@@ -1,4 +1,20 @@
 ----------
+11/25/04 9-speed
+----------
+added apps/icon-network, apps/meld.svg and apps/meld-icon.svg (symlink)
+Added files:
+   lila/gnome/scalable/apps/icon-network.svg
+   lila/gnome/scalable/apps/meld.svg
+   lila/gnome/scalable/apps/meld-icon.svg
+----------
+11/25/04 9-speed
+----------
+changed "fill-opacity:0.750000" to "fill-opacity:1.000000",
+this was an inkscape bug in <0.40 versions and now icons
+don't show unwanted translucency anymore
+Modified files:
+    *.svg (with "fill-opacity:0.750000" in it)
+----------
 11/13/04 9-speed
 ----------
 some new icons
