@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.0"
+   x="0"
+   y="0"
+   width="60"
+   height="60"
+   id="svg1">
+  <defs
+     id="defs3">
+    <linearGradient
+       id="linearGradient584">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop585" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop586" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient578">
+      <stop
+         style="stop-color:#d9cce6;stop-opacity:1;"
+         offset="0"
+         id="stop579" />
+      <stop
+         style="stop-color:#73667f;stop-opacity:1;"
+         offset="1"
+         id="stop580" />
+    </linearGradient>
+    <linearGradient
+       x1="0.00000000"
+       y1="-0.00000000"
+       x2="0.99264705"
+       y2="0.99218750"
+       id="linearGradient581"
+       xlink:href="#linearGradient578" />
+    <linearGradient
+       x1="0.00000000"
+       y1="-0.00000000"
+       x2="1.00000000"
+       y2="0.99218750"
+       id="linearGradient583"
+       xlink:href="#linearGradient584" />
+    <linearGradient
+       x1="-0.00000000"
+       y1="-0.00000000"
+       x2="0.98333335"
+       y2="0.98437500"
+       id="linearGradient612"
+       xlink:href="#linearGradient584" />
+    <linearGradient
+       id="linearGradient614"
+       xlink:href="#linearGradient578" />
+  </defs>
+  <path
+     d="M 31.046361 18.397056 C 28.088764 12.424239 22.844415 8.7381716 15.966672 8.3188926 C 7.1275917 8.7757203 3.8420502 17.181731 4.9122257 26.458885 C 9.047599 43.801567 17.647582 49.492707 30.929961 58.777313 C 45.670501 49.397577 54.313038 44.04688 58.164286 26.717961 C 57.981574 17.492131 56.492147 8.9196598 45.855715 8.5141576 C 36.999118 8.5416695 33.260489 12.380434 31.046361 18.397056 z "
+     style="font-size:12;fill-opacity:0.25;fill-rule:evenodd;stroke-width:1.875;stroke-opacity:0.25;"
+     id="path623" />
+  <path
+     d="M 29.228179 15.25656 C 26.270582 9.2837425 21.026233 5.5976758 14.14849 5.1783968 C 5.3094098 5.6352245 2.0238683 14.041235 3.0940438 23.318389 C 7.2294172 40.661071 15.8294 46.352211 29.111779 55.636817 C 43.852319 46.257081 52.494856 40.906384 56.346104 23.577465 C 57.485706 14.351635 54.673965 5.779164 44.037533 5.3736618 C 35.180936 5.4011737 31.442307 9.2399379 29.228179 15.25656 z "
+     style="font-size:12;fill:url(#linearGradient581);fill-rule:evenodd;stroke:#261933;stroke-width:1.875;"
+     id="path618" />
+  <path
+     d="M 15.292381 6.9614083 C 12.240044 7.1372948 8.0327229 8.545164 6.2893677 13.109989 C 4.1829064 18.30829 4.5404106 23.198596 6.2068966 27.549909 C 6.2178409 22.926898 7.9337057 17.265534 10.491087 13.457617 C 12.965931 11.146112 15.516982 9.636182 23.568995 11.16643 C 20.071495 7.6164373 17.761689 7.3183136 15.292381 6.9614083 z "
+     style="font-size:12;fill:url(#linearGradient583);fill-opacity:0.75;fill-rule:evenodd;stroke-width:1pt;"
+     id="path619" />
+  <path
+     d="M 29.371452 16.072371 C 29.371452 28.014295 29.183303 43.603121 29.183303 55.545045 C 37.713249 49.592232 40.937078 49.118192 47.942523 41.096413 C 51.20931 37.865923 55.007357 29.354031 56.205179 24.272362 C 55.624417 20.678895 56.328774 13.374521 51.174509 7.6031959 C 43.660898 5.2801466 36.166595 2.2851055 29.371452 16.072371 z "
+     style="font-size:12;fill:#261e2e;fill-opacity:0.1;fill-rule:evenodd;stroke-width:1pt;"
+     id="path622" />
+  <path
+     d="M 52.262375 30.50354 C 47.777305 40.370271 45.9884 40.828263 43.011994 44.222092 C 38.728872 47.924451 36.188748 49.764065 31.252269 52.595281 C 35.789474 48.892922 37.526601 47.162911 40.713676 44.223159 C 45.073129 39.308387 47.250278 38.354151 52.262375 30.50354 z "
+     style="font-size:12;fill:url(#linearGradient612);fill-opacity:0.75;fill-rule:evenodd;stroke-width:1pt;"
+     id="path620" />
+  <path
+     d="M 43.135518 7.1574867 C 40.083181 7.3333732 32.738605 9.5255561 31.191329 16.051165 C 36.731926 11.249466 38.423902 10.794945 41.667557 9.7321264 C 45.024754 9.1853273 46.791492 9.2440251 52.392524 11.06839 C 48.895024 7.5183981 45.996983 7.0241959 43.135518 7.1574867 z "
+     style="font-size:12;fill:url(#linearGradient583);fill-opacity:0.75;fill-rule:evenodd;stroke-width:1pt;"
+     id="path591" />
+</svg>

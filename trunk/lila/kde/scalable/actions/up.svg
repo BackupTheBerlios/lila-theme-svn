@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.0"
+   x="0"
+   y="0"
+   width="60.0000000"
+   height="60.0000000"
+   id="svg1">
+  <defs
+     id="defs3">
+    <linearGradient
+       id="linearGradient584">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop585" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop586" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient578">
+      <stop
+         style="stop-color:#d9cce6;stop-opacity:1;"
+         offset="0"
+         id="stop579" />
+      <stop
+         style="stop-color:#73667f;stop-opacity:1;"
+         offset="1"
+         id="stop580" />
+    </linearGradient>
+    <linearGradient
+       x1="0.00694444"
+       y1="0.02142857"
+       x2="0.98611110"
+       y2="0.97857141"
+       id="linearGradient581"
+       xlink:href="#linearGradient578" />
+    <linearGradient
+       x1="0.01538462"
+       y1="0.01428571"
+       x2="0.96923077"
+       y2="0.98571426"
+       id="linearGradient583"
+       xlink:href="#linearGradient584" />
+    <linearGradient
+       x1="0.00342466"
+       y1="-0.50000000"
+       x2="0.74657536"
+       y2="0.63157892"
+       id="linearGradient612"
+       xlink:href="#linearGradient584" />
+    <linearGradient
+       x1="0.01052632"
+       y1="0.02857143"
+       x2="0.97894734"
+       y2="0.95714283"
+       id="linearGradient614"
+       xlink:href="#linearGradient584" />
+  </defs>
+  <path
+     d="M 45.618888 57.375612 C 44.526257 59.123014 18.058798 58.473278 16.596744 57.375612 C 14.931176 56.070206 17.68242 34.822906 16.596744 33.08534 C 15.761502 31.57697 2.5808584 34.560006 3.032046 33.08534 C 3.5014327 31.714377 24.346689 3.5660056 30.161442 3.4322786 C 35.635597 3.4925536 58.441194 31.157496 58.868129 33.08534 C 59.20536 34.784316 45.97048 32.056769 44.987971 33.400797 C 43.686069 35.093107 46.936692 55.491165 45.618888 57.375612 z "
+     style="font-size:12;opacity:0.302675;fill-rule:evenodd;stroke-width:14.8479;"
+     id="path617" />
+  <path
+     d="M 42.896282 55.839669 C 41.918011 57.404179 18.220747 56.822448 16.911717 55.839669 C 15.420475 54.670891 17.883761 35.647422 16.911717 34.091717 C 16.163895 32.74122 4.3627912 35.412038 4.766754 34.091717 C 5.187014 32.864246 23.496412 7.6619996 29.056677 7.5422706 C 34.134948 7.5963476 54.376553 32.365651 54.758804 34.091717 C 55.060738 35.612873 43.211076 33.170801 42.331401 34.374159 C 41.16576 35.889345 44.076158 54.152456 42.896282 55.839669 z "
+     style="font-size:12;fill:url(#linearGradient581);fill-rule:evenodd;stroke:#261933;stroke-width:1.87313;"
+     id="path589" />
+  <path
+     d="M 29.616124 56.608444 C 29.392508 54.621495 28.141012 9.2307166 29.490928 7.7819806 C 30.481463 6.5845686 51.191356 27.7729 54.154552 33.822762 C 55.197629 35.952378 43.292949 31.383127 42.010536 33.947958 C 39.703996 38.561037 44.614532 50.068004 42.511319 55.356484 C 42.117594 56.480289 29.777654 57.918527 29.616124 56.608444 z "
+     style="font-size:12;opacity:0.201783;fill:#261e2e;fill-rule:evenodd;stroke-width:1pt;"
+     id="path644" />
+  <path
+     d="M 10.069505 29.749513 C 9.5701048 29.976514 7.209902 32.524807 7.9906353 32.659934 C 10.81328 33.148469 18.10667 31.047957 18.777882 33.014041 C 19.821556 37.911084 17.098779 52.700334 18.592882 53.864426 C 19.738794 55.158668 40.814433 54.339088 41.252585 53.864426 C 41.645981 53.438242 23.205344 53.260018 21.087527 51.161893 C 19.481919 49.413608 22.687369 35.675353 20.410144 31.558831 C 19.083993 29.161556 13.886267 31.680645 10.277393 31.620497 C 9.7285222 31.61135 10.332358 29.630036 10.069505 29.749513 z "
+     style="font-size:12;fill:url(#linearGradient614);fill-rule:evenodd;stroke-width:1pt;"
+     id="path613" />
+</svg>
