@@ -249,7 +249,7 @@ if __name__ == "__main__":
 		print "Copyright 2004 Daniel G. Taylor, released under the GNU GPL"
 		print "Usage:"
 		print "svgcolor colors.xml file.svg [newname.svg]"
-		print "svggrayscale colors.xml /path/to/search/for/svgs [/path/to/put/new/svgs]"
+		print "svgcolor colors.xml /path/to/search/for/svgs [/path/to/put/new/svgs]"
 		print "Note that the SVG files must have an svg extension for them to be included!"
 		exit()
 
