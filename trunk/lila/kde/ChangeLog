@@ -5,6 +5,24 @@ used symbols:
 ->: file renamed
 files expected to change every time: kde/ChangeLog and kde/TODO
 
+
+----------
+03/15/05 jpetso
+---------
+
+kde/
+ ~generate.py: added option parsing as prerequisite for automatic color mod
+               generation. made the code more readable. learned python.
+
+actions/
+ ~window_fullscreen.svg
+ ~window_nofullscreen.svg
+
+apps/
+ +kcmsound.svg
+ ~kaudiocreator.svg: update from gnome's sound-juicer
+
+
 ----------
 03/14/05 jpetso
 ---------
