@@ -184,6 +184,19 @@ style "icon-style" {
  stock ["stock_view-html-source"] = {{ "scalable/stock/stock_view-html-source.svg" }}
  stock ["stock_volume"] = {{ "scalable/stock/stock_volume.svg" }}
 
+ stock ["terminal-advanced"] = {{ "scalable/stock/terminal-advanced.svg" }}
+ stock ["terminal-appearance"] = {{ "scalable/stock/terminal-appearance.svg" }}
+ stock ["terminal-closetab"] = {{ "scalable/stock/terminal-closetab.svg" }}
+ stock ["terminal-closewindow"] = {{ "scalable/stock/terminal-closewindow.svg" }}
+ stock ["terminal-colors"] = {{ "scalable/stock/terminal-colors.svg" }}
+ stock ["terminal-compose"] = {{ "scalable/stock/terminal-compose.svg" }}
+ stock ["terminal-fullscreen"] = {{ "scalable/stock/terminal-fullscreen.svg" }}
+ stock ["terminal-general"] = {{ "scalable/stock/terminal-general.svg" }}
+ stock ["terminal-newtab"] = {{ "scalable/stock/terminal-newtab.svg" }}
+ stock ["terminal-newwindow"] = {{ "scalable/stock/terminal-newwindow.svg" }}
+ stock ["terminal-reportbug"] = {{ "scalable/stock/terminal-reportbug.svg" }}
+ stock ["terminal-shortcuts"] = {{ "scalable/stock/terminal-shortcuts.svg" }}
+
  stock ["vim-find-help"] = {{ "scalable/stock/vim-find-help.svg" }}
  stock ["vim-save-all"] = {{ "scalable/stock/vim-save-all.svg" }}
  stock ["vim-session-load"] = {{ "scalable/stock/vim-session-load.svg" }}

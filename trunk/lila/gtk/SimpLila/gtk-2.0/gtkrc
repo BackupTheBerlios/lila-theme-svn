@@ -23,6 +23,14 @@ style "default"
 	GtkRange::stepper_size = 15
 	GtkRange::stepper_spacing = 0
 
+	ExoIconBar::active-item-border-color = "#9E91AA"
+	ExoIconBar::active-item-fill-color = "#BAB5AB"
+	ExoIconBar::active-item-text-color = "#FFFFFF"
+
+	ExoIconBar::cursor-item-border-color = "#887B94"
+	ExoIconBar::cursor-item-fill-color = "#9E91AA"
+	ExoIconBar::cursor-item-text-color = "#00000"
+
 	fg[ACTIVE] = "#000000" # Black
 	fg[SELECTED] = "#FFFFFF" # White
 	fg[NORMAL] = "#000000" # Black
