@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+	svgcolor example template file
+	
+	All colors are in hex form: #RRGGBBAA
+
+	Color replacement resolution order is as follows:
+	<[rect,circle,ellipse,line,polyline,polygon,path,text,tspan,tref,textPath,group,linearGradient,radialGradient]>
+	<[object, gradient]>
+	<color>
+-->
+
+<svg>
+
+	<!-- Blanket replace a certain color on all elements -->
+	<color
+		old="#000000ff"
+		new="#ffffffff"
+	/>
+
+	<!--
+		Replace a gradient
+		Note that there must be the same number
+		of stops in old and new!!!!
+		This affects both linear and radial gradients!
+	-->
+	<gradient>
+		<old>
+			<stop
+				color="#0f0f0fff"
+			/>
+			<stop
+				color="#f0f0f0ff"
+			/>
+		</old>
+		<new>
+			<stop
+				color="#ff0000ff"
+			/>
+			<stop
+				color="#00ff00ff"
+			/>
+		</new>
+	</gradient>
+
+	<!--
+		Example showing a more specific gradient replace
+		linearGradient and radialGradient tags are searched
+		before the gradient tags!
+	-->
+	<linearGradient>
+		<old>
+			<stop
+				color="#f3f3f344"
+			/>
+			<stop
+				color="#00000000"
+			/>
+			<stop
+				color="#ffffffff"
+			/>
+		</old>
+		<new>
+			<stop
+				color="#f3f3f355"
+			/>
+			<stop
+				color="#ffffff00"
+			/>
+			<stop
+				color="#000000ff"
+			/>
+		</new>
+	</linearGradient>
+
+	<!--
+		Replace a [rect, circle, ellipse, line, polyline,
+		polygon, path, text, tspan, tref, textPath]'s fill
+		and/or stroke
+	-->
+	<object>
+		<fill
+			old="#123456ff"
+			new="#654321ff"
+		/>
+		<stroke
+			old="#111111ff"
+			new="#222222ff"
+		/>
+	</object>
+
+	<!--
+		Another example like above, except with a group element
+		only replacing the fill to show that either fill or stroke
+		are optional. Note that when either is left off it will
+		be like a wildcard (e.g. if style is left off but fill
+		is given, any element with a matching fill will be changed,
+		irregardless of stroke)
+	-->
+	<group>
+		<fill
+			old="#3f3f3fff"
+			new="#4d4d4dff"
+		/>
+	</group>
+
+</svg>
