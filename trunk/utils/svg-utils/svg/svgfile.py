@@ -528,6 +528,13 @@ class TextContainer(SVGElement, FilledElement, StrokedElement, TransformableElem
 			text.set_attribute("stroke", stroke)
 		return text
 
+	def add_text(self, element):
+		"""
+		Add an existing text element to this element
+		"""
+		self.__dict__["element"].appendChild(element.element)
+		return element
+
 	def add_tspan(self, tspan_id = None, text = None, x = None, y = None, deviation_x = None, deviation_y = None, rotation = None, length = None, font_weight = None, fill = None, stroke = None, element = None):
 		"""
 		Add a tref into this container
