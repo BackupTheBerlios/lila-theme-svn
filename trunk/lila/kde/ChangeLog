@@ -5,6 +5,45 @@ used symbols:
 ->: file renamed
 
 ----------
+02/10/05 jpetso
+---------
+
+actions/
+ +fileclose.svg
+ +history.svg
+ +messagebox_critical.svg
+ +messagebox_warning.svg
+ +openterm.svg
+ -ktip.svg: goes to apps/
+
+apps/
+ hexedit.svg -> khexedit.svg: sorry, messed up this one
+ +ktip.svg: dito
+ ~kfm_home2.svg: update from firefox-home.svg
+ +kweather.svg
+ +kwin.svg
+ +laptop_battery.svg
+ +panel_settings.svg
+ +planner.svg
+ +mathematica.svg
+ ~kscreensaver.svg: update from gnome's xscreensaver.svg
+
+
+things I had in my last tarball, but forgot to mention them here, so they're not yet in CVS:
+
+actions/
+ (to 9-speed: remove these two from your disk)
+ -kmaillight.svg (goes to apps/ where it belongs)
+ -italic.svg
+
+apps/
+ +kmaillight.svg (moved from actions/, where it doesn't belong)
+ +realplayer.svg
+ +skype.svg
+ +sodipodi.svg
+
+
+----------
 02/09/05 jpetso
 ---------
 

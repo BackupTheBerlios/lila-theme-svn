@@ -1,4 +1,6 @@
-icons for
+TODO list: this is what I find most important to do. Your opinion may differ.
+
+Icons for
 - Kontact summary view, KOrganizer reminder daemon
 - Kopete (including offline, some away, all away & some online icons)
 - Konqueror toolbar buttons: FSView & Gwenview Image View
@@ -7,7 +9,7 @@ icons for
 - Menu Editor and Menu Updating Tool
 - Bookmark Tabs as Folder and Bookmark Toolbar
 - Amarok (new wolf howl icon)
-- Konversation and KSirc
+- Konversation and KSirc (although, the original KSirc almost looks like native Lila :-)
 - KOffice Logo
 - Info Center
 - KNewsTicker
@@ -20,4 +22,6 @@ icons for
 - Game Categories (Arcade, Board Games, Card Games, Tactics & Strategy)
 - Edutainment (and Subcategories: Languages, Mathematics, Miscellaneous, Science, Teaching Tools)
 
-- text_* prüfen, fonts.svg auch
+Things that can be done with relatively low amount of work:
+- actions/player_mute: combine the mute and volume-zero icons from gnome stock
+- filesystems/link, lockover and zip icons should be easy
