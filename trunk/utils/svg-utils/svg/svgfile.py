@@ -384,16 +384,23 @@ class Container(XMLElement):
 								"to remove an object call its unlink() method!"
 		return False
 
-	def add_gradient(self, grad_type, attributes, grad_id = None):
+	def add_gradient(self, grad_type = None, attributes = None, grad_id = None, element = None):
 		"""
 		Add a gradient to this container
+		Either element can be specified (and should be a Gradient object)
+		OR
+		gradient type, id, attributes etc... will produce a new gradient
 		"""
-		if not grad_id:
-			global id_counter
-			grad_id = id_counter
-			id_counter += 1
-		attributes["id"] = grad_id
-		return self.add_child_tag(grad_type + "Gradient", Gradient, attributes)
+		if element:
+			self.element.appendChild(element.element)
+			return element
+		else:
+			if not grad_id:
+				global id_counter
+				grad_id = id_counter
+				id_counter += 1
+			attributes["id"] = grad_id
+			return self.add_child_tag(grad_type + "Gradient", Gradient, attributes)
 
 	def add_linear_gradient(self, gradient_id = None, x1 = None, y1 = None, x2 = None, y2 = None, xlink = None):
 		"""
@@ -431,22 +438,29 @@ class Container(XMLElement):
 			attributes["xlink"] = xlink
 		return self.add_gradient("radial", attributes, gradient_id)
 
-	def add_shape(self, tag, shape_id, attributes, fill = None, stroke = None, shape_type = Shape):
+	def add_shape(self, tag = None, shape_id = None, attributes = {}, fill = None, stroke = None, shape_type = Shape, element = None):
 		"""
 		Add an object to this container
+		Either element can be specified (and it should be one of these shape/text classes
+		OR
+		A tag, shape_id, attributes, etc... can be specified and a new shape will be added
 		"""
-		# if no shape id is specified get a numerical one
-		if not shape_id:
-			global id_counter
-			shape_id = id_counter
-			id_counter += 1
-		attributes["id"] = str(shape_id)
-		shape = self.add_child_tag(tag, shape_type, attributes)
-		if fill:
-			shape.fill = fill
-		if stroke:
-			shape.stroke = stroke
-		return shape
+		if element:
+			self.element.appendChild(element.element)
+			return element
+		else:
+			# if no shape id is specified get a numerical one
+			if not shape_id:
+				global id_counter
+				shape_id = id_counter
+				id_counter += 1
+			attributes["id"] = str(shape_id)
+			shape = self.add_child_tag(tag, shape_type, attributes)
+			if fill:
+				shape.fill = fill
+			if stroke:
+				shape.stroke = stroke
+			return shape
 
 	def add_rect(self, rect_id = None, x = None, y = None, width = None, height = None, fill = None, stroke = None, stroke_width = None, rx = None, ry = None):
 		"""
@@ -524,19 +538,30 @@ class Container(XMLElement):
 			attributes["y2"] = y2
 		if stroke_width:
 			attributes["stroke-width"] = stroke_width
-		return self.add_shape("line", line_id, attributes, stroke, Line)
+		return self.add_shape("line", line_id, attributes, stroke, shape_type=Line)
 
 	def add_polyline(self, line_id = None, points = None, fill = None, stroke = None):
 		"""
 		Add a polyline into this container
 		"""
-		pass
+		attributes = {}
+		if points:
+			attributes["p"] = points
+		return self.add_shape("polyline", line_id, attributes, fill, stroke)
 
 	def add_text(self, text_id = None, x = None, y = None, text = None, fill = None, stroke = None):
 		"""
 		Add a text element into this container
 		"""
-		pass
+		attributes = {}
+		if x:
+			attributes["x"] = x
+		if y:
+			attributes["y"] = y
+		obj = self.add_shape("text", text_id, attributes, fill, stroke, TextElement)
+		if text:
+			obj.text = text
+		return obj
 
 class TransformableContainer(Container, TransformableElement):
 	"""
