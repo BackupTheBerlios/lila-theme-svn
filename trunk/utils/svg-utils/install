@@ -83,22 +83,26 @@ if len(sys.argv) > 1:
 if install:
 	# check dependencies
 	print "Checking dependencies..."
+	error = False
 	try:
 		from xml.dom.minidom import parse
 	except:
 		print red("Could not import xml.dom.minidom.parse!")
-		sys.exit()
+		print red("Is Python installed correctly?")
+		error = True
 	try:
-		from xml.dom.ext import PrettyPrint
+		from xml.dom.ext import Print
 	except:
-		print red("Could not import xml.dom.ext.PrettyPrint!")
+		print red("Could not import xml.dom.ext.Print!")
 		print red("Please install or update pyxml!")
-		sys.exit()
+		error = True
 	try:
 		from os.path import walk
 	except:
 		print red("Could not import os.path.walk!")
 		print red("Please upgrade to python-2.3 or above!")
+		error = True
+	if error:
 		sys.exit()
 
 print "Configuring paths..."
