@@ -398,6 +398,12 @@ class Path(Shape):
 		"""
 		pass
 
+	def clear(self):
+		"""
+		Clear the path
+		"""
+		self.
+
 class TextElement(TransformableElement):
 	"""
 	Holds an element containing text
@@ -772,48 +778,6 @@ class Container(XMLElement):
 		if length:
 			attributes["textLength"] = length
 		obj = self.add_shape("text", text_id, attributes, fill, stroke, TextContainer)
-		if text:
-			obj.text = text
-		return obj
-
-	def add_tspan(self, text_id = None, x = None, y = None, x_shift = None, y_shift = None, length = None, text = None, fill = None, stroke = None):
-		"""
-		Add a tspan element into this container
-		"""
-		attributes = {}
-		if x:
-			attributes["x"] = x
-		if y:
-			attributes["y"] = y
-		if x_shift:
-			attributes["dx"] = x_shift
-		if y_shift:
-			attributes["dy"] = y_shift
-		if length:
-			attributes["textLength"] = length
-		obj = self.add_shape("tspan", text_id, attributes, fill, stroke, TextElement)
-		if text:
-			obj.text = text
-		return obj
-
-	def add_tref(self, tref_id = None, x = None, y = None, x_shift = None, y_shift = None, length = None, text = None, fill = None, stroke = None, xlink = None):
-		"""
-		Add a tref element into this container
-		"""
-		attributes = {}
-		if x:
-			attributes["x"] = x
-		if y:
-			attributes["y"] = y
-		if x_shift:
-			attributes["dx"] = x_shift
-		if y_shift:
-			attributes["dy"] = y_shift
-		if length:
-			attributes["textLength"] = length
-		if xlink:
-			attributes["xlink"] = xlink
-		obj = self.add_shape("tref", text_id, attributes, fill, stroke, Tref)
 		if text:
 			obj.text = text
 		return obj
