@@ -7,4 +7,4 @@ from scripts import SVGScript
 authors = [("Daniel G. Taylor", "http://programmer-art.org")]
 homepage = "http://programmer-art.org/?page=svg-utils"
 documentation = "http://programmer-art.org/svg-utils/"
-version = "0.1-pre0"
+version = "0.1"

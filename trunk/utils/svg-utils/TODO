@@ -1,10 +1,7 @@
 SVG-Utils TODO
 
-Version 0.1
--make svg-utils-test.py test all aspects of svg-utils
--fix outstanding bugs we find testing before release
-
 Version 0.2
+-make svg-utils-test.py test all aspects of svg-utils
 -Finish Path point creation functions
 -SVG use tag support
 -SVG switch tag support
