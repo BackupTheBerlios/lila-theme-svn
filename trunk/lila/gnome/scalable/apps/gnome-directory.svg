@@ -5,10 +5,10 @@
 <svg
    id="svg1"
    sodipodi:version="0.32"
-   inkscape:version="0.37"
+   inkscape:version="0.38.1"
    width="48pt"
    height="48pt"
-   sodipodi:docbase="/usr/share/icons/Lila/scalable/filesystems"
+   sodipodi:docbase="/home/dan/svg-icons/lila/gnome/scalable/filesystems"
    sodipodi:docname="gnome-fs-directory.svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -30,12 +30,12 @@
     <linearGradient
        id="linearGradient578">
       <stop
-         style="stop-color:#d9cce6;stop-opacity:1;"
-         offset="0.00000000"
+         style="stop-color:#d9cce6;stop-opacity:1.0000000;"
+         offset="0.0000000"
          id="stop579" />
       <stop
-         style="stop-color:#73667f;stop-opacity:1;"
-         offset="1.00000000"
+         style="stop-color:#73667f;stop-opacity:1.0000000;"
+         offset="1.0000000"
          id="stop580" />
     </linearGradient>
     <linearGradient
@@ -81,13 +81,13 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.97947193"
-     inkscape:cx="25.5142336"
-     inkscape:cy="23.6060866"
+     inkscape:zoom="5.6423387"
+     inkscape:cx="25.514233"
+     inkscape:cy="23.606088"
      inkscape:window-width="640"
      inkscape:window-height="535"
-     inkscape:window-x="90"
-     inkscape:window-y="297" />
+     inkscape:window-x="102"
+     inkscape:window-y="270" />
   <path
      d="M 11.267699 56.622671 C 2.7670491 52.988532 1.5072003 22.031864 3.2623489 8.9840518 C 3.8256059 4.7962807 15.938655 3.472312 19.798169 3.9971948 C 21.406915 4.2160343 21.378639 11.507009 23.210262 11.477541 C 32.2712 11.332006 44.430229 0.76734911 50.900965 4.3909154 C 56.460229 7.5040954 60.504727 30.459332 55.887824 36.543835 C 47.293672 47.869915 20.265076 60.469119 11.267699 56.622671 z "
      style="font-size:12;opacity:0.302675;fill-rule:evenodd;stroke-width:18.75;stroke-linecap:round;stroke-linejoin:round;"

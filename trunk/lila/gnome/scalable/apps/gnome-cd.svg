@@ -5,17 +5,28 @@
 <svg
    id="svg1"
    sodipodi:version="0.32"
-   inkscape:version="0.37"
+   inkscape:version="0.38.1"
    width="48pt"
    height="48pt"
-   sodipodi:docbase="/home/dan/Projects/Lila-icons/scalable/devices"
-   sodipodi:docname="gnome-dev-cdrom.svg"
+   sodipodi:docbase="/home/dan/svg-icons/lila/gnome/scalable/devices"
+   sodipodi:docname="gnome-dev-cdrom-audio.svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs
      id="defs3">
+    <linearGradient
+       id="linearGradient2888">
+      <stop
+         offset="0.0000000"
+         style="stop-color:#d9cce6;stop-opacity:1.0000000;"
+         id="stop2890" />
+      <stop
+         offset="1.0000000"
+         style="stop-color:#73667f;stop-opacity:1.0000000;"
+         id="stop2889" />
+    </linearGradient>
     <linearGradient
        id="linearGradient584">
       <stop
@@ -59,8 +70,108 @@
        x2="0.96923077"
        y2="0.99218750" />
     <linearGradient
-       xlink:href="#linearGradient584"
-       id="linearGradient713" />
+       xlink:href="#linearGradient2888"
+       id="linearGradient713"
+       x1="0.013513510"
+       y1="0.046875000"
+       x2="0.99324322"
+       y2="0.96875000" />
+    <defs
+       id="defs2842">
+      <linearGradient
+         id="linearGradient2843">
+        <stop
+           style="stop-color:#ffffff;stop-opacity:1;"
+           offset="0.00000000"
+           id="stop2844" />
+        <stop
+           style="stop-color:#ffffff;stop-opacity:0;"
+           offset="1.00000000"
+           id="stop2845" />
+      </linearGradient>
+      <linearGradient
+         id="linearGradient2846"
+         x1="0.0000000"
+         y1="0.50000000"
+         x2="1.0000000"
+         y2="0.50000000"
+         gradientUnits="objectBoundingBox"
+         spreadMethod="pad"
+         xlink:href="#linearGradient2888" />
+      <linearGradient
+         xlink:href="#linearGradient578"
+         id="linearGradient2849"
+         x1="-0.00000000"
+         y1="-0.00000000"
+         x2="0.96428573"
+         y2="0.98437500" />
+      <linearGradient
+         xlink:href="#linearGradient584"
+         id="linearGradient2850"
+         x1="0.00000000"
+         y1="-0.00000000"
+         x2="0.98717946"
+         y2="1.00000000" />
+      <linearGradient
+         xlink:href="#linearGradient584"
+         id="linearGradient860"
+         x1="0.01086957"
+         y1="0.05555556"
+         x2="0.99637681"
+         y2="0.94444442" />
+      <linearGradient
+         xlink:href="#linearGradient584"
+         id="linearGradient861"
+         x1="0.01811594"
+         y1="0.00833333"
+         x2="0.98913044"
+         y2="1.00000000" />
+      <linearGradient
+         xlink:href="#linearGradient584"
+         id="linearGradient862"
+         x1="-0.28676471"
+         y1="-0.21875000"
+         x2="0.97887325"
+         y2="1.03906250" />
+      <radialGradient
+         xlink:href="#linearGradient584"
+         id="radialGradient595" />
+      <linearGradient
+         xlink:href="#linearGradient584"
+         id="linearGradient612"
+         x1="0.00000000"
+         y1="0.00000000"
+         x2="1.03389835"
+         y2="1.02343750" />
+      <linearGradient
+         xlink:href="#linearGradient578"
+         id="linearGradient613"
+         x1="0.00000000"
+         y1="0.00000000"
+         x2="0.96874988"
+         y2="1.00000012" />
+    </defs>
+    <sodipodi:namedview
+       id="namedview2857"
+       pagecolor="#ffffff"
+       bordercolor="#666666"
+       borderopacity="1.0"
+       inkscape:pageopacity="0.0"
+       inkscape:pageshadow="2"
+       inkscape:zoom="5.64233871"
+       inkscape:cx="25.7884720"
+       inkscape:cy="24.7998202"
+       inkscape:window-width="640"
+       inkscape:window-height="535"
+       inkscape:window-x="65"
+       inkscape:window-y="68" />
+    <linearGradient
+       xlink:href="#linearGradient2888"
+       id="linearGradient2891"
+       x1="0.013513510"
+       y1="0.046875000"
+       x2="0.99324322"
+       y2="0.96875000" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -69,11 +180,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.64233871"
-     inkscape:cx="23.0963011"
-     inkscape:cy="23.9821367"
+     inkscape:zoom="5.6423387"
+     inkscape:cx="24.863378"
+     inkscape:cy="24.030350"
      inkscape:window-width="640"
-     inkscape:window-height="516"
+     inkscape:window-height="525"
      inkscape:window-x="96"
      inkscape:window-y="127" />
   <path
@@ -100,4 +211,24 @@
      d="M 29.473007 34.718049 C 29.439136 34.342493 27.022281 33.103018 26.720708 33.332986 C 22.117364 37.959801 12.895625 45.133311 13.205717 49.318609 C 13.426772 52.276018 28.881644 56.743083 29.275523 55.937104 C 30.943145 52.178566 30.055853 41.410426 29.473007 34.718049 z "
      style="font-size:12;fill:url(#linearGradient654);fill-rule:evenodd;stroke-width:1pt;"
      id="path781" />
+  <path
+     style="font-size:12.000000;opacity:0.30267498;fill-rule:evenodd;stroke-width:1.8750000;"
+     d="M 55.742479,39.192322 C 56.061815,36.032617 54.545999,35.037416 52.730522,34.836727 C 48.562955,34.437101 43.887685,33.333561 43.707336,35.947203 C 43.026828,39.499380 42.581016,41.796089 41.898391,47.619294 C 41.573688,50.074997 42.804215,57.213497 37.425064,57.707836 C 31.929574,58.213255 29.008435,54.294497 30.555195,50.530435 C 32.731379,45.373160 38.228725,48.656725 38.791664,46.728156 C 40.453503,40.869075 40.221440,34.127320 41.564883,28.147974 C 41.617569,27.913481 42.324988,27.676862 42.736753,27.620090 C 43.814827,27.359591 56.893756,28.427431 57.731353,28.969060 C 58.143118,28.912290 58.717370,29.405015 58.882003,29.563232 C 60.265786,30.893097 59.432339,36.481504 59.177684,37.660665 C 58.497175,41.212841 58.022439,43.494169 57.339811,49.317376 C 57.015109,51.773079 58.274563,58.926959 52.895412,59.421297 C 47.399921,59.926716 44.478780,56.007960 46.025541,52.243897 C 48.201727,47.086621 53.670145,50.354805 54.233085,48.426239 C 55.064004,45.496696 55.423142,42.352025 55.742479,39.192322 z "
+     id="path702"
+     sodipodi:nodetypes="csccccccccccccccc" />
+  <path
+     style="font-size:12.000000;fill:url(#linearGradient2891);fill-rule:evenodd;stroke:#261933;stroke-width:1.8750000;stroke-dasharray:none;"
+     d="M 53.659397,36.919870 C 53.978734,33.760165 52.462917,32.764963 50.647440,32.564275 C 46.479874,32.164648 41.804603,31.061108 41.624255,33.674750 C 40.943746,37.226927 40.497935,39.523636 39.815310,45.346842 C 39.490607,47.802545 40.721133,54.941045 35.341982,55.435383 C 29.846492,55.940803 26.925354,52.022045 28.472113,48.257983 C 30.648297,43.100707 36.145644,46.384273 36.708583,44.455704 C 38.370422,38.596622 38.138358,31.854867 39.481801,25.875522 C 39.534488,25.641029 40.241906,25.404409 40.653672,25.347638 C 41.731745,25.087139 54.810674,26.154979 55.648272,26.696608 C 56.060037,26.639837 56.634288,27.132562 56.798921,27.290780 C 58.182705,28.620644 57.349258,34.209052 57.094602,35.388212 C 56.414093,38.940389 55.939357,41.221717 55.256730,47.044923 C 54.932028,49.500626 56.191481,56.654507 50.812330,57.148845 C 45.316839,57.654264 42.395698,53.735508 43.942459,49.971445 C 46.118645,44.814169 51.587064,48.082352 52.150004,46.153786 C 52.980922,43.224244 53.340061,40.079573 53.659397,36.919870 z "
+     id="path701"
+     sodipodi:nodetypes="csccccccccccccccc" />
+  <path
+     style="fill:url(#linearGradient583);fill-rule:evenodd;stroke-width:1.0000000pt;"
+     d="M 29.271897,51.620986 C 29.111458,51.430610 29.019028,49.437218 30.936441,47.535993 C 33.221638,45.349381 36.764276,47.662690 37.372343,45.764297 C 39.144122,40.500501 39.407021,32.576269 40.560662,26.719618 C 40.595938,26.540535 49.853785,26.693516 55.076399,27.819546 C 48.128022,27.120122 42.359919,27.446607 41.593316,27.940413 C 40.400983,28.685448 39.524616,40.951533 37.856600,46.164519 C 37.235479,48.063189 34.735365,46.254610 31.639612,48.361646 C 29.161023,50.008308 29.413218,51.788674 29.271897,51.620986 z "
+     id="path698"
+     sodipodi:nodetypes="cssscssss" />
+  <path
+     style="fill:url(#linearGradient583);fill-rule:evenodd;stroke-width:1.0000000pt;"
+     d="M 44.730832,53.196323 C 44.570391,53.005946 44.477962,51.012553 46.395375,49.111328 C 48.680573,46.924717 52.223212,49.238024 52.831278,47.339632 C 54.603057,42.075836 53.864525,40.408044 55.018165,34.551393 C 55.088717,34.193225 55.994069,35.103928 55.818189,35.457090 C 54.175106,38.587177 54.983552,42.526868 53.315535,47.739855 C 52.694412,49.638525 50.194299,47.829946 47.098547,49.936981 C 44.619957,51.583643 44.872153,53.364010 44.730832,53.196323 z "
+     id="path700"
+     sodipodi:nodetypes="csssssss" />
 </svg>
