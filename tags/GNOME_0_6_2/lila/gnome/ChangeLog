@@ -1,0 +1,595 @@
+----------
+12/15/04 scaba
+----------
+Modified Files:
+  scalable/apps/gnome-balsa2.svg
+----------
+12/15/04 9-speed
+----------
+enhanced xfce mouse
+Modified Files:
+  scalable/apps/xfcalendar.svg
+  scalable/apps/xfce4-menueditor.svg
+  scalable/apps/xfce-mouse.svg
+  scalable/apps/xfmedia.svg
+----------
+12/15/04 scaba
+----------
+Added Files:
+  scalable/apps/xfcalendar.svg
+  scalable/apps/xfce4-menueditor.svg
+  scalable/apps/xfce-mouse.svg
+  scalable/apps/xfmedia.svg
+  scalable/stock/vim-find-help.svg
+----------
+12/14/04 scaba
+----------
+Modified Files:
+  ChangeLog
+  index.theme
+  scalable/stock/stock_repeat.svg
+Added Files:
+  scalable/apps/Terminal.svg
+  scalable/apps/amule.svg
+  scalable/apps/bug-buddy.svg
+  scalable/apps/dc_gui2.svg
+  scalable/apps/gcdmaster.svg
+  scalable/apps/giftui.svg
+  scalable/apps/gmpc.svg
+  scalable/apps/gnome-audio.svg
+  scalable/apps/gnome-balsa2.svg
+  scalable/apps/gnome-ghostview.svg
+  scalable/apps/gnome-netstatus-disconn.svg
+  scalable/apps/gnome-netstatus-error.svg
+  scalable/apps/gnome-netstatus-idle.svg
+  scalable/apps/gnome-netstatus-rx.svg
+  scalable/apps/gnome-netstatus-tx.svg
+  scalable/apps/gnome-netstatus-txrx.svg
+  scalable/apps/gripicon.svg
+  scalable/apps/gthumb.svg
+  scalable/apps/gxmame.svg
+  scalable/apps/msn.svg
+  scalable/apps/realplay.svg
+  scalable/apps/skype.svg
+  scalable/apps/xfce-mail.svg
+  scalable/apps/xfce-multimedia.svg
+  scalable/apps/xfce-sound.svg
+  scalable/apps/xfce4-backdrop.svg
+  scalable/apps/xfce4-display.svg
+  scalable/apps/xfce4-keyboard.svg
+  scalable/apps/xfce4-keys.svg
+  scalable/apps/xfce4-mixer.svg
+  scalable/apps/xfce4-mouse.svg
+  scalable/apps/xfce4-panel.svg
+  scalable/apps/xfce4-settings.svg
+  scalable/apps/xfce4-ui.svg
+  scalable/apps/xfce4-workspaces.svg
+  scalable/apps/xfwm.svg
+  scalable/apps/xmule.svg
+  scalable/stock/media-shuffle.svg
+  scalable/stock/stock_shuffle.svg
+Removed Files:
+  ToDo
+  scalable/apps/bug_buddy.svg
+----------
+11/25/04 9-speed
+----------
+added apps/icon-network, apps/meld.svg and apps/meld-icon.svg (symlink)
+Added files:
+   lila/gnome/scalable/apps/icon-network.svg
+   lila/gnome/scalable/apps/meld.svg
+   lila/gnome/scalable/apps/meld-icon.svg
+----------
+11/25/04 9-speed
+----------
+changed "fill-opacity:0.750000" to "fill-opacity:1.000000",
+this was an inkscape bug in <0.40 versions and now icons
+don't show unwanted translucency anymore
+Modified files:
+    *.svg (with "fill-opacity:0.750000" in it)
+----------
+11/13/04 9-speed
+----------
+some new icons
+Added files:
+   lila/gnome/scalable/apps/gnotski-icon.svg
+and updates
+gdesklets made two pieces again
+blackjack fixed letters
+Modified files:
+   lila/gnome/scalable/apps/gdesklets.svg
+   lila/gnome/scalable/apps/gnome-blackjack.svg
+----------
+11/10/04 9-speed
+----------
+makzu made new game icons
+Added files:
+   lila/gnome/scalable/apps/gataxx.svg
+   lila/gnome/scalable/apps/glines.svg
+   lila/gnome/scalable/apps/gnect-icon.svg
+   lila/gnome/scalable/apps/gnome-blackjack.svg
+   lila/gnome/scalable/apps/gnome-gnobots2.svg
+   lila/gnome/scalable/apps/gnome-gnomine.svg
+   lila/gnome/scalable/apps/gnome-gnotravex.svg
+   lila/gnome/scalable/apps/gnome-gsame.svg
+   lila/gnome/scalable/apps/gnome-gtali.svg
+   lila/gnome/scalable/apps/gnome-gtetris.svg
+   lila/gnome/scalable/apps/gnome-mahjongg.svg
+   lila/gnome/scalable/apps/gnome-nibbles.svg
+   lila/gnome/scalable/apps/gnome-stones.svg
+   lila/gnome/scalable/apps/iagno.svg
+----------
+10/30/04 9-speed
+----------
+scaba edited new device icons, update
+Modified files:
+   lila/gnome/scalable/devices/gnome-dev-harddisk-1394.svg
+   lila/gnome/scalable/devices/gnome-dev-harddisk-usb.svg
+   lila/gnome/scalable/devices/gnome-dev-removable-1394.svg
+   lila/gnome/scalable/devices/gnome-dev-removable-usb.svg
+----------
+10/30/04 9-speed
+----------
+added new usb and ieee device icons
+Added files:
+   lila/gnome/scalable/devices/gnome-dev-harddisk-1394.svg
+   lila/gnome/scalable/devices/gnome-dev-harddisk-usb.svg
+   lila/gnome/scalable/devices/gnome-dev-removable-1394.svg
+   lila/gnome/scalable/devices/gnome-dev-removable-usb.svg
+----------
+10/26/04 9-speed
+----------
+added emblem-sound
+Added files:
+   lila/gnome/scalable/emblems/emblem-sound.svg
+synced with 0.6.1 release
+Modified Files:
+   lila/gnome/index.theme lila/gnome/scalable/apps/galeon.svg
+   lila/gnome/scalable/apps/gdesklets.svg
+   lila/gnome/scalable/apps/gdict.svg
+   lila/gnome/scalable/apps/gnome-desktop-config.svg
+   lila/gnome/scalable/apps/gnome-emacs.svg
+   lila/gnome/scalable/apps/gnome-globe.svg
+   lila/gnome/scalable/apps/gnome-joystick.svg
+   lila/gnome/scalable/apps/gnome-lockscreen.svg
+   lila/gnome/scalable/apps/gnome-logo-icon-transparent.svg
+   lila/gnome/scalable/apps/gnome-main-menu.svg
+   lila/gnome/scalable/apps/gnome-run.svg
+   lila/gnome/scalable/apps/gnome-settings-keybindings.svg
+   lila/gnome/scalable/apps/gnome-settings-sound.svg
+   lila/gnome/scalable/apps/gqview.svg
+   lila/gnome/scalable/apps/muine.svg
+   lila/gnome/scalable/apps/revelation.svg
+   lila/gnome/scalable/apps/xcdricon.svg
+   lila/gnome/scalable/devices/gnome-dev-cdwriter.svg
+   lila/gnome/scalable/devices/gnome-dev-floppy.svg
+   lila/gnome/scalable/devices/gnome-dev-printer.svg
+   lila/gnome/scalable/devices/gnome-dev-zipdisk.svg
+   lila/gnome/scalable/emblems/emblem-desktop.svg
+   lila/gnome/scalable/emblems/emblem-nowrite.svg
+   lila/gnome/scalable/emblems/emblem-paused.svg
+   lila/gnome/scalable/emblems/emblem-pictures.svg
+   lila/gnome/scalable/emblems/emblem-symbolic-link.svg
+   lila/gnome/scalable/emblems/emblem-urgent.svg
+   lila/gnome/scalable/emblems/emblem-web.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-postscript.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-text-x-c-header.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-text-x-chdr.svg
+   lila/gnome/scalable/mimetypes/x-gdesklets-display.svg
+   lila/gnome/scalable/stock/gaim-im.svg
+   lila/gnome/scalable/stock/gaim-link.svg
+   lila/gnome/scalable/stock/gaim-smiley.svg
+   lila/gnome/scalable/stock/gtk-delete.svg
+   lila/gnome/scalable/stock/gtk-execute.svg
+   lila/gnome/scalable/stock/gtk-missing-image.svg
+   lila/gnome/scalable/stock/gtk-print-preview.svg
+   lila/gnome/scalable/stock/gtk-print.svg
+   lila/gnome/scalable/stock/gtk-revert-to-saved.svg
+   lila/gnome/scalable/stock/gtk-undelete.svg
+   lila/gnome/scalable/stock/panel-gnome-logo.svg
+   lila/gnome/scalable/stock/stock_print-setup.svg
+   lila/gnome/scalable/stock/vim-save-all.svg
+   lila/gnome/scalable/stock/volume-max.svg
+   lila/gnome/scalable/stock/volume-med.svg
+   lila/gnome/scalable/stock/volume-min.svg
+   lila/gnome/scalable/stock/volume-mute.svg
+Added Files:
+   lila/gnome/scalable/apps/battstat.svg
+   lila/gnome/scalable/apps/charpick.svg
+   lila/gnome/scalable/apps/control-center2.svg
+   lila/gnome/scalable/apps/drivemount-applet.svg
+   lila/gnome/scalable/apps/gnome-amusements.svg
+   lila/gnome/scalable/apps/gnome-cdplayer-icon.svg
+   lila/gnome/scalable/apps/gnome-clock.svg
+   lila/gnome/scalable/apps/gnome-eyes.svg
+   lila/gnome/scalable/apps/gnome-favourites.svg
+   lila/gnome/scalable/apps/gnome-logo-icon.svg
+   lila/gnome/scalable/apps/gnome-mailcheck.svg
+   lila/gnome/scalable/apps/gnome-media-player.svg
+   lila/gnome/scalable/apps/gnome-mini-commander.svg
+   lila/gnome/scalable/apps/gnome-mixer-applet.svg
+   lila/gnome/scalable/apps/gnome-modem.svg
+   lila/gnome/scalable/apps/gnome-warning.svg
+   lila/gnome/scalable/apps/gswitchit-applet.svg
+   lila/gnome/scalable/apps/launcher-program.svg
+   lila/gnome/scalable/apps/nicotine.svg
+   lila/gnome/scalable/apps/panel-window-list.svg
+   lila/gnome/scalable/apps/panel-window-menu.svg
+   lila/gnome/scalable/devices/gnome-dev-camera.svg
+   lila/gnome/scalable/devices/gnome-dev-jazdisk.svg
+   lila/gnome/scalable/devices/gnome-dev-joystick.svg
+   lila/gnome/scalable/devices/gnome-dev-palm.svg
+   lila/gnome/scalable/devices/gnome-dev-symlink.svg
+   lila/gnome/scalable/devices/gnome-dev-tv.svg
+   lila/gnome/scalable/filesystems/gnome-fs-bookmark-missing.svg
+   lila/gnome/scalable/filesystems/gnome-fs-bookmark.svg
+   lila/gnome/scalable/filesystems/gnome-fs-web.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-magicpoint.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-qif.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-rhythmbox-effect.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-rhythmbox-playlist.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-smil.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-vnd.lotus-1-2-3.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-vnd.ms-excel.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-vnd.ms-powerpoint.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-vnd.rn-realmedia.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-vnd.stardivision.calc.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-vnd.stardivision.impress.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-vnd.stardivision.writer.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-applix-spreadsheet.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-applix-word.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-blender.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-class-file.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-core-file.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-core.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-dc-rom.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-e-theme.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-executable.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-font-afm.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-font-bdf.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-font-linux-psf.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-font-pcf.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-font-sunos-news.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-font-ttf.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-gameboy-rom.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-genesis-rom.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-gnome-app-info.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-gnucash.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-gnumeric.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-gtktalog.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-java-byte-code.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-kde-app-info.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-killustrator.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-kpresenter.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-kspread.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-kword.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-lha.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-lhz.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-mrproject.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-msx-rom.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-n64-rom.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-nes-rom.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-qw.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-reject.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-shockwave-flash.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-smil.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-application-x-sms-rom.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-audio-basic.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-audio-x-aiff.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-audio-x-it.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-audio-x-mod.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-audio-x-s3m.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-audio-x-stm.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-audio-x-ulaw.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-audio-x-voc.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-audio-x-xi.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-audio-x-xm.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-image-ief.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-image-x-3ds.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-image-x-applix-graphic.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-image-x-cmu-raster.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-image-x-lwo.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-image-x-lws.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-image-x-portable-anymap.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-image-x-portable-bitmap.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-image-x-portable-graymap.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-image-x-portable-pixmap.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-image-x-rgb.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-image-x-tga.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-image-x-xbitmap.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-image-x-xfig.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-image-x-xwindowdump.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-text-x-csh.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-text-x-csharp.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-text-x-haskell.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-text-x-literate-haskell.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-text-x-lyx.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-text-x-scheme.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-text-x-sh.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-text-x-troff-man.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-text-x-vcalendar.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-text-x-vcard.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-text-x-zsh.svg
+   lila/gnome/scalable/mimetypes/gnome-mime-x-font-afm.svg
+   lila/gnome/scalable/misc/gentoo-logo.svg
+   lila/gnome/scalable/misc/gnome-mime-archive-template.svg
+   lila/gnome/scalable/misc/gnome-mime-cd-image-template.svg
+   lila/gnome/scalable/misc/penguin.svg
+   lila/gnome/scalable/stock/gaim-send.svg
+   lila/gnome/scalable/stock/gaim-typed.svg
+   lila/gnome/scalable/stock/gaim-typing.svg
+   lila/gnome/scalable/stock/gnome-stock-about.svg
+   lila/gnome/scalable/stock/gnome-stock-mic.svg
+   lila/gnome/scalable/stock/gnome-stock-volume.svg
+   lila/gnome/scalable/stock/gtk-fs-client.svg
+   lila/gnome/scalable/stock/gtk-zoom-page-width.svg
+   lila/gnome/scalable/stock/media-eject.svg
+   lila/gnome/scalable/stock/media-ffwd.svg
+   lila/gnome/scalable/stock/media-next.svg
+   lila/gnome/scalable/stock/media-pause.svg
+   lila/gnome/scalable/stock/media-play.svg
+   lila/gnome/scalable/stock/media-prev.svg
+   lila/gnome/scalable/stock/media-record.svg
+   lila/gnome/scalable/stock/media-rewind.svg
+   lila/gnome/scalable/stock/media-stop.svg
+   lila/gnome/scalable/stock/panel-amusements.svg
+   lila/gnome/scalable/stock/panel-desktop.svg
+   lila/gnome/scalable/stock/panel-internet.svg
+   lila/gnome/scalable/stock/panel-launcher.svg
+   lila/gnome/scalable/stock/panel-lockscreen.svg
+   lila/gnome/scalable/stock/panel-logout.svg
+   lila/gnome/scalable/stock/panel-multimedia.svg
+   lila/gnome/scalable/stock/panel-run.svg
+   lila/gnome/scalable/stock/panel-screenshot.svg
+   lila/gnome/scalable/stock/panel-searchtool.svg
+   lila/gnome/scalable/stock/panel-utility.svg
+   lila/gnome/scalable/stock/rox-mount.svg
+   lila/gnome/scalable/stock/rox-mounted.svg
+   lila/gnome/scalable/stock/rox-select.svg
+   lila/gnome/scalable/stock/rox-show-details.svg
+   lila/gnome/scalable/stock/rox-show-hidden.svg
+   lila/gnome/scalable/stock/stock_effects-sound.svg
+   lila/gnome/scalable/stock/stock_headphones.svg
+   lila/gnome/scalable/stock/stock_insert-video-plugin.svg
+   lila/gnome/scalable/stock/stock_mic.svg
+   lila/gnome/scalable/stock/stock_music-library.svg
+   lila/gnome/scalable/stock/stock_repeat.svg
+   lila/gnome/scalable/stock/stock_volume.svg
+Removed Files:
+   lila/gnome/scalable/apps/gnome-logo.svg
+   lila/gnome/scalable/devices/gnome-palm.svg
+   lila/gnome/scalable/misc/gentoo-penguin.svg
+   lila/gnome/scalable/stock/gtk-revert.svg
+----------
+08/27/04 scaba
+----------
+Lila/scalable/stock
+-edited gtk-add
+----------
+08/25/04 scaba
+----------
+Lila/scalable/apps
+-edited file-roller
+-edited gnome-eog
+Lila/scalable/stock
+-added gaim-bgcolor
+-added gaim-edit :: copy of gedit-icon from 'scalable/apps'
+-added gaim-fgcolor
+-added gaim-image :: copy of gnome-eog from 'scalable/apps'
+-added gaim-link
+-added gaim-smiley
+-added gaim-text-bigger
+-added gaim-text-normal :: copy of gtk-select-font
+-added gaim-text-smaller
+-added gtk-about :: copy of gaim-about
+-edited gtk-add
+-edited gtk-italic
+-edited gtk-select-font
+-edited gtk-strikethrough
+-edited gtk-underline
+----------
+08/24/04 scaba
+----------
+Lila/scalable/apps
+-added xcdricon
+-edited gnome-settings-theme
+Lila/scalable/filesystems
+-edited gnome-fs-desktop
+Lila/scalable/stock
+-edited gtk-color-picker :: drop shadow added, thanks to Makzu
+-replaced gtk-close :: copy of gtk-cancel/gtk-no
+----------
+08/23/04 scaba
+----------
+Lila/scalable/apps
+-added gdm-setup :: thanks to Makzu for giving me something to start with :)
+-added gdm-xnest :: thanks to Makzu
+Lila/scalable/stock
+-edited gtk-strikethrough
+-edited gtk-underline
+-renamed gaim-send-im :: gaim-im
+----------
+08/22/04 scaba
+----------
+Lila/scalable/apps
+-edited gnome-mixer
+-edited gnome-session
+-edited gnome-settings-sound
+-edited ooo_calc
+-edited ooo_draw
+-edited ooo_impress
+-edited ooo_writer
+-edited ximian-openoffice-calc
+-edited ximian-openoffice-draw
+-edited ximian-openoffice-impress
+-edited ximian-openoffice-writer
+-removed stock_bluetooth :: moved to 'scalable/stock'
+-resized gnome-other
+-resized gnome-settings-default-applications
+-resized mozilla-icon
+-resized porthole
+Lila/scalable/stock
+-added stock_bluetooth :: moved from 'scalable/apps'
+-edited gtk-color-picker :: drop shadow still missing
+-edited gtk-dialog-question
+-edited stock_cell-phone
+-edited volume-max
+-edited volume-med
+-edited volume-min
+-edited volume-zero
+----------
+08/16/04 scaba
+----------
+Lila/scalable/apps
+-edited gnome-gnumeric
+-edited gnumeric
+-removed epiphany-bookmarks :: already in 'scalable/stock'
+Lila/scalable/filesystems
+-edited gnome-fs-desktop :: drop shadow added, thanks to 9-speed
+Lila/scalable/stock
+-added gaim-about :: enlarged version of emblem-special from 'scalable/emblems'
+-added gaim-accounts :: copy of epiphany-bookmarks
+-edited gaim-send-im
+-replaced epiphany-bookmarks :: epiphany-bookmarks from 'scalable/apps'
+----------
+08/11/04 scaba
+----------
+Lila/scalable/filesystems
+-edited gnome-fs-desktop :: drop shadow still missing
+Lila/scalable/mimetypes
+-edited gnome-mime-text-x-makefile :: fixes crashes some people had
+----------
+08/05/04 scaba
+----------
+Lila/scalable/stock
+-added gaim-send-im :: haven't got the name right, yet
+-edited gtk-jump-to
+----------
+RELEASE OF LILA-GNOME-0.5.1
+----------
+07/22/04 scaba
+----------
+Lila/scalable/apps
+-edited gnome-panel
+-removed gripicon :: not lila style
+-removed sodipodi :: not lila style
+----------
+07/13/04 scaba
+----------
+Lila/scalable/apps
+-added gstreamer-properties :: copy of gst-player-48
+-edited gnome-logo
+-edited gnome-remote-desktop
+-edited gnome-settings-background
+-edited gnome-settings-keybindings
+Lila/scalable/stock
+-replaced panel-gnome-logo :: gnome-logo from 'scalable/apps'
+----------
+07/12/04 scaba
+----------
+Lila/scalable/apps
+-added gnome-gimp :: copy of wilber-icon
+-edited gnome-logo
+-edited gok
+-edited gucharmap
+-edited logviewer
+-edited gnome-searchtool
+-edited revelation
+-removed bluefish :: obsoleted by bluefish-icon
+-removed-gaim-dialog-info :: icon already in 'scalable/stock'
+-replaced gnome-calculator :: not lila style; copy of gcalctool
+-replaced gnome-calc2 ::not lila style; copy of gcalctool
+-replaced gnome-calc3 :: not lila style; copy of gcalctool
+-replaced gnome-icon-transparent :: copy of gnome-logo
+-replaced gnome-main-menu :: copy of gnome-logo
+Lila/scalable/devices
+-edited gnome-dev-mouse-ball
+-replaced gnome-dev-mouse-optical :: copy of gnome-dev-mouse-ball
+Lila/scalable/filesystems
+-removed gnome-fs-net-template :: moved to 'scalable/misc'
+Lila/scalable/mimetypes
+::merged Snooper's mimetype icons
+-edited gnome-mime-x-directory-smb-server
+-removed gnome-mime-audio-template :: moved to 'scalable/misc'
+-removed gnome-mime-image-template :: moved to 'scalable/misc'
+-removed gnome-mime-video-template :: moved to 'scalable/misc'
+-replaced gnome-mime-application-pgp-keys :: not lila style
+Lila/scalable/misc
+-added globe :: copy of gnome-globe from 'scalable/apps'
+-added firefox-home :: new firefox home icon
+-removed firefox_home :: deprecated
+-replaced larry
+Lila/scalable/stock
+-edited gaim-away
+-edited gaim-dialog-auth
+-edited gaim-dialog-error
+-edited gaim-dialog-info
+-replaced gtk-quit :: copy of gnome-logout from 'scalable/apps'
+-replaced panel-gnome-logo :: copy of  gnome-logo from 'scalable/apps'
+----------
+07/11/04 scaba
+----------
+Lila/scalable/apps
+-removed larry :: moved to 'scalable/misc'
+-removed logviewer_alt :: obsoleted by logviewer
+-removed gnome-pdf_alt :: obsoleted by gnome-pdf
+Lila/scalable/misc
+-removed clock2 :: obsoleted by clock
+-removed kmenu :: contained in lila-kde
+-removed k_lil :: not lila style; kde icon; obsoleted by kmenu
+----------
+07/09/04 scaba
+----------
+Lila/scalable/apps
+-added azureus
+-added logjam_pencil :: hope it's named properly
+----------
+07/08/04 scaba
+----------
+Lila/scalable/apps
+-removed firefox :: obsoleted by firefox-icon
+-removed thunderbird :: obsoleted by thunderbird-icon
+----------
+06/29/04 Chad
+----------
+Lila/scalable/apps
+-added gnome-settings-accessibility-keyboard
+Lila/scalable/mimetypes
+-added gnome-mime-x-directory-nfs-server
+-added gnome-mime-x-directory-smb-server
+-added gnome-mime-x-directory-smb-share
+-added gnome-mime-x-directory-smb-workgroup
+-added gnome-mime-application-pgp
+-added gnome-mime-application-pgp-keys
+-added gnome-mime-application-pgp-encrypted :: copy of gnome-mime-application-pgp
+-added x-gdesklets-display
+----------
+06/28/04 Chad
+----------
+Lila/scalable
+-created stock icon folder
+Lila/scalable/stock
+::added icons from 'Lila/gtk-2.0'
+::named stock icons properly
+-added stock_proxy
+-added stock_cell-phone
+Lila/scalable/apps
+-added nicotine
+-added gnome-ccmime :: copy of gnome-applications
+-added gnome-gnumeric :: copy of gnumeric
+-added gnome-media-player :: copy of gnome-multimedia
+-added gnome-screenshot :: copy applets-screenshooter
+-added gnome-settings-default-applications :: copy of gnome-other
+Lila/scalable/devices
+-added gnome-dev-mouse-ball
+Lila/scalable/mimetypes
+-added gnome-mime-application-x-archive
+-added gnome-mime-application-x-arj
+-added gnome-mime-application-x-backup
+-added gnome-mime-application-x-cpio
+-added gnome-mime-application-x-cpio-compressed
+-added gnome-mime-application-x-sharedlib :: copy of gnome-library
+-added gnome-mime-application-x-trash
+----------
+based on dgt84's lila-gnome-0.5 tarball
+----------
