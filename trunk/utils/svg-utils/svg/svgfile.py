@@ -81,11 +81,11 @@ def get_special_attribute(element, attribute, recursive = False):
 		if attribute in ["patterns", "fills"]:
 			search.append(("pattern", TransformableContainer))
 		if attribute in ["rects", "basic_shapes", "shapes"]:
-			search.append(("rect", Shape))
+			search.append(("rect", Rect))
 		if attribute in ["circles", "basic_shapes", "shapes"]:
-			search.append(("circle", Shape))
+			search.append(("circle", Circle))
 		if attribute in ["ellipses", "basic_shapes", "shapes"]:
-			search.append(("ellipse", Shape))
+			search.append(("ellipse", Ellipse))
 		if attribute in ["lines", "basic_shapes", "shapes"]:
 			search.append(("line", Line))
 		if attribute in ["polylines", "basic_shapes", "shapes"]:
@@ -318,12 +318,46 @@ class Shape(ColoredElement, TransformableElement):
 		ColoredElement.__init__(self, element)
 		TransformableElement.__init__(self, element)
 
+class Rect(Shape):
+	"""
+	Holds a rect shape
+	"""
+	def __init__(self, element = None):
+		Shape.__init__(self, element)
+		self.register_attribute_alias("roundedx", "rx")
+		self.register_attribute_alias("roundedy", "ry")
+
+class Circle(Shape):
+	"""
+	Holds a circle shape
+	"""
+	def __init__(self, element = None):
+		Shape.__init__(self, element)
+		self.register_attribute_alias("centerx", "cx")
+		self.register_attribute_alias("centery", "cy")
+		self.register_attribute_alias("radius", "r")
+
+class Ellipse(Shape):
+	"""
+	Holds an ellipse shape
+	"""
+	def __init__(self, element = None):
+		Shape.__init__(self, element)
+		self.register_attribute_alias("centerx", "cx")
+		self.register_attribute_alias("centery", "cy")
+		self.register_attribute_alias("radiusx", "rx")
+		self.register_attribute_alias("radiusy", "ry")
+
 class Line(TransformableElement):
 	"""
 	Holds a line element
 	"""
 	def __init__(self, element = None):
 		TransformableElement.__init__(self, element)
+		self.register_attribute_alias("startx", "x1")
+		self.register_attribute_alias("starty", "y1")
+		self.register_attribute_alias("stopx", "x2")
+		self.register_attribute_alias("stopy", "y2")
 
 	def _get_attribute(self, attribute):
 		"""
@@ -684,7 +718,7 @@ class Container(XMLElement):
 				shape.stroke = stroke
 			return shape
 
-	def add_rect(self, rect_id = None, x = None, y = None, width = None, height = None, fill = None, stroke = None, stroke_width = None, rx = None, ry = None):
+	def add_rect(self, rect_id = None, x = None, y = None, width = None, height = None, fill = None, stroke = None, stroke_width = None, roundedx = None, roundedy = None):
 		"""
 		Add a rect to this container
 		x,y specify the top left corner
@@ -703,11 +737,11 @@ class Container(XMLElement):
 			attributes["height"] = height
 		if stroke_width:
 			attributes["stroke-width"] = stroke_width
-		if rx:
-			attributes["rx"] = rx
-		if ry:
-			attributes["ry"] = ry
-		return self.add_shape("rect", rect_id, attributes, fill, stroke)
+		if roundedx:
+			attributes["rx"] = roundedx
+		if roundedy:
+			attributes["ry"] = roundedy
+		return self.add_shape("rect", rect_id, attributes, fill, stroke, Rect)
 
 	def add_circle(self, circle_id = None, centerx = None, centery = None, radius = None, fill = None, stroke = None, stroke_width = None):
 		"""
@@ -723,7 +757,7 @@ class Container(XMLElement):
 			attributes["r"] = radius
 		if stroke_width:
 			attributes["stroke-width"] = stroke_width
-		return self.add_shape("circle", circle_id, attributes, fill, stroke)
+		return self.add_shape("circle", circle_id, attributes, fill, stroke, Circle)
 
 	def add_ellipse(self, ellipse_id = None, centerx = None, centery = None, radiusx = None, radiusy = None, fill = None, stroke = None, stroke_width = None):
 		"""
@@ -743,21 +777,21 @@ class Container(XMLElement):
 			attributes["ry"] = radiusy
 		if stroke_width:
 			attributes["stroke-width"] = stroke_width
-		return self.add_shape("ellipse", ellipse_id, attributes, fill, stroke)
+		return self.add_shape("ellipse", ellipse_id, attributes, fill, stroke, Ellipse)
 
-	def add_line(self, line_id = None, x1 = None, y1 = None, x2 = None, y2 = None, stroke = None, stroke_width = None):
+	def add_line(self, line_id = None, startx = None, starty = None, stopx = None, stopy = None, stroke = None, stroke_width = None):
 		"""
 		Add a line into this container
 		"""
 		attributes = {}
-		if x1:
-			attributes["x1"] = x1
-		if y1:
-			attributes["y1"] = y1
-		if x2:
-			attributes["x2"] = x2
-		if y2:
-			attributes["y2"] = y2
+		if startx:
+			attributes["x1"] = startx
+		if starty:
+			attributes["y1"] = starty
+		if stopx:
+			attributes["x2"] = stopx
+		if stopy:
+			attributes["y2"] = stopy
 		if stroke_width:
 			attributes["stroke-width"] = stroke_width
 		return self.add_shape("line", line_id, attributes, stroke, shape_type=Line)
