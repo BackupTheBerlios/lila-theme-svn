@@ -21,6 +21,13 @@
 	Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 """
 
+"""
+	This software implements part of the W3C SVG 1.1 Specification
+	Access to objects and data have been changed for ease-of-use
+	For more information on SVG, see:
+	http://www.w3.org/TR/SVG11/
+"""
+
 # Imports
 from svg.utils import XMLElement, get_color, set_color, ReadOnlyError
 from xml.dom.minidom import parse, getDOMImplementation, Document
@@ -354,6 +361,43 @@ class PolyShape(Shape):
 		"""
 		pass
 
+class Path(Shape):
+	"""
+	Hold and manage a path element
+	"""
+	def __init__(self, element = None):
+		Shape.__init__(self, element)
+
+	def moveto(self, x, y, relative = None):
+		"""
+		Move the path's 'pen'
+		"""
+		pass
+
+	def lineto(self, x = None, y = None, relative = None):
+		"""
+		Draw a line to the new point from the 'pen's current position
+		"""
+		pass
+
+	def closepath(self):
+		"""
+		Close the current subpath
+		"""
+		pass
+
+	def curveto(self, curve_node_x1, curve_node_y1, curve_node_x2, curve_node_y2, x, y, relative = None):
+		"""
+		Add a bezier curve to this path
+		"""
+		pass
+
+	def curveto_smooth(self, curve_node_x, curve_node_y, x, y, relative = None):
+		"""
+		Add a smooth bezier curve to this path
+		"""
+		pass
+
 class TextElement(TransformableElement):
 	"""
 	Holds an element containing text
@@ -680,11 +724,14 @@ class Container(XMLElement):
 			attributes["points"] = points
 		return self.add_shape("polygon", line_id, attributes, fill, stroke, PolyShape)
 
-	def add_path(self, path_id = None):
+	def add_path(self, path_id = None, data = None, fill = None, stroke = None, element = None):
 		"""
 		Add a path element into this container
 		"""
-		pass
+		attributes = {}
+		if data:
+			attributes["d"] = data
+		return self.add_shape("path", path_id, attributes, fill, stroke, Path)
 
 	def add_text(self, text_id = None, x = None, y = None, text = None, fill = None, stroke = None):
 		"""
