@@ -366,3 +366,21 @@ class XMLElement:
 		if self.__dict__.has_key("element"):
 			if self.__dict__["element"].parentNode:
 				self.__dict__["element"].parentNode.removeChild(self.__dict__["element"])
+
+def red(text):
+	"""
+	Return given text in red (using bash colors)
+	"""
+	return '\x1b[31;01m' + text + '\x1b[0m'
+
+def green(text):
+	"""
+	Return given text in green (using bash colors)
+	"""
+	return '\x1b[32;01m' + text + '\x1b[0m'
+
+def blue(text):
+	"""
+	Return given text in blue (using bash colors)
+	"""
+	return '\x1b[34;01m' + text + '\x1b[0m'
