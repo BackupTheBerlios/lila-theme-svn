@@ -65,6 +65,7 @@ class Path:
 	Holds icon path translation data
 	"""
 	def __init__(self, element):
+		self._element = element
 		self.env = element.getAttribute("env")
 		# env has no default, so make sure it's set
 		if not self.env:

@@ -4,24 +4,49 @@
 	Theme icon name XML database
 
 	The directory directive allows an action to be done to
-	an entire directory instead of single icons
+	an entire directory instead of single icons.
 
-	The icon directive allows single icon renaming/copying
+	The icon directive allows an action to be done to a
+	single icon.
 
 	env should be the desktop environment or program
 	(like 'gnome' or 'kde') There is no default value.
 
-	action should be either 'copy' or nothing, since 'translate'
-	is the default.
+	action can be one of the following:
+		copy - copies the single icon or contents of the 
+				directory over to the content of the path;
+				if no content is present is uses the
+				directory's name.
+		prepend - copies the single icon or contents of
+					the directory over prepending all
+					filenames with the path's content.
+		append - copies the single icon or contents of
+					the directory over appending all
+					filenames with the path's content.
+		translate - copies the single icon or contents
+					of the directory over using the path
+					content to translate. If it is a 
+					directory, the path content will be
+					the target directory, while if it
+					is a file the path content will be
+					the name of the target file.
+					Note: translate is the default!
 -->
 
 <theme>
 	<!--
-		Directories to directly copy over from theme to theme
+		Whole directories to manipulate
 	-->
 	<directory name="apps">
 		<path env="gnome" action="copy" />
 		<path env="kde" action="copy" />
+	</directory>
+
+	<directory name="emblems">
+		<!-- prepend 'emblem-' to emblems for GNOME -->
+		<path env="gnome" action="prepend">
+			emblem-
+		</path>
 	</directory>
 
 	<!--
@@ -432,10 +457,22 @@
 	</icon>
 
 	<!-- Mimetypes -->
+	<icon name="mimetypes/application-magicpoint">
+		<path env="gnome">
+			mimetypes/gnome-mime-application-magicpoint
+		</path>
+	</icon>
+	<icon name="mimetypes/application-msword">
+		<path env="gnome">
+			mimetypes/gnome-mime-application-msword
+		</path>
+	</icon>
 	<icon name="mimetypes/text">
 		<path env="gnome">
-			mimetypes/gnome-mime-text
+			mimetypes/gnome-mime-text,mimetypes/gnome-mime-application-text
 		</path>
-		<path env="kde" action="copy" />
+		<path env="kde">
+			mimetypes/txt
+		</path>
 	</icon>
 </theme>
