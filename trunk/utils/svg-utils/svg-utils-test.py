@@ -14,7 +14,7 @@ a.add_stop(color="#00ffffff", offset="1")
 test.add_linear_gradient("full_diag", startx=0, starty=0, stopx=1, stopy=1, xlink="#my_gradient")
 
 # add a rectangle
-test.add_rect(x="10", y="10", width="40", height="40", fill="url(#full_diag)", stroke="#000000ff", stroke_width="2", rx="5", ry="5")
+test.add_rect(x="10", y="10", width="40", height="40", fill="url(#full_diag)", stroke="#000000ff", stroke_width="2", roundedx="5", roundedy="5")
 
 # add a circle
 test.add_circle(centerx="40", centery="40", radius="15", fill="url(#full_diag)", stroke="#00ff00ff", stroke_width="0.5")
