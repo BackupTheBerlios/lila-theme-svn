@@ -6,6 +6,35 @@ used symbols:
 files expected to change every time: kde/ChangeLog and kde/TODO
 
 ----------
+03/11/05 jpetso
+---------
+
+kde/
+ ~generate.py: "rm -r %s/lila" -> "rm -rf %s/lila"
+               (because of write-protected files in some .svn dir)
+
+actions/
+ ~kontact_summary.svg: I didn't think of the most obvious option:
+                       making the app icon the summary icon. good idea.
+ ~kontact_contacts.svg: move the paper so it's in the middle
+ ~kontact_date.svg: dito
+ ~kontact_todo.svg: dito
+
+apps/
+ ~kontact.svg: rework, reflecting the most important program parts
+ ~kaddressbook.svg: see kontact_*.svg
+ ~korganizer.svg: dito
+ ~korganizer_todo.svg: dito
+ ~kmixdocked_mute.svg: tried out KDE SVG rendering beautification method, and it works!
+ +kpilot.svg
+ +kpilotDaemon.svg
+ +randr.svg: copy of gnome's display-capplet
+
+mimetypes/
+ ~colorscm.svg: this one was broken, fixed it
+
+
+----------
 03/01/05 jpetso
 ---------
 

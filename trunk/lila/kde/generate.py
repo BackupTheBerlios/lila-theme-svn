@@ -70,7 +70,7 @@ print "Done!"
 
 answer = raw_input("Install to %s? [y/N] " % (KDEIconPath))
 if answer == 'y':
-	os.popen("rm -r %s/lila" % (KDEIconPath))
+	os.popen("rm -rf %s/lila" % (KDEIconPath))
 	os.popen("mkdir %s/lila" % (KDEIconPath))
 	os.popen("cp -r 16x16 22x22 32x32 48x48 64x64 128x128 scalable index.desktop %s/lila" % (KDEIconPath))
 	print "Done!"

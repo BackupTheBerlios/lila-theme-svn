@@ -8,7 +8,7 @@
    inkscape:version="0.40"
    width="48.000000pt"
    height="48.000000pt"
-   sodipodi:docbase="/home/jakob/dev/lila-cvs/lila/kde/scalable/apps"
+   sodipodi:docbase="/home/jakob/dev/lila-cvs/lila-theme/trunk/lila/kde/scalable/apps"
    sodipodi:docname="kmixdocked_mute.svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:cc="http://web.resource.org/cc/"
@@ -87,17 +87,21 @@
     <linearGradient
        xlink:href="#linearGradient578"
        id="linearGradient581"
-       x1="0.01538462"
-       y1="0.03125000"
-       x2="0.99230766"
-       y2="0.98437500" />
+       x1="12.502139"
+       y1="13.433952"
+       x2="47.524523"
+       y2="47.603183"
+       gradientTransform="scale(1.002997,0.997012)"
+       gradientUnits="userSpaceOnUse" />
     <linearGradient
        xlink:href="#linearGradient584"
        id="linearGradient600"
-       x1="-0.00000000"
-       y1="0.01562500"
-       x2="1.00000000"
-       y2="1.00781250" />
+       x1="16.553690"
+       y1="27.896356"
+       x2="29.584401"
+       y2="40.825264"
+       gradientTransform="scale(0.900530,1.110457)"
+       gradientUnits="userSpaceOnUse" />
     <linearGradient
        xlink:href="#linearGradient584"
        id="linearGradient599"
@@ -119,10 +123,12 @@
     <linearGradient
        xlink:href="#linearGradient584"
        id="linearGradient583"
-       x1="-0.01086957"
-       y1="0.00000000"
-       x2="0.98369563"
-       y2="0.96875000" />
+       x1="26.242982"
+       y1="18.593821"
+       x2="37.633286"
+       y2="29.688476"
+       gradientTransform="scale(1.185296,0.843671)"
+       gradientUnits="userSpaceOnUse" />
     <linearGradient
        id="linearGradient843">
       <stop
@@ -899,6 +905,16 @@
        y1="26.809235"
        x2="70.330377"
        y2="35.238999" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient584"
+       id="linearGradient1215"
+       x1="14.026849"
+       y1="16.180872"
+       x2="27.387728"
+       y2="29.016207"
+       gradientTransform="scale(1.072984,0.931981)"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -1076,29 +1092,30 @@
        transform="matrix(0.581802,0.000000,0.000000,0.581802,20.23540,16.13032)" />
   </g>
   <g
-     id="g1214">
+     id="g1214"
+     transform="matrix(1.031710,0.000000,0.000000,1.000000,-0.359962,0.000000)">
     <path
-       style="opacity:0.29999998;fill:#000000;fill-opacity:1.0000000;fill-rule:evenodd;stroke:none;stroke-width:18.750000;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;"
+       style="opacity:0.29999998;fill:#000000;fill-opacity:1.0000000;fill-rule:evenodd;stroke:none;stroke-width:18.750000;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000"
        d="M 11.436209,50.764295 C 12.778416,52.116148 29.538864,39.342603 31.721876,39.212737 C 33.526402,39.212737 49.270269,52.021845 50.457954,50.764295 C 51.665111,49.486132 38.904608,33.357958 38.906385,31.605607 C 38.908268,29.895019 51.814249,13.382717 50.598821,12.024298 C 49.419396,10.706135 33.379266,23.577753 31.721876,23.575864 C 29.888316,23.430300 12.975948,10.508960 11.717956,11.883428 C 10.440236,13.279451 24.110111,29.803363 24.114752,31.887354 C 23.978019,33.747041 10.149329,49.326283 11.436209,50.764295 z "
        id="path1064"
        sodipodi:nodetypes="cssssssss" />
     <path
-       style="font-size:12.000000;fill:url(#linearGradient581);fill-rule:evenodd;stroke:#330000;stroke-width:1.4498143;"
+       style="font-size:12.000000;fill:url(#linearGradient581);fill-rule:evenodd;stroke:#330000;stroke-width:1.4498143"
        d="M 12.785501,47.206621 C 13.963190,48.392770 28.669235,37.184943 30.584660,37.070989 C 32.167997,37.070996 45.982064,48.310022 47.024167,47.206621 C 48.083347,46.085123 36.886970,31.933861 36.888531,30.396309 C 36.890187,28.895389 48.214216,14.407076 47.147769,13.215173 C 46.112923,12.058577 32.038899,23.352466 30.584660,23.350809 C 28.975848,23.223088 14.136506,11.885570 13.032717,13.091566 C 11.911612,14.316470 23.905907,28.814969 23.909983,30.643516 C 23.790003,32.275254 11.656368,45.944871 12.785501,47.206621 z "
        id="path1065"
        sodipodi:nodetypes="cssssssss" />
     <path
-       style="font-size:12.000000;fill:url(#linearGradient600);fill-rule:evenodd;stroke:none;stroke-width:1.0000000pt;"
+       style="font-size:12.000000;fill:url(#linearGradient600);fill-rule:evenodd;stroke:none;stroke-width:1.0000000pt"
        d="M 14.909403,45.197294 C 15.097288,44.619004 23.662721,33.630557 26.471937,30.798657 C 27.012230,30.254001 26.150707,34.600241 25.452344,35.438440 C 22.458404,39.031898 14.754496,45.674105 14.909403,45.197294 z "
        id="path1066"
        sodipodi:nodetypes="csss" />
     <path
-       style="opacity:0.75038201;fill:url(#linearGradient599);fill-opacity:1.0000000;fill-rule:evenodd;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;"
+       style="opacity:0.75038201;fill:url(#linearGradient1215);fill-opacity:1.0000000;fill-rule:evenodd;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000"
        d="M 21.435679,24.094936 C 20.694491,23.379302 14.527073,15.166610 15.005700,14.944390 C 15.559900,14.687083 24.813733,21.229910 25.523003,21.914723 C 25.883446,22.262736 18.083508,17.449747 17.844021,17.548453 C 17.706687,17.612218 21.764202,24.412129 21.435679,24.094936 z "
        id="path1067"
        sodipodi:nodetypes="cssss" />
     <path
-       style="fill:url(#linearGradient583);fill-opacity:1.0000000;fill-rule:evenodd;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;"
+       style="fill:url(#linearGradient583);fill-opacity:1.0000000;fill-rule:evenodd;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000"
        d="M 31.298879,25.196103 C 33.848064,22.748882 44.218972,15.642639 44.799273,15.687280 C 45.290218,15.725045 39.350212,21.910261 36.023298,24.216044 C 35.188834,24.794382 30.757928,25.715403 31.298879,25.196103 z "
        id="path1068"
        sodipodi:nodetypes="csss" />
