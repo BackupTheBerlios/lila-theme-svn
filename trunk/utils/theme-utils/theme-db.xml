@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!--
+	Theme icon name XML database
+
+	The directory directive allows an action to be done to
+	an entire directory instead of single icons
+
+	The icon directive allows single icon renaming/copying
+
+	env should be the desktop environment or program
+	(like 'gnome' or 'kde') There is no default value.
+
+	action should be either 'copy' or nothing, since 'translate'
+	is the default.
+-->
+
+<theme>
+	<!--
+		Directories to directly copy over from theme to theme
+	-->
+	<directory name="apps">
+		<path env="gnome" action="copy" />
+		<path env="kde" action="copy" />
+	</directory>
+
+	<!--
+		Specific icon name conversions
+	-->
+
+	<!-- Devices -->
+	<icon name="devices/audio-cd">
+		<path env="gnome">
+			devices/gnome-dev-cdrom-audio
+		</path>
+		<path env="kde">
+			devices/cdaudio_mount
+		</path>
+	</icon>
+	<icon name="devices/audio-cd-unmounted">
+		<path env="kde">
+			devices/cdaudio_unmount
+		</path>
+	</icon>
+	<icon name="devices/battery">
+		<path env="gnome">
+			devices/gnome-dev-battery
+		</path>
+	</icon>
+	<icon name="devices/camera">
+		<path env="kde">
+			devices/camera,devices/camera_mount
+		</path>
+	</icon>
+	<icon name="devices/cdrom">
+		<path env="gnome">
+			devices/gnome-dev-cdrom
+		</path>
+		<path env="kde">
+			devices/cdrom_mount
+		</path>
+	</icon>
+	<icon name="devices/cdrom-unmounted">
+		<path env="kde">
+			devices/cdrom_unmount
+		</path>
+	</icon>
+	<icon name="devices/cdwriter">
+		<path env="gnome">
+			devices/gnome-dev-cdwriter
+		</path>
+		<path env="kde">
+			devices/cdwriter_mount
+		</path>
+	</icon>
+	<icon name="devices/cdwriter-unmounted">
+		<path env="kde">
+			devices/cdwriter_unmount
+		</path>
+	</icon>
+	<icon name="devices/dvd">
+		<path env="gnome">
+			devices/gnome-dev-dvd
+		</path>
+		<path env="kde">
+			devices/dvd_mount
+		</path>
+	</icon>
+	<icon name="devices/dvd-unmounted">
+		<path env="kde">
+			devices/dvd_unmount
+		</path>
+	</icon>
+	<icon name="devices/floppy">
+		<path env="gnome">
+			devices/gnome-dev-floppy
+		</path>
+		<path env="kde">
+			devices/3floppy_mount
+		</path>
+	</icon>
+	<icon name="devices/floppy-unmounted">
+		<path env="kde">
+			devices/3floppy_unmount
+		</path>
+	</icon>
+	<icon name="devices/hdd">
+		<path env="gnome">
+			devices/gnome-dev-harddisk
+		</path>
+		<path env="kde">
+			devices/hdd_mount
+		</path>
+	</icon>
+	<icon name="devices/hdd-unmounted">
+		<path env="kde">
+			devices/hdd_unmount
+		</path>
+	</icon>
+	<icon name="devices/jazdisk">
+		<path env="gnome">
+			devices/gnome-dev-jazdisk
+		</path>
+	</icon>
+	<icon name="devices/keyboard">
+		<path env="gnome">
+			devices/gnome-dev-keyboard
+		</path>
+	</icon>
+	<icon name="devices/memory">
+		<path env="gnome">
+			devices/gnome-dev-memory
+		</path>
+	</icon>
+	<icon name="devices/mouse">
+		<path env="gnome">
+			devices/gnome-dev-mouse-ball
+		</path>
+	</icon>
+	<icon name="devices/mouse-optical">
+		<path env="gnome">
+			devices/gnome-dev-mouse-optical
+		</path>
+	</icon>
+	<icon name="devices/network">
+		<path env="gnome">
+			devices/gnome-dev-network
+		</path>
+	</icon>
+	<icon name="devices/pcmcia">
+		<path env="gnome">
+			devices/gnome-dev-pcmcia
+		</path>
+	</icon>
+	<icon name="devices/printer">
+		<path env="gnome">
+			devices/gnome-dev-printer
+		</path>
+		<path env="kde">
+			devices/print_printer,printer,printer1
+		</path>
+	</icon>
+	<icon name="devices/removable">
+		<path env="gnome">
+			devices/gnome-dev-removable
+		</path>
+	</icon>
+	<icon name="devices/symlink">
+		<path env="gnome">
+			devices/gnome-dev-symlink
+		</path>
+	</icon>
+	<icon name="devices/tv">
+		<path env="kde">
+			devices/tv
+		</path>
+	</icon>
+	<icon name="devices/zipdisk">
+		<path env="gnome">
+			devices/gnome-dev-zipdisk
+		</path>
+	</icon>
+	
+	<!-- Mimetypes -->
+	<icon name="mimetypes/text">
+		<path env="gnome">
+			mimetypes/gnome-mime-text
+		</path>
+		<path env="kde" action="copy" />
+	</icon>
+</theme>
