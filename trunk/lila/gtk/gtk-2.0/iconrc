@@ -8,13 +8,15 @@ style "icon-style"
   stock["fr-add"] = {{ "scalable/stock/fr-add.svg" }}
   stock["fr-extract"] = {{ "scalable/stock/fr-extract.svg" }}
   stock["fr-view"] = {{ "scalable/stock/fr-view.svg" }}
+  stock["gaim-about"] = {{ "scalable/stock/gaim-about.svg" }}
+  stock["gaim-accounts"] = {{ "scalable/stock/gaim-accounts.svg" }}
+  stock["gaim-send-im"] = {{ "scalable/stock/gaim-send-im.svg" }}
   stock["gaim-dialog-auth"] = {{ "scalable/stock/gaim-dialog-auth.svg" }}
   stock["gaim-dialog-error"] =	{{ "scalable/stock/gaim-dialog-error.svg" }}
   stock["gaim-dialog-info"] = {{ "scalable/stock/gaim-dialog-info.svg" }}
   stock["gaim-icon-away"] = {{ "scalable/stock/gaim-icon-away.svg" }}
   stock["gaim-icon-online"] = {{ "scalable/stock/gaim-icon-online.svg" }}
   stock["gaim-info"] = {{ "scalable/stock/gaim-info.svg" }}
-  stock["gaim-send-im"] = {{ "scalable/stock/gaim-send-im.svg" }}
   stock["gtk-add"] = {{ "scalable/stock/gtk-add.svg" }}
   stock["gtk-apply"] = {{ "scalable/stock/gtk-apply.svg" }}
   stock["gtk-bold"] = {{ "scalable/stock/gtk-bold.svg" }}
