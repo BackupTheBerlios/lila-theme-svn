@@ -95,13 +95,13 @@ def get_special_attribute(element, attribute, recursive = False):
 		if attribute in ["polygons", "basic_shapes", "shapes"]:
 			search.append(("polygon", Shape))
 		if attribute in ["paths", "basic_shapes", "shapes"]:
-			search.append(("path", Shape))
+			search.append(("path", Path))
 		if attribute in ["texts", "text_shapes", "shapes"]:
-			search.append(("text", TextElement))
+			search.append(("text", TextContainer))
 		if attribute in ["tspans", "text_shapes", "shapes"]:
 			search.append(("tspan", TextElement))
 		if attribute in ["trefs", "text_shapes", "shapes"]:
-			search.append(("tref", TextElement))
+			search.append(("tref", Tref))
 		if attribute in ["text_paths", "text_shapes", "shapes"]:
 			search.append(("textPath", TextPath))
 		if attribute in ["groups", "containers"]:
@@ -463,7 +463,7 @@ class TextContainer(TextElement):
 	def __init__(self, element = None):
 		TextElement.__init__(self, element)
 
-	def add_child_text(self, element_type, tspan_id = None, text = None, x = None, y = None, deviation_x = None, deviation_y = None, rotation = None, length = None, font_weight = None, fill = None, stroke = None, xlink = None):
+	def add_child_text(self, element_name, element_type, tspan_id = None, text = None, x = None, y = None, deviation_x = None, deviation_y = None, rotation = None, length = None, font_weight = None, fill = None, stroke = None, xlink = None):
 		"""
 		Add a text child
 		"""
@@ -491,7 +491,7 @@ class TextContainer(TextElement):
 			tspan_id = str(id_counter)
 			id_counter += 1
 		attributes["id"] = tspan_id
-		text = self.add_child_tag(element_type, TextElement, attributes)
+		text = self.add_child_tag(element_name, element_type, attributes)
 		if fill:
 			text.set_attribute("fill", fill)
 		if stroke:
@@ -506,7 +506,7 @@ class TextContainer(TextElement):
 			self.element.appendChild(element.element)
 			return element
 		else:
-			return self.add_child_text("tspan", tspan_id, text, x, y, deviation_x, deviation_y, rotation, length, font_weight, fill, stroke)
+			return self.add_child_text("tspan", TextElement, tspan_id, text, x, y, deviation_x, deviation_y, rotation, length, font_weight, fill, stroke)
 
 	def add_tref(self, tref_id = None, xlink = None, text = None, x = None, y = None, dx = None, dy = None, rotation = None, length = None, font_weight = None, fill = None, stroke = None, element = None):
 		"""
@@ -516,7 +516,7 @@ class TextContainer(TextElement):
 			self.element.appendChild(element.element)
 			return element
 		else:
-			return self.add_child_text("tref", tref_id, text, x, y, deviation_x, deviation_y, rotation, length, font_weight, fill, stroke, xlink)
+			return self.add_child_text("tref", Tref, tref_id, text, x, y, deviation_x, deviation_y, rotation, length, font_weight, fill, stroke, xlink)
 
 class TextPath(TransformableElement):
 	"""
