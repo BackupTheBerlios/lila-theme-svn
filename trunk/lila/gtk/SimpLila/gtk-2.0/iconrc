@@ -184,6 +184,7 @@ style "icon-style" {
  stock ["stock_view-html-source"] = {{ "scalable/stock/stock_view-html-source.svg" }}
  stock ["stock_volume"] = {{ "scalable/stock/stock_volume.svg" }}
 
+ stock ["vim-find-help"] = {{ "scalable/stock/vim-find-help.svg" }}
  stock ["vim-save-all"] = {{ "scalable/stock/vim-save-all.svg" }}
  stock ["vim-session-load"] = {{ "scalable/stock/vim-session-load.svg" }}
  stock ["vim-session-save"] = {{ "scalable/stock/vim-session-save.svg" }}
