@@ -368,31 +368,37 @@ class Path(Shape):
 	def __init__(self, element = None):
 		Shape.__init__(self, element)
 
-	def moveto(self, x, y, relative = None):
+	def moveto(self, x, y, relative = False):
 		"""
 		Move the path's 'pen'
 		"""
-		pass
+		if relative:
+			char = "m"
+		else: char = "M"
+		self.d += " " + char + " " + str(x) + "," + str(y)
 
-	def lineto(self, x = None, y = None, relative = None):
+	def lineto(self, x = None, y = None, relative = False):
 		"""
 		Draw a line to the new point from the 'pen's current position
 		"""
-		pass
+		if relative:
+			char = "l"
+		else: char = "L"
+		self.d += " " + char + " " + str(x) + "," + str(y)
 
 	def closepath(self):
 		"""
 		Close the current subpath
 		"""
-		pass
+		self.d += " Z"
 
-	def curveto(self, curve_node_x1, curve_node_y1, curve_node_x2, curve_node_y2, x, y, relative = None):
+	def curveto(self, curve_node_x1, curve_node_y1, curve_node_x2, curve_node_y2, x, y, relative = False):
 		"""
 		Add a bezier curve to this path
 		"""
 		pass
 
-	def curveto_smooth(self, curve_node_x, curve_node_y, x, y, relative = None):
+	def curveto_smooth(self, curve_node_x, curve_node_y, x, y, relative = False):
 		"""
 		Add a smooth bezier curve to this path
 		"""
