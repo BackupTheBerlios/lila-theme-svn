@@ -23,7 +23,6 @@
 
 from os import walk, makedirs, sep
 from os.path import join, exists, isfile, isdir
-from sys import exit
 
 def dummy(path, save_path):
 	"""
@@ -46,6 +45,10 @@ class SVGScript:
 		"""
 		Run this script!
 		"""
+		if self.path:
+			if not exists(self.path):
+				raise IOError, self.path + " does not exist!"
+
 		if self.path[-1] != sep:
 			self.path += sep
 
@@ -74,4 +77,4 @@ class SVGScript:
 							except IOError, err:
 								print "Skipping " + join(root, file) + ", check permissions!"
 		else:
-			raise AttributeError, self.path + " is neither a file or directory!"
+			raise IOError, self.path + " is neither a file or directory!"
