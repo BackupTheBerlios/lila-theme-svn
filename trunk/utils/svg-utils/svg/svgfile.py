@@ -415,12 +415,19 @@ class PolyShape(Shape):
 		"""
 		pass
 
+	def clear(self):
+		"""
+		Clear this polyshape's point data
+		"""
+		self.points = []
+
 class Path(Shape):
 	"""
 	Hold and manage a path element
 	"""
 	def __init__(self, element = None):
 		Shape.__init__(self, element)
+		self.register_attribute_alias("data", "d")
 
 	def moveto(self, x, y, relative = False):
 		"""
@@ -440,7 +447,7 @@ class Path(Shape):
 		else: char = "L"
 		self.d += " " + char + " " + str(x) + "," + str(y)
 
-	def closepath(self):
+	def close(self):
 		"""
 		Close the current subpath
 		"""
