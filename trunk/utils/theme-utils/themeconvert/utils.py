@@ -58,3 +58,15 @@ def print_xmldb(xmldb, verbose = False):
 		print "Possible environment conversion strings:"
 		print "  standard"
 		for env in envs: print "  " + env
+
+def print_standard(xmldb):
+	"""
+	Print out the standard set in the xml database
+	"""
+	last_cat = ""
+	for icon in xmldb.icons:
+		cat, name = icon.name.split("/")
+		if cat != last_cat:
+			print cat
+		print "  " + name
+		last_cat = cat
