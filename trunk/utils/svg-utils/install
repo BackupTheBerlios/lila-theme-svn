@@ -56,26 +56,6 @@ library_files = ["__init__.py", "color.py", "effects.py",\
 script_files = ["svg-utils-test", "svg-utils-info", "svgcolor",\
 					"svgdump", "svggrayscale", "svgoverlay"]
 
-# check dependencies
-print "Checking dependencies..."
-try:
-	from xml.dom.minidom import parse
-except:
-	print red("Could not import xml.dom.minidom.parse!")
-	sys.exit()
-try:
-	from xml.dom.ext import PrettyPrint
-except:
-	print red("Could not import xml.dom.ext.PrettyPrint!")
-	print red("Please install or update pyxml!")
-	sys.exit()
-try:
-	from os.path import walk
-except:
-	print red("Could not import os.path.walk!")
-	print red("Please upgrade to python-2.3 or above!")
-	sys.exit()
-
 if len(sys.argv) > 1:
 	# parse the command line arguments
 	for arg in sys.argv[1:]:
@@ -99,6 +79,27 @@ if len(sys.argv) > 1:
 			symlink_path = arg[15:]
 		elif arg == "--uninstall":
 			install = False
+
+if install:
+	# check dependencies
+	print "Checking dependencies..."
+	try:
+		from xml.dom.minidom import parse
+	except:
+		print red("Could not import xml.dom.minidom.parse!")
+		sys.exit()
+	try:
+		from xml.dom.ext import PrettyPrint
+	except:
+		print red("Could not import xml.dom.ext.PrettyPrint!")
+		print red("Please install or update pyxml!")
+		sys.exit()
+	try:
+		from os.path import walk
+	except:
+		print red("Could not import os.path.walk!")
+		print red("Please upgrade to python-2.3 or above!")
+		sys.exit()
 
 print "Configuring paths..."
 
