@@ -205,6 +205,8 @@ class XMLElement:
 						style = self.__dict__["element"].getAttribute("style")
 						if str(attribute) + ':' in style:
 							return get_style_element(style, attribute)
+						else:
+							raise AttributeError, attribute
 					except:
 						raise AttributeError, attribute
 				else:
