@@ -291,6 +291,13 @@ style "icon-style" {
  stock ["gnome-stock-book-red"] = {{ "scalable/stock/gnome-stock-book-red.svg" }}
  stock ["gnome-stock-book-yellow"] = {{ "scalable/stock/gnome-stock-book-yellow.svg" }}
  stock ["gnome-stock-trash"] = {{ "scalable/stock/gnome-stock-trash.svg" }}
+
+ stock ["media-album"] = {{ "scalable/stock/media-album.svg" }}
+ stock ["media-artist"] = {{ "scalable/stock/media-artist.svg" }}
+ stock ["media-audiofile"] = {{ "scalable/stock/media-audiofile.svg" }}
+ stock ["media-random"] = {{ "scalable/stock/media-random.svg" }}
+ stock ["media-repeat"] = {{ "scalable/stock/media-repeat.svg" }}
+ stock ["media-stream"] = {{ "scalable/stock/media-stream.svg" }}
 }
 
 class "GtkWidget" style "icon-style"
