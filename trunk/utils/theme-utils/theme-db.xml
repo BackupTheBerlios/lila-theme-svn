@@ -182,7 +182,7 @@
 			devices/gnome-dev-printer
 		</path>
 		<path env="kde">
-			devices/printer,print_printer,printer1
+			devices/printer,devices/print_printer,devices/printer1
 		</path>
 	</icon>
 	<icon name="devices/removable">

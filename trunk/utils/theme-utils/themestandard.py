@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
 """
-	themeconvert
-	Convert between desktop theme formats
+	themestandard
+	Print out the standard theme spec from an xml database
 
 	Copyright (C) 2004 Daniel G. Taylor
 
@@ -22,28 +22,19 @@
 """
 
 from themeconvert.xmldb import XMLDB
-from themeconvert.translate import convert_xmldb_to_dict, translate_theme
+from themeconvert.utils import print_standard
 from sys import argv, exit
 
-if len(argv) != 6:
-	print "themeconvert - translate themes for other programs or environments"
+if len(argv) != 2:
+	print "themestandard - print out the standard theme spec"
 	print "Copyright 2004 Daniel G. Taylor, released under the GNU GPL"
 	print "Usage:"
-	print "themeconvert database.xml from-theme-type to-theme-type /from/path /to/path"
+	print "themestandard database.xml"
 	print "Example:"
-	print "themeconvert theme-db.xml gnome kde /usr/share/icons/gnome/48x48 ./gnome-kde/48x48"
+	print "themestandard theme-db.xml"
 	exit()
 
 xmldb_name = argv[1]
-from_theme_type = argv[2]
-to_theme_type = argv[3]
-from_path = argv[4]
-to_path = argv[5]
-
-if from_path[-1] == '/':
-	from_path = from_path[:-1]
-if to_path[-1] == '/':
-	to_path = to_path[:-1]
 
 try:
 	xmldb = XMLDB(xmldb_name)
@@ -52,6 +43,4 @@ except ValueError, e:
 	print e
 	exit()
 
-print "Generating " + to_theme_type + " theme using " + xmldb_name
-dict = convert_xmldb_to_dict(xmldb, from_theme_type, to_theme_type, from_path)
-translate_theme(from_path, to_path, dict)
+print_standard(xmldb)
