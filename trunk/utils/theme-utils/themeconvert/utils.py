@@ -56,4 +56,5 @@ def print_xmldb(xmldb, verbose = False):
 					if path.env not in envs:
 						envs.append(path.env)
 		print "Possible environment conversion strings:"
+		print "  standard"
 		for env in envs: print "  " + env
