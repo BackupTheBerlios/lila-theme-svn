@@ -8,8 +8,8 @@
    inkscape:version="0.40"
    width="48pt"
    height="48pt"
-   sodipodi:docbase="/home/jakob/dev/lila-cvs/lila-theme/trunk/lila/kde/scalable/apps"
-   sodipodi:docname="kontact.svg"
+   sodipodi:docbase="/home/jakob/dev/lila-cvs/lila-theme/trunk/lila/kde/scalable/actions"
+   sodipodi:docname="kontact_summary.svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:cc="http://web.resource.org/cc/"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -126,10 +126,12 @@
     <linearGradient
        xlink:href="#linearGradient584"
        id="linearGradient587"
-       x1="0.00000000"
-       y1="-0.00000000"
-       x2="1.00000000"
-       y2="1.00000000" />
+       x1="6.6842281"
+       y1="3.6391857"
+       x2="47.008321"
+       y2="43.963279"
+       gradientTransform="matrix(0.999660,0.000000,0.000000,1.000396,-4.296867e-5,2.589494e-5)"
+       gradientUnits="userSpaceOnUse" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient584"
@@ -963,21 +965,21 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="16.875000"
-     inkscape:cx="24.000000"
-     inkscape:cy="24.000000"
+     inkscape:zoom="8.0000000"
+     inkscape:cx="23.999950"
+     inkscape:cy="24.000008"
      inkscape:window-width="1400"
      inkscape:window-height="991"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:current-layer="svg1" />
   <path
-     d="M 6.6876568 43.965773 C 6.360392 43.13667 19.363758 4.5872629 20.579427 3.7922731 C 22.09876 2.7554118 46.659814 7.3454032 46.98631 8.172561 C 47.28557 8.9306762 27.823671 5.3906629 23.493845 9.2635774 C 15.189619 16.482895 6.9861475 44.721984 6.6876568 43.965773 z "
-     style="font-size:12;opacity:0.699936;fill:url(#linearGradient587);fill-rule:evenodd;stroke:none;stroke-width:0.100121pt;"
+     d="M 6.6879951,43.965780 C 6.3607116,43.136677 19.364818,4.5872868 20.580557,3.7922973 C 22.099976,2.7554366 46.662431,7.3454259 46.988945,8.1725834 C 47.288222,8.9306982 27.825214,5.3906864 23.495142,9.2635993 C 15.190442,16.482913 6.9865028,44.721991 6.6879951,43.965780 z "
+     style="font-size:12.000000;opacity:0.69993597;fill:url(#linearGradient587);fill-rule:evenodd;stroke:none;stroke-width:0.10012100pt"
      id="path640" />
   <g
      id="g6847"
-     transform="translate(1.162500,0.000000)">
+     transform="matrix(1.000056,0.000000,0.000000,1.000000,1.162524,2.589494e-5)">
     <path
        d="M 7.2076351,58.478218 C 10.010877,60.231715 50.839133,60.360114 53.482873,59.421664 C 55.452703,57.771276 54.795013,5.2135138 53.808123,3.2653029 C 52.782273,1.1174027 11.022629,2.4135329 9.4085201,3.8826366 C 7.4202841,5.7028573 6.3575721,55.703744 7.2076351,58.478218 z "
        style="font-size:12.000000;opacity:0.30267498;fill-rule:evenodd;stroke-width:12.500000"
@@ -991,7 +993,7 @@
   </g>
   <g
      id="g1546"
-     transform="matrix(0.879052,0.000000,0.000000,0.877559,-33.84585,-37.59635)">
+     transform="matrix(0.760228,0.000000,0.000000,0.758895,-21.44689,-32.49779)">
     <g
        transform="matrix(0.664500,0.000000,0.000000,0.657257,55.61175,41.77565)"
        style="font-size:12.000000;opacity:0.29999998;stroke:#000000;stroke-width:3.2302842;stroke-miterlimit:4.0000000"
@@ -1029,7 +1031,7 @@
        rx="28.881311"
        ry="28.881311"
        transform="matrix(0.609722,0.000000,0.000000,0.603076,46.64442,36.42913)"
-       style="font-size:12.000000;fill:url(#radialGradient1556);fill-opacity:1.0000000;fill-rule:evenodd;stroke:#261933;stroke-width:3.5204961;stroke-miterlimit:4.0000000"
+       style="font-size:12.000000;fill:url(#radialGradient1556);fill-opacity:1.0000000;fill-rule:evenodd;stroke:#261933;stroke-width:4.0709786;stroke-miterlimit:4.0000000"
        id="path594"
        d="M 76.476992 41.555550 A 28.881311 28.881311 0 1 0 18.714369,41.555550 A 28.881311 28.881311 0 1 0 76.476992 41.555550 z"
        sodipodi:cx="47.595680"
@@ -1068,7 +1070,7 @@
   </g>
   <g
      id="g5407"
-     transform="matrix(0.900080,0.000000,0.000000,0.900080,-18.23956,7.983818)">
+     transform="matrix(0.949969,0.000000,0.000000,0.949915,-22.29559,5.103835)">
     <path
        sodipodi:type="arc"
        style="font-size:12.000000;fill-opacity:0.29999998;fill-rule:evenodd;stroke-width:1.0000000pt"
@@ -1086,7 +1088,7 @@
        sodipodi:nodetypes="cssssssssss"
        transform="translate(51.26369,9.222061)" />
     <path
-       style="font-size:12.000000;fill:url(#linearGradient5414);fill-opacity:1.0000000;fill-rule:evenodd;stroke:#261933;stroke-width:2.0831482;stroke-miterlimit:4.0000000;stroke-dasharray:none;"
+       style="font-size:12.000000;fill:url(#linearGradient5414);fill-opacity:1.0000000;fill-rule:evenodd;stroke:#261933;stroke-width:1.9738607;stroke-miterlimit:4.0000000"
        d="M 1.8797916,41.993427 C 1.8960580,38.828029 4.7882886,22.131676 17.198286,22.298221 C 32.260308,22.496472 32.947548,39.685898 33.246231,42.479729 C 33.336921,43.401849 30.625121,43.573550 30.085273,42.479729 C 28.593549,38.785371 25.346948,29.909633 25.222259,29.835893 C 23.883887,29.188186 30.292526,39.880253 29.112670,42.966030 C 28.185219,45.391669 22.339629,46.291974 18.900341,46.370139 C 15.207209,46.454074 8.8867477,45.941428 7.7154078,43.452332 C 6.2931411,40.430013 11.448052,29.831427 11.119518,29.835893 C 10.195156,29.845151 6.8557273,41.891134 6.4996541,41.993427 C 4.6555971,42.308228 1.9241618,42.612453 1.8797916,41.993427 z "
        id="path650"
        sodipodi:nodetypes="cssssssssss"
@@ -1099,7 +1101,7 @@
        transform="translate(51.26369,9.222061)" />
     <path
        sodipodi:type="arc"
-       style="font-size:12.000000;fill:url(#linearGradient5416);fill-opacity:1.0000000;fill-rule:evenodd;stroke:#261933;stroke-width:2.6441125;stroke-opacity:1.0000000;stroke-miterlimit:4.0000000;stroke-dasharray:none;"
+       style="font-size:12.000000;fill:url(#linearGradient5416);fill-opacity:1.0000000;fill-rule:evenodd;stroke:#261933;stroke-width:2.5053954;stroke-miterlimit:4.0000000;stroke-opacity:1.0000000"
        id="path653"
        sodipodi:cx="36.656563"
        sodipodi:cy="15.354189"
@@ -1116,7 +1118,7 @@
   </g>
   <g
      id="g604"
-     transform="matrix(0.950170,-0.311733,0.311733,0.950170,22.63523,-5.291306)"
+     transform="matrix(0.950223,-0.311733,0.311750,0.950170,22.63648,-7.590851)"
      style="fill:url(#linearGradient1203)">
     <path
        style="font-size:12.000000;opacity:0.29999998;fill:#000000;fill-opacity:1.0000000;fill-rule:evenodd;stroke:#000000;stroke-width:1.8750000;stroke-opacity:1.0000000"
