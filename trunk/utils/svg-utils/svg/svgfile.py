@@ -421,6 +421,29 @@ class TextElement(TransformableElement):
 			return set_special_attribute(self, attribute, value)
 		return False
 
+class Tref(TransformableElement):
+	"""
+	Holds a tref element
+	"""
+	def __init__(self, element = None):
+		TransformableElement.__init__(self, element)
+
+	def _get_attribute(self, attribute):
+		"""
+		Handle calls to get special variables
+		"""
+		if attribute in ["fill", "stroke", "text", "xlink"]:
+			return get_special_attribute(self, attribute)
+		return None, True
+
+	def _set_attribute(self, attribute, value):
+		"""
+		Handle calls to set special variables
+		"""
+		if attribute in ["fill", "stroke", "text", "xlink"]:
+			return set_special_attribute(self, attribute, value)
+		return False
+
 class TextContainer(TextElement):
 	"""
 	Holds a text container
@@ -733,7 +756,7 @@ class Container(XMLElement):
 			attributes["d"] = data
 		return self.add_shape("path", path_id, attributes, fill, stroke, Path)
 
-	def add_text(self, text_id = None, x = None, y = None, text = None, fill = None, stroke = None):
+	def add_text(self, text_id = None, x = None, y = None, x_shift = None, y_shift = None, length = None, text = None, fill = None, stroke = None):
 		"""
 		Add a text element into this container
 		"""
@@ -742,7 +765,55 @@ class Container(XMLElement):
 			attributes["x"] = x
 		if y:
 			attributes["y"] = y
+		if x_shift:
+			attributes["dx"] = x_shift
+		if y_shift:
+			attributes["dy"] = y_shift
+		if length:
+			attributes["textLength"] = length
 		obj = self.add_shape("text", text_id, attributes, fill, stroke, TextContainer)
+		if text:
+			obj.text = text
+		return obj
+
+	def add_tspan(self, text_id = None, x = None, y = None, x_shift = None, y_shift = None, length = None, text = None, fill = None, stroke = None):
+		"""
+		Add a tspan element into this container
+		"""
+		attributes = {}
+		if x:
+			attributes["x"] = x
+		if y:
+			attributes["y"] = y
+		if x_shift:
+			attributes["dx"] = x_shift
+		if y_shift:
+			attributes["dy"] = y_shift
+		if length:
+			attributes["textLength"] = length
+		obj = self.add_shape("tspan", text_id, attributes, fill, stroke, TextElement)
+		if text:
+			obj.text = text
+		return obj
+
+	def add_tref(self, tref_id = None, x = None, y = None, x_shift = None, y_shift = None, length = None, text = None, fill = None, stroke = None, xlink = None):
+		"""
+		Add a tref element into this container
+		"""
+		attributes = {}
+		if x:
+			attributes["x"] = x
+		if y:
+			attributes["y"] = y
+		if x_shift:
+			attributes["dx"] = x_shift
+		if y_shift:
+			attributes["dy"] = y_shift
+		if length:
+			attributes["textLength"] = length
+		if xlink:
+			attributes["xlink"] = xlink
+		obj = self.add_shape("tref", text_id, attributes, fill, stroke, Tref)
 		if text:
 			obj.text = text
 		return obj
