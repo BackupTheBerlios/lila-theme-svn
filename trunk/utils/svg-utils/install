@@ -146,10 +146,10 @@ if symlink_path[0] != os.sep:
 	symlink_path = os.path.join(prefix, symlink_path)
 
 if install:
-	print "Installing library into " + blue(library_install_path)
-	print "Installing scripts into " + blue(script_install_path)
-	print "Installing data into " + blue(data_path)
-	print "Symlinking scripts in " + blue(symlink_path)
+	print "Install library into " + blue(library_install_path)
+	print "Install scripts into " + blue(script_install_path)
+	print "Install data into " + blue(data_path)
+	print "Symlink scripts in " + blue(symlink_path)
 
 	print "Installing..."
 
@@ -196,6 +196,8 @@ if install:
 		# copy the data file and set permissions :)
 		shutil.copy(file, path)
 		os.chmod(path, 0644)
+
+	print "Creating symlinks..."
 
 	# symlink the scripts if we need to
 	if create_symlinks:
@@ -247,21 +249,31 @@ else:
 		print blue("Couldn't remove " + os.path.join(library_install_path, "svg"))
 	print red("Library removed...")
 
+	# keep track of problems removing paths
+	all_paths_removed = True
+
 	try:
 		os.removedirs(library_install_path)
 	except:
 		print blue("Couldn't remove all library paths!")
+		all_paths_removed = False
 	try:
 		os.removedirs(script_install_path)
 	except:
 		print blue("Couldn't remove all script paths!")
+		all_paths_removed = False
 	try:
 		os.removedirs(data_path)
 	except:
 		print blue("Couldn't remove all data paths!")
+		all_paths_removed = False
 	try:
 		os.removedirs(symlink_path)
 	except:
 		print blue("Couldn't remove all symlink paths!")
+		all_paths_removed = False
+
+	if not all_paths_removed:
+		print blue("The above is an informational message only, and doesn't necessarily mean that anything went wrong. It could be that there are still files in the directory or that files have already been removed. Either way SVG-Utils should be removed now!")
 
 	print green("Uninstall completed!")
