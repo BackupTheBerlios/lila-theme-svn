@@ -12,7 +12,7 @@
    sodipodi:version="0.32"
    inkscape:version="0.37"
    sodipodi:docname="laptop_nobattery.svg"
-   sodipodi:docbase="/home/tom/Pics/lilasvg/scalable/actions"
+   sodipodi:docbase="/home/jakob/dev/lila/svg-icons/lila/kde/scalable/actions"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -24,8 +24,8 @@
      inkscape:cy="16.7499988"
      inkscape:window-width="1018"
      inkscape:window-height="711"
-     inkscape:window-x="0"
-     inkscape:window-y="30" />
+     inkscape:window-x="468"
+     inkscape:window-y="272" />
   <defs
      id="defs3">
     <linearGradient
@@ -130,12 +130,12 @@
        fx="0.47493827"
        fy="0.48125076" />
     <linearGradient
-       xlink:href="#linearGradient590"
+       xlink:href="#linearGradient635"
        id="linearGradient609"
-       x1="0.20634921"
-       y1="0.27343750"
-       x2="1.69841266"
-       y2="3.66406250" />
+       x1="0.00000000"
+       y1="0.00000000"
+       x2="1.00000000"
+       y2="0.00000000" />
   </defs>
   <path
      d="M 4.8022939 55.40648 C 5.6368291 57.214521 26.26906 58.179635 26.905009 56.36298 C 27.611696 54.078472 27.413707 12.982791 26.726034 10.930714 C 26.050537 8.9391209 5.5506353 8.6147224 4.8917818 10.69159 C 4.2622797 12.438607 3.9800631 53.431429 4.8022939 55.40648 z "
@@ -151,13 +151,13 @@
      id="path603"
      sodipodi:nodetypes="cccccccc" />
   <rect
-     style="font-size:12;fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#261933;stroke-width:2.5;stroke-opacity:1;stroke-dasharray:none;"
+     style="font-size:12;fill:url(#linearGradient609);fill-opacity:0.75;fill-rule:evenodd;stroke:#261933;stroke-width:2.57549;"
      id="rect602"
-     width="23.4975967"
-     height="53.3293266"
-     x="34.7355766"
-     y="5.24038458"
-     ry="5.31250000" />
+     width="23.49759674"
+     height="56.59855731"
+     x="34.73557663"
+     y="1.97115390"
+     ry="5.63817049" />
   <path
      style="font-size:12;opacity:0.3;fill-rule:evenodd;stroke-width:2.07367;"
      d="M 49.394215 32.950281 C 49.394215 42.697205 41.483667 50.607754 31.736741 50.607754 C 21.989816 50.607754 14.079267 42.697205 14.079267 32.950281 C 14.079267 23.203354 21.989816 15.292806 31.736741 15.292806 C 41.483667 15.292806 49.394215 23.203354 49.394215 32.950281 z "

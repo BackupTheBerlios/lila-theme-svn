@@ -5,14 +5,17 @@
 <svg
    id="svg1"
    sodipodi:version="0.32"
-   inkscape:version="0.37"
+   inkscape:version="0.39"
    width="48pt"
    height="48pt"
-   sodipodi:docbase="/home/tom"
-   sodipodi:docname="player_pause.svg"
+   sodipodi:docbase="/home/scaba/files/lila/devel/lila-gnome/Lila/scalable/stock"
+   sodipodi:docname="media-pause.svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:cc="http://web.resource.org/cc/"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs
      id="defs3">
@@ -108,58 +111,92 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.99999999"
-     inkscape:cx="20.0213013"
-     inkscape:cy="29.4961853"
-     inkscape:window-width="640"
-     inkscape:window-height="535"
-     inkscape:window-x="236"
-     inkscape:window-y="112" />
+     inkscape:zoom="7.9999999"
+     inkscape:cx="28.650263"
+     inkscape:cy="19.444000"
+     inkscape:window-width="1022"
+     inkscape:window-height="695"
+     inkscape:window-x="0"
+     inkscape:window-y="26"
+     showguides="true"
+     inkscape:guide-bbox="true" />
   <g
-     transform="matrix(-0.988431,0.000000,0.000000,1.000000,62.52601,-0.331400)"
-     style="font-size:12;opacity:0.3;stroke:#000000;"
+     transform="matrix(0.939009,0.000000,0.000000,0.950000,1.035344,1.240930)"
+     style="font-size:12.000000;opacity:0.29999998;stroke:#000000;"
      id="g677">
     <ellipse
-       cx="47.59568024"
-       cy="41.55554962"
-       rx="28.88131142"
-       ry="28.88131142"
+       cx="47.595680"
+       cy="41.555550"
+       rx="28.881311"
+       ry="28.881311"
        transform="matrix(0.917566,0.000000,0.000000,0.917566,-11.48724,-5.833475)"
-       style="fill-rule:evenodd;stroke-width:2.05418;"
-       id="path675" />
+       style="fill-rule:evenodd;stroke-width:2.0541799;"
+       id="path675"
+       d="M 76.476992 41.555550 A 28.881311 28.881311 0 1 0 18.714369,41.555550 A 28.881311 28.881311 0 1 0 76.476992 41.555550 z"
+       sodipodi:cx="47.595680"
+       sodipodi:cy="41.555550"
+       sodipodi:rx="28.881311"
+       sodipodi:ry="28.881311" />
     <ellipse
-       cx="42.10733032"
-       cy="34.26774216"
-       rx="21.77344894"
-       ry="21.77344894"
+       cx="42.107330"
+       cy="34.267742"
+       rx="21.773449"
+       ry="21.773449"
        transform="matrix(0.934849,0.000000,0.000000,0.934849,-7.035911,0.205833)"
-       style="fill-rule:evenodd;stroke-width:1pt;"
-       id="path676" />
+       style="fill-rule:evenodd;stroke-width:1.0000000pt;"
+       id="path676"
+       d="M 63.880779 34.267742 A 21.773449 21.773449 0 1 0 20.333881,34.267742 A 21.773449 21.773449 0 1 0 63.880779 34.267742 z"
+       sodipodi:cx="42.107330"
+       sodipodi:cy="34.267742"
+       sodipodi:rx="21.773449"
+       sodipodi:ry="21.773449" />
   </g>
   <ellipse
-     cx="47.59568024"
-     cy="41.55554962"
-     rx="28.88131142"
-     ry="28.88131142"
-     transform="matrix(-0.906950,0.000000,0.000000,0.917565,74.89132,-7.869530)"
-     style="font-size:12;fill:url(#radialGradient670);fill-opacity:0.75;fill-rule:evenodd;stroke:#261933;stroke-width:2.04345;stroke-dasharray:none;"
-     id="path594" />
+     cx="47.595680"
+     cy="41.555550"
+     rx="28.881311"
+     ry="28.881311"
+     transform="matrix(0.861603,0.000000,0.000000,0.871687,-11.00858,-6.223432)"
+     style="font-size:12.000000;fill:url(#radialGradient670);fill-opacity:1.00000000;fill-rule:evenodd;stroke:#261933;stroke-width:2.0434501;"
+     id="path594"
+     d="M 76.476992 41.555550 A 28.881311 28.881311 0 1 0 18.714369,41.555550 A 28.881311 28.881311 0 1 0 76.476992 41.555550 z"
+     sodipodi:cx="47.595680"
+     sodipodi:cy="41.555550"
+     sodipodi:rx="28.881311"
+     sodipodi:ry="28.881311" />
   <rect
-     style="font-size:12;fill:url(#radialGradient595);fill-opacity:0.75;fill-rule:evenodd;stroke:#261933;stroke-width:1pt;"
-     id="rect596"
-     width="7.51300955"
-     height="36.68116379"
-     x="-28.14292144"
-     y="12.71223354"
-     ry="2.65165043"
-     transform="scale(-1.000000,1.000000)" />
+     style="font-size:12.000000;fill:url(#radialGradient595);fill-opacity:1.00000000;fill-rule:evenodd;stroke:#261933;stroke-width:0.99144373pt;"
+     id="rect930"
+     width="7.7736773"
+     height="34.847107"
+     x="-27.018044"
+     y="12.874308"
+     ry="2.6516504"
+     transform="matrix(-1.000000,0.000000,0.000000,1.000000,-0.296881,-0.303138)"
+     rx="2.6516504" />
   <rect
-     style="font-size:12;fill:url(#radialGradient595);fill-opacity:0.75;fill-rule:evenodd;stroke:#261933;stroke-width:1pt;"
-     id="rect597"
-     width="7.51300955"
-     height="36.68116379"
-     x="-43.14292147"
-     y="12.71223354"
-     ry="2.65165043"
-     transform="scale(-1.000000,1.000000)" />
+     style="font-size:12.000000;fill:url(#radialGradient595);fill-opacity:1.00000000;fill-rule:evenodd;stroke:#261933;stroke-width:0.99144373pt;"
+     id="rect931"
+     width="7.7736773"
+     height="34.847107"
+     x="-41.496120"
+     y="12.929082"
+     ry="2.6516504"
+     transform="matrix(-1.000000,0.000000,0.000000,1.000000,-0.296881,-0.303138)"
+     rx="2.6516504" />
+  <metadata
+     id="metadata933">
+    <rdf:RDF
+       id="RDF934">
+      <cc:Work
+         rdf:about=""
+         id="Work935">
+        <dc:format
+           id="format936">image/svg+xml</dc:format>
+        <dc:type
+           id="type938"
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
 </svg>
