@@ -1,0 +1,58 @@
+# Lila vector icon theme
+# (c) 2004 Daniel G. Taylor <dantaylor@web.de>
+# Gentoo and the Gentoo G are Copyright Gentoo Technologies, Inc.
+
+[Icon Theme]
+Name=Lila
+Comment=Gentoo Vector Theme
+Inherits=gnome
+DesktopDefault=48
+Directories=scalable/actions,scalable/apps,scalable/filesystems,scalable/mimetypes,scalable/emblems,scalable/devices,36x36/apps
+Example=gnome-theme-preview.svg
+
+[scalable/actions]
+MinSize=1
+Size=48
+MaxSize=256
+Context=Actions
+Type=Scalable
+
+[scalable/apps]
+MinSize=1
+Size=48
+MaxSize=256
+Context=Applications
+Type=Scalable
+
+[scalable/devices]
+MinSize=1
+Size=48
+MaxSize=256
+Context=Devices
+Type=Scalable
+
+[scalable/emblems]
+MinSize=1
+Size=48
+MaxSize=128
+Context=Emblems
+Type=Scalable
+
+[scalable/filesystems]
+MinSize=1
+Size=48
+MaxSize=256
+Context=FileSystems
+Type=Scalable
+
+[scalable/mimetypes]
+MinSize=1
+Size=48
+MaxSize=256
+Context=MimeTypes
+Type=Scalable
+
+[36x36/apps]
+Size=36
+Context=Applications
+Type=Scalable

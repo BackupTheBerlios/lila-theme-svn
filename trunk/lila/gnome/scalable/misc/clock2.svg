@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   version="1.0"
+   x="0"
+   y="0"
+   width="60"
+   height="60"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:version="0.32"
+   inkscape:version="0.37"
+   sodipodi:docname="clock2.svg"
+   sodipodi:docbase="/home/dan/Projects/Lila-icons/scalable/misc">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="6.94653375"
+     inkscape:cx="25.7557037"
+     inkscape:cy="25.0637084"
+     inkscape:window-width="640"
+     inkscape:window-height="500"
+     inkscape:window-x="0"
+     inkscape:window-y="25" />
+  <defs
+     id="defs3">
+    <linearGradient
+       id="linearGradient570">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop571" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop572" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient563">
+      <stop
+         style="stop-color:#d9cce6;stop-opacity:1;"
+         offset="0"
+         id="stop564" />
+      <stop
+         style="stop-color:#73667f;stop-opacity:1;"
+         offset="1"
+         id="stop565" />
+    </linearGradient>
+    <linearGradient
+       x1="0.00000000"
+       y1="0.00000000"
+       x2="0.98461539"
+       y2="0.99218750"
+       id="linearGradient566"
+       xlink:href="#linearGradient563" />
+    <linearGradient
+       x1="-0.00000000"
+       y1="0.00000000"
+       x2="0.99230772"
+       y2="0.98437500"
+       id="linearGradient569"
+       xlink:href="#linearGradient570" />
+    <linearGradient
+       x1="0.98717952"
+       y1="0.99354839"
+       x2="0.00641027"
+       y2="0.01290322"
+       id="linearGradient573"
+       xlink:href="#linearGradient563" />
+    <linearGradient
+       x1="0.98039198"
+       y1="0.97656202"
+       x2="0.00653600"
+       y2="0.00781200"
+       id="linearGradient575"
+       xlink:href="#linearGradient563" />
+    <linearGradient
+       x1="-0.00662200"
+       y1="0.00781300"
+       x2="0.92053002"
+       y2="0.92187500"
+       id="linearGradient578"
+       xlink:href="#linearGradient570" />
+  </defs>
+  <g
+     transform="translate(-0.947071,-0.331396)"
+     style="font-size:12;opacity:0.3;stroke:#000000;"
+     id="g677">
+    <ellipse
+       cx="47.59568024"
+       cy="41.55554962"
+       rx="28.88131142"
+       ry="28.88131142"
+       transform="matrix(0.917566,0.000000,0.000000,0.917566,-11.48724,-5.833475)"
+       style="fill-rule:evenodd;stroke-width:2.05418;"
+       id="path675" />
+    <ellipse
+       cx="42.10733032"
+       cy="34.26774216"
+       rx="21.77344894"
+       ry="21.77344894"
+       transform="matrix(0.934849,0.000000,0.000000,0.934849,-7.035911,0.205833)"
+       style="fill-rule:evenodd;stroke-width:1pt;"
+       id="path676" />
+  </g>
+  <ellipse
+     cx="47.59568024"
+     cy="41.55554962"
+     rx="28.88131142"
+     ry="28.88131142"
+     transform="matrix(0.917566,0.000000,0.000000,0.917566,-13.45711,-7.869533)"
+     style="font-size:12;fill:url(#linearGradient566);fill-opacity:0.75;fill-rule:evenodd;stroke:#261933;stroke-width:2.05418;"
+     id="path594" />
+  <ellipse
+     cx="42.10733032"
+     cy="34.26774216"
+     rx="21.77344894"
+     ry="21.77344894"
+     transform="matrix(0.934849,0.000000,0.000000,0.934849,-9.005779,-1.830225)"
+     style="font-size:12;fill:url(#linearGradient569);fill-opacity:0.75;fill-rule:evenodd;stroke:url(#linearGradient573);stroke-width:1pt;"
+     id="path623" />
+</svg>
