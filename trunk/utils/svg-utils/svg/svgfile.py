@@ -70,9 +70,14 @@ def get_special_attribute(element, attribute, recursive = False):
 			return points, False
 		except:
 			return None, True
-	elif element.tag in ["svg", "defs", "g", "text"]:
+	else:
 		# container objects
 		search = []
+		recursive = False
+
+		if attribute[:4] == "all_":
+			recursive = True
+			attribute = attribute[4:]
 
 		if attribute in ["linear_gradients", "gradients", "fills"]:
 			search.append(("linearGradient", LinearGradient))
@@ -103,14 +108,18 @@ def get_special_attribute(element, attribute, recursive = False):
 		if attribute in ["text_paths", "text_shapes", "shapes"]:
 			search.append(("textPath", TextPath))
 		if attribute in ["groups", "containers"]:
-			search.append(("g", TransformableColorableContainer))
+			search.append(("g", Group))
 		if attribute in ["defs", "containers"]:
-			search.append(("defs", Container))
+			search.append(("defs", Defs))
 
 		if search:
 			objs = []
 			for obj, stype in search:
-				objs += element.get_children(obj, stype, recursive)
+				# shortcut for <svg> to go straight to defs
+				if obj in ["linearGradient", "radialGradient", "pattern"] and element.tag == "svg":
+					objs += element.defs.get_children(obj, stype, recursive)
+				else:
+					objs += element.get_children(obj, stype, recursive)
 			return objs, False
 	return None, True
 
@@ -141,56 +150,68 @@ def set_special_attribute(element, attribute, value):
 			points += " " + str(point[0]) + "," + str(point[1])
 		element.element.setAttribute("points", points.strip())
 		return True
+	elif attribute in ["stops"]:
+		raise ReadOnlyError, str(attribute) + " is read only! Use the add_* functions instead!"
 	return False
 
-class Stop(XMLElement):
+class SVGElement(XMLElement):
+	"""
+	Hold and manage an SVG element
+	"""
+	def __init__(self, element=None):
+		XMLElement.__init__(self, element)
+		if not self.__dict__.has_key("special_attributes"):
+			self.__dict__["special_attributes"] = []
+
+	def register_special_attribute(self, attribute):
+		"""
+		Register a special attribute that will be passed
+		on to the special attribute handler function
+		"""
+		self.__dict__["special_attributes"].append(attribute)
+
+	def unregister_special_attribute(self, attribute):
+		"""
+		Remove a special attribute from this item
+		"""
+		for pos in range(len(self.__dict__["special_attributes"]) - 1):
+			if self.__dict__["special_attributes"][pos] == attribute:
+				self.__dict__["special_attributes"][pos:pos + 1] = []
+				return True
+		raise ValueError, str(attribute) + " not registered!"
+
+	def _get_attribute(self, attribute):
+		"""
+		Get custom attributes
+		"""
+		if attribute in self.__dict__["special_attributes"]:
+			return get_special_attribute(self, attribute)
+		return None, True
+
+	def _set_attribute(self, attribute, value):
+		"""
+		Set custom attributes
+		"""
+		if attribute in self.__dict__["special_attributes"]:
+			return set_special_attribute(self, attribute, value)
+		return False
+
+class Stop(SVGElement):
 	"""
 	Hold and manage a gradient stop
 	"""
 	def __init__(self, element = None):
-		XMLElement.__init__(self, element)
+		SVGElement.__init__(self, element)
+		self.register_special_attribute("color")
 
-	def _get_attribute(self, attribute):
-		"""
-		Get custom attributes like color
-		"""
-		if attribute in ["color"]:
-			return get_special_attribute(self, attribute)
-		return None, True
-
-	def _set_attribute(self, attribute, value):
-		"""
-		Set custom attributes like color
-		"""
-		if attribute in ["color"]:
-			return set_special_attribute(self, attribute, value)
-		return False
-
-class Gradient(XMLElement):
+class Gradient(SVGElement):
 	"""
 	Hold and manage a gradient
 	"""
 	def __init__(self, element = None):
-		XMLElement.__init__(self, element)
+		SVGElement.__init__(self, element)
 		self.register_attribute_alias("xlink", "xlink:href")
-
-	def _get_attribute(self, attribute):
-		"""
-		Catch calls to the gradient's stops and such
-		"""
-		if attribute in ["stops"]:
-			return get_special_attribute(self, attribute)
-		return None, True
-
-	def _set_attribute(self, attribute, value):
-		"""
-		Catch calls to set the gradient's stops
-		"""
-		if attribute == "stops":
-			raise ReadOnlyError, "Cannot set stops this way!\n" \
-					"Try using add_stop to add stops or calling " \
-					"unlink() on a stop element to remove it"
-		return False
+		self.register_special_attribute("stops")
 
 	def add_stop(self, id = None, color = "#00000000", offset = "1"):
 		"""
@@ -227,35 +248,29 @@ class RadialGradient(Gradient):
 		self.register_attribute_alias("focalx", "fx")
 		self.register_attribute_alias("focaly", "fy")
 
-class ColoredElement(XMLElement):
+class FilledElement:
 	"""
-	Hold and manage a colored element
+	Hold and manage a filled element
+	This is NOT a stand-alone element! Use SVGElement with it!
 	"""
-	def __init__(self, element = None):
-		XMLElement.__init__(self, element)
+	def __init__(self):
+		self.register_special_attribute("fill")
 
-	def _get_attribute(self, attribute):
-		"""
-		Handle calls to get color values
-		"""
-		if attribute in ["fill", "stroke"]:
-			return get_special_attribute(self, attribute)
-		return None, True
+class StrokedElement:
+	"""
+	Hold and manage a stroked element
+	This is NOT a stand-alone element! Use SVGElement with it!
+	"""
+	def __init__(self):
+		self.register_special_attribute("stroke")
 
-	def _set_attribute(self, attribute, value):
-		"""
-		Handle calls to set color values
-		"""
-		if attribute in ["fill", "stroke"]:
-			return set_special_attribute(self, attribute, value)
-		return False
-
-class TransformableElement(XMLElement):
+class TransformableElement:
 	"""
 	Handle and manage transformable objects
+	This is NOT a stand-alone element! Use SVGElement with it!
 	"""
-	def __init__(self, element = None):
-		XMLElement.__init__(self, element)
+	def __init__(self):
+		pass
 
 	def __transform(self, name, attributes):
 		"""
@@ -313,13 +328,15 @@ class TransformableElement(XMLElement):
 			attributes.append(centery)
 		self.__transform("rotate", attributes)
 
-class Shape(ColoredElement, TransformableElement):
+class Shape(SVGElement, FilledElement, StrokedElement, TransformableElement):
 	"""
-	Holds normal colorable, transformable shapes
+	Holds normal colorable, transformable shapes (excluding lines)
 	"""
 	def __init__(self, element = None):
-		ColoredElement.__init__(self, element)
-		TransformableElement.__init__(self, element)
+		SVGElement.__init__(self, element)
+		FilledElement.__init__(self)
+		StrokedElement.__init__(self)
+		TransformableElement.__init__(self)
 
 class Rect(Shape):
 	"""
@@ -351,32 +368,18 @@ class Ellipse(Shape):
 		self.register_attribute_alias("radiusx", "rx")
 		self.register_attribute_alias("radiusy", "ry")
 
-class Line(TransformableElement):
+class Line(SVGElement, StrokedElement, TransformableElement):
 	"""
 	Holds a line element
 	"""
 	def __init__(self, element = None):
-		TransformableElement.__init__(self, element)
+		SVGElement.__init__(self, element)
+		StrokedElement.__init__(self)
+		TransformableElement.__init__(self)
 		self.register_attribute_alias("startx", "x1")
 		self.register_attribute_alias("starty", "y1")
 		self.register_attribute_alias("stopx", "x2")
 		self.register_attribute_alias("stopy", "y2")
-
-	def _get_attribute(self, attribute):
-		"""
-		Handle calls to get stroke value
-		"""
-		if attribute in ["stroke"]:
-			return get_special_attribute(self, attribute)
-		return None, True
-
-	def _set_attribute(self, attribute, value):
-		"""
-		Handle calls to set stroke value
-		"""
-		if attribute in ["stroke"]:
-			return set_special_attribute(self, attribute, value)
-		return False
 
 class PolyShape(Shape):
 	"""
@@ -384,22 +387,7 @@ class PolyShape(Shape):
 	"""
 	def __init__(self, element = None):
 		Shape.__init__(self, element)
-
-	def _get_attribute(self, attribute):
-		"""
-		Handle calls to get stroke value
-		"""
-		if attribute in ["fill", "stroke", "points"]:
-			return get_special_attribute(self, attribute)
-		return None, True
-
-	def _set_attribute(self, attribute, value):
-		"""
-		Handle calls to set stroke value
-		"""
-		if attribute in ["fill", "stroke", "points"]:
-			return set_special_attribute(self, attribute, value)
-		return False
+		self.register_special_attribute("points")
 
 	def add_point(self, x, y):
 		"""
@@ -474,74 +462,36 @@ class Path(Shape):
 		"""
 		self.d = ''
 
-class TextElement(TransformableElement):
+class TextElement(SVGElement, TransformableElement):
 	"""
 	Holds an element containing text
 	"""
 	def __init__(self, element = None):
-		TransformableElement.__init__(self, element)
+		SVGElement.__init__(self, element)
+		TransformableElement.__init__(self)
+		self.register_special_attribute("text")
 
-	def _get_attribute(self, attribute):
-		"""
-		Handle calls to get special variables
-		"""
-		if attribute in ["fill", "stroke", "text"]:
-			return get_special_attribute(self, attribute)
-		return None, True
-
-	def _set_attribute(self, attribute, value):
-		"""
-		Handle calls to set special variables
-		"""
-		if attribute in ["fill", "stroke", "text"]:
-			return set_special_attribute(self, attribute, value)
-		return False
-
-class Tref(TransformableElement):
+class Tref(TextElement):
 	"""
 	Holds a tref element
 	"""
 	def __init__(self, element = None):
-		TransformableElement.__init__(self, element)
+		TextElement.__init__(self, element)
 
-	def _get_attribute(self, attribute):
-		"""
-		Handle calls to get special variables
-		"""
-		if attribute in ["fill", "stroke", "text"]:
-			return get_special_attribute(self, attribute)
-		return None, True
-
-	def _set_attribute(self, attribute, value):
-		"""
-		Handle calls to set special variables
-		"""
-		if attribute in ["fill", "stroke", "text"]:
-			return set_special_attribute(self, attribute, value)
-		return False
-
-class TextContainer(TransformableElement):
+class TextContainer(SVGElement, FilledElement, StrokedElement, TransformableElement):
 	"""
 	Holds a text container
 	"""
 	def __init__(self, element = None):
-		TransformableElement.__init__(self, element)
-
-	def _get_attribute(self, attribute):
-		"""
-		Handle calls to get special variables
-		"""
-		if attribute in ["fill", "stroke", "text", "tspans", "trefs"]:
-			return get_special_attribute(self, attribute)
-		return None, True
-
-	def _set_attribute(self, attribute, value):
-		"""
-		Handle calls to set special variables
-		"""
-		if attribute in ["fill", "stroke", "text"]:
-			return set_special_attribute(self, attribute, value)
-		return False
+		SVGElement.__init__(self, element)
+		FilledElement.__init__(self)
+		StrokedElement.__init__(self)
+		TransformableElement.__init__(self)
+		self.register_special_attribute("text")
+		self.register_special_attribute("tspans")
+		self.register_special_attribute("trefs")
+		self.register_special_attribute("all_tspans")
+		self.register_special_attribute("all_trefs")
 
 	def add_child_text(self, element_name, element_type, tspan_id = None, text = None, x = None, y = None, deviation_x = None, deviation_y = None, rotation = None, length = None, font_weight = None, fill = None, stroke = None, xlink = None):
 		"""
@@ -598,68 +548,26 @@ class TextContainer(TransformableElement):
 		else:
 			return self.add_child_text("tref", Tref, tref_id, text, x, y, deviation_x, deviation_y, rotation, length, font_weight, fill, stroke, xlink)
 
-class TextPath(TransformableElement):
+class TextPath(SVGElement, TransformableElement):
 	"""
 	Holds a textPath element
 	"""
 	def __init__(self, element = None):
-		TransformableElement.__init__(self, element)
+		SVGElement.__init__(self, element)
+		TransformableElement.__init__(self)
+		self.register_attribute_alias("xlink", "xlink:href")
+		self.register_special_attribute("text")
 
-	def _get_attribute(self, attribute):
-		"""
-		Handle calls to get special variables
-		"""
-		if attribute in ["xlink", "text"]:
-			return get_special_attribute(self, attribute)
-		return None, True
-
-	def _set_attribute(self, attribute, value):
-		"""
-		Handle calls to set special variables
-		"""
-		if attribute in ["xlink", "text"]:
-			return set_special_attribute(self, attribute, value)
-		return False
-
-class Container(XMLElement):
+class Defs(SVGElement):
 	"""
-	Holds SVG elements
+	Holds a defs element
 	"""
 	def __init__(self, element = None):
-		XMLElement.__init__(self, element)
-
-	def _get_attribute(self, attribute):
-		"""
-		Handle attribute access to objects
-		"""
-		if attribute[:4] == "all_":
-			recursive = True
-			attribute = attribute[4:]
-		else:
-			recursive = False
-		if attribute in ["linear_gradients", "radial_gradients", "gradients", \
-						"patterns", "rects", "circles", "ellipses", "lines", \
-						"polylines", "polygons", "paths", "texts", "tspans", \
-						"trefs", "text_paths", "fills", "basic_shapes", \
-						"text_shapes", "shapes", "defs", "groups", "containers"]:
-			return get_special_attribute(self, attribute, recursive)
-		return None, True
-
-	def _set_attribute(self, attribute, value):
-		"""
-		Handle attribute setting
-		"""
-		if attribute[:4] == "all_":
-			attribute = attribute[4:]
-		if attribute in ["linear_gradients", "radial_gradients", "gradients", \
-						"patterns", "rects", "circles", "ellipses", "lines", \
-						"polylines", "polygons", "paths", "texts", "tspans", \
-						"trefs", "text_paths", "fills", "basic_shapes", \
-						"text_shapes", "shapes", "defs", "groups", "containers"]:
-			raise ReadOnlyError, "Cannot directly set " + attribute + "!\n" \
-								"To add an object, use the add_* functions, and " \
-								"to remove an object call its unlink() method!"
-		return False
+		SVGElement.__init__(self, element)
+		for special_element in ["gradients", "fills", "linear_gradients", \
+											"radial_gradients", "patterns"]:
+			self.register_special_attribute(special_element)
+			self.register_special_attribute("all_" + special_element)
 
 	def add_gradient(self, grad_type = None, attributes = None, grad_id = None, element = None):
 		"""
@@ -720,12 +628,30 @@ class Container(XMLElement):
 			attributes["xlink"] = xlink
 		return self.add_gradient("radial", attributes, id)
 
+	def add_pattern(self, id = None):
+		"""
+		Add a pattern to this container
+		"""
+		pass
+
+class Container(SVGElement):
+	"""
+	Holds SVG elements
+	"""
+	def __init__(self, element = None):
+		SVGElement.__init__(self, element)
+		for special_element in ["shapes", "basic_shapes", "text_shapes", \
+								"containers", "rects", "circles", "ellipses", \
+								"lines", "polylines", "polygons", "paths", \
+								"texts", "text_paths", "groups"]:
+			self.register_special_attribute(special_element)
+			self.register_special_attribute("all_" + special_element)
+
 	def add_shape(self, tag = None, shape_id = None, attributes = {}, fill = None, stroke = None, shape_type = Shape, element = None):
 		"""
-		Add an object to this container
-		Either element can be specified (and it should be one of these shape/text classes
-		OR
-		A tag, shape_id, attributes, etc... can be specified and a new shape will be added
+		Add a new shape to this container
+		OR, if element is specified
+		Add an existing shape as a child
 		"""
 		if element:
 			self.element.appendChild(element.element)
@@ -890,74 +816,44 @@ class Container(XMLElement):
 			attributes["stroke-width"] = stroke_width
 		return self.add_shape("g", id, fill, stroke, attributes, Group)
 
-class TransformableContainer(Container, TransformableElement):
+class Group(Container, FilledElement, StrokedElement, TransformableElement):
 	"""
 	Hold and manage a container that can be transformed
 	"""
 	def __init__(self, element = None):
 		Container.__init__(self, element)
-		TransformableElement.__init__(self, element)
+		FilledElement.__init__(self)
+		StrokedElement.__init__(self)
+		TransformableElement.__init__(self)
 
-class TransformableColorableContainer(TransformableContainer):
-	"""
-	Hold and manage a container that can be transformed/colored
-	"""
-	def __init__(self, element = None):
-		TransformableContainer.__init__(self, element)
-
-	def _get_attribute(self, attribute):
-		"""
-		Handle attribute access to objects
-		"""
-		if attribute[:4] == "all_":
-			recursive = True
-			attribute = attribute[4:]
-		else:
-			recursive = False
-		if attribute in ["linear_gradients", "radial_gradients", "gradients", \
-						"patterns", "rects", "circles", "ellipses", "lines", \
-						"polylines", "polygons", "paths", "texts", "tspans", \
-						"trefs", "text_paths", "fills", "basic_shapes", \
-						"text_shapes", "shapes", "defs", "groups", "containers"]:
-			return get_special_attribute(self, attribute)
-
-	def _set_attribute(self, attribute, value):
-		"""
-		Handle attribute setting
-		"""
-		if attribute[:4] == "all_":
-			attribute = attribute[4:]
-		if attribute in ["linear_gradients", "radial_gradients", "gradients", \
-						"patterns", "rects", "circles", "ellipses", "lines", \
-						"polylines", "polygons", "paths", "texts", "tspans", \
-						"trefs", "text_paths", "fills", "basic_shapes", \
-						"text_shapes", "shapes", "defs", "groups", "containers"]:
-			raise ReadOnlyError, "Cannot directly set " + attribute + "!\n" \
-								"To add an object, use the add_* functions, and " \
-								"to remove an object call its unlink() method!"
-		elif attribute in ["fill", "stroke"]:
-			return set_special_attribute(self, attribute, value)
-		return False
-
-class SVGFile(Container):
+class SVGFile(Container, Defs):
 	def __init__(self, filename = None):
 		if filename:
 			dom = parse(filename)
 			Container.__init__(self, dom.documentElement)
 			self.__filename = filename
 			try:
-				self.__dict__["defs"] = self.get_children("defs", Container)[0]
+				self.__dict__["defs"] = self.get_children("defs", Defs)[0]
 			except:
-				self.__dict__["defs"] = self.add_child_tag("defs", Container, { "id" : "defs" })
+				self.__dict__["defs"] = self.add_child_tag("defs", Defs, { "id" : "defs" })
 		else:
 			# create a default SVG document
-			XMLElement.__init__(self, getDOMImplementation().createDocument(None, "svg", None).documentElement)
+			Container.__init__(self, getDOMImplementation().createDocument(None, "svg", None).documentElement)
 			self.id = "New Document"
 			self.width = "48pt"
 			self.height = "48pt"
 			self.xmlns = "http://www.w3.org/2000/svg"
 			self.set_attribute("xmlns:xlink", "http://www.w3.org/1999/xlink")
-			self.__dict__["defs"] = self.add_child_tag("defs", Container, { "id" : "defs" })
+			self.__dict__["defs"] = self.add_child_tag("defs", Defs, { "id" : "defs" })
+		# register some special attributes that aren't provided for
+		# a normal container class
+		self.register_special_attribute("all_fills")
+		self.register_special_attribute("all_gradients")
+		self.register_special_attribute("all_patterns")
+		self.register_special_attribute("all_linear_gradients")
+		self.register_special_attribute("all_radial_gradients")
+		self.register_special_attribute("all_trefs")
+		self.register_special_attribute("all_tspans")
 
 	def save(self, filename = None):
 		"""
@@ -973,13 +869,67 @@ class SVGFile(Container):
 		print >>outfile, '"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">'
 		PrettyPrint(self.element, outfile)
 
-	def add_gradient(self, grad_type, attributes, grad_id = None):
+	def add_gradient(self, grad_type = None, attributes = None, grad_id = None, element = None):
 		"""
-		Add a gradient to the SVG
+		Add a gradient to this container
+		Either element can be specified (and should be a Gradient object)
+		OR
+		gradient type, id, attributes etc... will produce a new gradient
 		"""
-		if not grad_id:
-			global id_counter
-			grad_id = id_counter
-			id_counter += 1
-		attributes["id"] = grad_id
-		return self.__dict__["defs"].add_child_tag(grad_type + "Gradient", Gradient, attributes)
+		if element:
+			self.defs.element.appendChild(element.element)
+			return element
+		else:
+			if not grad_id:
+				global id_counter
+				grad_id = id_counter
+				id_counter += 1
+			attributes["id"] = grad_id
+			if grad_type == "linear":
+				grad_class = LinearGradient
+			else:
+				grad_class = RadialGradient
+			return self.defs.add_child_tag(grad_type + "Gradient", grad_class, attributes)
+
+	def add_linear_gradient(self, id = None, startx = None, starty = None, stopx = None, stopy = None, xlink = None):
+		"""
+		Add a linear gradient to this container
+		"""
+		attributes = {}
+		if startx != None:
+			attributes["x1"] = startx
+		if starty != None:
+			attributes["y1"] = starty
+		if stopx != None:
+			attributes["x2"] = stopx
+		if stopy != None:
+			attributes["y2"] = stopy
+		if xlink:
+			attributes["xlink"] = xlink
+		return self.add_gradient("linear", attributes, id)
+
+	def add_radial_gradient(self, id = None, centerx = None, centery = None, radius = None, focusx = None, focusy = None, xlink = None):
+		"""
+		Add a radial gradient to this container
+		center and focus are (x, y) tuples
+		"""
+		attributes = {}
+		if centerx != None:
+			attributes["cx"] = centerx
+		if centery != None:
+			attributes["cy"] = centery
+		if radius != None:
+			attributes["r"] = radius
+		if focusx != None:
+			attributes["fx"] = focusx
+		if focusy != None:
+			attributes["fy"] = focusy
+		if xlink:
+			attributes["xlink"] = xlink
+		return self.add_gradient("radial", attributes, id)
+
+	def add_pattern(self, id = None):
+		"""
+		Add a pattern to this container
+		"""
+		pass
