@@ -1,4 +1,4 @@
-# SimplyLila - Modified Glider GTK+ theme
+# Lila - modified Glider GTK+ theme
 # Original theme (c) 2004 Link Dupont <link@subpop.net>
 
 include "iconrc"
@@ -26,13 +26,13 @@ style "default"
 	fg[ACTIVE] = "#000000" # Black
 	fg[SELECTED] = "#FFFFFF" # White
 	fg[NORMAL] = "#000000" # Black
-	fg[PRELIGHT] = "#000000" # Black
+	fg[PRELIGHT] = "#FFFFFF" # White
 	fg[INSENSITIVE] = "#565248" # 3D Shadow
 
 	bg[ACTIVE] = "#BAB5AB" # Basic 3D Medium
 	bg[SELECTED] = "#9E91AA" # Purple
 	bg[NORMAL] = "#EAE8E3" # Basic 3D Hilight
-	bg[PRELIGHT] = "#F2F0EB" # Variant of Basic 3D Hilight
+	bg[PRELIGHT] = "#887B94" # Dark Purple
 	bg[INSENSITIVE] = "#EAE8E3" # Basic 3D Hilight
 
 	base[ACTIVE] = "#807D74" # Basic 3D Dark
@@ -53,11 +53,17 @@ style "default"
 
 		fill
 		{
-			style = shaded
+			style = gradient
 			hdirection = vertical
 			vdirection = horizontal
-			shade1 = 1.05
-			shade2 = 0.95
+			color1[SELECTED] = "#D9CCE6"
+			color2[SELECTED] = "#887B94"
+			color1[NORMAL] = "#F2F0EB"
+			color2[NORMAL] = "#EAE8E3"
+			color1[PRELIGHT] = "#D9CCE6"
+			color2[PRELIGHT] = "#887B94"
+			color1[INSENSITIVE] = "#F2F0EB"
+			color2[INSENSITIVE] = "#EAE8E3"
 	   	}
 
 		edge
@@ -77,16 +83,16 @@ style "default"
 			}
 			line
 			{
-				style = flat
+				style = smooth
 			}
 		}
 
 		focus
 		{
-			foreground[ACTIVE] = "#9E91AA"
-			foreground[SELECTED] = "#9E91AA"
-			foreground[NORMAL] = "#9E91AA"
-			foreground[PRELIGHT] = "#9E91AA"
+			foreground[ACTIVE] = "#EAE8E3"
+			foreground[SELECTED] = "#EAE8E3"
+			foreground[NORMAL] = "#EAE8E3"
+			foreground[PRELIGHT] = "#EAE8E3"
 		}
 
 		grip
@@ -125,34 +131,35 @@ widget_class "*" style "default"
 
 style "menuitem"
 {
-	bg[PRELIGHT] = "#9E91AA"
-	fg[PRELIGHT] = "#FFFFFF"
-	base[PRELIGHT] = "#9E91AA"
-	text[PRELIGHT] = "#FFFFFF"
-
 	engine "smooth"
 	{
 		fill
 		{
-			style = shaded
+			style = gradient
 			hdirection = vertical
 			vdirection = horizontal
-			shade1 = 1.05
-			shade2 = 0.95
+			color1[SELECTED] = "#D9CCE6"
+			color2[SELECTED] = "#887B94"
+			color1[NORMAL] = "#F2F0EB"
+			color2[NORMAL] = "#EAE8E3"
+			color1[PRELIGHT] = "#D9CCE6"
+			color2[PRELIGHT] = "#887B94"
+			color1[INSENSITIVE] = "#F2F0EB"
+			color2[INSENSITIVE] = "#EAE8E3"
 		}
 
 		edge
 		{
 			line
 			{
-				style = flat
+				style = smooth
 				thickness = 1
 			}
 		}
 
 		line
 		{
-			style = flat
+			style = smooth
 			thickness = 1
 		}
 		
@@ -219,13 +226,10 @@ style "toolbar"
 }
 widget_class "*BonoboDockItem" style "toolbar"
 class "*BonoboDockItem" style "toolbar"
-
 widget_class "*HandleBox" style "toolbar"
 class "*HandleBox" style "toolbar"
-
 widget_class "*Toolbar" style "toolbar"
 class "*Toolbar" style "toolbar"
-
 widget_class "*MenuBar" style "toolbar"
 class "*MenuBar" style "toolbar"
 
@@ -234,11 +238,17 @@ style "hscrollbar"
 	engine "smooth" {
 		fill
 		{
-			style = shaded
+			style = gradient
 			hdirection = vertical
 			vdirection = horizontal
-			shade1 = 1.05
-			shade2 = 0.95
+			color1[SELECTED] = "#D9CCE6"
+			color2[SELECTED] = "#887B94"
+			color1[NORMAL] = "#F2F0EB"
+			color2[NORMAL] = "#EAE8E3"
+			color1[PRELIGHT] = "#D9CCE6"
+			color2[PRELIGHT] = "#887B94"
+			color1[INSENSITIVE] = "#F2F0EB"
+			color2[INSENSITIVE] = "#EAE8E3"
 		}
 	
 		line
@@ -271,10 +281,10 @@ style "hscrollbar"
 		}
 	}
 }
-widget_class "*HScrollbar*"         style "hscrollbar"
-class "*HScrollbar*"                style "hscrollbar"
-widget_class "*HScale*"         style "hscrollbar"
-class "*HScale*"                style "hscrollbar"
+widget_class "*HScrollbar*" style "hscrollbar"
+class "*HScrollbar*" style "hscrollbar"
+widget_class "*HScale*" style "hscrollbar"
+class "*HScale*" style "hscrollbar"
 
 style "progressbar"
 {
@@ -287,11 +297,17 @@ style "vscrollbar"
 	engine "smooth" {
 		fill
 		{
-			style = shaded
+			style = gradient
 			hdirection = vertical
 			vdirection = horizontal
-			shade1 = 1.05
-			shade2 = 0.95
+			color1[SELECTED] = "#D9CCE6"
+			color2[SELECTED] = "#887B94"
+			color1[NORMAL] = "#F2F0EB"
+			color2[NORMAL] = "#EAE8E3"
+			color1[PRELIGHT] = "#D9CCE6"
+			color2[PRELIGHT] = "#887B94"
+			color1[INSENSITIVE] = "#F2F0EB"
+			color2[INSENSITIVE] = "#EAE8E3"
 		}
 	
 		line
@@ -323,14 +339,14 @@ style "vscrollbar"
 		}
 	}
 }
-widget_class "*VScrollbar*"         style "vscrollbar"
-class "*VScrollbar*"                style "vscrollbar"
-widget_class "*VScale*"         style "vscrollbar"
-class "*VScale*"                style "vscrollbar"
+widget_class "*VScrollbar*" style "vscrollbar"
+class "*VScrollbar*" style "vscrollbar"
+widget_class "*VScale*" style "vscrollbar"
+class "*VScale*" style "vscrollbar"
 
 style "tooltip"
 {
-	bg[NORMAL] = "#DCCAED" # Light Purple
+	bg[NORMAL] = "#D9CCE6" # Light Purple
 	fg[NORMAL] = "#000000"
 
 	engine "smooth"
@@ -343,7 +359,7 @@ style "tooltip"
 		{
 			line
 			{
-				style = flat
+				style = smooth
 			}
 		}
 	}
