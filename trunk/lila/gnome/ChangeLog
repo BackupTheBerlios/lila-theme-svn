@@ -1,19 +1,56 @@
 ----------
-08/17/04 scaba
+08/23/04 scaba
 ----------
-Lila/scalable/filesystems
--edited gnome-fs-desktop
+Lila/scalable/apps
+-added gdm-setup :: thanks to Makzu for giving me something to start with :)
+-added gdm-xnest :: thanks to Makzu
+Lila/scalable/stock
+-edited gtk-strikethrough
+-edited gtk-underline
+-renamed gaim-send-im :: gaim-im
+----------
+08/22/04 scaba
+----------
+Lila/scalable/apps
+-edited gnome-mixer
+-edited gnome-session
+-edited gnome-settings-sound
+-edited ooo_calc
+-edited ooo_draw
+-edited ooo_impress
+-edited ooo_writer
+-edited ximian-openoffice-calc
+-edited ximian-openoffice-draw
+-edited ximian-openoffice-impress
+-edited ximian-openoffice-writer
+-removed stock_bluetooth :: moved to 'scalable/stock'
+-resized gnome-other
+-resized gnome-settings-default-applications
+-resized mozilla-icon
+-resized porthole
+Lila/scalable/stock
+-added gtk-revert :: copy of gtk-undo :: not working yet
+-added stock_bluetooth :: moved from 'scalable/apps'
+-edited gtk-color-picker :: drop shadow still missing
+-edited gtk-dialog-question
+-edited stock_cell-phone
+-edited volume-max
+-edited volume-med
+-edited volume-min
+-edited volume-zero
 ----------
 08/16/04 scaba
 ----------
 Lila/scalable/apps
 -edited gnome-gnumeric
 -edited gnumeric
+-removed epiphany-bookmarks :: already in 'scalable/stock'
 Lila/scalable/filesystems
 -edited gnome-fs-desktop :: drop shadow added, thanks to 9-speed
 Lila/scalable/stock
 -added gaim-about :: enlarged version of emblem-special from 'scalable/emblems'
 -added gaim-accounts :: copy of epiphany-bookmarks
+-edited gaim-send-im
 -replaced epiphany-bookmarks :: epiphany-bookmarks from 'scalable/apps'
 ----------
 08/11/04 scaba

@@ -1,14 +1,40 @@
 --------------------------------
-Last modified: 08/16/2004 scaba
+Last modified: 08/23/2004 scaba
 --------------------------------
 
+-fix back and forward buttons in galeon
+
 Lila/scalable/apps
--dasher :: the part with the 'b' in it is hard to see, maybe change color slightly.
--file-roller :: a new and and more specific icon would be nice.
--galeon :: maybe the globe should be moved a bit. or color changed slightly. it's hard to see.
--gconf-editor :: perhabs a new and more creative icon?
--gnome-emacs :: a bit hard edged for my taste.
--gnome-session :: maybe remove the heart and just have the window?
--gnome-settings-sound :: the front part should be formed more like a trumpet.
--gnome-settings-ui-behavior :: a little mess. simplify.
--gnopernicus :: a bit of a mess. simplify or rearrange the items.
+-dasher :: adjust colors of the 'b' part
+-file-roller :: replace if new icon available
+-galeon :: adjust color/position/size of the globe
+-gconf-editor :: replace if new icon available
+-gnome-settings-default-applications :: adjust shape
+-gnome-emacs :: adjust shape
+-gnome-other :: adjust shape
+-gnome-settings-sound :: adjust size
+-gnome-settings-theme :: replace the 'g'
+-gnome-settings-ui-behavior :: simplify/cleanup
+-gnopernicus :: replace the 'g'
+-gripicon :: icon needed
+-gthumb :: icon needed
+-helixplay :: icon needed
+-seahorse :: icon needed
+-sodipodi :: icon needed
+
+Lila/scalable/filesystems
+-gnome-fs-desktop :: adjust size
+
+Lila/scalable/stock
+-gaim-edit :: icon needed
+-gaim-image :: icon needed
+-gaim-link :: icon needed
+-gaim-smiley :: icon needed
+-gtk-add :: adjust proportions
+-gtk-close :: adjust colors
+-gtk-color-picker :: add drop shadow
+-gtk-new-tab :: adjust shape
+-gtk-print-preview :: overhaul printer
+-gtk-print-setup :: overhaul printer
+-gtk-print :: overhaul printer
+-gtk-revert :: rename properly
