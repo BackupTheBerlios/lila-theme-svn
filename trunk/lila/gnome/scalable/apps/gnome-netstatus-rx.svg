@@ -8,7 +8,7 @@
    id="svg2735"
    sodipodi:version="0.32"
    inkscape:version="0.40"
-   sodipodi:docbase="/home/pinuz/lila-inkscape/icon theme"
+   sodipodi:docbase="/home/andrew/lila"
    sodipodi:docname="gnome-netstatus-rx.svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:cc="http://web.resource.org/cc/"
@@ -19,6 +19,28 @@
    xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs
      id="defs3">
+    <linearGradient
+       id="linearGradient1782">
+      <stop
+         offset="0.0000000"
+         style="stop-color:#ffffff;stop-opacity:1.0000000;"
+         id="stop1784" />
+      <stop
+         offset="1.0000000"
+         style="stop-color:#d9cce6;stop-opacity:1.0000000;"
+         id="stop1783" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient1775">
+      <stop
+         offset="0.0000000"
+         style="stop-color:#d9cce6;stop-opacity:1.0000000;"
+         id="stop1777" />
+      <stop
+         offset="1.0000000"
+         style="stop-color:#73667f;stop-opacity:1.0000000;"
+         id="stop1776" />
+    </linearGradient>
     <defs
        id="defs2746">
       <linearGradient
@@ -71,27 +93,23 @@
              id="stop1150" />
         </linearGradient>
         <linearGradient
-           id="linearGradient1146">
-          <stop
-             offset="0.00000000"
-             style="stop-color:#ffffff;stop-opacity:1;"
-             id="stop1148" />
-          <stop
-             offset="1.00000000"
-             style="stop-color:#d9cce6;stop-opacity:1;"
-             id="stop1147" />
-        </linearGradient>
+           id="linearGradient1146"
+           x1="0.0000000"
+           y1="0.50000000"
+           x2="1.0000000"
+           y2="0.50000000"
+           gradientUnits="objectBoundingBox"
+           spreadMethod="pad"
+           xlink:href="#linearGradient1782" />
         <linearGradient
-           id="linearGradient778">
-          <stop
-             style="stop-color:#d9cce6;stop-opacity:1;"
-             offset="0.00000000"
-             id="stop780" />
-          <stop
-             style="stop-color:#73667f;stop-opacity:1;"
-             offset="1.00000000"
-             id="stop779" />
-        </linearGradient>
+           id="linearGradient778"
+           x1="0.0000000"
+           y1="0.50000000"
+           x2="1.0000000"
+           y2="0.50000000"
+           gradientUnits="objectBoundingBox"
+           spreadMethod="pad"
+           xlink:href="#linearGradient1775" />
         <linearGradient
            id="linearGradient570">
           <stop
@@ -476,19 +494,19 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.5632647"
-     inkscape:cx="35.866508"
-     inkscape:cy="20.922131"
-     inkscape:current-layer="g3075"
+     inkscape:cx="35.866509"
+     inkscape:cy="20.922137"
+     inkscape:current-layer="g3057"
      showgrid="true"
      inkscape:grid-bbox="true"
      gridspacingy="1.0000000pt"
      gridspacingx="1.0000000pt"
      gridoriginy="0.0000000pt"
      gridoriginx="0.0000000pt"
-     inkscape:window-width="696"
-     inkscape:window-height="554"
-     inkscape:window-x="561"
-     inkscape:window-y="362" />
+     inkscape:window-width="1274"
+     inkscape:window-height="1006"
+     inkscape:window-x="0"
+     inkscape:window-y="0" />
   <metadata
      id="metadata4">
     <rdf:RDF
@@ -547,7 +565,7 @@
        id="path3083" />
     <path
        d="M 8.7394694,17.235069 C 8.2524726,17.854999 9.6821939,46.676325 10.423834,47.216400 C 11.189687,47.712858 35.256901,39.999964 35.857349,39.215829 C 36.423641,38.560461 35.649129,20.178136 35.267886,19.509056 C 34.777201,18.795639 9.2714457,16.642237 8.7394694,17.235069 z "
-       style="font-size:12.000000;fill:#26197d;fill-opacity:1.0000000;fill-rule:evenodd;stroke:#261933;stroke-width:0.52129185;stroke-opacity:1.0000000;opacity:0.65104167;"
+       style="font-size:12.000000;fill:#d9cce6;fill-opacity:1.0000000;fill-rule:evenodd;stroke:#261933;stroke-width:1.2500000;stroke-opacity:1.0000000;opacity:1.0000000;stroke-miterlimit:4.0000000;stroke-dasharray:none;"
        id="path3084" />
     <path
        d="M 10.760659,45.616302 C 10.573605,45.385872 8.8730448,18.786018 9.3290931,18.161517 C 9.9326679,17.450104 32.554206,19.615693 32.741260,19.845881 C 32.919253,20.064686 12.239689,17.755900 10.423834,19.508977 C 9.1861371,20.705622 10.938491,45.835025 10.760659,45.616302 z "
@@ -593,7 +611,7 @@
        id="path836" />
     <path
        d="M 8.7394694,17.235069 C 8.2524726,17.854999 9.6821939,46.676325 10.423834,47.216400 C 11.189687,47.712858 35.256901,39.999964 35.857349,39.215829 C 36.423641,38.560461 35.649129,20.178136 35.267886,19.509056 C 34.777201,18.795639 9.2714457,16.642237 8.7394694,17.235069 z "
-       style="font-size:12.000000;fill:#261933;fill-opacity:1.0000000;fill-rule:evenodd;stroke:#261933;stroke-width:0.52129185;stroke-opacity:1.0000000"
+       style="font-size:12.000000;fill:#261933;fill-opacity:1.0000000;fill-rule:evenodd;stroke:#261933;stroke-width:1.2500000;stroke-opacity:1.0000000;stroke-miterlimit:4.0000000;stroke-dasharray:none;"
        id="path837" />
     <path
        d="M 10.760659,45.616302 C 10.573605,45.385872 8.8730448,18.786018 9.3290931,18.161517 C 9.9326679,17.450104 32.554206,19.615693 32.741260,19.845881 C 32.919253,20.064686 12.239689,17.755900 10.423834,19.508977 C 9.1861371,20.705622 10.938491,45.835025 10.760659,45.616302 z "

@@ -10,13 +10,31 @@
    height="48pt"
    id="svg611"
    sodipodi:version="0.32"
-   inkscape:version="0.38.1"
+   inkscape:version="0.40"
    sodipodi:docname="gnome-settings-background.svg"
-   sodipodi:docbase="/home/scaba/files/lila-artwork/devel/lila-gnome-0.5.1_pre2/lila-gnome/Lila/scalable/apps"
+   sodipodi:docbase="/home/andrew/lila"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink">
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata
+     id="metadata3987">
+    <rdf:RDF
+       id="RDF3988">
+      <cc:Work
+         rdf:about=""
+         id="Work3989">
+        <dc:format
+           id="format3990">image/svg+xml</dc:format>
+        <dc:type
+           id="type3992"
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -24,13 +42,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6568542"
-     inkscape:cx="34.493998"
-     inkscape:cy="21.777704"
+     inkscape:zoom="22.627417"
+     inkscape:cx="29.400613"
+     inkscape:cy="27.667700"
      inkscape:window-width="671"
-     inkscape:window-height="525"
+     inkscape:window-height="539"
      inkscape:window-x="46"
-     inkscape:window-y="85" />
+     inkscape:window-y="85"
+     inkscape:current-layer="svg611" />
   <defs
      id="defs613">
     <linearGradient
@@ -122,12 +141,12 @@
        gradientUnits="objectBoundingBox"
        spreadMethod="pad">
       <stop
-         style="stop-color:#736b7f;stop-opacity:1;"
-         offset="0.00000000"
+         style="stop-color:#73667f;stop-opacity:1.0000000;"
+         offset="0.0000000"
          id="stop570" />
       <stop
-         style="stop-color:#f3ebff;stop-opacity:1;"
-         offset="1.00000000"
+         style="stop-color:#d9cce6;stop-opacity:1.0000000;"
+         offset="1.0000000"
          id="stop571" />
     </linearGradient>
     <linearGradient

@@ -11,24 +11,43 @@
    id="svg548"
    sodipodi:version="0.32"
    sodipodi:docname="gnome-spinner-rest.svg"
-   sodipodi:docbase="/home/dan/Projects/Lila-icons/scalable/apps"
-   inkscape:version="0.37"
+   sodipodi:docbase="/home/andrew/lila"
+   inkscape:version="0.40"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink">
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata
+     id="metadata1203">
+    <rdf:RDF
+       id="RDF1204">
+      <cc:Work
+         rdf:about=""
+         id="Work1205">
+        <dc:format
+           id="format1206">image/svg+xml</dc:format>
+        <dc:type
+           id="type1208"
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
   <sodipodi:namedview
      id="base"
-     inkscape:zoom="5.29884800"
-     inkscape:cx="18.7058323"
-     inkscape:cy="14.6486907"
+     inkscape:zoom="5.2988480"
+     inkscape:cx="24.419585"
+     inkscape:cy="23.316306"
      inkscape:window-width="514"
      inkscape:window-height="557"
-     inkscape:window-x="157"
-     inkscape:window-y="280"
+     inkscape:window-x="29"
+     inkscape:window-y="303"
      showgrid="false"
      gridspacingy="1pt"
-     gridspacingx="0.99pt" />
+     gridspacingx="0.99pt"
+     inkscape:current-layer="g940" />
   <defs
      id="defs550">
     <linearGradient
@@ -91,12 +110,12 @@
        gradientUnits="objectBoundingBox"
        spreadMethod="pad">
       <stop
-         style="stop-color:#736b7f;stop-opacity:1;"
-         offset="0.00000000"
+         style="stop-color:#73667f;stop-opacity:1.0000000;"
+         offset="0.0000000"
          id="stop570" />
       <stop
-         style="stop-color:#f3ebff;stop-opacity:1;"
-         offset="1.00000000"
+         style="stop-color:#d9cce6;stop-opacity:1.0000000;"
+         offset="1.0000000"
          id="stop571" />
     </linearGradient>
     <linearGradient
@@ -275,7 +294,7 @@
        id="path596" />
     <path
        d="M 25.513822 17.610672 C 29.896756 13.540958 37.329414 20.25786 35.143064 24.133745 C 32.577747 28.370302 21.199115 21.617118 25.513822 17.610672 z "
-       style="font-size:12;fill:url(#linearGradient572);fill-rule:evenodd;stroke-width:1pt;"
+       style="font-size:12;fill:url(#linearGradient572);fill-rule:evenodd;stroke-width:1pt;opacity:1.0000000;"
        id="path568" />
     <path
        d="M 27.431967 19.009515 C 29.958326 16.663701 34.242569 20.535376 32.982341 22.769468 C 31.50367 25.211452 24.944936 21.318864 27.431967 19.009515 z "
