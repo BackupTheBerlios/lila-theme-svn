@@ -1,0 +1,47 @@
+SVG-Utils 0.1
+=============
+
+=========
+= About =
+=========
+SVG-Utils is a collection of scripts and a Python library for creating and
+manipulating SVG (Scalar Vector Graphics) files. It is released under the terms
+of the GNU General Public License, version 2 or later.
+
+This release of SVG-Utils includes scripts that can dump SVG information,
+grayscale and recolor SVG images, and overlay one SVG on top of another.
+
+The library supports creating SVG images on the fly, as well as editing them.
+This could be used for server-side scripts using mod_python to send out SVG
+data to clients (for generated graphs, for example).
+
+===========
+= Install =
+===========
+SVG-Utils includes a custom installation script that can be used to install it.
+To use the script to install SVG-Utils:
+
+	tar -xvjf svg-utils-0.1.tar.bz2
+	cd svg-utils-0.1
+	./install
+
+For a list of custom options and paths that can be passed to the install script,
+use './install --help'. The syntax is similar to the standard configure scripts
+that are included with most applications.
+
+=================
+= Documentation =
+=================
+SVG-Utils documentation is available online, and includes documentation for
+both normal users and developers. You can find it here:
+
+	http://programmer-art.org/svg-utils/
+
+===========
+= Contact =
+===========
+The SVG-Utils Homepage is located here:
+
+	http://programmer-art.org/?page=svg-utils
+
+Daniel G. Taylor	<dgt84@users.sourceforge.net>

@@ -1,0 +1,19 @@
+SVG-Utils TODO
+
+Version 0.2
+-make svg-utils-test.py test all aspects of svg-utils
+-Finish Path point creation functions
+-SVG use tag support
+-SVG switch tag support
+-Tint script
+
+Version 0.3
+-SVG filter tag support
+-Special effects scripts (e.g. for shadows)
+
+Version 0.4
+-CSS support?
+-Script to read/annotate/remove SVG metadata (like author info)
+
+Version 0.5
+-Functions to generate bar, point, pie charts, tables, and graphs

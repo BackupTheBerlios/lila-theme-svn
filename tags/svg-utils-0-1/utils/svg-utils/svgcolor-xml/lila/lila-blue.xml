@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- Lila Blue Icons -->
+
+<svg>
+
+	<!-- Light Purple -->
+	<color
+		old="#d9cce6ff"
+		new="#bfcce6ff"
+	/>
+
+	<!-- Dark Purple -->
+	<color
+		old="#73667fff"
+		new="#0c3366ff"
+	/>
+
+	<!-- Really Dark Purple -->
+	<color
+		old="#736b7aff"
+		new="#000066ff"
+	/>
+
+	<!-- Really Dark Purple from gnome-other -->
+	<color
+		old="#594c66ff"
+		new="#000066ff"
+	/>
+
+	<!-- Purple Outline -->
+	<color
+		old="#261933ff"
+		new="#000025ff"
+	/>
+
+	<!-- Mime Text Back -->
+	<color
+		old="#d9cce6cc"
+		new="#bfccd9cc"
+	/>
+
+	<!-- Gentoo G Back -->
+	<color
+		old="#bfb8ccff"
+		new="#4c6b9aff"
+	/>
+
+	<!-- Light Green -->
+	<color
+		old="#7fff7fff"
+		new="#ff9840ff"
+	/>
+
+	<!-- Dark Green -->
+	<color
+		old="#3fbf3fff"
+		new="#ff8000ff"
+	/>
+
+	<!-- Solid Green -->
+	<color
+		old="#80ff80ff"
+		new="#ffa64cff"
+	/>
+
+	<!-- Green Outline -->
+	<color
+		old="#003f00ff"
+		new="#593300ff"
+	/>
+
+</svg>
