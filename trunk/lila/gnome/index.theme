@@ -7,7 +7,7 @@ Name=Lila
 Comment=Gentoo Vector Theme
 Inherits=gnome
 DesktopDefault=48
-Directories=scalable/actions,scalable/apps,scalable/filesystems,scalable/mimetypes,scalable/emblems,scalable/devices,36x36/apps
+Directories=scalable/actions,scalable/apps,scalable/devices,scalable/emblems,scalable/filesystems,scalable/mimetypes,scalable/stock,36x36/apps
 Example=gnome-theme-preview.svg
 
 [scalable/actions]
@@ -52,7 +52,14 @@ MaxSize=256
 Context=MimeTypes
 Type=Scalable
 
+[scalable/stock]
+MinSize=1
+Size=48
+MaxSize=256
+Context=Stock
+Type=Scalable
+
 [36x36/apps]
 Size=36
 Context=Applications
-Type=Scalable
+Type=Scaled

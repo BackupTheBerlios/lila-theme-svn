@@ -1,0 +1,142 @@
+----------
+08/11/04 scaba
+----------
+Lila/scalable/filesystems
+-edited gnome-fs-desktop :: drop shadow still missing
+Lila/scalable/mimetypes
+-edited gnome-mime-text-x-makefile :: fixes crashes some people had
+----------
+08/05/04 scaba
+----------
+Lila/scalable/stock
+-added gaim-send-im :: haven't got the name right, yet
+-edited gtk-jump-to
+----------
+RELEASE OF LILA-GNOME-0.5.1
+----------
+07/22/04 scaba
+----------
+Lila/scalable/apps
+-edited gnome-panel
+-removed gripicon :: not lila style
+-removed sodipodi :: not lila style
+----------
+07/13/04 scaba
+----------
+Lila/scalable/apps
+-added gstreamer-properties :: copy of gst-player-48
+-edited gnome-logo
+-edited gnome-remote-desktop
+-edited gnome-settings-background
+-edited gnome-settings-keybindings
+Lila/scalable/stock
+-replaced panel-gnome-logo :: gnome-logo from 'scalable/apps'
+----------
+07/12/04 scaba
+----------
+Lila/scalable/apps
+-added gnome-gimp :: copy of wilber-icon
+-edited gnome-logo
+-edited gok
+-edited gucharmap
+-edited logviewer
+-edited gnome-searchtool
+-edited revelation
+-removed bluefish :: obsoleted by bluefish-icon
+-removed-gaim-dialog-info :: icon already in 'scalable/stock'
+-replaced gnome-calculator :: not lila style; copy of gcalctool
+-replaced gnome-calc2 ::not lila style; copy of gcalctool
+-replaced gnome-calc3 :: not lila style; copy of gcalctool
+-replaced gnome-icon-transparent :: copy of gnome-logo
+-replaced gnome-main-menu :: copy of gnome-logo
+Lila/scalable/devices
+-edited gnome-dev-mouse-ball
+-replaced gnome-dev-mouse-optical :: copy of gnome-dev-mouse-ball
+Lila/scalable/filesystems
+-removed gnome-fs-net-template :: moved to 'scalable/misc'
+Lila/scalable/mimetypes
+::merged Snooper's mimetype icons
+-edited gnome-mime-x-directory-smb-server
+-removed gnome-mime-audio-template :: moved to 'scalable/misc'
+-removed gnome-mime-image-template :: moved to 'scalable/misc'
+-removed gnome-mime-video-template :: moved to 'scalable/misc'
+-replaced gnome-mime-application-pgp-keys :: not lila style
+Lila/scalable/misc
+-added globe :: copy of gnome-globe from 'scalable/apps'
+-added firefox-home :: new firefox home icon
+-removed firefox_home :: deprecated
+-replaced larry
+Lila/scalable/stock
+-edited gaim-away
+-edited gaim-dialog-auth
+-edited gaim-dialog-error
+-edited gaim-dialog-info
+-replaced gtk-quit :: copy of gnome-logout from 'scalable/apps'
+-replaced panel-gnome-logo :: copy of  gnome-logo from 'scalable/apps'
+----------
+07/11/04 scaba
+----------
+Lila/scalable/apps
+-removed larry :: moved to 'scalable/misc'
+-removed logviewer_alt :: obsoleted by logviewer
+-removed gnome-pdf_alt :: obsoleted by gnome-pdf
+Lila/scalable/misc
+-removed clock2 :: obsoleted by clock
+-removed kmenu :: contained in lila-kde
+-removed k_lil :: not lila style; kde icon; obsoleted by kmenu
+----------
+07/09/04 scaba
+----------
+Lila/scalable/apps
+-added azureus
+-added logjam_pencil :: hope it's named properly
+----------
+07/08/04 scaba
+----------
+Lila/scalable/apps
+-removed firefox :: obsoleted by firefox-icon
+-removed thunderbird :: obsoleted by thunderbird-icon
+----------
+06/29/04 Chad
+----------
+Lila/scalable/apps
+-added gnome-settings-accessibility-keyboard
+Lila/scalable/mimetypes
+-added gnome-mime-x-directory-nfs-server
+-added gnome-mime-x-directory-smb-server
+-added gnome-mime-x-directory-smb-share
+-added gnome-mime-x-directory-smb-workgroup
+-added gnome-mime-application-pgp
+-added gnome-mime-application-pgp-keys
+-added gnome-mime-application-pgp-encrypted :: copy of gnome-mime-application-pgp
+-added x-gdesklets-display
+----------
+06/28/04 Chad
+----------
+Lila/scalable
+-created stock icon folder
+Lila/scalable/stock
+::added icons from 'Lila/gtk-2.0'
+::named stock icons properly
+-added stock_proxy
+-added stock_cell-phone
+Lila/scalable/apps
+-added nicotine
+-added gnome-ccmime :: copy of gnome-applications
+-added gnome-gnumeric :: copy of gnumeric
+-added gnome-media-player :: copy of gnome-multimedia
+-added gnome-screenshot :: copy applets-screenshooter
+-added gnome-settings-default-applications :: copy of gnome-other
+Lila/scalable/devices
+-added gnome-dev-mouse-ball
+Lila/scalable/mimetypes
+-added gnome-mime-application-x-archive
+-added gnome-mime-application-x-arj
+-added gnome-mime-application-x-backup
+-added gnome-mime-application-x-cpio
+-added gnome-mime-application-x-cpio-compressed
+-added gnome-mime-application-x-sharedlib :: copy of gnome-library
+-added gnome-mime-application-x-trash
+----------
+based on dgt84's lila-gnome-0.5 tarball
+----------
