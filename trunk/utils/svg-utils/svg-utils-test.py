@@ -22,7 +22,11 @@ test.add_circle(centerx="40", centery="40", radius="15", fill="url(#full_diag)",
 # add an ellipse
 ellipse = test.add_ellipse(centerx="10", centery="40", radiusx="10", radiusy="20", fill="#ff00ffaa")
 
+# test some translation and rotation functions
 ellipse.translate(30, -10)
 ellipse.rotate(5)
+
+# add a text element
+test.add_text(x="0", y="10", text="Testing...!", fill="000000ff")
 
 test.save("/home/dan/test.svg")
