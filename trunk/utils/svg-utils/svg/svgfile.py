@@ -23,7 +23,7 @@
 
 # Imports
 from svg.utils import XMLElement, get_color, set_color, ReadOnlyError
-from xml.dom.minidom import parse, getDOMImplementation
+from xml.dom.minidom import parse, getDOMImplementation, Document
 from xml.dom.ext import PrettyPrint
 from sys import exit
 
@@ -50,7 +50,12 @@ def get_special_attribute(element, attribute, recursive = False):
 		if color: return color, False
 		else: return color, True
 	elif attribute == "text":
-		pass
+		text = ''
+		for child in element.element.childNodes:
+			if child.nodeType == child.TEXT_NODE:
+				text += child.data.strip()
+		if text:
+			return text, False
 	elif element.tag in ["svg", "defs", "g"]:
 		# container objects
 		search = []
@@ -82,7 +87,7 @@ def get_special_attribute(element, attribute, recursive = False):
 		if attribute in ["trefs", "text_shapes", "shapes"]:
 			search.append(("tref", TextElement))
 		if attribute in ["text_paths", "text_shapes", "shapes"]:
-			search.append(("textPath", TextElement))
+			search.append(("textPath", TextPath))
 		if attribute in ["groups", "containers"]:
 			search.append(("g", TransformableColorableContainer))
 		if attribute in ["defs", "containers"]:
@@ -111,6 +116,10 @@ def set_special_attribute(element, attribute, value):
 	elif attribute == "xlink":
 		element.set_attribute("xlink:href", value)
 		return True
+	elif attribute == "text":
+		for node in element.element.childNodes:
+			element.element.removeChild(node)
+		element.element.appendChild(Document().createTextNode(value))
 	return False
 
 class Stop(XMLElement):
@@ -312,6 +321,29 @@ class TextElement(TransformableElement):
 			return set_special_attribute(self, attribute, value)
 		return False
 
+class TextPath(TransformableElement):
+	"""
+	Holds a textPath element
+	"""
+	def __init__(self, element = None):
+		TransformableElement.__init__(self, element)
+
+	def _get_attribute(self, attribute):
+		"""
+		Handle calls to get special variables
+		"""
+		if attribute in ["xlink", "text"]:
+			return get_special_attribute(self, attribute)
+		return None, True
+
+	def _set_attribute(self, attribute, value):
+		"""
+		Handle calls to set special variables
+		"""
+		if attribute in ["xlink", "text"]:
+			return set_special_attribute(self, attribute, value)
+		return False
+
 class Container(XMLElement):
 	"""
 	Holds SVG elements
@@ -493,6 +525,18 @@ class Container(XMLElement):
 		if stroke_width:
 			attributes["stroke-width"] = stroke_width
 		return self.add_shape("line", line_id, attributes, stroke, Line)
+
+	def add_polyline(self, line_id = None, points = None, fill = None, stroke = None):
+		"""
+		Add a polyline into this container
+		"""
+		pass
+
+	def add_text(self, text_id = None, x = None, y = None, text = None, fill = None, stroke = None):
+		"""
+		Add a text element into this container
+		"""
+		pass
 
 class TransformableContainer(Container, TransformableElement):
 	"""
