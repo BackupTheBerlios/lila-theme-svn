@@ -31,7 +31,7 @@
 # Imports
 from svg.utils import XMLElement, get_color, set_color, ReadOnlyError
 from xml.dom.minidom import parse, getDOMImplementation, Document
-from xml.dom.ext import PrettyPrint
+from xml.dom.ext import Print
 from sys import exit
 
 id_counter = 0
@@ -858,7 +858,7 @@ class SVGFile(Container, Defs):
 		print >>outfile, '<?xml version="1.0" encoding="UTF-8" standalone="no"?>'
 		print >>outfile, '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"'
 		print >>outfile, '"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">'
-		PrettyPrint(self.element, outfile)
+		Print(self.element, outfile)
 
 	def add_gradient(self, grad_type = None, attributes = None, grad_id = None, element = None):
 		"""
