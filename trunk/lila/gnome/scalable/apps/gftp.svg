@@ -9,14 +9,14 @@
    width="48.000000pt"
    height="48.000000pt"
    id="svg1"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    sodipodi:version="0.32"
-   inkscape:version="0.38"
+   inkscape:version="0.38.1"
    sodipodi:docname="gftp.svg"
-   sodipodi:docbase="/home/dan/Projects/Lila-icons/scalable/apps">
+   sodipodi:docbase="/home/dan/svg-icons/lila/gnome/scalable/apps"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -24,13 +24,13 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4.9119411"
-     inkscape:cx="29.549956"
-     inkscape:cy="23.021918"
+     inkscape:zoom="6.9465337"
+     inkscape:cx="10.305771"
+     inkscape:cy="24.870666"
      inkscape:window-width="640"
-     inkscape:window-height="503"
-     inkscape:window-x="0"
-     inkscape:window-y="25" />
+     inkscape:window-height="525"
+     inkscape:window-x="10"
+     inkscape:window-y="75" />
   <defs
      id="defs3">
     <linearGradient
@@ -72,7 +72,7 @@
     <linearGradient
        id="linearGradient872">
       <stop
-         style="stop-color:#a792b5;stop-opacity:1.0000000;"
+         style="stop-color:#d9cce6;stop-opacity:1.0000000;"
          offset="0.0000000"
          id="stop873" />
       <stop
@@ -187,10 +187,10 @@
        gradientTransform="scale(0.951960,1.050464)"
        spreadMethod="pad" />
     <linearGradient
-       x1="19.473392"
-       y1="16.373957"
-       x2="117.50826"
-       y2="88.331528"
+       x1="-0.74109882"
+       y1="8.6274891"
+       x2="43.626400"
+       y2="47.089310"
        id="linearGradient1063"
        xlink:href="#linearGradient872"
        gradientUnits="userSpaceOnUse"
@@ -199,8 +199,8 @@
     <linearGradient
        x1="-0.022222223"
        y1="-0.025974026"
-       x2="0.73333335"
-       y2="0.75974023"
+       x2="0.54761904"
+       y2="0.68750000"
        id="linearGradient573"
        xlink:href="#linearGradient570" />
   </defs>
@@ -234,7 +234,7 @@
        id="path1054" />
   </g>
   <path
-     d="M 11.933560,15.532447 C 9.8499801,15.984428 4.7021697,15.338029 4.1927258,16.932424 C 3.6002837,18.526819 3.7661131,29.883394 4.3756654,44.230161 C 4.6896087,36.229868 5.1809107,19.864900 5.7038317,18.396620 C 6.2148597,16.880619 8.7458671,16.917782 11.933560,15.532447 z "
+     d="M 23.989933,16.072285 C 16.148085,16.164374 5.4985571,15.412565 4.6580273,16.513433 C 3.8811180,17.614302 4.0360319,32.312663 4.3756654,46.479484 C 4.6896087,38.479191 3.8878808,21.132326 6.0900759,18.343915 C 7.9610860,15.920797 14.144243,16.557890 23.989933,16.072285 z "
      style="font-size:12.000000;fill:url(#linearGradient573);fill-opacity:0.75000000;fill-rule:evenodd;stroke-width:1.0000000pt;"
      id="path616"
      sodipodi:nodetypes="czcsc" />

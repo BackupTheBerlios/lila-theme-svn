@@ -8,7 +8,7 @@
    inkscape:version="0.38.1"
    width="48pt"
    height="48pt"
-   sodipodi:docbase="/home/dan/Projects/Lila-icons/scalable/apps"
+   sodipodi:docbase="/home/dan/svg-icons/lila/gnome/scalable/apps"
    sodipodi:docname="revelation.svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -30,12 +30,12 @@
     <linearGradient
        id="linearGradient578">
       <stop
-         style="stop-color:#d7cce6;stop-opacity:1.0000000;"
+         style="stop-color:#d9cce6;stop-opacity:1.0000000;"
          offset="0.0000000"
          id="stop579" />
       <stop
-         style="stop-color:#73667f;stop-opacity:1;"
-         offset="1.00000000"
+         style="stop-color:#73667f;stop-opacity:1.0000000;"
+         offset="1.0000000"
          id="stop580" />
     </linearGradient>
     <linearGradient
@@ -68,7 +68,11 @@
        y2="1.00000000" />
     <linearGradient
        xlink:href="#linearGradient578"
-       id="linearGradient862" />
+       id="linearGradient862"
+       x1="0.011904762"
+       y1="0.0078125000"
+       x2="0.96428573"
+       y2="0.96093750" />
     <linearGradient
        xlink:href="#linearGradient584"
        id="linearGradient847" />
@@ -82,7 +86,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="11.284678"
      inkscape:cx="29.461774"
-     inkscape:cy="22.191735"
+     inkscape:cy="22.191734"
      inkscape:window-width="1035"
      inkscape:window-height="882"
      inkscape:window-x="8"

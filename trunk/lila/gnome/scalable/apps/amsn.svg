@@ -5,11 +5,11 @@
 <svg
    id="svg1"
    sodipodi:version="0.32"
-   inkscape:version="0.38"
+   inkscape:version="0.38.1"
    width="48pt"
    height="48pt"
    sodipodi:docname="amsn.svg"
-   sodipodi:docbase="/home/dan/Projects/Lila-icons/scalable/apps"
+   sodipodi:docbase="/home/dan/svg-icons/lila/gnome/scalable/apps"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -175,15 +175,10 @@
      id="path651"
      sodipodi:nodetypes="cssss" />
   <path
-     sodipodi:type="arc"
-     style="font-size:12.000000;fill:url(#linearGradient654);fill-opacity:0.75000000;fill-rule:evenodd;stroke:#261933;stroke-width:2.3799128;stroke-opacity:1.0000000;stroke-dasharray:none;"
-     id="path653"
-     sodipodi:cx="36.65656281"
-     sodipodi:cy="15.35418892"
-     sodipodi:rx="10.33903027"
-     sodipodi:ry="10.33903027"
-     d="M 46.995593 15.354189 A 10.339030 10.339030 0 1 0 26.317533,15.354189 A 10.339 10.339 0 1 0 46.9956 15.3542 L 36.656563 15.354189 z"
-     transform="matrix(0.787844,0.000000,0.000000,0.787844,-11.36211,4.040320)" />
+     transform="matrix(0.787844,0.000000,0.000000,0.787844,-11.36211,4.040320)"
+     style="font-size:12.000000;fill:url(#linearGradient654);fill-opacity:0.75000000;fill-rule:evenodd;stroke:#261933;stroke-width:2.3799129;"
+     d="M 46.995593,15.354189 C 46.995593,21.061334 42.363708,25.693219 36.656563,25.693219 C 30.949418,25.693219 26.317533,21.061334 26.317533,15.354189 C 26.317533,9.6470442 30.949418,5.0151587 36.656563,5.0151587 C 42.363708,5.0151587 46.995593,9.6470442 46.995593,15.354189 z "
+     id="path978" />
   <path
      style="font-size:12.000000;fill:url(#linearGradient661);fill-opacity:0.49166700;fill-rule:evenodd;stroke-width:1.0000000pt;"
      d="M 15.116028,14.886811 C 16.421607,14.305395 17.283297,14.944902 18.299903,14.886811 C 19.936526,14.793289 23.158187,13.216429 23.075716,13.067453 C 20.871609,9.4968260 16.585702,9.1675244 13.978929,10.793255 C 9.5356920,13.564307 11.156533,19.954016 12.159570,19.435204 C 13.354925,18.816918 13.074388,15.736343 15.116028,14.886811 z "
@@ -215,15 +210,10 @@
      id="path637"
      sodipodi:nodetypes="cssss" />
   <path
-     sodipodi:type="arc"
-     style="font-size:12.000000;fill:url(#linearGradient581);fill-opacity:0.75000000;fill-rule:evenodd;stroke:#261933;stroke-width:2.0847486;stroke-opacity:1.0000000;stroke-dasharray:none;"
-     id="path608"
-     sodipodi:cx="36.65656281"
-     sodipodi:cy="15.35418892"
-     sodipodi:rx="10.33903027"
-     sodipodi:ry="10.33903027"
-     d="M 46.995593 15.354189 A 10.339030 10.339030 0 1 0 26.317533,15.354189 A 10.339 10.339 0 1 0 46.9956 15.3542 L 36.656563 15.354189 z"
-     transform="matrix(0.899389,0.000000,0.000000,0.899389,5.937537,4.008923)" />
+     transform="matrix(0.899389,0.000000,0.000000,0.899389,5.937537,4.008923)"
+     style="font-size:12.000000;fill:url(#linearGradient581);fill-opacity:0.75000000;fill-rule:evenodd;stroke:#261933;stroke-width:2.0847485;"
+     d="M 46.995593,15.354189 C 46.995593,21.061334 42.363708,25.693219 36.656563,25.693219 C 30.949418,25.693219 26.317533,21.061334 26.317533,15.354189 C 26.317533,9.6470442 30.949418,5.0151587 36.656563,5.0151587 C 42.363708,5.0151587 46.995593,9.6470442 46.995593,15.354189 z "
+     id="path979" />
   <path
      style="font-size:12.000000;fill:url(#linearGradient583);fill-opacity:0.49166700;fill-rule:evenodd;stroke-width:1.0000000pt;"
      d="M 36.291758,16.266552 C 37.813276,15.588973 38.817486,16.334252 40.002235,16.266552 C 41.909550,16.157563 45.664063,14.319895 45.567951,14.146280 C 42.999293,9.9850842 38.004513,9.6013181 34.966588,11.495938 C 29.788456,14.725312 31.677379,22.171855 32.846315,21.567234 C 34.239376,20.846685 33.912440,17.256594 36.291758,16.266552 z "

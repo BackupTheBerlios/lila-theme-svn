@@ -9,7 +9,7 @@
    width="64.000000pt"
    height="64.000000pt"
    sodipodi:docname="gnome-other.svg"
-   sodipodi:docbase="/home/dan/Projects/Lila-icons/scalable/apps"
+   sodipodi:docbase="/home/dan/svg-icons/lila/gnome/scalable/apps"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -30,23 +30,23 @@
     <linearGradient
        id="linearGradient635">
       <stop
-         style="stop-color:#413250;stop-opacity:1;"
-         offset="0.00000000"
+         style="stop-color:#594c66;stop-opacity:1.0000000;"
+         offset="0.0000000"
          id="stop636" />
       <stop
-         style="stop-color:#634486;stop-opacity:1;"
-         offset="1.00000000"
+         style="stop-color:#73667f;stop-opacity:1.0000000;"
+         offset="1.0000000"
          id="stop637" />
     </linearGradient>
     <linearGradient
        id="linearGradient625">
       <stop
-         style="stop-color:#857894;stop-opacity:1.0000000;"
+         style="stop-color:#73667f;stop-opacity:1.0000000;"
          offset="0.0000000"
          id="stop626" />
       <stop
-         style="stop-color:#d9cce6;stop-opacity:1;"
-         offset="1.00000000"
+         style="stop-color:#d9cce6;stop-opacity:1.0000000;"
+         offset="1.0000000"
          id="stop627" />
     </linearGradient>
     <linearGradient
@@ -137,17 +137,17 @@
     <linearGradient
        xlink:href="#linearGradient635"
        id="linearGradient633"
-       x1="0.00000000"
-       y1="-0.00000000"
-       x2="1.00000000"
-       y2="-0.00000000" />
+       x1="0.94897962"
+       y1="0.015625000"
+       x2="0.040816326"
+       y2="0.98437500" />
     <linearGradient
        xlink:href="#linearGradient635"
        id="linearGradient634"
-       x1="-1.08570838"
-       y1="-0.00000000"
-       x2="0.01065831"
-       y2="-0.00000000"
+       x1="0.022246432"
+       y1="0.025696091"
+       x2="0.85648757"
+       y2="1.0792359"
        gradientTransform="scale(1.096367,0.912104)" />
     <linearGradient
        xlink:href="#linearGradient1163"
