@@ -35,7 +35,10 @@ def get_style_element(style, element, default = None):
 	# find the element
 	start = style.find(element + ":")
 	if start == -1:
-		return Default
+		if Default:
+			return Default
+		else:
+			raise AttributeError, element
 	else:
 		# get and return the element's value
 		start += len(element) + 1
@@ -235,6 +238,7 @@ class XMLElement:
 					style = self.__dict__["element"].getAttribute("style")
 					if attribute + ':' in style:
 						self.style = set_style_element(style, attribute, value)
+						return
 				except: pass
 			self.__dict__["element"].setAttribute(attribute, value)
 		else:
