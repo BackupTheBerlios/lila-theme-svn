@@ -48,8 +48,13 @@ for COLOR in $COLORMODS; do
 	echo
 	echo "Generating PNG files in $OUTPUTPATH/lila-kde/lila-$COLOR..."
 	echo
+
+	# non-creatable files
 	cp generate.py $OUTPUTPATH/lila-kde/lila-$COLOR/
-	cp *_connecting.mng $OUTPUTPATH/lila-kde/lila-$COLOR/  # non-creatable files
+	cp *_connecting.mng $OUTPUTPATH/lila-kde/lila-$COLOR/
+	cp ChangeLog COPYRIGHT LICENSE README TODO $OUTPUTPATH/lila-kde/lila-$COLOR/
+	cp index-$COLOR.desktop $OUTPUTPATH/lila-kde/lila-$COLOR/index.desktop
+
 	sh -c "cd $OUTPUTPATH/lila-kde/lila-$COLOR && ./generate.py --noinstall"
 done
 
@@ -58,17 +63,24 @@ done
 
 echo
 echo "Removing unnecessary files and directories..."
-rm -rf $OUTPUTPATH/lila-kde/lila/ksplash
-rm -rf $OUTPUTPATH/lila-kde/lila/scalable
-rm -f $OUTPUTPATH/lila-kde/lila/*_connecting.mng
-rm -f $OUTPUTPATH/lila-kde/lila/generate.py
-rm -f $OUTPUTPATH/lila-kde/lila/makerelease.sh
-rm -f $OUTPUTPATH/lila-kde/lila/makecolormod.sh
+rm -rf $OUTPUTPATH/lila-kde/lila/.svn #> /dev/null
+rm -rf $OUTPUTPATH/lila-kde/lila/*/.svn #> /dev/null
+rm -rf $OUTPUTPATH/lila-kde/lila/*/*/.svn #> /dev/null
+rm -rf $OUTPUTPATH/lila-kde/lila/ksplash #> /dev/null
+rm -rf $OUTPUTPATH/lila-kde/lila/scalable #> /dev/null
+rm -f $OUTPUTPATH/lila-kde/lila/*_connecting.mng #> /dev/null
+rm -f $OUTPUTPATH/lila-kde/lila/generate.py #> /dev/null
+rm -f $OUTPUTPATH/lila-kde/lila/makerelease.sh #> /dev/null
+rm -f $OUTPUTPATH/lila-kde/lila/makecolormod.sh #> /dev/null
+rm -f $OUTPUTPATH/lila-kde/lila/convert-errors.log #> /dev/null
+rm -f $OUTPUTPATH/lila-kde/lila/index-scalable.desktop #> /dev/null
 
-for COLOR in "$COLORS"; do
-	rm -rf $OUTPUTPATH/lila-kde/lila-$COLOR/ksplash
-	rm -rf $OUTPUTPATH/lila-kde/lila-$COLOR/scalable
-	rm -f $OUTPUTPATH/lila-kde/lila-$COLOR/generate.py
+for COLOR in "$COLORMODS"; do
+	rm -rf $OUTPUTPATH/lila-kde/lila-$COLOR/ksplash #> /dev/null
+	rm -rf $OUTPUTPATH/lila-kde/lila-$COLOR/scalable #> /dev/null
+	rm -f $OUTPUTPATH/lila-kde/lila-$COLOR/generate.py #> /dev/null
+	rm -f $OUTPUTPATH/lila-kde/lila-$COLOR/convert-errors.log #> /dev/null
+	rm -f $OUTPUTPATH/lila-kde/lila/index-$COLOR.desktop #> /dev/null
 done
 
 

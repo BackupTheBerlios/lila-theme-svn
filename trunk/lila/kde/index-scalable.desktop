@@ -1,0 +1,57 @@
+# Lila SVG Icon Theme
+# Copyright (C) 2004 Lila Community
+# Gentoo and the Gentoo G are Copyright Gentoo Technologies, Inc.
+
+[KDE Icon Theme]
+Name=Lila
+Comment=Gentoo Vector Theme
+DisplayDepth=32
+
+Inherits=hicolor
+
+Example=folder
+LinkOverlay=link
+LockOverlay=lockoverlay
+ZipOverlay=zip
+DesktopDefault=48
+DesktopSizes=16,32,48,64,128
+ToolbarDefault=22
+ToolbarSizes=16,22,32,48
+MainToolbarDefault=22
+MainToolbarSizes=16,22,32,48
+SmallDefault=16
+SmallSizes=16
+PanelDefault=32
+PanelSizes=16,32,48,64,128
+Directories=scalable/actions,scalable/apps,scalable/devices,scalable/filesystems,scalable/mimetypes
+
+[scalable/actions]
+MinSize=16
+MaxSize=128
+Size=128
+Context=Actions
+Type=Scalable
+[scalable/apps]
+MinSize=16
+MaxSize=128
+Size=128
+Context=Applications
+Type=Scalable
+[scalable/devices]
+MinSize=16
+MaxSize=128
+Size=128
+Context=Devices
+Type=Scalable
+[scalable/filesystems]
+MinSize=16
+MaxSize=128
+Size=128
+Context=FileSystems
+Type=Scalable
+[scalable/mimetypes]
+MinSize=16
+MaxSize=128
+Size=128
+Context=MimeTypes
+Type=Scalable

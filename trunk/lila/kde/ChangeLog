@@ -7,7 +7,18 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
-03/22/05 jpetso (not yet committed)
+03/29/05 jpetso
+---------
+
+kde/
+ ~makerelease.sh: deployment ready (as far as I can see)
+ +index-scalable.desktop: replace index.desktop to have KDE use the SVG sources
+ +index-blue.desktop: copy of index.desktop with modified Description entry
+ +index-red.desktop: dito
+
+
+----------
+03/22/05 jpetso
 ---------
 
 kde/
