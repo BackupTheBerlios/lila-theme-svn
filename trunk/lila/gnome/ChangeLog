@@ -1,4 +1,54 @@
 ----------
+12/14/04 scaba
+----------
+Modified Files:
+  ChangeLog
+  index.theme
+  scalable/stock/stock_repeat.svg
+Added Files:
+  scalable/apps/Terminal.svg
+  scalable/apps/amule.svg
+  scalable/apps/bug-buddy.svg
+  scalable/apps/dc_gui2.svg
+  scalable/apps/gcdmaster.svg
+  scalable/apps/giftui.svg
+  scalable/apps/gmpc.svg
+  scalable/apps/gnome-audio.svg
+  scalable/apps/gnome-balsa2.svg
+  scalable/apps/gnome-ghostview.svg
+  scalable/apps/gnome-netstatus-disconn.svg
+  scalable/apps/gnome-netstatus-error.svg
+  scalable/apps/gnome-netstatus-idle.svg
+  scalable/apps/gnome-netstatus-rx.svg
+  scalable/apps/gnome-netstatus-tx.svg
+  scalable/apps/gnome-netstatus-txrx.svg
+  scalable/apps/gripicon.svg
+  scalable/apps/gthumb.svg
+  scalable/apps/gxmame.svg
+  scalable/apps/msn.svg
+  scalable/apps/realplay.svg
+  scalable/apps/skype.svg
+  scalable/apps/xfce-mail.svg
+  scalable/apps/xfce-multimedia.svg
+  scalable/apps/xfce-sound.svg
+  scalable/apps/xfce4-backdrop.svg
+  scalable/apps/xfce4-display.svg
+  scalable/apps/xfce4-keyboard.svg
+  scalable/apps/xfce4-keys.svg
+  scalable/apps/xfce4-mixer.svg
+  scalable/apps/xfce4-mouse.svg
+  scalable/apps/xfce4-panel.svg
+  scalable/apps/xfce4-settings.svg
+  scalable/apps/xfce4-ui.svg
+  scalable/apps/xfce4-workspaces.svg
+  scalable/apps/xfwm.svg
+  scalable/apps/xmule.svg
+  scalable/stock/media-shuffle.svg
+  scalable/stock/stock_shuffle.svg
+Removed Files:
+  ToDo
+  scalable/apps/bug_buddy.svg
+----------
 11/25/04 9-speed
 ----------
 added apps/icon-network, apps/meld.svg and apps/meld-icon.svg (symlink)
