@@ -46,8 +46,6 @@ def get_special_attribute(element, attribute, recursive = False):
 		else: return color, True
 	elif attribute == "stops":
 		return element.get_children("stop", Stop), False
-	elif attribute == "xlink":
-		return element.get_attribute("xlink:href", False), False
 	elif attribute == "fill":
 		color = get_color(element, "fill", "fill-opacity")
 		if color: return color, False
@@ -72,14 +70,14 @@ def get_special_attribute(element, attribute, recursive = False):
 			return points, False
 		except:
 			return None, True
-	elif element.tag in ["svg", "defs", "g"]:
+	elif element.tag in ["svg", "defs", "g", "text"]:
 		# container objects
 		search = []
 
 		if attribute in ["linear_gradients", "gradients", "fills"]:
-			search.append(("linearGradient", Gradient))
+			search.append(("linearGradient", LinearGradient))
 		if attribute in ["radial_gradients", "gradients", "fills"]:
-			search.append(("radialGradient", Gradient))
+			search.append(("radialGradient", RadialGradient))
 		if attribute in ["patterns", "fills"]:
 			search.append(("pattern", TransformableContainer))
 		if attribute in ["rects", "basic_shapes", "shapes"]:
@@ -174,12 +172,13 @@ class Gradient(XMLElement):
 	"""
 	def __init__(self, element = None):
 		XMLElement.__init__(self, element)
+		self.register_attribute_alias("xlink", "xlink:href")
 
 	def _get_attribute(self, attribute):
 		"""
 		Catch calls to the gradient's stops and such
 		"""
-		if attribute in ["stops", "xlink"]:
+		if attribute in ["stops"]:
 			return get_special_attribute(self, attribute)
 		return None, True
 
@@ -191,8 +190,6 @@ class Gradient(XMLElement):
 			raise ReadOnlyError, "Cannot set stops this way!\n" \
 					"Try using add_stop to add stops or calling " \
 					"unlink() on a stop element to remove it"
-		elif attribute == "xlink":
-			return set_special_attribute(self, attribute, value)
 		return False
 
 	def add_stop(self, color = "#00000000", offset = "1"):
@@ -203,6 +200,29 @@ class Gradient(XMLElement):
 		stop = self.add_child_tag("stop", Stop, { "id" : str(id_counter), "color" : color, "offset" : offset })
 		id_counter += 1
 		return stop
+
+class LinearGradient(Gradient):
+	"""
+	Hold and manage a linear gradient
+	"""
+	def __init__(self, element = None):
+		Gradient.__init__(self, element)
+		self.register_attribute_alias("startx", "x1")
+		self.register_attribute_alias("starty", "y1")
+		self.register_attribute_alias("stopx", "x2")
+		self.register_attribute_alias("stopy", "y2")
+
+class RadialGradient(Gradient):
+	"""
+	Hold and manage a radial gradient
+	"""
+	def __init__(self, element = None):
+		Gradient.__init__(self, element)
+		self.register_attribute_alias("centerx", "cx")
+		self.register_attribute_alias("centery", "cy")
+		self.register_attribute_alias("radius", "r")
+		self.register_attribute_alias("focalx", "fx")
+		self.register_attribute_alias("focaly", "fy")
 
 class ColoredElement(XMLElement):
 	"""
@@ -444,7 +464,7 @@ class Tref(TransformableElement):
 		"""
 		Handle calls to get special variables
 		"""
-		if attribute in ["fill", "stroke", "text", "xlink"]:
+		if attribute in ["fill", "stroke", "text"]:
 			return get_special_attribute(self, attribute)
 		return None, True
 
@@ -452,7 +472,7 @@ class Tref(TransformableElement):
 		"""
 		Handle calls to set special variables
 		"""
-		if attribute in ["fill", "stroke", "text", "xlink"]:
+		if attribute in ["fill", "stroke", "text"]:
 			return set_special_attribute(self, attribute, value)
 		return False
 
@@ -597,21 +617,25 @@ class Container(XMLElement):
 				grad_id = id_counter
 				id_counter += 1
 			attributes["id"] = grad_id
-			return self.add_child_tag(grad_type + "Gradient", Gradient, attributes)
+			if grad_type == "linear":
+				grad_class = LinearGradient
+			else:
+				grad_class = RadialGradient
+			return self.add_child_tag(grad_type + "Gradient", grad_class, attributes)
 
-	def add_linear_gradient(self, gradient_id = None, x1 = None, y1 = None, x2 = None, y2 = None, xlink = None):
+	def add_linear_gradient(self, gradient_id = None, startx = None, starty = None, stopx = None, stopy = None, xlink = None):
 		"""
 		Add a linear gradient to this container
 		"""
 		attributes = {}
-		if x1:
-			attributes["x1"] = x1
-		if y1:
-			attributes["y1"] = y1
-		if x2:
-			attributes["x2"] = x2
-		if y2:
-			attributes["y2"] = y2
+		if startx != None:
+			attributes["x1"] = startx
+		if starty != None:
+			attributes["y1"] = starty
+		if stopx != None:
+			attributes["x2"] = stopx
+		if stopy != None:
+			attributes["y2"] = stopy
 		if xlink:
 			attributes["xlink"] = xlink
 		return self.add_gradient("linear", attributes, gradient_id)
@@ -619,17 +643,18 @@ class Container(XMLElement):
 	def add_radial_gradient(self, gradient_id = None, centerx = None, centery = None, radius = None, focusx = None, focusy = None, xlink = None):
 		"""
 		Add a radial gradient to this container
+		center and focus are (x, y) tuples
 		"""
 		attributes = {}
-		if centerx:
+		if centerx != None:
 			attributes["cx"] = centerx
-		if centery:
+		if centery != None:
 			attributes["cy"] = centery
-		if radius:
+		if radius != None:
 			attributes["r"] = radius
-		if focusx:
+		if focusx != None:
 			attributes["fx"] = focusx
-		if focusy:
+		if focusy != None:
 			attributes["fy"] = focusy
 		if xlink:
 			attributes["xlink"] = xlink

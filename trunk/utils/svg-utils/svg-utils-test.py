@@ -11,7 +11,7 @@ a.add_stop(color="#ff0000ff", offset="0")
 a.add_stop(color="#00ffffff", offset="1")
 
 # add a positioned gradient with an xlink for the color
-test.add_linear_gradient("full_diag", x1="0", y1="0", x2="1", y2="1", xlink="#my_gradient")
+test.add_linear_gradient("full_diag", startx=0, starty=0, stopx=1, stopy=1, xlink="#my_gradient")
 
 # add a rectangle
 test.add_rect(x="10", y="10", width="40", height="40", fill="url(#full_diag)", stroke="#000000ff", stroke_width="2", rx="5", ry="5")

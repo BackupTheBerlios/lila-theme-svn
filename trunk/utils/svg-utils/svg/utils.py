@@ -170,6 +170,19 @@ class XMLElement:
 		Initialize
 		"""
 		self.__dict__["element"] = element
+		self.__dict__["attribute_aliases"] = {}
+
+	def register_attribute_alias(self, alias, attribute):
+		"""
+		Register an alias for the given attribute
+		"""
+		self.__dict__["attribute_aliases"][alias] = attribute
+
+	def unregister_attribute_alias(self, alias):
+		"""
+		Remove an attribute alias
+		"""
+		del self.__dict__["attribute_aliases"][alias]
 
 	def __getattr__(self, attribute, custom = True):
 		"""
@@ -183,6 +196,8 @@ class XMLElement:
 		#l = len(attribute)
 		#if l > 10: l = 10
 		#print "__GETATTR__", attribute[:l], self.__dict__["element"].getAttribute("id")
+		if attribute in self.__dict__["attribute_aliases"].keys():
+			return self.__getattr__(self.__dict__["attribute_aliases"][attribute], False)
 		if custom:
 			try:
 				# see if a subclass added the _get_attribute function
@@ -222,6 +237,8 @@ class XMLElement:
 		#l = len(attribute)
 		#if l > 10: l = 10
 		#print "__SETATTR__", attribute[:l]
+		if attribute in self.__dict__["attribute_aliases"].keys():
+			return self.__setattr__(self.__dict__["attribute_aliases"][attribute], value, False)
 		if custom:
 			try:
 				if self._set_attribute(attribute, value):
@@ -242,7 +259,7 @@ class XMLElement:
 						self.style = set_style_element(style, attribute, value)
 						return
 				except: pass
-			self.__dict__["element"].setAttribute(attribute, value)
+			self.__dict__["element"].setAttribute(attribute, str(value))
 		else:
 				raise AttributeError, "Element not set!"
 

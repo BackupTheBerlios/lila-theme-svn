@@ -1,1 +1,1 @@
-
+from svgfile import SVGFile
