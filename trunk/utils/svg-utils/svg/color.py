@@ -50,7 +50,7 @@ def grayscale(svg):
 			except: pass
 
 	# change the shape and group fill/stroke colors
-	for shapes in [svg.all_shapes, svg.all_groups]:
+	for shapes in [(item for item in svg.all_shapes), (item for item in svg.all_groups)]:
 		for shape in shapes:
 			try:
 				fill = shape.fill

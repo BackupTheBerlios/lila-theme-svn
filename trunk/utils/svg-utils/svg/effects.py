@@ -1,29 +1,41 @@
 #!/usr/bin/env python
 
 """
-	effects
-	Functions for applying effects and such to SVG files
+	Effects
+	=======
+		Functions for applying effects and such to SVG files
 
-    Copyright (C) 2004 Daniel G. Taylor
+		License
+		-------
+		Copyright (C) 2005 Daniel G. Taylor
 
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
+		This program is free software; you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the U{Free Software Foundation<http://www.fsf.org>}; either version 2
+		of the License, or (at your option) any later version.
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU General Public License for more details.
 
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+		You should have received a copy of the GNU General Public License
+		along with this program; if not, write to the Free Software
+		Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 """
 
 def overlay(svg, overlay, x = 0, y = 0):
 	"""
-	Overlay an image onto another at (x,y)
+	Overlay an image onto another at (x,y).
+	
+	@type svg: SVGFile
+	@param svg: The svg getting an overlay.
+	@type overlay: SVGFile
+	@param overlay: The svg being overlayed on svg.
+	@type x: number
+	@param x: The horizontal position of the top left of the overlay.
+	@type y: number
+	@param y: The vertical position of the top left of the overlay.
 	"""
 	# move over any gradients/patterns
 	if overlay.defs.has_attribute("fills"):
