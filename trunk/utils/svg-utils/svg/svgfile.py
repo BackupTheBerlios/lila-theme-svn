@@ -84,7 +84,7 @@ def get_special_attribute(element, attribute, recursive = False):
 		if attribute in ["radial_gradients", "gradients", "fills"]:
 			search.append(("radialGradient", RadialGradient))
 		if attribute in ["patterns", "fills"]:
-			search.append(("pattern", TransformableContainer))
+			search.append(("pattern", SVGElement))
 		if attribute in ["rects", "basic_shapes", "shapes"]:
 			search.append(("rect", Rect))
 		if attribute in ["circles", "basic_shapes", "shapes"]:
@@ -195,6 +195,12 @@ class SVGElement(XMLElement):
 		if attribute in self.__dict__["special_attributes"]:
 			return set_special_attribute(self, attribute, value)
 		return False
+
+	def add_element(self, element):
+		"""
+		Add an existing element as a child into this element
+		"""
+		self.__dict__["element"].appendChild(element.element)
 
 class Stop(SVGElement):
 	"""
@@ -528,13 +534,6 @@ class TextContainer(SVGElement, FilledElement, StrokedElement, TransformableElem
 			text.set_attribute("stroke", stroke)
 		return text
 
-	def add_text(self, element):
-		"""
-		Add an existing text element to this element
-		"""
-		self.__dict__["element"].appendChild(element.element)
-		return element
-
 	def add_tspan(self, tspan_id = None, text = None, x = None, y = None, deviation_x = None, deviation_y = None, rotation = None, length = None, font_weight = None, fill = None, stroke = None, element = None):
 		"""
 		Add a tref into this container
@@ -576,27 +575,21 @@ class Defs(SVGElement):
 			self.register_special_attribute(special_element)
 			self.register_special_attribute("all_" + special_element)
 
-	def add_gradient(self, grad_type = None, attributes = None, grad_id = None, element = None):
+	def add_gradient(self, grad_type = None, attributes = None, grad_id = None):
 		"""
 		Add a gradient to this container
-		Either element can be specified (and should be a Gradient object)
-		OR
 		gradient type, id, attributes etc... will produce a new gradient
 		"""
-		if element:
-			self.element.appendChild(element.element)
-			return element
+		if not grad_id:
+			global id_counter
+			grad_id = id_counter
+			id_counter += 1
+		attributes["id"] = grad_id
+		if grad_type == "linear":
+			grad_class = LinearGradient
 		else:
-			if not grad_id:
-				global id_counter
-				grad_id = id_counter
-				id_counter += 1
-			attributes["id"] = grad_id
-			if grad_type == "linear":
-				grad_class = LinearGradient
-			else:
-				grad_class = RadialGradient
-			return self.add_child_tag(grad_type + "Gradient", grad_class, attributes)
+			grad_class = RadialGradient
+		return self.add_child_tag(grad_type + "Gradient", grad_class, attributes)
 
 	def add_linear_gradient(self, id = None, startx = None, starty = None, stopx = None, stopy = None, xlink = None):
 		"""
@@ -654,28 +647,22 @@ class Container(SVGElement):
 			self.register_special_attribute(special_element)
 			self.register_special_attribute("all_" + special_element)
 
-	def add_shape(self, tag = None, shape_id = None, attributes = {}, fill = None, stroke = None, shape_type = Shape, element = None):
+	def add_shape(self, tag = None, shape_id = None, attributes = {}, fill = None, stroke = None, shape_type = Shape):
 		"""
 		Add a new shape to this container
-		OR, if element is specified
-		Add an existing shape as a child
 		"""
-		if element:
-			self.element.appendChild(element.element)
-			return element
-		else:
-			# if no shape id is specified get a numerical one
-			if not shape_id:
-				global id_counter
-				shape_id = id_counter
-				id_counter += 1
-			attributes["id"] = str(shape_id)
-			shape = self.add_child_tag(tag, shape_type, attributes)
-			if fill:
-				shape.fill = fill
-			if stroke:
-				shape.stroke = stroke
-			return shape
+		# if no shape id is specified get a numerical one
+		if shape_id == None:
+			global id_counter
+			shape_id = id_counter
+			id_counter += 1
+		attributes["id"] = str(shape_id)
+		shape = self.add_child_tag(tag, shape_type, attributes)
+		if fill:
+			shape.fill = fill
+		if stroke:
+			shape.stroke = stroke
+		return shape
 
 	def add_rect(self, id = None, x = None, y = None, width = None, height = None, fill = None, stroke = None, stroke_width = None, roundedx = None, roundedy = None):
 		"""
@@ -686,19 +673,19 @@ class Container(SVGElement):
 		rx,ry specify rounded corners
 		"""
 		attributes = {}
-		if x:
+		if x != None:
 			attributes["x"] = x
-		if y:
+		if y != None:
 			attributes["y"] = y
-		if width:
+		if width != None:
 			attributes["width"] = width
-		if height:
+		if height != None:
 			attributes["height"] = height
-		if stroke_width:
+		if stroke_width != None:
 			attributes["stroke-width"] = stroke_width
-		if roundedx:
+		if roundedx != None:
 			attributes["rx"] = roundedx
-		if roundedy:
+		if roundedy != None:
 			attributes["ry"] = roundedy
 		return self.add_shape("rect", id, attributes, fill, stroke, Rect)
 
@@ -708,13 +695,13 @@ class Container(SVGElement):
 		Center is (centerx, centery)
 		"""
 		attributes = {}
-		if centerx:
+		if centerx != None:
 			attributes["cx"] = centerx
-		if centery:
+		if centery != None:
 			attributes["cy"] = centery
-		if radius:
+		if radius != None:
 			attributes["r"] = radius
-		if stroke_width:
+		if stroke_width != None:
 			attributes["stroke-width"] = stroke_width
 		return self.add_shape("circle", id, attributes, fill, stroke, Circle)
 
@@ -726,15 +713,15 @@ class Container(SVGElement):
 		radiusy specifies height
 		"""
 		attributes = {}
-		if centerx:
+		if centerx != None:
 			attributes["cx"] = centerx
-		if centery:
+		if centery != None:
 			attributes["cy"] = centery
-		if radiusx:
+		if radiusx != None:
 			attributes["rx"] = radiusx
-		if radiusy:
+		if radiusy != None:
 			attributes["ry"] = radiusy
-		if stroke_width:
+		if stroke_width != None:
 			attributes["stroke-width"] = stroke_width
 		return self.add_shape("ellipse", id, attributes, fill, stroke, Ellipse)
 
@@ -743,15 +730,15 @@ class Container(SVGElement):
 		Add a line into this container
 		"""
 		attributes = {}
-		if startx:
+		if startx != None:
 			attributes["x1"] = startx
-		if starty:
+		if starty != None:
 			attributes["y1"] = starty
-		if stopx:
+		if stopx != None:
 			attributes["x2"] = stopx
-		if stopy:
+		if stopy != None:
 			attributes["y2"] = stopy
-		if stroke_width:
+		if stroke_width != None:
 			attributes["stroke-width"] = stroke_width
 		return self.add_shape("line", id, attributes, stroke, shape_type=Line)
 
@@ -762,9 +749,9 @@ class Container(SVGElement):
 		attributes = {}
 		if x and y:
 			attributes["points"] = [(x, y),]
-		if points:
+		if points != None:
 			attributes["points"] = points
-		if stroke_width:
+		if stroke_width != None:
 			attributes["stroke-width"] = stroke_width
 		return self.add_shape("polyline", id, attributes, fill, stroke, PolyShape)
 
@@ -775,9 +762,9 @@ class Container(SVGElement):
 		attributes = {}
 		if x and y:
 			attributes["points"] = [(x, y),]
-		if points:
+		if points != None:
 			attributes["points"] = points
-		if stroke_width:
+		if stroke_width != None:
 			attributes["stroke-width"] = stroke_width
 		return self.add_shape("polygon", id, attributes, fill, stroke, PolyShape)
 
@@ -786,9 +773,9 @@ class Container(SVGElement):
 		Add a path element into this container
 		"""
 		attributes = {}
-		if data:
+		if data != None:
 			attributes["d"] = data
-		if stroke_width:
+		if stroke_width != None:
 			attributes["stroke-width"] = stroke_width
 		return self.add_shape("path", id, attributes, fill, stroke, Path)
 
@@ -797,17 +784,17 @@ class Container(SVGElement):
 		Add a text element into this container
 		"""
 		attributes = {}
-		if x:
+		if x != None:
 			attributes["x"] = x
-		if y:
+		if y != None:
 			attributes["y"] = y
-		if deviationx:
+		if deviationx != None:
 			attributes["dx"] = deviationx
-		if deviationy:
+		if deviationy != None:
 			attributes["dy"] = deviationy
-		if length:
+		if length != None:
 			attributes["textLength"] = length
-		if stroke_width:
+		if stroke_width != None:
 			attributes["stroke-width"] = stroke_width
 		obj = self.add_shape("text", id, attributes, fill, stroke, TextContainer)
 		if text:
@@ -819,9 +806,9 @@ class Container(SVGElement):
 		Add a group element into this container
 		"""
 		attributes = {}
-		if stroke_width:
+		if stroke_width != None:
 			attributes["stroke-width"] = stroke_width
-		return self.add_shape("g", id, fill, stroke, attributes, Group)
+		return self.add_shape("g", id, attributes, fill, stroke, Group)
 
 class Group(Container, FilledElement, StrokedElement, TransformableElement):
 	"""
