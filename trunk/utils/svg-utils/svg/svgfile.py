@@ -442,9 +442,15 @@ class Path(Shape):
 		Draw a line to the new point from the 'pen's current position
 		"""
 		if relative:
-			char = "l"
-		else: char = "L"
-		self.d += " " + char + " " + str(x) + "," + str(y)
+			char = " l"
+		else: char = " L"
+		if x:
+			char += " " + str(x)
+		if y:
+			if x:
+				char += ", "
+			char += str(y)
+		self.d += char
 
 	def close(self):
 		"""
