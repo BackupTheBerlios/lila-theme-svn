@@ -860,6 +860,23 @@ class SVGFile(Container, Defs):
 		print >>outfile, '"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">'
 		Print(self.element, outfile)
 
+	def __str__(self):
+		"""
+		Return the SVG's XML in a string
+		"""
+		class SVGString:
+			def __init__(self):
+				self.string = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"\n"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">'
+
+			def write(self, data):
+				self.string += str(data)
+
+		svg = SVGString()
+
+		Print(self.element, svg)
+
+		return svg.string
+
 	def add_gradient(self, grad_type = None, attributes = None, grad_id = None, element = None):
 		"""
 		Add a gradient to this container
