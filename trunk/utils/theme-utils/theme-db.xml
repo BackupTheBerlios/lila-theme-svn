@@ -188,6 +188,16 @@
 			filesystems/blockdev
 		</path>
 	</icon>
+	<icon name="filesystems/bookmark">
+		<path env="gnome">
+			filesystems/gnome-fs-bookmark
+		</path>
+	</icon>
+	<icon name="filesystems/bookmark-missing">
+		<path env="gnome">
+			filesystems/gnome-fs-bookmark-missing
+		</path>
+	</icon>
 	<icon name="filesystems/character-device">
 		<path env="gnome">
 			filesystems/gnome-fs-chardev
@@ -321,11 +331,104 @@
 			filesystems/folder_video
 		</path>
 	</icon>
+	<icon name="filesystems/directory-ftp">
+		<path env="gnome">
+			filesystems/gnome-fs-ftp
+		</path>
+		<path env="kde">
+			filesystems/ftp
+		</path>
+	</icon>
+	<icon name="filesystems/directory-nfs">
+		<path env="gnome">
+			filesystems/gnome-fs-nfs
+		</path>
+		<path env="kde">
+			filesystems/nfs
+		</path>
+	</icon>
+	<icon name="filesystems/directory-smb">
+		<path env="gnome">
+			filesystems/gnome-fs-smb
+		</path>
+		<path env="kde">
+			filesystems/smb
+		</path>
+	</icon>
+	<icon name="filesystems/directory-ssh">
+		<path env="gnome">
+			filesystems/gnome-fs-ssh
+		</path>
+		<path env="kde">
+			filesystems/ssh
+		</path>
+	</icon>
 	<icon name="filesystems/executable">
 		<path env="gnome">
 			filesystems/gnome-fs-executable
 		</path>
 		<path env="kde" action="copy" />
+	</icon>
+	<icon name="filesystems/fifo">
+		<path env="gnome">
+			filesystems/gnome-fs-fifo
+		</path>
+	</icon>
+	<icon name="filesystems/loading">
+		<path env="gnome">
+			filesystems/gnome-fs-loading
+		</path>
+	</icon>
+	<icon name="filesystems/network">
+		<path env="gnome">
+			filesystems/gnome-fs-network
+		</path>
+		<path env="kde" action="copy" />
+	</icon>
+	<icon name="filesystems/network-local">
+		<path env="kde">
+			filesystems/network_local
+		</path>
+	</icon>
+	<icon name="filesystems/regular-file">
+		<path env="gnome">
+			filesystems/gnome-fs-regular
+		</path>
+	</icon>
+	<icon name="filesystems/server">
+		<path env="gnome">
+			filesystems/gnome-fs-server
+		</path>
+		<path env="kde" action="copy" />
+	</icon>
+	<icon name="filesystems/socket">
+		<path env="gnome">
+			filesystems/gnome-fs-socket
+		</path>
+	</icon>
+	<icon name="filesystems/trash-empty">
+		<path env="gnome">
+			filesystems/gnome-fs-trash-empty
+		</path>
+		<path env="kde">
+			filesystems/trashcan_empty
+		</path>
+	</icon>
+	<icon name="filesystems/trash-full">
+		<path env="gnome">
+			filesystems/gnome-fs-trash-full
+		</path>
+		<path env="kde">
+			filesystems/trashcan_full
+		</path>
+	</icon>
+	<icon name="filesystems/web">
+		<path env="gnome">
+			filesystems/gnome-fs-web
+		</path>
+		<path env="kde">
+			filesystems/www
+		</path>
 	</icon>
 
 	<!-- Mimetypes -->
