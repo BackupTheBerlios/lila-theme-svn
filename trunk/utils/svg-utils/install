@@ -23,6 +23,8 @@
 
 import os, sys, shutil
 
+# ============ Just some fun coloring functions =============
+
 def red(text):
 	"""
 	Return given text in red (using bash colors)
@@ -45,16 +47,25 @@ def blue(text):
 
 # setup some defaults
 install = True
-prefix = "/usr"
+prefix = os.sep + "usr"
 prefix_lib = True
 library_install_path = ""
-script_install_path = "lib/svg-utils"
+script_install_path = "lib" + os.sep + "svg-utils"
 symlink_path = "bin"
+create_symlinks = True
+data_path = "share" + os.sep + "svg-utils"
 
+# list individual files so that uninstall knows what to snag!
 library_files = ["__init__.py", "color.py", "effects.py",\
 					"scripts.py", "svgfile.py", "utils.py"]
 script_files = ["svg-utils-test", "svg-utils-info", "svgcolor",\
 					"svgdump", "svggrayscale", "svgoverlay"]
+# data files are listed with directories
+# please make sure they start deep and end shallow!
+data_files = ["svgcolor-xml/lila/lila-blue.xml",\
+				"svgcolor-xml/lila/lila-red.xml",\
+				"svgcolor-xml/lila/lila-template.xml",\
+				"svgcolor-xml/svgcolor-template.xml" ]
 
 if len(sys.argv) > 1:
 	# parse the command line arguments
@@ -63,11 +74,14 @@ if len(sys.argv) > 1:
 			print "SVG-Utils Install Script"
 			print "Available command line options:"
 			print "\t" + blue("--prefix=value") + " - prefix added to other paths"
-			print "\t" + blue("--lib-path=value") + " - set the library install path"
+			print "\t" + blue("--lib-path=value") + " - set the library installation path"
 			print "\t" + blue("--script-path=value") + " - set the script installation path"
+			print "\t" + blue("--data-path=value") + " - set the data installation path"
 			print "\t" + blue("--symlink-path=value") + " - set the path where symlinks are created"
+			print "\t" + blue("--no-symlinks") + " - do not make symlinks to the scripts!"
 			print "\t" + blue("--uninstall") + " - uninstall this package!"
 			print "\t" + blue("--help") + " - display this help message"
+			print "Note that the prefix path is not prepended if paths are absolute!"
 			sys.exit()
 		elif arg[:9] == "--prefix=":
 			prefix = arg[9:]
@@ -75,8 +89,12 @@ if len(sys.argv) > 1:
 			library_install_path = arg[11:]
 		elif arg[:14] == "--script-path=":
 			script_install_path = arg[14:]
+		elif arg[:12] == "--data-path=":
+			data_path = arg[12:]
 		elif arg[:15] == "--symlink-path=":
 			symlink_path = arg[15:]
+		elif arg == "--no-symlinks":
+			create_symlinks = False
 		elif arg == "--uninstall":
 			install = False
 
@@ -118,49 +136,43 @@ if library_install_path == "":
 	print red("Please specify the path using --lib-path=value!")
 	sys.exit()
 # prepend the prefix to our other paths
-if prefix_lib:
+if prefix_lib or library_install_path[0] != os.sep:
 	library_install_path = os.path.join(prefix, library_install_path)
-script_install_path = os.path.join(prefix, script_install_path)
-symlink_path = os.path.join(prefix, symlink_path)
+if script_install_path[0] != os.sep:
+	script_install_path = os.path.join(prefix, script_install_path)
+if data_path[0] != os.sep:
+	data_path = os.path.join(prefix, data_path)
+if symlink_path[0] != os.sep:
+	symlink_path = os.path.join(prefix, symlink_path)
 
 if install:
 	print "Installing library into " + blue(library_install_path)
 	print "Installing scripts into " + blue(script_install_path)
+	print "Installing data into " + blue(data_path)
 	print "Symlinking scripts in " + blue(symlink_path)
 
 	print "Installing..."
 
 	# make all needed directories
-	if not os.path.exists(library_install_path):
-		try:
-			os.makedirs(library_install_path)
-		except OSError, err:
-			if err[0] == 13:
-				print red("You don't have write permission to create or write to " + library_install_path + "!")
-			else:
-				print red(err)
-			sys.exit()
-	if not os.path.exists(script_install_path):
-		try:
-			os.makedirs(script_install_path)
-		except OSError, err:
-			if err[0] == 13:
-				print red("You don't have write permission to create or write to " + script_install_path + "!")
-			else:
-				print red(err)
-			sys.exit()
-	if not os.path.exists(symlink_path):
-		try:
-			os.makedirs(symlink_path)
-		except OSError, err:
-			if err[0] == 13:
-				print red("You don't have write permission to create or write to" + symlink_path + "!")
-			else:
-				print red(err)
-			sys.exit()
+	for path in [library_install_path, script_install_path, data_path, symlink_path]:
+		if not os.path.exists(path):
+			try:
+				os.makedirs(path)
+			except OSError, err:
+				if err[0] == 13:
+					print red("You don't have write permission to create or write to " + path + "!")
+				else:
+					print red(err)
+				sys.exit()
 
 	# install the library
-	os.mkdir(os.path.join(library_install_path, "svg"))
+	# svg directory is hard coded, so sue me :P
+	try:
+		os.mkdir(os.path.join(library_install_path, "svg"))
+	except OSError, err:
+		if err[0] != 17:
+			print red(err)
+			sys.exit()
 	os.chmod(os.path.join(library_install_path, "svg"), 0755)
 	for file in library_files:
 		shutil.copy(os.path.join("svg", file), os.path.join(library_install_path, "svg", file))
@@ -171,22 +183,49 @@ if install:
 		shutil.copy(file + ".py", os.path.join(script_install_path, file + ".py"))
 		os.chmod(os.path.join(script_install_path, file + ".py"), 0755)
 
-	# symlink the scripts
-	for file in script_files:
-		os.symlink(os.path.join(script_install_path, file + ".py"), os.path.join(symlink_path, file))
-		os.chmod(os.path.join(symlink_path, file), 0755)
+	# install the data files
+	for file in data_files:
+		path = os.path.join(data_path, file)
+		# make sure the directories exist
+		try:
+			os.makedirs(os.path.dirname(path))
+		except OSError, err:
+			if err[0] != 17:
+				print red(err)
+				sys.exit()
+		# copy the data file and set permissions :)
+		shutil.copy(file, path)
+		os.chmod(path, 0644)
+
+	# symlink the scripts if we need to
+	if create_symlinks:
+		for file in script_files:
+			os.symlink(os.path.join(script_install_path, file + ".py"), os.path.join(symlink_path, file))
+			os.chmod(os.path.join(symlink_path, file), 0755)
 
 	print green("Installation successful!")
 else:
 	print red("Uninstalling SVG-Utils!")
 	
-	# remove the symlinks
-	for file in script_files:
+	# remove the symlinks if needed
+	if create_symlinks:
+		for file in script_files:
+			try:
+				os.remove(os.path.join(symlink_path, file))
+			except:
+				print blue("Couldn't remove " + os.path.join(symlink_path, file))
+		print red("Symlinks removed...")
+
+	# remove data files
+	for file in data_files:
 		try:
-			os.remove(os.path.join(symlink_path, file))
+			os.remove(os.path.join(data_path, file))
 		except:
-			print blue("Couldn't remove " + os.path.join(symlink_path, file))
-	print red("Symlinks removed...")
+			print blue("Couldn't remove " + os.path.join(data_path, file))
+		try:
+			os.rmdir(os.path.dirname(os.path.join(data_path, file)))
+		except: pass
+	print red("Data files removed...")
 
 	# remove the scripts
 	for file in script_files:
@@ -216,6 +255,10 @@ else:
 		os.removedirs(script_install_path)
 	except:
 		print blue("Couldn't remove all script paths!")
+	try:
+		os.removedirs(data_path)
+	except:
+		print blue("Couldn't remove all data paths!")
 	try:
 		os.removedirs(symlink_path)
 	except:
