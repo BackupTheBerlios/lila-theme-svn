@@ -56,6 +56,15 @@ def get_special_attribute(element, attribute, recursive = False):
 				text += child.data.strip()
 		if text:
 			return text, False
+	elif attribute == "points":
+		try:
+			points = []
+			for point in element.points.split():
+				x,y = point.split(",")
+				points.append((x,y))
+			return points, False
+		except:
+			return None, True
 	elif element.tag in ["svg", "defs", "g"]:
 		# container objects
 		search = []
@@ -120,6 +129,13 @@ def set_special_attribute(element, attribute, value):
 		for node in element.element.childNodes:
 			element.element.removeChild(node)
 		element.element.appendChild(Document().createTextNode(value))
+		return True
+	elif attribute == "points":
+		points = ""
+		for point in value:
+			points += " " + str(point[0]) + "," + str(point[1])
+		element.element.setAttribute("points", points.strip())
+		return True
 	return False
 
 class Stop(XMLElement):
@@ -297,6 +313,46 @@ class Line(TransformableElement):
 		if attribute in ["stroke"]:
 			return set_special_attribute(self, attribute, value)
 		return False
+
+class PolyShape(Shape):
+	"""
+	Holds a polyline/polygon
+	"""
+	def __init__(self, element = None):
+		Shape.__init__(self, element)
+
+	def _get_attribute(self, attribute):
+		"""
+		Handle calls to get stroke value
+		"""
+		if attribute in ["fill", "stroke", "points"]:
+			return get_special_attribute(self, attribute)
+		return None, True
+
+	def _set_attribute(self, attribute, value):
+		"""
+		Handle calls to set stroke value
+		"""
+		if attribute in ["fill", "stroke", "points"]:
+			return set_special_attribute(self, attribute, value)
+		return False
+
+	def add_point(self, x, y):
+		"""
+		Add a point to the polyshape
+		"""
+		try:
+			points = self.get_attribute("points")
+			points.append((x,y))
+			self.points = points
+		except:
+			self.points = [(x, y),]
+
+	def remove_point(self, x, y):
+		"""
+		Remove a point from the polyshape
+		"""
+		pass
 
 class TextElement(TransformableElement):
 	"""
@@ -540,14 +596,27 @@ class Container(XMLElement):
 			attributes["stroke-width"] = stroke_width
 		return self.add_shape("line", line_id, attributes, stroke, shape_type=Line)
 
-	def add_polyline(self, line_id = None, points = None, fill = None, stroke = None):
+	def add_polyline(self, line_id = None, x = None, y = None, points = None, fill = None, stroke = None):
 		"""
 		Add a polyline into this container
 		"""
 		attributes = {}
+		if x and y:
+			attributes["points"] = [(x, y),]
 		if points:
-			attributes["p"] = points
-		return self.add_shape("polyline", line_id, attributes, fill, stroke)
+			attributes["points"] = points
+		return self.add_shape("polyline", line_id, attributes, fill, stroke, PolyShape)
+
+	def add_polygon(self, line_id = None, x = None, y = None, points = None, fill = None, stroke = None):
+		"""
+		Add a polygon into this container
+		"""
+		attributes = {}
+		if x and y:
+			attributes["points"] = [(x, y),]
+		if points:
+			attributes["points"] = points
+		return self.add_shape("polygon", line_id, attributes, fill, stroke, PolyShape)
 
 	def add_text(self, text_id = None, x = None, y = None, text = None, fill = None, stroke = None):
 		"""
