@@ -298,6 +298,12 @@ style "icon-style" {
  stock ["media-random"] = {{ "scalable/stock/media-random.svg" }}
  stock ["media-repeat"] = {{ "scalable/stock/media-repeat.svg" }}
  stock ["media-stream"] = {{ "scalable/stock/media-stream.svg" }}
+
+ stock ["gtk-media-next"] = {{ "scalable/stock/gtk-media-next.svg" }}
+ stock ["gtk-media-pause"] = {{ "scalable/stock/gtk-media-pause.svg" }}
+ stock ["gtk-media-play"] = {{ "scalable/stock/gtk-media-play.svg" }}
+ stock ["gtk-media-previous"] = {{ "scalable/stock/gtk-media-previous.svg" }}
+ stock ["gtk-media-stop"] = {{ "scalable/stock/gtk-media-stop.svg" }}
 }
 
 class "GtkWidget" style "icon-style"
