@@ -3,9 +3,65 @@ used symbols:
 +: file added
 -: file removed
 ->: file renamed
+files expected to change every time: kde/ChangeLog and kde/TODO
 
 ----------
-02/10/05 jpetso
+03/01/05 jpetso
+---------
+
+kde/
+ ~generate.py: removed laptop_*.svg manual copy command, isn't needed anymore
+ +lila.kcsrc: the original color scheme from Tom Chance
+ +lila-alternative.kcsrc: a slightly different version by myself
+ +makerelease.sh: shell script to automate the packaging work -
+                  I didn't try it out yet, so it may not work.
+
+actions/
+ +kontact_summary.svg: new summary icon. I'm not sure if I'm satisfied with it yet.
+ +flag.svg
+ +reload3.svg: known use in Superkaramba context menu. Don't know if it's used anywhere else.
+ -close.svg
+
+apps/
+ +kopete.svg: new Kopete icons, hurray!
+ +kopete_all_away.svg
+ +kopete_offline.svg
+ +kopete_some_away.svg
+ +kopete_some_online.svg
+ ~kscreensaver.svg: changed the file in 0.7.3, but it's not yet in CVS
+ ~ksirc.svg: fix to match the lila specifications
+ ~kmixdocked.svg: use the gnome/stock/volume-max icon
+ ~kmixdocked_mute.svg: kmixdocked.svg combined with gnome/stock/volume-mute.svg
+ ~kmixdocked_error.svg: kmixdocked.svg combined with the stop sign icon
+
+filesystems/
+ ~folder_home2.svg: changed to rounded edge home icon as well.
+ +lockoverlay.svg
+ +zip.svg: belongs in filesystems/ AND mimetypes/
+
+mimetypes/
+ ~zip.svg: modified in order to look more like lila
+
+
+----------
+02/26/05 jpetso
+---------
+
+actions/
+ +fileexport.svg
+ ~kontact_todo.svg: update from apps/korganizer_todo.svg (was originally used by telex)
+
+apps/
+ +kwikdisk.svg: combined chardevice and floppy icons
+ ~kcmdevices.svg: updated with new kwikdisk.svg
+ +kcmdf.svg: dito
+ +kdf.svg: dito. Unfortunately, kwikdisk is using the kdf icon for the systray,
+           otherwise I would have made a different icon for KDiskFree. (That's life.)
+ ~laptop_battery.svg: update from devices/battery.svg
+
+
+----------
+02/10/05 jpetso (release 0.7.3)
 ---------
 
 actions/
@@ -14,7 +70,6 @@ actions/
  +messagebox_critical.svg
  +messagebox_warning.svg
  +openterm.svg
- -ktip.svg: goes to apps/
 
 apps/
  hexedit.svg -> khexedit.svg: sorry, messed up this one
@@ -44,7 +99,7 @@ apps/
 
 
 ----------
-02/09/05 jpetso
+02/09/05 jpetso (release 0.7.2)
 ---------
 
 kde/

@@ -64,7 +64,6 @@ for s in sizes:
 			#print cmd
 
 # Manually copy certain icons that can't be auto-generated properly, or at all
-os.popen("cp laptop_*.png 22x22/actions")
 os.popen("cp *_connecting.mng 16x16/actions")
 
 print "Done!"

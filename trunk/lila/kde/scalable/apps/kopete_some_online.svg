@@ -11,7 +11,7 @@
    id="svg548"
    sodipodi:version="0.32"
    inkscape:version="0.40"
-   sodipodi:docname="kopete.svg"
+   sodipodi:docname="kopete_some_online.svg"
    sodipodi:docbase="/home/jakob/dev/lila-cvs/lila/kde/scalable/apps"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:cc="http://web.resource.org/cc/"
@@ -116,7 +116,7 @@
        fy="123.93536"
        r="554.45038"
        id="radialGradient556"
-       xlink:href="#linearGradient552"
+       xlink:href="#linearGradient1735"
        gradientUnits="userSpaceOnUse"
        spreadMethod="pad" />
     <linearGradient
@@ -888,7 +888,7 @@
        r="554.45038" />
     <radialGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient552"
+       xlink:href="#linearGradient1735"
        id="radialGradient1806"
        gradientUnits="userSpaceOnUse"
        spreadMethod="pad"
@@ -951,7 +951,7 @@
      rx="237.74203"
      ry="237.74203"
      transform="matrix(2.997098e-2,0.000000,0.000000,2.997098e-2,-3.871758,-2.386195)"
-     style="font-size:12.000000;fill:url(#radialGradient556);fill-rule:evenodd;stroke:#003300;stroke-width:62.560516;stroke-miterlimit:4.0000000;stroke-opacity:1.0000000;fill-opacity:1.0;"
+     style="font-size:12.000000;fill:url(#radialGradient556);fill-rule:evenodd;stroke:#261933;stroke-width:62.560516;stroke-miterlimit:4.0000000;stroke-opacity:1.0000000;fill-opacity:1.0;"
      id="path551"
      d="M 635.95996 352.78537 A 237.74203 237.74203 0 1 0 160.47589,352.78537 A 237.74203 237.74203 0 1 0 635.95996 352.78537 z"
      sodipodi:cx="398.21793"
@@ -1103,7 +1103,7 @@
      rx="237.74203"
      ry="237.74203"
      transform="matrix(2.997098e-2,0.000000,0.000000,2.997098e-2,38.62788,40.11381)"
-     style="font-size:12.000000;fill:url(#radialGradient1806);fill-opacity:1.0000000;fill-rule:evenodd;stroke:#003300;stroke-width:62.560516;stroke-miterlimit:4.0000000;stroke-opacity:1.0000000"
+     style="font-size:12.000000;fill:url(#radialGradient1806);fill-opacity:1.0;fill-rule:evenodd;stroke:#261933;stroke-width:62.560516;stroke-miterlimit:4.0000000;stroke-opacity:1.0000000;"
      id="ellipse1805"
      d="M 635.95996 352.78537 A 237.74203 237.74203 0 1 0 160.47589,352.78537 A 237.74203 237.74203 0 1 0 635.95996 352.78537 z"
      sodipodi:cx="398.21793"

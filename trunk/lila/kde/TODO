@@ -1,27 +1,24 @@
-TODO list: this is what I find most important to do. Your opinion may differ.
+TODO list: this is what I find most important to do (in order of importance). Your opinion may differ.
 
 Icons for
-- Kontact summary view, KOrganizer reminder daemon
-- Kopete (including offline, some away, all away & some online icons)
 - Konqueror toolbar buttons: FSView & Gwenview Image View
 - Konqueror (unique icon instead of generic world)
-- KwikDisk and KDiskFree
 - Menu Editor and Menu Updating Tool
 - Bookmark Tabs as Folder and Bookmark Toolbar
-- Amarok (new wolf howl icon)
-- Konversation and KSirc (although, the original KSirc almost looks like native Lila :-)
+- Amarok (new wolf howl icon? but wait for that until the icon troubles are over)
+- colored folders in filesystem/
+- Konversation
 - KOffice Logo
 - Info Center
 - KNewsTicker
 - KWifiManager
-- Gwenview, Kuickshow & KView
+- Gwenview, Kuickshow & KView (one of them could get the gqview icon)
 - KGpg, KFloppy, World Clock, Tea Cooker, AMOR
 - KBear
-- Umbrello
-- Debugger and KBugBuster
+- KDE-SDK: Umbrello, KBugBuster, babel fish, Kompare, Qt Utilities
 - Game Categories (Arcade, Board Games, Card Games, Tactics & Strategy)
 - Edutainment (and Subcategories: Languages, Mathematics, Miscellaneous, Science, Teaching Tools)
 
-Things that can be done with relatively low amount of work:
-- actions/player_mute: combine the mute and volume-zero icons from gnome stock
-- filesystems/link, lockover and zip icons should be easy
+other TODO items:
+- Make the Superkaramba guys drop that crappy bomb as system tray icon and use their own one.
+  Or better, tell them to drop the system tray icon as a whole, hardly anybody needs that.
