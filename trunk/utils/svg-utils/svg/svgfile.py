@@ -680,7 +680,7 @@ class Container(XMLElement):
 				grad_class = RadialGradient
 			return self.add_child_tag(grad_type + "Gradient", grad_class, attributes)
 
-	def add_linear_gradient(self, gradient_id = None, startx = None, starty = None, stopx = None, stopy = None, xlink = None):
+	def add_linear_gradient(self, id = None, startx = None, starty = None, stopx = None, stopy = None, xlink = None):
 		"""
 		Add a linear gradient to this container
 		"""
@@ -695,9 +695,9 @@ class Container(XMLElement):
 			attributes["y2"] = stopy
 		if xlink:
 			attributes["xlink"] = xlink
-		return self.add_gradient("linear", attributes, gradient_id)
+		return self.add_gradient("linear", attributes, id)
 
-	def add_radial_gradient(self, gradient_id = None, centerx = None, centery = None, radius = None, focusx = None, focusy = None, xlink = None):
+	def add_radial_gradient(self, id = None, centerx = None, centery = None, radius = None, focusx = None, focusy = None, xlink = None):
 		"""
 		Add a radial gradient to this container
 		center and focus are (x, y) tuples
@@ -715,7 +715,7 @@ class Container(XMLElement):
 			attributes["fy"] = focusy
 		if xlink:
 			attributes["xlink"] = xlink
-		return self.add_gradient("radial", attributes, gradient_id)
+		return self.add_gradient("radial", attributes, id)
 
 	def add_shape(self, tag = None, shape_id = None, attributes = {}, fill = None, stroke = None, shape_type = Shape, element = None):
 		"""
@@ -741,7 +741,7 @@ class Container(XMLElement):
 				shape.stroke = stroke
 			return shape
 
-	def add_rect(self, rect_id = None, x = None, y = None, width = None, height = None, fill = None, stroke = None, stroke_width = None, roundedx = None, roundedy = None):
+	def add_rect(self, id = None, x = None, y = None, width = None, height = None, fill = None, stroke = None, stroke_width = None, roundedx = None, roundedy = None):
 		"""
 		Add a rect to this container
 		x,y specify the top left corner
@@ -764,9 +764,9 @@ class Container(XMLElement):
 			attributes["rx"] = roundedx
 		if roundedy:
 			attributes["ry"] = roundedy
-		return self.add_shape("rect", rect_id, attributes, fill, stroke, Rect)
+		return self.add_shape("rect", id, attributes, fill, stroke, Rect)
 
-	def add_circle(self, circle_id = None, centerx = None, centery = None, radius = None, fill = None, stroke = None, stroke_width = None):
+	def add_circle(self, id = None, centerx = None, centery = None, radius = None, fill = None, stroke = None, stroke_width = None):
 		"""
 		Add a circle to this container
 		Center is (centerx, centery)
@@ -780,9 +780,9 @@ class Container(XMLElement):
 			attributes["r"] = radius
 		if stroke_width:
 			attributes["stroke-width"] = stroke_width
-		return self.add_shape("circle", circle_id, attributes, fill, stroke, Circle)
+		return self.add_shape("circle", id, attributes, fill, stroke, Circle)
 
-	def add_ellipse(self, ellipse_id = None, centerx = None, centery = None, radiusx = None, radiusy = None, fill = None, stroke = None, stroke_width = None):
+	def add_ellipse(self, id = None, centerx = None, centery = None, radiusx = None, radiusy = None, fill = None, stroke = None, stroke_width = None):
 		"""
 		Add an ellipse into this container
 		Center is (centerx, centery)
@@ -800,9 +800,9 @@ class Container(XMLElement):
 			attributes["ry"] = radiusy
 		if stroke_width:
 			attributes["stroke-width"] = stroke_width
-		return self.add_shape("ellipse", ellipse_id, attributes, fill, stroke, Ellipse)
+		return self.add_shape("ellipse", id, attributes, fill, stroke, Ellipse)
 
-	def add_line(self, line_id = None, startx = None, starty = None, stopx = None, stopy = None, stroke = None, stroke_width = None):
+	def add_line(self, id = None, startx = None, starty = None, stopx = None, stopy = None, stroke = None, stroke_width = None):
 		"""
 		Add a line into this container
 		"""
@@ -817,9 +817,9 @@ class Container(XMLElement):
 			attributes["y2"] = stopy
 		if stroke_width:
 			attributes["stroke-width"] = stroke_width
-		return self.add_shape("line", line_id, attributes, stroke, shape_type=Line)
+		return self.add_shape("line", id, attributes, stroke, shape_type=Line)
 
-	def add_polyline(self, line_id = None, x = None, y = None, points = None, fill = None, stroke = None):
+	def add_polyline(self, id = None, x = None, y = None, points = None, fill = None, stroke = None):
 		"""
 		Add a polyline into this container
 		"""
@@ -828,9 +828,9 @@ class Container(XMLElement):
 			attributes["points"] = [(x, y),]
 		if points:
 			attributes["points"] = points
-		return self.add_shape("polyline", line_id, attributes, fill, stroke, PolyShape)
+		return self.add_shape("polyline", id, attributes, fill, stroke, PolyShape)
 
-	def add_polygon(self, line_id = None, x = None, y = None, points = None, fill = None, stroke = None):
+	def add_polygon(self, id = None, x = None, y = None, points = None, fill = None, stroke = None):
 		"""
 		Add a polygon into this container
 		"""
@@ -839,18 +839,18 @@ class Container(XMLElement):
 			attributes["points"] = [(x, y),]
 		if points:
 			attributes["points"] = points
-		return self.add_shape("polygon", line_id, attributes, fill, stroke, PolyShape)
+		return self.add_shape("polygon", id, attributes, fill, stroke, PolyShape)
 
-	def add_path(self, path_id = None, data = None, fill = None, stroke = None, element = None):
+	def add_path(self, id = None, data = None, fill = None, stroke = None, element = None):
 		"""
 		Add a path element into this container
 		"""
 		attributes = {}
 		if data:
 			attributes["d"] = data
-		return self.add_shape("path", path_id, attributes, fill, stroke, Path)
+		return self.add_shape("path", id, attributes, fill, stroke, Path)
 
-	def add_text(self, text_id = None, x = None, y = None, x_shift = None, y_shift = None, length = None, text = None, fill = None, stroke = None):
+	def add_text(self, id = None, x = None, y = None, x_shift = None, y_shift = None, length = None, text = None, fill = None, stroke = None):
 		"""
 		Add a text element into this container
 		"""
@@ -865,7 +865,7 @@ class Container(XMLElement):
 			attributes["dy"] = y_shift
 		if length:
 			attributes["textLength"] = length
-		obj = self.add_shape("text", text_id, attributes, fill, stroke, TextContainer)
+		obj = self.add_shape("text", id, attributes, fill, stroke, TextContainer)
 		if text:
 			obj.text = text
 		return obj
