@@ -64,4 +64,8 @@ if __name__ == "__main__":
 	# setup and run the script
 	script = SVGScript(path, color_translate_svg, save)
 
-	script.run()
+	try:
+		script.run()
+	except IOError, err:
+		print str(err)
+		exit()

@@ -64,4 +64,8 @@ if __name__ == "__main__":
 	# setup the script and run it :)
 	script = SVGScript(path, convert_svg_to_grayscale, save)
 
-	script.run()
+	try:
+		script.run()
+	except IOError, err:
+		print str(err)
+		exit()
