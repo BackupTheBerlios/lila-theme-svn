@@ -384,6 +384,41 @@ class TextContainer(TextElement):
 	def __init__(self, element = None):
 		TextElement.__init__(self, element)
 
+	def add_child_text(self, element_type, tspan_id = None, text = None, x = None, y = None, deviation_x = None, deviation_y = None, rotation = None, length = None, font_weight = None, fill = None, stroke = None, xlink = None):
+		"""
+		Add a text child
+		"""
+		attributes = {}
+		if text:
+			attributes["text"] = text
+		if x:
+			attributes["x"] = x
+		if y:
+			attributes["y"] = y
+		if deviation_x:
+			attributes["dx"] = deviation_x
+		if deviation_y:
+			attributes["dy"] = deviation_y
+		if rotation:
+			attributes["rotation"] = rotation
+		if length:
+			attributes["textLength"] = length
+		if font_weight:
+			attributes["font-weight"] = font_weight
+		if xlink:
+			attributes["xlink"] = xlink
+		if not tspan_id:
+			global id_counter
+			tspan_id = str(id_counter)
+			id_counter += 1
+		attributes["id"] = tspan_id
+		text = self.add_child_tag(element_type, TextElement, attributes)
+		if fill:
+			text.set_attribute("fill", fill)
+		if stroke:
+			text.set_attribute("stroke", stroke)
+		return text
+
 	def add_tspan(self, tspan_id = None, text = None, x = None, y = None, deviation_x = None, deviation_y = None, rotation = None, length = None, font_weight = None, fill = None, stroke = None, element = None):
 		"""
 		Add a tref into this container
@@ -392,40 +427,17 @@ class TextContainer(TextElement):
 			self.element.appendChild(element.element)
 			return element
 		else:
-			attributes = {}
-			if text:
-				attributes["text"] = text
-			if x:
-				attributes["x"] = x
-			if y:
-				attributes["y"] = y
-			if deviation_x:
-				attributes["dx"] = deviation_x
-			if deviation_y:
-				attributes["dy"] = deviation_y
-			if rotation:
-				attributes["rotation"] = rotation
-			if length:
-				attributes["textLength"] = length
-			if font_weight:
-				attributes["font-weight"] = font_weight
-			if not tspan_id:
-				global id_counter
-				tspan_id = str(id_counter)
-				id_counter += 1
-			attributes["id"] = tspan_id
-			tspan = self.add_child_tag("tspan", TextElement, attributes)
-			if fill:
-				tspan.set_attribute("fill", fill)
-			if stroke:
-				tspan.set_attribute("stroke", stroke)
-			return tspan
+			return self.add_child_text("tspan", tspan_id, text, x, y, deviation_x, deviation_y, rotation, length, font_weight, fill, stroke)
 
-	def add_tref(self, tref_id = None, text = None, x = None, y = None, dx = None, dy = None, rotation = None, length = None, font_weight = None, fill = None, stroke = None, element = None):
+	def add_tref(self, tref_id = None, xlink = None, text = None, x = None, y = None, dx = None, dy = None, rotation = None, length = None, font_weight = None, fill = None, stroke = None, element = None):
 		"""
 		Add a tref into this container
 		"""
-		pass
+		if element:
+			self.element.appendChild(element.element)
+			return element
+		else:
+			return self.add_child_text("tref", tref_id, text, x, y, deviation_x, deviation_y, rotation, length, font_weight, fill, stroke, xlink)
 
 class TextPath(TransformableElement):
 	"""
