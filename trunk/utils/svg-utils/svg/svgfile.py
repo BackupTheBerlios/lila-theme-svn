@@ -517,12 +517,28 @@ class Tref(TransformableElement):
 			return set_special_attribute(self, attribute, value)
 		return False
 
-class TextContainer(TextElement):
+class TextContainer(TransformableElement):
 	"""
 	Holds a text container
 	"""
 	def __init__(self, element = None):
-		TextElement.__init__(self, element)
+		TransformableElement.__init__(self, element)
+
+	def _get_attribute(self, attribute):
+		"""
+		Handle calls to get special variables
+		"""
+		if attribute in ["fill", "stroke", "text", "tspans", "trefs"]:
+			return get_special_attribute(self, attribute)
+		return None, True
+
+	def _set_attribute(self, attribute, value):
+		"""
+		Handle calls to set special variables
+		"""
+		if attribute in ["fill", "stroke", "text"]:
+			return set_special_attribute(self, attribute, value)
+		return False
 
 	def add_child_text(self, element_name, element_type, tspan_id = None, text = None, x = None, y = None, deviation_x = None, deviation_y = None, rotation = None, length = None, font_weight = None, fill = None, stroke = None, xlink = None):
 		"""
