@@ -1,0 +1,16 @@
+SVG-Utils TODO
+
+Version 0.1
+-make svg-utils-test.py test all aspects of svg-utils
+-fix outstanding bugs we find testing before release
+
+Version 0.2
+-Finish Path point creation functions
+-SVG filter tag support
+-SVG use tag support
+-Tint script
+-Special effects scripts (e.g. for shadows)
+
+Version 0.3
+-Chart making functions/scripts
+-CSS support?
