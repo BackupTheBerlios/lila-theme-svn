@@ -367,7 +367,7 @@ class Container(XMLElement):
 			attributes["xlink"] = xlink
 		return self.add_gradient("radial", attributes, gradient_id)
 
-	def add_shape(self, tag, shape_id, attributes, fill = None, stroke = None):
+	def add_shape(self, tag, shape_id, attributes, fill = None, stroke = None, shape_type = Shape):
 		"""
 		Add an object to this container
 		"""
@@ -377,7 +377,7 @@ class Container(XMLElement):
 			shape_id = id_counter
 			id_counter += 1
 		attributes["id"] = str(shape_id)
-		shape = self.add_child_tag(tag, SVGShape, attributes)
+		shape = self.add_child_tag(tag, shape_type, attributes)
 		if fill:
 			shape.fill = fill
 		if stroke:
@@ -460,7 +460,7 @@ class Container(XMLElement):
 			attributes["y2"] = y2
 		if stroke_width:
 			attributes["stroke-width"] = stroke_width
-		return self.add_shape("line", line_id, attributes, stroke)
+		return self.add_shape("line", line_id, attributes, stroke, Line)
 
 class TransformableContainer(Container, TransformableElement):
 	"""
@@ -525,7 +525,7 @@ class SVGFile(Container):
 			self.height = "48pt"
 			self.xmlns = "http://www.w3.org/2000/svg"
 			self.set_attribute("xmlns:xlink", "http://www.w3.org/1999/xlink")
-			self.__dict__["defs"] = self.add_child_tag("defs", SVGContainer, { "id" : "defs" })
+			self.__dict__["defs"] = self.add_child_tag("defs", Container, { "id" : "defs" })
 
 	def save(self, filename = None):
 		"""
