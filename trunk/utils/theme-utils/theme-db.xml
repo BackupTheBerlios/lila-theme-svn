@@ -171,16 +171,163 @@
 		</path>
 	</icon>
 	<icon name="devices/tv">
-		<path env="kde">
-			devices/tv
-		</path>
+		<path env="kde" action="copy" />
 	</icon>
 	<icon name="devices/zipdisk">
 		<path env="gnome">
 			devices/gnome-dev-zipdisk
 		</path>
 	</icon>
-	
+
+	<!-- Filesystems -->
+	<icon name="filesystems/block-device">
+		<path env="gnome">
+			filesystems/gnome-fs-blockdev
+		</path>
+		<path env="kde">
+			filesystems/blockdev
+		</path>
+	</icon>
+	<icon name="filesystems/character-device">
+		<path env="gnome">
+			filesystems/gnome-fs-chardev
+		</path>
+		<path env="kde">
+			filesystems/chardev
+		</path>
+	</icon>
+	<icon name="filesystems/client">
+		<path env="gnome">
+			filesystems/gnome-fs-client
+		</path>
+	</icon>
+	<icon name="filesystems/desktop">
+		<path env="gnome">
+			filesystems/gnome-fs-desktop
+		</path>
+		<path env="kde" action="copy" />
+	</icon>
+	<icon name="filesystems/directory">
+		<path env="gnome">
+			filesystems/gnome-fs-directory
+		</path>
+		<path env="kde">
+			filesystems/folder
+		</path>
+	</icon>
+	<icon name="filesystems/directory-accept">
+		<path env="gnome">
+			filesystems/gnome-fs-directory-accept
+		</path>
+	</icon>
+	<icon name="filesystems/directory-visiting">
+		<path env="gnome">
+			filesystems/gnome-fs-directory-visiting
+		</path>
+		<path env="kde">
+			filesystems/folder_open
+		</path>
+	</icon>
+	<icon name="filesystems/directory-red">
+		<path env="kde">
+			filesystems/folder_red
+		</path>
+	</icon>
+	<icon name="filesystems/directory-red-visiting">
+		<path env="kde">
+			filesystems/folder_red_open
+		</path>
+	</icon>
+	<icon name="filesystems/directory-green">
+		<path env="kde">
+			filesystems/folder_green
+		</path>
+	</icon>
+	<icon name="filesystems/directory-green-visiting">
+		<path env="kde">
+			filesystems/folder_green_open
+		</path>
+	</icon>
+	<icon name="filesystems/directory-blue">
+		<path env="kde">
+			filesystems/folder_blue
+		</path>
+	</icon>
+	<icon name="filesystems/directory-blue-visiting">
+		<path env="kde">
+			filesystems/folder_blue_open
+		</path>
+	</icon>
+	<icon name="filesystems/directory-yellow">
+		<path env="kde">
+			filesystems/folder_yellow
+		</path>
+	</icon>
+	<icon name="filesystems/directory-yellow-visiting">
+		<path env="kde">
+			filesystems/folder_yellow_open
+		</path>
+	</icon>
+	<icon name="filesystems/directory-favorite">
+		<path env="kde">
+			filesystems/folder_favorite
+		</path>
+	</icon>
+	<icon name="filesystems/directory-home">
+		<path env="kde">
+			filesystems/folder_home
+		</path>
+		<path env="gnome">
+			filesystems/gnome-fs-home
+		</path>
+	</icon>
+	<icon name="filesystems/directory-inbox">
+		<path env="kde">
+			filesystems/folder_inbox
+		</path>
+	</icon>
+	<icon name="filesystems/directory-locked">
+		<path env="kde">
+			filesystems/folder_locked
+		</path>
+	</icon>
+	<icon name="filesystems/directory-mail">
+		<path env="kde">
+			filesystems/folder_mail
+		</path>
+	</icon>
+	<icon name="filesystems/directory-outbox">
+		<path env="kde">
+			filesystems/folder_outbox
+		</path>
+	</icon>
+	<icon name="filesystems/directory-sent-mail">
+		<path env="kde">
+			filesystems/folder_send_mail
+		</path>
+	</icon>
+	<icon name="filesystems/directory-sound">
+		<path env="kde">
+			filesystems/folder_sound
+		</path>
+	</icon>
+	<icon name="filesystems/directory-text">
+		<path env="kde">
+			filesystems/folder_txt
+		</path>
+	</icon>
+	<icon name="filesystems/directory-video">
+		<path env="kde">
+			filesystems/folder_video
+		</path>
+	</icon>
+	<icon name="filesystems/executable">
+		<path env="gnome">
+			filesystems/gnome-fs-executable
+		</path>
+		<path env="kde" action="copy" />
+	</icon>
+
 	<!-- Mimetypes -->
 	<icon name="mimetypes/text">
 		<path env="gnome">
