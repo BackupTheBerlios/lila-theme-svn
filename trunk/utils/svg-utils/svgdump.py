@@ -27,32 +27,38 @@ def print_info(element, tabs = ''):
 	"""
 	Print information about an SVG element
 	"""
-	# get any containers
-	for container in element.containers:
-		if container.tag == "defs": tag = "Defs"
-		elif container.tag == "g": tag = "Group"
-		print tabs + tag
-		print tabs + "  Name: " + container.id
-		print_info(container, tabs + "  ")
-	# get the gradients
-	for grad in element.gradients:
-		print tabs + grad.tag
-		print tabs + "  Name: " + grad.id
-		for stop in grad.stops:
-			print tabs + "  Stop"
-			print tabs + "    Name: " + stop.id
-			print tabs + "    Color: " + stop.color
-			print tabs + "    Offset: " + stop.offset
-		if grad.has_attribute("xlink"):
-			print tabs + "  xlink: " + grad.xlink
-	# get the shapes
-	for shape in element.shapes:
-		print tabs + shape.tag
-		print tabs + "  Name: " + shape.id
-		if shape.has_attribute("fill"):
-			print tabs + "  Fill: " + shape.fill
-		if shape.has_attribute("stroke"):
-			print tabs + "  Stroke: " + shape.stroke
+	try:
+		# get any containers
+		for container in element.containers:
+			if container.tag == "defs": tag = "Defs"
+			elif container.tag == "g": tag = "Group"
+			print tabs + tag
+			print tabs + "  Name: " + container.id
+			print_info(container, tabs + "  ")
+	except: pass
+	try:
+		# get the gradients
+		for grad in element.gradients:
+			print tabs + grad.tag
+			print tabs + "  Name: " + grad.id
+			for stop in grad.stops:
+				print tabs + "  Stop"
+				print tabs + "    Name: " + stop.id
+				print tabs + "    Color: " + stop.color
+				print tabs + "    Offset: " + stop.offset
+			if grad.has_attribute("xlink"):
+				print tabs + "  xlink: " + grad.xlink
+	except: pass
+	try:
+		# get the shapes
+		for shape in element.shapes:
+			print tabs + shape.tag
+			print tabs + "  Name: " + shape.id
+			if shape.has_attribute("fill"):
+				print tabs + "  Fill: " + shape.fill
+			if shape.has_attribute("stroke"):
+				print tabs + "  Stroke: " + shape.stroke
+	except: pass
 
 if __name__ == "__main__":
 	from sys import argv, exit
