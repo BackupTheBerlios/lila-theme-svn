@@ -402,7 +402,7 @@ class Path(Shape):
 		"""
 		Clear the path
 		"""
-		self.
+		self.d = ''
 
 class TextElement(TransformableElement):
 	"""
