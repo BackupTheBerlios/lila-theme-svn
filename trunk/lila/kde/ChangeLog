@@ -6,6 +6,23 @@ used symbols:
 files expected to change every time: kde/ChangeLog and kde/TODO
 
 ----------
+03/14/05 jpetso
+---------
+
+kde/
+ +makecolormod.sh
+ ~makerelease.sh: stop deleting the most important pieces of your working directory
+ those two still don't work, don't even try it unless you want to improve them
+
+actions/
+ +debugger.svg
+ +ktip.svg: I thought I did this one long ago?
+ +player_mute.svg: copy of kmixdocked_mute
+
+apps/
+ kpoker.svg -> package_games_card.svg
+
+----------
 03/13/05 jpetso
 ---------
 

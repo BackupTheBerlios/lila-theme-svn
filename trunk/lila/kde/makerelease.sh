@@ -10,17 +10,26 @@
 # Make sure you have updated the README file with the latest
 # release version number, the script won't do that.
 
+OUTPUTPATH=../release-kde
+
 
 # Part 1: copy
 
-cd ..
-rm -rf lila-kde
-mkdir lila-kde
-cp kde lila-kde/lila
-cd lila-kde/lila
+rm -rf $OUTPUTPATH
+mkdir $OUTPUTPATH
+mkdir $OUTPUTPATH/lila-kde
+cp -r . $OUTPUTPATH/lila-kde/lila
+mkdir $OUTPUTPATH/lila-kde/lila-blue
+mkdir $OUTPUTPATH/lila-kde/lila-red
 
 
-# Part 2: generate PNG files from the SVG sources
+# Part 2: make color mods
+
+./makecolormod.sh blue $OUTPUTPATH/lila-kde $OUTPUTPATH/lila-kde/lila-blue
+./makecolormod.sh red  $OUTPUTPATH/lila-kde $OUTPUTPATH/lila-kde/lila-red
+
+
+# Part 3: generate PNG files from the SVG sources
 
 # ...leave that for later. At the moment, I can't control generate.py
 # with command line arguments, so expect that everything is already
@@ -30,14 +39,17 @@ cd lila-kde/lila
 # as well, because I don't want to do that manually each time.
 
 
-# Part 3: delete unnecessary files and directories
+# Part 4: delete unnecessary files and directories
 
-rm -rf CVS */CVS */*/CVS
-rm -rf ksplash scalable
-rm -f *_connecting.mng generate.sh makerelease.sh
+#rm -rf CVS */CVS */*/CVS
+rm -rf $OUTPUTPATH/lila-kde/lila/ksplash
+rm -rf $OUTPUTPATH/lila-kde/lila/scalable
+rm -f $OUTPUTPATH/lila-kde/lila/*_connecting.mng
+rm -f $OUTPUTPATH/lila-kde/lila/generate.sh
+rm -f $OUTPUTPATH/lila-kde/lila/makerelease.sh
+rm -f $OUTPUTPATH/lila-kde/lila/makecolormod.sh
 
 
-# Part 4: make a tarball
+# Part 5: make a tarball
 
-cd ../..
-tar --create --bzip2 --file lila-kde.tar.bz2 lila-kde
+tar --create --bzip2 --file $OUTPUTPATH/lila-kde.tar.bz2 $OUTPUTPATH/lila-kde
