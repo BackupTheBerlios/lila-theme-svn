@@ -20,7 +20,6 @@
 	along with this program; if not, write to the Free Software
 	Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 """
-
 from os import walk, makedirs, sep
 from os.path import join, exists, isfile, isdir
 
@@ -45,21 +44,29 @@ class SVGScript:
 		"""
 		Run this script!
 		"""
+		# make sure the path exists if set
 		if self.path:
 			if not exists(self.path):
 				raise IOError, self.path + " does not exist!"
 
-		if self.path[-1] != sep:
-			self.path += sep
+		# if it's a directory, make sure the last character is the path seperator
+		if isdir(self.path):
+			if self.path[-1] != sep:
+				self.path += sep
 
-		if self.save_path and self.save_path[-1] != sep:
-			self.save_path += sep
+		# if the save path exists and is a directory, do the same
+		if self.save_path:
+			if isdir(self.save_path) and self.save_path[-1] != sep:
+				self.save_path += sep
 		else:
+			# set the save path to the same as the path
 			self.save_path = self.path
 
 		if isfile(self.path):
-			pass
+			# run the function on a single file
+			self.function(self.path, self.save_path)
 		elif isdir(self.path):
+			# run the function on all the files in the directory
 			for root, dirs, files in walk(self.path):
 				relative_root = root[len(self.path):]
 				print "Scanning " + root
