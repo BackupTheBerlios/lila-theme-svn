@@ -1,4 +1,17 @@
 ----------
+12/22/04 9-speed
+----------
+added anjuta_icon and xfce-schedule, moved xfce-mouse to misc and edited some xfce mouses
+Added Files:
+  scalable/apps/anjuta_icon.svg
+  scalable/apps/xfce-schedule.svg
+Modified Files:
+  scalable/apps/xfmedia.svg
+  scalable/apps/xfce4-menueditor.svg
+  scalable/apps/vim-find-help.svg
+Moved Files:
+  scalable/apps/xfce-mouse.svg scalable/misc/xfce-mouse.svg
+----------
 12/21/04 scaba
 ----------
 Modified Files:
