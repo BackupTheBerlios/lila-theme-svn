@@ -170,7 +170,8 @@ class XMLElement:
 		Initialize
 		"""
 		self.__dict__["element"] = element
-		self.__dict__["attribute_aliases"] = {}
+		if not self.__dict__.has_key("attribute_aliases"):
+			self.__dict__["attribute_aliases"] = {}
 
 	def register_attribute_alias(self, alias, attribute):
 		"""
