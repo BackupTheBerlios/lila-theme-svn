@@ -27,6 +27,13 @@ ellipse.translate(30, -10)
 ellipse.rotate(5)
 
 # add a text element
-test.add_text(x="0", y="10", text="Testing...!", fill="000000ff")
+text = test.add_text(x="0", y="10", text="Testing...!", fill="#000000ff")
+text.add_tspan(x="20", y="5", text="Boo!", fill="#ff0000ff")
+
+# add a polyline
+polyline = test.add_polyline(x="0", y="0", fill="#00ff00ff")
+polyline.add_point(20, 0)
+polyline.add_point(20, 20)
+polyline.add_point(40,20)
 
 test.save("/home/dan/test.svg")

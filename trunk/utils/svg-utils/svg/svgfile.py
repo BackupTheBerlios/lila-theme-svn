@@ -377,6 +377,56 @@ class TextElement(TransformableElement):
 			return set_special_attribute(self, attribute, value)
 		return False
 
+class TextContainer(TextElement):
+	"""
+	Holds a text container
+	"""
+	def __init__(self, element = None):
+		TextElement.__init__(self, element)
+
+	def add_tspan(self, tspan_id = None, text = None, x = None, y = None, deviation_x = None, deviation_y = None, rotation = None, length = None, font_weight = None, fill = None, stroke = None, element = None):
+		"""
+		Add a tref into this container
+		"""
+		if element:
+			self.element.appendChild(element.element)
+			return element
+		else:
+			attributes = {}
+			if text:
+				attributes["text"] = text
+			if x:
+				attributes["x"] = x
+			if y:
+				attributes["y"] = y
+			if deviation_x:
+				attributes["dx"] = deviation_x
+			if deviation_y:
+				attributes["dy"] = deviation_y
+			if rotation:
+				attributes["rotation"] = rotation
+			if length:
+				attributes["textLength"] = length
+			if font_weight:
+				attributes["font-weight"] = font_weight
+			if not tspan_id:
+				global id_counter
+				tspan_id = str(id_counter)
+				id_counter += 1
+			attributes["id"] = tspan_id
+			tspan = self.add_child_tag("tspan", TextElement, attributes)
+			if fill:
+				tspan.set_attribute("fill", fill)
+			if stroke:
+				tspan.set_attribute("stroke", stroke)
+			return tspan
+
+	def add_tref(self, tref_id = None, text = None, x = None, y = None, dx = None, dy = None, rotation = None, length = None, font_weight = None, fill = None, stroke = None, element = None):
+		"""
+		Add a tref into this container
+		"""
+		pass
+
 class TextPath(TransformableElement):
 	"""
 	Holds a textPath element
@@ -618,6 +668,12 @@ class Container(XMLElement):
 			attributes["points"] = points
 		return self.add_shape("polygon", line_id, attributes, fill, stroke, PolyShape)
 
+	def add_path(self, path_id = None):
+		"""
+		Add a path element into this container
+		"""
+		pass
+
 	def add_text(self, text_id = None, x = None, y = None, text = None, fill = None, stroke = None):
 		"""
 		Add a text element into this container
@@ -627,7 +683,7 @@ class Container(XMLElement):
 			attributes["x"] = x
 		if y:
 			attributes["y"] = y
-		obj = self.add_shape("text", text_id, attributes, fill, stroke, TextElement)
+		obj = self.add_shape("text", text_id, attributes, fill, stroke, TextContainer)
 		if text:
 			obj.text = text
 		return obj
