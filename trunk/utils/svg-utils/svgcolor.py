@@ -21,7 +21,7 @@
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 """
 
-from svgfile import SVGFile
+from svg.svgfile import SVGFile
 from xml.dom.minidom import parse
 
 class Replace:
@@ -116,8 +116,8 @@ def condense_gradient(gradient):
 	(stop1, stop2, stop3, ...)
 	"""
 	tmp = ()
-	for stop in gradient.get_stops():
-		tmp += (stop.get_color(),)
+	for stop in gradient.stops:
+		tmp += (stop.color,)
 	return tmp
 
 def translate_gradient(gradient, new_gradient):
@@ -125,9 +125,9 @@ def translate_gradient(gradient, new_gradient):
 	Replace a Gradient object with the values
 	from new_gradient
 	"""
-	stops = gradient.get_stops()
+	stops = gradient.stops
 	for pos in range(len(stops)):
-		stops[pos].set_color(new_gradient[pos])
+		stops[pos].color = new_gradient[pos]
 
 def check_gradients(gradients, replace, replace_type):
 	"""
@@ -140,10 +140,9 @@ def check_gradients(gradients, replace, replace_type):
 		elif condensed in replace.gradients.keys():
 			translate_gradient(gradient, replace.gradients[condensed])
 		else:
-			for stop in gradient.get_stops():
-				old = stop.get_color()
-				if old in replace.colors.keys():
-					stop.set_color(replace.colors[old])
+			for stop in gradient.stops:
+				if stop.color in replace.colors.keys():
+					stop.color = replace.colors[stop.color]
 
 def translate_object(object, replacements):
 	"""
@@ -153,27 +152,29 @@ def translate_object(object, replacements):
 	"""
 	replaced = False
 	# get the object's fill & stroke
-	fill = object.get_fill_color()
-	stroke = object.get_stroke_color()
-	if fill and fill[:3] == "url": fill = None
-	if stroke and stroke[:3] == "url": stroke = None
+	try:
+		fill = object.fill
+		if fill and fill[:3] == "url": fill = None
+	except: fill = None
+	try:
+		stroke = object.stroke
+		if stroke and stroke[:3] == "url": stroke = None
+	except: stroke = None
+
+	if not (fill or stroke):
+		return replaced
 
 	for replacement in replacements.keys():
 		# get the replacement's fill and stroke
 		match_fill = replacement[0]
 		match_stroke = replacement[1]
-		if match_fill and match_stroke:
-			if fill == match_fill and stroke == match_stroke:
-				object.set_fill_color(replacements[replacement][0])
-				object.set_stroke_color(replacements[replacement][1])
-				replaced = True
-		elif match_fill:
+		if match_fill:
 			if fill == match_fill:
-				object.set_fill_color(replacements[replacement][0])
+				object.fill = replacements[replacement][0]
 				replaced = True
-		elif match_stroke:
+		if match_stroke:
 			if stroke == match_stroke:
-				object.set_stroke_color(replacements[replacement][1])
+				object.stroke = replacements[replacement][1]
 				replaced = True
 	return replaced
 
@@ -187,12 +188,16 @@ def check_objects(objects, replace, replace_type):
 		elif translate_object(object, replace.objects):
 			pass
 		else:
-			fill = object.get_fill_color()
-			stroke = object.get_stroke_color()
+			try:
+				fill = object.fill
+			except: fill = None
+			try:
+				stroke = object.stroke
+			except: stroke = None
 			if fill in replace.colors.keys():
-				object.set_fill_color(replace.colors[fill])
+				object.fill = replace.colors[fill]
 			if stroke in replace.colors.keys():
-				object.set_stroke_color(replace.colors[stroke])
+				object.stroke = replace.colors[stroke]
 
 def color_translate_svg(filename, replace, file_to_save = None):
 	"""
@@ -202,39 +207,25 @@ def color_translate_svg(filename, replace, file_to_save = None):
 	"""
 	# open and parse the file
 	svg = SVGFile(filename)
-	# get all the color information
-	linear_gradients = svg.get_linear_gradients()
-	radial_gradients = svg.get_radial_gradients()
-	rects = svg.get_rects()
-	circles = svg.get_circles()
-	ellipses = svg.get_ellipses()
-	lines = svg.get_lines()
-	polylines = svg.get_polylines()
-	polygons = svg.get_polygons()
-	paths = svg.get_paths()
-	texts = svg.get_texts()
-	tspans = svg.get_tspans()
-	trefs = svg.get_trefs()
-	text_paths = svg.get_text_paths()
-	groups = svg.get_groups()
 
 	# translate any gradients
-	check_gradients(linear_gradients, replace, replace.linear_gradients)
-	check_gradients(radial_gradients, replace, replace.radial_gradients)
+	check_gradients(svg.all_gradients, replace, replace.linear_gradients)
 
 	# translate any objects
-	check_objects(rects, replace, replace.rects)
-	check_objects(circles, replace, replace.circles)
-	check_objects(ellipses, replace, replace.ellipses)
-	check_objects(lines, replace, replace.lines)
-	check_objects(polylines, replace, replace.polylines)
-	check_objects(polygons, replace, replace.polygons)
-	check_objects(paths, replace, replace.paths)
-	check_objects(texts, replace, replace.texts)
-	check_objects(tspans, replace, replace.tspans)
-	check_objects(trefs, replace, replace.trefs)
-	check_objects(text_paths, replace, replace.text_paths)
-	check_objects(groups, replace, replace.groups)
+	check_objects(svg.all_rects, replace, replace.rects)
+	check_objects(svg.all_circles, replace, replace.circles)
+	check_objects(svg.all_ellipses, replace, replace.ellipses)
+	check_objects(svg.all_lines, replace, replace.lines)
+	check_objects(svg.all_polylines, replace, replace.polylines)
+	check_objects(svg.all_polygons, replace, replace.polygons)
+	check_objects(svg.all_paths, replace, replace.paths)
+	check_objects(svg.all_texts, replace, replace.texts)
+	check_objects(svg.all_tspans, replace, replace.tspans)
+	check_objects(svg.all_trefs, replace, replace.trefs)
+	check_objects(svg.all_text_paths, replace, replace.text_paths)
+
+	# translate groups
+	check_objects(svg.all_groups, replace, replace.groups)
 
 	# save the file
 	svg.save(file_to_save)
