@@ -7,8 +7,6 @@ COMMANDLINE_LOGACCUM=
 
 MAIL_LOGACCUM=${1};
 shift;
-MAIL_SYNCMAIL=${1};
-shift;
 
 COMMANDLINE_SYNCMAIL=$@
 
@@ -27,7 +25,7 @@ done
 cat > "$LOGBUFFER";
 
 cat "$LOGBUFFER"  | \
-$CVSROOT/CVSROOT/log_accum.pl -s -r -S xorg-commit -F pdx.freedesktop.org \
+$CVSROOT/CVSROOT/log_accum.pl -s -r -S svg-icons-commit -F freedesktop.org \
  -m ${MAIL_LOGACCUM} -f ${LOGFILE} "${COMMANDLINE_LOGACCUM}" 2>&1 \
  | tee -a ${LOGLIST}
 
