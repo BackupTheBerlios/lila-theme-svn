@@ -9,7 +9,15 @@
 
 if [ $# -lt 1 -o $# -gt 4 ]
 then
-  echo "Usage: `basename $0` color [/path/to/svgs [/path/to/output [/path/to/svg-utils]]]"
+  echo
+  echo "Usage:"
+  echo "$0 color [/path/to/svgs [/path/to/output [/path/to/svg-utils]]]"
+  echo "The default values for the arguments are:"
+  echo "  source-svg path:   . (this directory)"
+  echo "  output-svg path:   [svg-path]/../svg-[colorname]"
+  echo "  path to svg-utils: /usr/share/svg-utils"
+  echo "Beware: Don't let the output path be a subdirectory of the source-svg path."
+  echo "        This will cause an infinite recursive loop."
   exit $E_WRONG_ARGS
 else
   COLOR=$1
@@ -24,7 +32,7 @@ fi
 if [ $# -ge 3 ]; then
   OUTPUTPATH=$3
 else
-  OUTPUTPATH=$SVGPATH-$COLOR
+  OUTPUTPATH=$SVGPATH/../svg-$COLOR
 fi
 
 if [ $# -eq 4 ]; then
@@ -35,10 +43,13 @@ fi
 
 mkdir -p $OUTPUTPATH
 
+echo
+echo "Making $COLOR color-mod in $OUTPUTPATH..."
 $SVGUTILSPATH/svgcolor.py $SVGUTILSPATH/svgcolor-xml/lila/lila-$COLOR.xml $SVGPATH $OUTPUTPATH > /dev/null
 if [ $? -ne 0 ]; then
-    echo "Errors exist."
-    exit 1
+	echo "There was an error while making the color-mod."
+	exit 1
+else
+	echo "$COLOR color-mod has been created."
+	exit
 fi
-
-exit

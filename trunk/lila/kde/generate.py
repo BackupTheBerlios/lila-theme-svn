@@ -108,7 +108,15 @@ if not answer:
 
 if answer == 'y':
 	os.popen("rm -rf %s/lila" % (KDEIconPath))
-	os.popen("mkdir %s/lila" % (KDEIconPath))
+	try: os.mkdir('%s/lila' % (KDEIconPath))
+	except:
+		try:
+			os.mkdir('%s' % (KDEIconPath))
+			try: os.mkdir('%s/lila' % (KDEIconPath))
+			except: pass
+		except:
+			print "Icons have not been installed to %s." % (KDEIconPath)
+			sys.exit(1)
 	os.popen("cp -r 16x16 22x22 32x32 48x48 64x64 128x128 scalable index.desktop %s/lila" % (KDEIconPath))
 	print "Icons have been installed to %s." % (KDEIconPath)
 else:

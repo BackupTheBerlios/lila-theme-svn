@@ -7,6 +7,32 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+03/22/05 jpetso (not yet committed)
+---------
+
+kde/
+ ~makerelease.sh: it works! it's not yet perfect, but already you can generate PNGs and
+                  create color mods automatically. I'll finish it later on.
+ ~makecolormod.sh: some polish. Now, it definitely works.
+ ~generate.py: little more exception handling
+
+actions/
+ ~view_detailed.svg: size fix
+ ~view_multicolumn.svg: dito
+ ~view_icon.svg: dito
+ ~view_text.svg: dito
+ ~view_tree.svg: dito
+
+apps/
+ ~kontact.svg: small fix. I got it in use for a week now, and I really like it this way.
+ +fsview.svg: finally! that's another item taken off the todo list.
+ ~package_multimedia.svg: replaced with xfce-multimedia.svg, I think that fits better
+ ~multimedia.svg: dito
+ -globe.svg: doesn't belong into KDE icon set (anymore?)
+ +netbeans.svg
+
+
+----------
 03/15/05 jpetso
 ---------
 
