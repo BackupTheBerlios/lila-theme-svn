@@ -1,8 +1,6 @@
 --------------------------------
-Last modified: 08/23/2004 scaba
+Last modified: 08/25/2004 scaba
 --------------------------------
-
--fix back and forward buttons in galeon
 
 Lila/scalable/apps
 -dasher :: adjust colors of the 'b' part
@@ -12,29 +10,17 @@ Lila/scalable/apps
 -gnome-settings-default-applications :: adjust shape
 -gnome-emacs :: adjust shape
 -gnome-other :: adjust shape
--gnome-settings-sound :: adjust size
--gnome-settings-theme :: replace the 'g'
 -gnome-settings-ui-behavior :: simplify/cleanup
 -gnopernicus :: replace the 'g'
 -gripicon :: icon needed
 -gthumb :: icon needed
 -helixplay :: icon needed
+-logviewer :: adjust proportions
 -seahorse :: icon needed
 -sodipodi :: icon needed
 
-Lila/scalable/filesystems
--gnome-fs-desktop :: adjust size
-
 Lila/scalable/stock
--gaim-edit :: icon needed
--gaim-image :: icon needed
--gaim-link :: icon needed
--gaim-smiley :: icon needed
--gtk-add :: adjust proportions
--gtk-close :: adjust colors
--gtk-color-picker :: add drop shadow
 -gtk-new-tab :: adjust shape
 -gtk-print-preview :: overhaul printer
 -gtk-print-setup :: overhaul printer
 -gtk-print :: overhaul printer
--gtk-revert :: rename properly

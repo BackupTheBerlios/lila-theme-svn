@@ -1,4 +1,42 @@
 ----------
+08/27/04 scaba
+----------
+Lila/scalable/stock
+-edited gtk-add
+----------
+08/25/04 scaba
+----------
+Lila/scalable/apps
+-edited file-roller
+-edited gnome-eog
+Lila/scalable/stock
+-added gaim-bgcolor
+-added gaim-edit :: copy of gedit-icon from 'scalable/apps'
+-added gaim-fgcolor
+-added gaim-image :: copy of gnome-eog from 'scalable/apps'
+-added gaim-link
+-added gaim-smiley
+-added gaim-text-bigger
+-added gaim-text-normal :: copy of gtk-select-font
+-added gaim-text-smaller
+-added gtk-about :: copy of gaim-about
+-edited gtk-add
+-edited gtk-italic
+-edited gtk-select-font
+-edited gtk-strikethrough
+-edited gtk-underline
+----------
+08/24/04 scaba
+----------
+Lila/scalable/apps
+-added xcdricon
+-edited gnome-settings-theme
+Lila/scalable/filesystems
+-edited gnome-fs-desktop
+Lila/scalable/stock
+-edited gtk-color-picker :: drop shadow added, thanks to Makzu
+-replaced gtk-close :: copy of gtk-cancel/gtk-no
+----------
 08/23/04 scaba
 ----------
 Lila/scalable/apps
@@ -29,7 +67,6 @@ Lila/scalable/apps
 -resized mozilla-icon
 -resized porthole
 Lila/scalable/stock
--added gtk-revert :: copy of gtk-undo :: not working yet
 -added stock_bluetooth :: moved from 'scalable/apps'
 -edited gtk-color-picker :: drop shadow still missing
 -edited gtk-dialog-question
