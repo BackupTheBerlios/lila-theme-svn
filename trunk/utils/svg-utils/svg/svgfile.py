@@ -192,12 +192,15 @@ class Gradient(XMLElement):
 					"unlink() on a stop element to remove it"
 		return False
 
-	def add_stop(self, color = "#00000000", offset = "1"):
+	def add_stop(self, id = None, color = "#00000000", offset = "1"):
 		"""
 		Append a stop to this gradient
 		"""
-		global id_counter
-		stop = self.add_child_tag("stop", Stop, { "id" : str(id_counter), "color" : color, "offset" : offset })
+		if id == None:
+			global id_counter
+			id = id_counter
+			id_counter += 1
+		stop = self.add_child_tag("stop", Stop, { "id" : str(id), "color" : color, "offset" : offset })
 		id_counter += 1
 		return stop
 
@@ -819,7 +822,7 @@ class Container(XMLElement):
 			attributes["stroke-width"] = stroke_width
 		return self.add_shape("line", id, attributes, stroke, shape_type=Line)
 
-	def add_polyline(self, id = None, x = None, y = None, points = None, fill = None, stroke = None):
+	def add_polyline(self, id = None, x = None, y = None, points = None, fill = None, stroke = None, stroke_width = None):
 		"""
 		Add a polyline into this container
 		"""
@@ -828,9 +831,11 @@ class Container(XMLElement):
 			attributes["points"] = [(x, y),]
 		if points:
 			attributes["points"] = points
+		if stroke_width:
+			attributes["stroke-width"] = stroke_width
 		return self.add_shape("polyline", id, attributes, fill, stroke, PolyShape)
 
-	def add_polygon(self, id = None, x = None, y = None, points = None, fill = None, stroke = None):
+	def add_polygon(self, id = None, x = None, y = None, points = None, fill = None, stroke = None, stroke_width = None):
 		"""
 		Add a polygon into this container
 		"""
@@ -839,18 +844,22 @@ class Container(XMLElement):
 			attributes["points"] = [(x, y),]
 		if points:
 			attributes["points"] = points
+		if stroke_width:
+			attributes["stroke-width"] = stroke_width
 		return self.add_shape("polygon", id, attributes, fill, stroke, PolyShape)
 
-	def add_path(self, id = None, data = None, fill = None, stroke = None, element = None):
+	def add_path(self, id = None, data = None, fill = None, stroke = None, stroke_width = None):
 		"""
 		Add a path element into this container
 		"""
 		attributes = {}
 		if data:
 			attributes["d"] = data
+		if stroke_width:
+			attributes["stroke-width"] = stroke_width
 		return self.add_shape("path", id, attributes, fill, stroke, Path)
 
-	def add_text(self, id = None, x = None, y = None, x_shift = None, y_shift = None, length = None, text = None, fill = None, stroke = None):
+	def add_text(self, id = None, x = None, y = None, deviationx = None, deviationy = None, length = None, text = None, fill = None, stroke = None, stroke_width = None):
 		"""
 		Add a text element into this container
 		"""
@@ -859,16 +868,27 @@ class Container(XMLElement):
 			attributes["x"] = x
 		if y:
 			attributes["y"] = y
-		if x_shift:
-			attributes["dx"] = x_shift
-		if y_shift:
-			attributes["dy"] = y_shift
+		if deviationx:
+			attributes["dx"] = deviationx
+		if deviationy:
+			attributes["dy"] = deviationy
 		if length:
 			attributes["textLength"] = length
+		if stroke_width:
+			attributes["stroke-width"] = stroke_width
 		obj = self.add_shape("text", id, attributes, fill, stroke, TextContainer)
 		if text:
 			obj.text = text
 		return obj
+
+	def add_group(self, id = None, fill = None, stroke = None, stroke_width = None):
+		"""
+		Add a group element into this container
+		"""
+		attributes = {}
+		if stroke_width:
+			attributes["stroke-width"] = stroke_width
+		return self.add_shape("g", id, fill, stroke, attributes, Group)
 
 class TransformableContainer(Container, TransformableElement):
 	"""
