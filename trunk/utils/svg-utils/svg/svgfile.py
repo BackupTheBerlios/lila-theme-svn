@@ -29,29 +29,29 @@ from sys import exit
 
 id_counter = 0
 
-def get_special_attribute(element, attribute):
+def get_special_attribute(element, attribute, recursive = False):
 	"""
 	Try to get a special attribute from an element
 	"""
 	if attribute == "color":
-		return get_color(element, "stop-color", "stop-opacity"), False
+		color = get_color(element, "stop-color", "stop-opacity")
+		if color: return color, False
+		else: return color, True
 	elif attribute == "stops":
 		return element.get_children("stop", Stop), False
 	elif attribute == "xlink":
 		return element.get_attribute("xlink:href", False), False
 	elif attribute == "fill":
-		return get_color(element, "fill", "fill-opacity"), False
+		color = get_color(element, "fill", "fill-opacity")
+		if color: return color, False
+		else: return color, True
 	elif attribute == "stroke":
-		return get_color(element, "stroke", "stroke-opacity"), False
+		color = get_color(element, "stroke", "stroke-opacity")
+		if color: return color, False
+		else: return color, True
 	elif element.tag in ["svg", "defs", "g"]:
 		# container objects
 		search = []
-
-		if attribute[:4] == "all_":
-			recursive = True
-			attribute = attribute[4:]
-		else:
-			recursive = False
 
 		if attribute in ["linear_gradients", "gradients", "fills"]:
 			search.append(("linearGradient", Gradient))
@@ -62,7 +62,7 @@ def get_special_attribute(element, attribute):
 		if attribute in ["rects", "basic_shapes", "shapes"]:
 			search.append(("rect", Shape))
 		if attribute in ["circles", "basic_shapes", "shapes"]:
-			search.append(("rect", Shape))
+			search.append(("circle", Shape))
 		if attribute in ["ellipses", "basic_shapes", "shapes"]:
 			search.append(("ellipse", Shape))
 		if attribute in ["lines", "basic_shapes", "shapes"]:
@@ -294,16 +294,23 @@ class Container(XMLElement):
 		"""
 		Handle attribute access to objects
 		"""
+		if attribute[:4] == "all_":
+			recursive = True
+			attribute = attribute[4:]
+		else:
+			recursive = False
 		if attribute in ["linear_gradients", "radial_gradients", "gradients", \
 						"patterns", "rects", "circles", "ellipses", "lines", \
 						"polylines", "polygons", "paths", "fills", "basic_shapes", \
 						"text_shapes", "shapes", "defs", "groups", "containers"]:
-			return get_special_attribute(self, attribute)
+			return get_special_attribute(self, attribute, recursive)
 
 	def _set_attribute(self, attribute, value):
 		"""
 		Handle attribute setting
 		"""
+		if attribute[:4] == "all_":
+			attribute = attribute[4:]
 		if attribute in ["linear_gradients", "radial_gradients", "gradients", \
 						"patterns", "rects", "circles", "ellipses", "lines", \
 						"polylines", "polygons", "paths", "fills", "basic_shapes", \
@@ -474,6 +481,11 @@ class TransformableColorableContainer(TransformableContainer):
 		"""
 		Handle attribute access to objects
 		"""
+		if attribute[:4] == "all_":
+			recursive = True
+			attribute = attribute[4:]
+		else:
+			recursive = False
 		if attribute in ["linear_gradients", "radial_gradients", "gradients", \
 						"patterns", "rects", "circles", "ellipses", "lines", \
 						"polylines", "polygons", "paths", "fills", "basic_shapes", \
@@ -485,6 +497,8 @@ class TransformableColorableContainer(TransformableContainer):
 		"""
 		Handle attribute setting
 		"""
+		if attribute[:4] == "all_":
+			attribute = attribute[4:]
 		if attribute in ["linear_gradients", "radial_gradients", "gradients", \
 						"patterns", "rects", "circles", "ellipses", "lines", \
 						"polylines", "polygons", "paths", "fills", "basic_shapes", \
