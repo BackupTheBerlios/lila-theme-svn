@@ -82,6 +82,7 @@ if len(sys.argv) > 1:
 			print "\t" + blue("--uninstall") + " - uninstall this package!"
 			print "\t" + blue("--help") + " - display this help message"
 			print "Note that the prefix path is not prepended if paths are absolute!"
+			print "Also note that the library path will be automagically determined unless explicitly specified!"
 			sys.exit()
 		elif arg[:9] == "--prefix=":
 			prefix = arg[9:]
@@ -208,6 +209,13 @@ if install:
 	print green("Installation successful!")
 else:
 	print red("Uninstalling SVG-Utils!")
+
+	# check permissions
+	for path in [library_install_path, script_install_path, data_path, symlink_path]:
+		if os.path.exists(path):
+			if not os.access(path, os.W_OK):
+				print red("You don't have permission to remove " + path + "!")
+				exit()
 	
 	# remove the symlinks if needed
 	if create_symlinks:
