@@ -468,31 +468,28 @@ class Path(Shape):
 		"""
 		self.d = ''
 
-class TextElement(SVGElement, TransformableElement):
+class TextElement(Shape):
 	"""
 	Holds an element containing text
 	"""
 	def __init__(self, element = None):
-		SVGElement.__init__(self, element)
-		TransformableElement.__init__(self)
+		Shape.__init__(self, element)
 		self.register_special_attribute("text")
 
-class Tref(TextElement):
+class Tref(Shape):
 	"""
 	Holds a tref element
 	"""
 	def __init__(self, element = None):
-		TextElement.__init__(self, element)
+		Shape.__init__(self, element)
+		self.register_attribute_alias("xlink", "xlink:href")
 
-class TextContainer(SVGElement, FilledElement, StrokedElement, TransformableElement):
+class TextContainer(Shape):
 	"""
 	Holds a text container
 	"""
 	def __init__(self, element = None):
-		SVGElement.__init__(self, element)
-		FilledElement.__init__(self)
-		StrokedElement.__init__(self)
-		TransformableElement.__init__(self)
+		Shape.__init__(self, element)
 		self.register_special_attribute("text")
 		self.register_special_attribute("tspans")
 		self.register_special_attribute("trefs")
