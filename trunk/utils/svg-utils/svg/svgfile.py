@@ -49,6 +49,8 @@ def get_special_attribute(element, attribute, recursive = False):
 		color = get_color(element, "stroke", "stroke-opacity")
 		if color: return color, False
 		else: return color, True
+	elif attribute == "text":
+		pass
 	elif element.tag in ["svg", "defs", "g"]:
 		# container objects
 		search = []
@@ -69,14 +71,18 @@ def get_special_attribute(element, attribute, recursive = False):
 			search.append(("line", Line))
 		if attribute in ["polylines", "basic_shapes", "shapes"]:
 			search.append(("polyline", Shape))
+		if attribute in ["polygons", "basic_shapes", "shapes"]:
+			search.append(("polygon", Shape))
 		if attribute in ["paths", "basic_shapes", "shapes"]:
 			search.append(("path", Shape))
 		if attribute in ["texts", "text_shapes", "shapes"]:
-			search.append(("text", Shape))
+			search.append(("text", TextElement))
 		if attribute in ["tspans", "text_shapes", "shapes"]:
-			search.append(("tspan", Shape))
+			search.append(("tspan", TextElement))
 		if attribute in ["trefs", "text_shapes", "shapes"]:
-			search.append(("tref", Shape))
+			search.append(("tref", TextElement))
+		if attribute in ["text_paths", "text_shapes", "shapes"]:
+			search.append(("textPath", TextElement))
 		if attribute in ["groups", "containers"]:
 			search.append(("g", TransformableColorableContainer))
 		if attribute in ["defs", "containers"]:
@@ -283,6 +289,29 @@ class Line(TransformableElement):
 			return set_special_attribute(self, attribute, value)
 		return False
 
+class TextElement(TransformableElement):
+	"""
+	Holds an element containing text
+	"""
+	def __init__(self, element = None):
+		TransformableElement.__init__(self, element)
+
+	def _get_attribute(self, attribute):
+		"""
+		Handle calls to get special variables
+		"""
+		if attribute in ["fill", "stroke", "text"]:
+			return get_special_attribute(self, attribute)
+		return None, True
+
+	def _set_attribute(self, attribute, value):
+		"""
+		Handle calls to set special variables
+		"""
+		if attribute in ["fill", "stroke", "text"]:
+			return set_special_attribute(self, attribute, value)
+		return False
+
 class Container(XMLElement):
 	"""
 	Holds SVG elements
@@ -301,9 +330,11 @@ class Container(XMLElement):
 			recursive = False
 		if attribute in ["linear_gradients", "radial_gradients", "gradients", \
 						"patterns", "rects", "circles", "ellipses", "lines", \
-						"polylines", "polygons", "paths", "fills", "basic_shapes", \
+						"polylines", "polygons", "paths", "texts", "tspans", \
+						"trefs", "text_paths", "fills", "basic_shapes", \
 						"text_shapes", "shapes", "defs", "groups", "containers"]:
 			return get_special_attribute(self, attribute, recursive)
+		return None, True
 
 	def _set_attribute(self, attribute, value):
 		"""
@@ -313,7 +344,8 @@ class Container(XMLElement):
 			attribute = attribute[4:]
 		if attribute in ["linear_gradients", "radial_gradients", "gradients", \
 						"patterns", "rects", "circles", "ellipses", "lines", \
-						"polylines", "polygons", "paths", "fills", "basic_shapes", \
+						"polylines", "polygons", "paths", "texts", "tspans", \
+						"trefs", "text_paths", "fills", "basic_shapes", \
 						"text_shapes", "shapes", "defs", "groups", "containers"]:
 			raise ReadOnlyError, "Cannot directly set " + attribute + "!\n" \
 								"To add an object, use the add_* functions, and " \
@@ -488,9 +520,9 @@ class TransformableColorableContainer(TransformableContainer):
 			recursive = False
 		if attribute in ["linear_gradients", "radial_gradients", "gradients", \
 						"patterns", "rects", "circles", "ellipses", "lines", \
-						"polylines", "polygons", "paths", "fills", "basic_shapes", \
-						"text_shapes", "shapes", "defs", "groups", "containers", \
-						"fill", "stroke"]:
+						"polylines", "polygons", "paths", "texts", "tspans", \
+						"trefs", "text_paths", "fills", "basic_shapes", \
+						"text_shapes", "shapes", "defs", "groups", "containers"]:
 			return get_special_attribute(self, attribute)
 
 	def _set_attribute(self, attribute, value):
@@ -501,7 +533,8 @@ class TransformableColorableContainer(TransformableContainer):
 			attribute = attribute[4:]
 		if attribute in ["linear_gradients", "radial_gradients", "gradients", \
 						"patterns", "rects", "circles", "ellipses", "lines", \
-						"polylines", "polygons", "paths", "fills", "basic_shapes", \
+						"polylines", "polygons", "paths", "texts", "tspans", \
+						"trefs", "text_paths", "fills", "basic_shapes", \
 						"text_shapes", "shapes", "defs", "groups", "containers"]:
 			raise ReadOnlyError, "Cannot directly set " + attribute + "!\n" \
 								"To add an object, use the add_* functions, and " \
@@ -516,7 +549,10 @@ class SVGFile(Container):
 			dom = parse(filename)
 			Container.__init__(self, dom.documentElement)
 			self.__filename = filename
-			self.__dict__["defs"] = self.get_children("defs", Container)[0]
+			try:
+				self.__dict__["defs"] = self.get_children("defs", Container)[0]
+			except:
+				self.__dict__["defs"] = self.add_child_tag("defs", Container, { "id" : "defs" })
 		else:
 			# create a default SVG document
 			XMLElement.__init__(self, getDOMImplementation().createDocument(None, "svg", None).documentElement)
