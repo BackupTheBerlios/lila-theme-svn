@@ -1,0 +1,219 @@
+#!/usr/bin/env python
+
+"""
+	SVG-Utils Install Script
+	Used for install/uninstall of svg-utils!
+
+    Copyright (C) 2004 Daniel G. Taylor
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+"""
+
+import os, sys, shutil
+
+def red(text):
+	"""
+	Return given text in red (using bash colors)
+	"""
+	return '\x1b[31;01m' + text + '\x1b[0m'
+
+def green(text):
+	"""
+	Return given text in green (using bash colors)
+	"""
+	return '\x1b[32;01m' + text + '\x1b[0m'
+
+def blue(text):
+	"""
+	Return given text in blue (using bash colors)
+	"""
+	return '\x1b[34;01m' + text + '\x1b[0m'
+
+# ===========================================================
+
+# setup some defaults
+install = True
+prefix = "/usr"
+prefix_lib = True
+library_install_path = ""
+script_install_path = "lib/svg-utils"
+symlink_path = "bin"
+
+library_files = ["__init__.py", "color.py", "effects.py",\
+					"scripts.py", "svgfile.py", "utils.py"]
+script_files = ["svg-utils-test", "svg-utils-info", "svgcolor",\
+					"svgdump", "svggrayscale", "svgoverlay"]
+
+# check dependencies
+print "Checking dependencies..."
+try:
+	from xml.dom.minidom import parse
+except:
+	print red("Could not import xml.dom.minidom.parse!")
+	sys.exit()
+try:
+	from xml.dom.ext import PrettyPrint
+except:
+	print red("Could not import xml.dom.ext.PrettyPrint!")
+	print red("Please install or update pyxml!")
+	sys.exit()
+try:
+	from os.path import walk
+except:
+	print red("Could not import os.path.walk!")
+	print red("Please upgrade to python-2.3 or above!")
+	sys.exit()
+
+if len(sys.argv) > 1:
+	# parse the command line arguments
+	for arg in sys.argv[1:]:
+		if arg == "--help":
+			print "SVG-Utils Install Script"
+			print "Available command line options:"
+			print "\t" + blue("--prefix=value") + " - prefix added to other paths"
+			print "\t" + blue("--lib-path=value") + " - set the library install path"
+			print "\t" + blue("--script-path=value") + " - set the script installation path"
+			print "\t" + blue("--symlink-path=value") + " - set the path where symlinks are created"
+			print "\t" + blue("--uninstall") + " - uninstall this package!"
+			print "\t" + blue("--help") + " - display this help message"
+			sys.exit()
+		elif arg[:9] == "--prefix=":
+			prefix = arg[9:]
+		elif arg[:11] == "--lib-path=":
+			library_install_path = arg[11:]
+		elif arg[:14] == "--script-path=":
+			script_install_path = arg[14:]
+		elif arg[:15] == "--symlink-path=":
+			symlink_path = arg[15:]
+		elif arg == "--uninstall":
+			install = False
+
+print "Configuring paths..."
+
+# find the site packages path
+if library_install_path == "":
+	for path in sys.path:
+		if os.path.basename(path) == "site-packages":
+			library_install_path = path
+			prefix_lib = False
+if library_install_path == "":
+	print red("Couldn't find python site packages directory! Aborting!")
+	print red("Please specify the path using --lib-path=value!")
+	sys.exit()
+# prepend the prefix to our other paths
+if prefix_lib:
+	library_install_path = os.path.join(prefix, library_install_path)
+script_install_path = os.path.join(prefix, script_install_path)
+symlink_path = os.path.join(prefix, symlink_path)
+
+if install:
+	print "Installing library into " + blue(library_install_path)
+	print "Installing scripts into " + blue(script_install_path)
+	print "Symlinking scripts in " + blue(symlink_path)
+
+	print "Installing..."
+
+	# make all needed directories
+	if not os.path.exists(library_install_path):
+		try:
+			os.makedirs(library_install_path)
+		except OSError, err:
+			if err[0] == 13:
+				print red("You don't have write permission to create or write to " + library_install_path + "!")
+			else:
+				print red(err)
+			sys.exit()
+	if not os.path.exists(script_install_path):
+		try:
+			os.makedirs(script_install_path)
+		except OSError, err:
+			if err[0] == 13:
+				print red("You don't have write permission to create or write to " + script_install_path + "!")
+			else:
+				print red(err)
+			sys.exit()
+	if not os.path.exists(symlink_path):
+		try:
+			os.makedirs(symlink_path)
+		except OSError, err:
+			if err[0] == 13:
+				print red("You don't have write permission to create or write to" + symlink_path + "!")
+			else:
+				print red(err)
+			sys.exit()
+
+	# install the library
+	os.mkdir(os.path.join(library_install_path, "svg"))
+	os.chmod(os.path.join(library_install_path, "svg"), 0755)
+	for file in library_files:
+		shutil.copy(os.path.join("svg", file), os.path.join(library_install_path, "svg", file))
+		os.chmod(os.path.join(library_install_path, "svg", file), 0755)
+
+	# install the scripts
+	for file in script_files:
+		shutil.copy(file + ".py", os.path.join(script_install_path, file + ".py"))
+		os.chmod(os.path.join(script_install_path, file + ".py"), 0755)
+
+	# symlink the scripts
+	for file in script_files:
+		os.symlink(os.path.join(script_install_path, file + ".py"), os.path.join(symlink_path, file))
+		os.chmod(os.path.join(symlink_path, file), 0755)
+
+	print green("Installation successful!")
+else:
+	print red("Uninstalling SVG-Utils!")
+	
+	# remove the symlinks
+	for file in script_files:
+		try:
+			os.remove(os.path.join(symlink_path, file))
+		except:
+			print blue("Couldn't remove " + os.path.join(symlink_path, file))
+	print red("Symlinks removed...")
+
+	# remove the scripts
+	for file in script_files:
+		try:
+			os.remove(os.path.join(script_install_path, file + ".py"))
+		except:
+			print blue("Couldn't remove " + os.path.join(script_install_path, file + ".py"))
+	print red("Scripts removed...")
+
+	# remove the library
+	for file in library_files:
+		try:
+			os.remove(os.path.join(library_install_path, "svg", file))
+		except:
+			print blue("Couldn't remove " + os.path.join(library_install_path, "svg", file))
+	try:
+		os.rmdir(os.path.join(library_install_path, "svg"))
+	except:
+		print blue("Couldn't remove " + os.path.join(library_install_path, "svg"))
+	print red("Library removed...")
+
+	try:
+		os.removedirs(library_install_path)
+	except:
+		print blue("Couldn't remove all library paths!")
+	try:
+		os.removedirs(script_install_path)
+	except:
+		print blue("Couldn't remove all script paths!")
+	try:
+		os.removedirs(symlink_path)
+	except:
+		print blue("Couldn't remove all symlink paths!")
+
+	print green("Uninstall completed!")
