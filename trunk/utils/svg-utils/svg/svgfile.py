@@ -192,7 +192,9 @@ class SVGElement(XMLElement):
 		"""
 		Set custom attributes
 		"""
+		print attribute, value
 		if attribute in self.__dict__["special_attributes"]:
+			print "setting special..."
 			return set_special_attribute(self, attribute, value)
 		return False
 
@@ -219,7 +221,7 @@ class Gradient(SVGElement):
 		self.register_attribute_alias("xlink", "xlink:href")
 		self.register_special_attribute("stops")
 
-	def add_stop(self, id = None, color = "#00000000", offset = "1"):
+	def add_stop(self, id = None, color = "#000000ff", offset = "1"):
 		"""
 		Append a stop to this gradient
 		"""
@@ -877,27 +879,22 @@ class SVGFile(Container, Defs):
 
 		return svg.string
 
-	def add_gradient(self, grad_type = None, attributes = None, grad_id = None, element = None):
+	def add_gradient(self, grad_type = None, attributes = None, grad_id = None):
 		"""
 		Add a gradient to this container
-		Either element can be specified (and should be a Gradient object)
-		OR
 		gradient type, id, attributes etc... will produce a new gradient
 		"""
-		if element:
-			self.defs.element.appendChild(element.element)
-			return element
+		attributes = {}
+		if not grad_id:
+			global id_counter
+			grad_id = id_counter
+			id_counter += 1
+		attributes["id"] = grad_id
+		if grad_type == "linear":
+			grad_class = LinearGradient
 		else:
-			if not grad_id:
-				global id_counter
-				grad_id = id_counter
-				id_counter += 1
-			attributes["id"] = grad_id
-			if grad_type == "linear":
-				grad_class = LinearGradient
-			else:
-				grad_class = RadialGradient
-			return self.defs.add_child_tag(grad_type + "Gradient", grad_class, attributes)
+			grad_class = RadialGradient
+		return self.defs.add_child_tag(grad_type + "Gradient", grad_class, attributes)
 
 	def add_linear_gradient(self, id = None, startx = None, starty = None, stopx = None, stopy = None, xlink = None):
 		"""
