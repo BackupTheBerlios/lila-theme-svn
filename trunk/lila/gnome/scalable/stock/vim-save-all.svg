@@ -5,15 +5,18 @@
 <svg
    id="svg1"
    sodipodi:version="0.32"
-   inkscape:version="0.38.1"
+   inkscape:version="0.39"
    width="48pt"
    height="48pt"
-   sodipodi:docbase="/home/ed"
+   sodipodi:docbase="/home/stefan/software/Lila-themes/lila-gnome/Lila/scalable/stock"
    sodipodi:docname="vim-save-all.svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink">
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs3">
     <linearGradient
@@ -30,12 +33,12 @@
     <linearGradient
        id="linearGradient866">
       <stop
-         style="stop-color:#ffffff;stop-opacity:1;"
-         offset="0.00000000"
+         style="stop-color:#ffffff;stop-opacity:1.0000000;"
+         offset="0.0000000"
          id="stop867" />
       <stop
-         style="stop-color:#d9d1e1;stop-opacity:1;"
-         offset="1.00000000"
+         style="stop-color:#d9cce6;stop-opacity:1.0000000;"
+         offset="1.0000000"
          id="stop868" />
     </linearGradient>
     <linearGradient
@@ -308,4 +311,19 @@
      d="M 25.557050,24.393017 C 31.558478,25.331036 38.480702,26.756255 44.200918,28.367781 C 44.570185,28.471828 44.209090,29.599491 43.825499,29.539559 C 37.871173,28.608831 30.953521,27.020420 25.186904,25.395889 C 24.864124,25.304935 25.220560,24.340288 25.557050,24.393017 z "
      style="font-size:12;opacity:0.25;fill-rule:evenodd;stroke-width:1pt;"
      id="path887" />
+  <metadata
+     id="metadata67">
+    <rdf:RDF
+       id="RDF68">
+      <cc:Work
+         rdf:about=""
+         id="Work69">
+        <dc:format
+           id="format70">image/svg+xml</dc:format>
+        <dc:type
+           id="type72"
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
 </svg>

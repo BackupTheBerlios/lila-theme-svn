@@ -10,13 +10,16 @@
    height="48pt"
    id="svg1"
    sodipodi:version="0.32"
-   inkscape:version="0.38.1"
+   inkscape:version="0.39"
    sodipodi:docname="galeon.svg"
-   sodipodi:docbase="/home/dan/svg-icons/lila/gnome/scalable/apps"
+   sodipodi:docbase="/home/stefan/software/Lila-themes/lila-gnome/Lila/scalable/apps"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink">
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -25,12 +28,12 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="4.9119411"
-     inkscape:cx="31.296497"
-     inkscape:cy="22.294060"
+     inkscape:cx="31.296496"
+     inkscape:cy="22.575997"
      inkscape:window-width="640"
-     inkscape:window-height="525"
-     inkscape:window-x="69"
-     inkscape:window-y="340" />
+     inkscape:window-height="526"
+     inkscape:window-x="194"
+     inkscape:window-y="442" />
   <defs
      id="defs3">
     <linearGradient
@@ -138,12 +141,12 @@
        x2="0.75851387"
        y2="0.38095272" />
     <linearGradient
-       xlink:href="#linearGradient650"
+       xlink:href="#linearGradient563"
        id="linearGradient653"
-       x1="0.82031244"
-       y1="0.86718750"
-       x2="0.14843751"
-       y2="0.51562500" />
+       x1="0.0037735850"
+       y1="0.0075757578"
+       x2="0.98867923"
+       y2="0.99242425" />
   </defs>
   <g
      id="g687"
@@ -294,4 +297,19 @@
        style="font-size:12;opacity:0.7;fill:url(#linearGradient569);fill-rule:evenodd;stroke:none;stroke-width:0.0998909pt;"
        id="path700" />
   </g>
+  <metadata
+     id="metadata54">
+    <rdf:RDF
+       id="RDF55">
+      <cc:Work
+         rdf:about=""
+         id="Work56">
+        <dc:format
+           id="format57">image/svg+xml</dc:format>
+        <dc:type
+           id="type59"
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
 </svg>

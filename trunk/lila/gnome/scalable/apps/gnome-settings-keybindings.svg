@@ -5,15 +5,18 @@
 <svg
    id="svg1"
    sodipodi:version="0.32"
-   inkscape:version="0.38.1"
+   inkscape:version="0.39"
    width="48.000000pt"
    height="48.000000pt"
-   sodipodi:docbase="/home/scaba/files/lila-artwork/devel/lila-gnome-0.5.1_pre2/lila-gnome/Lila/scalable/apps"
+   sodipodi:docbase="/home/stefan/software/Lila-themes/lila-gnome/Lila/scalable/apps"
    sodipodi:docname="gnome-settings-keybindings.svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink">
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs3">
     <linearGradient
@@ -30,11 +33,11 @@
     <linearGradient
        id="linearGradient839">
       <stop
-         style="stop-color:#e6d9f3;stop-opacity:1.0000000;"
+         style="stop-color:#ffffff;stop-opacity:1.0000000;"
          offset="0.0000000"
          id="stop840" />
       <stop
-         style="stop-color:#ccbfd9;stop-opacity:1.0000000;"
+         style="stop-color:#d9cce6;stop-opacity:1.0000000;"
          offset="1.0000000"
          id="stop841" />
     </linearGradient>
@@ -314,4 +317,19 @@
      d="M 9.3814376,29.175726 C 9.5911419,30.054829 9.2546653,30.763619 9.0819837,31.528984 C 9.2445938,31.695148 9.6823677,31.754683 9.9581237,31.593258 C 10.562062,31.490184 9.9812296,29.456222 9.3814376,29.175726 z "
      id="path877"
      sodipodi:nodetypes="cccc" />
+  <metadata
+     id="metadata57">
+    <rdf:RDF
+       id="RDF58">
+      <cc:Work
+         rdf:about=""
+         id="Work59">
+        <dc:format
+           id="format60">image/svg+xml</dc:format>
+        <dc:type
+           id="type62"
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
 </svg>

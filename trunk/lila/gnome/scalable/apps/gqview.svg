@@ -5,15 +5,18 @@
 <svg
    id="svg1"
    sodipodi:version="0.32"
-   inkscape:version="0.37"
+   inkscape:version="0.39"
    width="48pt"
    height="48pt"
-   sodipodi:docbase="/home/stefan/software/Lila-themes"
+   sodipodi:docbase="/home/stefan/software/Lila-themes/lila-gnome/Lila/scalable/apps"
    sodipodi:docname="gqview.svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink">
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs3">
     <linearGradient
@@ -72,12 +75,8 @@
          id="stop580" />
     </linearGradient>
     <linearGradient
-       xlink:href="#linearGradient584"
-       id="linearGradient581"
-       x1="0.00649351"
-       y1="-0.00000000"
-       x2="0.96753246"
-       y2="0.97674417" />
+       xlink:href="#linearGradient652"
+       id="linearGradient581" />
     <linearGradient
        xlink:href="#linearGradient584"
        id="linearGradient583"
@@ -86,10 +85,10 @@
        x2="0.97692305"
        y2="1.03100777" />
     <linearGradient
-       xlink:href="#linearGradient652"
+       xlink:href="#linearGradient578"
        id="linearGradient860"
-       x1="0.00411519"
-       y1="0.01239669"
+       x1="0.0041151899"
+       y1="0.012396690"
        x2="0.99588472"
        y2="0.98347110" />
     <linearGradient
@@ -121,10 +120,10 @@
        x2="0.99588472"
        y2="0.98347110" />
     <linearGradient
-       xlink:href="#linearGradient652"
+       xlink:href="#linearGradient578"
        id="linearGradient655"
-       x1="0.00411519"
-       y1="0.01239669"
+       x1="0.0041151899"
+       y1="0.012396690"
        x2="0.99588472"
        y2="0.98347110" />
     <linearGradient
@@ -149,9 +148,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="16.0000000"
-     inkscape:cx="35.1665587"
-     inkscape:cy="22.6420249"
+     inkscape:zoom="16.000000"
+     inkscape:cx="35.166559"
+     inkscape:cy="22.642025"
      inkscape:window-width="1269"
      inkscape:window-height="970"
      inkscape:window-x="0"
@@ -190,4 +189,27 @@
      d="M 24.656817 30.128337 C 24.296564 28.327073 24.893801 26.628333 25.73279 25.562117 C 26.815149 24.186621 28.254443 23.505486 30.505773 23.538273 C 32.377335 23.565528 33.856836 24.663058 34.679584 25.929655 C 35.377903 27.0047 35.424369 28.667311 35.104144 30.308463 "
      id="path652"
      sodipodi:nodetypes="cssss" />
+  <metadata
+     id="metadata36">
+    <rdf:RDF
+       id="RDF37">
+      <cc:Work
+         rdf:about=""
+         id="Work38">
+        <dc:format
+           id="format39">image/svg+xml</dc:format>
+        <dc:type
+           id="type41"
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     style="font-size:12.000000;opacity:0.34545454;fill:#000000;fill-opacity:1.0000000;fill-rule:evenodd;stroke:none;stroke-width:1.8750000;"
+     d="M 56.114493,32.421875 C 56.114493,38.011732 51.577799,42.548425 45.987943,42.548425 C 40.398088,42.548425 35.861393,38.011732 35.861393,32.421875 C 35.861393,26.832020 40.398088,22.295325 45.987943,22.295325 C 51.577799,22.295325 56.114493,26.832020 56.114493,32.421875 z "
+     id="path1562" />
+  <path
+     style="font-size:12.000000;opacity:0.34545454;fill:#000000;fill-opacity:1.0000000;fill-rule:evenodd;stroke:none;stroke-width:1.8750000;"
+     d="M 23.912229,32.444636 C 23.912229,38.034493 19.375535,42.571186 13.785679,42.571186 C 8.1958243,42.571186 3.6591294,38.034493 3.6591294,32.444636 C 3.6591294,26.854781 8.1958243,22.318086 13.785679,22.318086 C 19.375535,22.318086 23.912229,26.854781 23.912229,32.444636 z "
+     id="path2186" />
 </svg>

@@ -5,15 +5,18 @@
 <svg
    id="svg1"
    sodipodi:version="0.32"
-   inkscape:version="0.38.1"
+   inkscape:version="0.39"
    width="48pt"
    height="48pt"
-   sodipodi:docbase="/root/Desktop"
-   sodipodi:docname="g-desklets.svg"
+   sodipodi:docbase="/home/stefan/software/Lila-themes/lila-gnome/Lila/scalable/mimetypes"
+   sodipodi:docname="x-gdesklets-display.svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink">
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs3">
     <linearGradient
@@ -24,21 +27,14 @@
        x2="0.99270076"
        y2="0.95714283" />
     <linearGradient
-       xlink:href="#linearGradient1304"
-       id="linearGradient586"
-       x1="0.00000000"
-       y1="0.00000000"
-       x2="0.99420291"
-       y2="0.99576271" />
-    <linearGradient
        id="linearGradient1304">
       <stop
-         style="stop-color:#d9cce6;stop-opacity:1;"
-         offset="0.00000000"
+         style="stop-color:#d9cce6;stop-opacity:1.0000000;"
+         offset="0.0000000"
          id="stop1305" />
       <stop
-         style="stop-color:#73667f;stop-opacity:1;"
-         offset="1.00000000"
+         style="stop-color:#73667f;stop-opacity:1.0000000;"
+         offset="1.0000000"
          id="stop1306" />
     </linearGradient>
     <linearGradient
@@ -150,12 +146,12 @@
     <linearGradient
        id="linearGradient578">
       <stop
-         style="stop-color:#d9cce6;stop-opacity:1;"
-         offset="0.00000000"
+         style="stop-color:#d9cce6;stop-opacity:1.0000000;"
+         offset="0.0000000"
          id="stop579" />
       <stop
-         style="stop-color:#73667f;stop-opacity:1;"
-         offset="1.00000000"
+         style="stop-color:#73667f;stop-opacity:1.0000000;"
+         offset="1.0000000"
          id="stop580" />
     </linearGradient>
     <linearGradient
@@ -222,6 +218,13 @@
        y1="0.05468750"
        x2="0.96212119"
        y2="0.96875000" />
+    <linearGradient
+       xlink:href="#linearGradient1304"
+       id="linearGradient586"
+       x1="1.1227998e-15"
+       y1="-8.4567769e-18"
+       x2="0.99420291"
+       y2="0.99576271" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -233,10 +236,10 @@
      inkscape:zoom="5.6423387"
      inkscape:cx="29.916903"
      inkscape:cy="24.206299"
-     inkscape:window-width="1274"
-     inkscape:window-height="950"
-     inkscape:window-x="0"
-     inkscape:window-y="25" />
+     inkscape:window-width="922"
+     inkscape:window-height="644"
+     inkscape:window-x="33"
+     inkscape:window-y="222" />
   <path
      d="M 4.4389304 48.086315 C 5.2483181 50.50443 38.765774 61.377487 40.966438 59.55288 C 42.936267 57.902492 57.675565 8.7785888 56.688667 6.8303779 C 55.662821 4.6824777 21.657054 -0.6675724 20.042945 0.80153134 C 18.054709 2.621752 3.5888672 45.311841 4.4389304 48.086315 z "
      style="font-size:12;opacity:0.302675;fill-rule:evenodd;stroke-width:12.5;"
@@ -334,4 +337,19 @@
      d="M 9.6627543,42.666033 C 9.4056853,42.917618 7.6266843,43.287038 7.8302243,42.952360 C 8.6134353,41.664519 12.262315,38.410980 12.411558,38.585876 C 12.567734,38.768889 10.697863,41.653008 9.6627543,42.666033 z "
      id="path642"
      sodipodi:nodetypes="csss" />
+  <metadata
+     id="metadata59">
+    <rdf:RDF
+       id="RDF60">
+      <cc:Work
+         rdf:about=""
+         id="Work61">
+        <dc:format
+           id="format62">image/svg+xml</dc:format>
+        <dc:type
+           id="type64"
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
 </svg>

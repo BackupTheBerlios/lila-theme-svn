@@ -5,15 +5,18 @@
 <svg
    id="svg1"
    sodipodi:version="0.32"
-   inkscape:version="0.37"
+   inkscape:version="0.39"
    width="48pt"
    height="48pt"
-   sodipodi:docbase="/home/stefan/software/Lila-themes"
-   sodipodi:docname="edtyg.svg"
+   sodipodi:docbase="/home/stefan/software/Lila-themes/lila-gnome/Lila/scalable/devices"
+   sodipodi:docname="gnome-dev-zipdisk.svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink">
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs3">
     <linearGradient
@@ -41,12 +44,12 @@
     <linearGradient
        id="linearGradient866">
       <stop
-         style="stop-color:#ffffff;stop-opacity:1;"
-         offset="0.00000000"
+         style="stop-color:#ffffff;stop-opacity:1.0000000;"
+         offset="0.0000000"
          id="stop867" />
       <stop
-         style="stop-color:#d9d1e1;stop-opacity:1;"
-         offset="1.00000000"
+         style="stop-color:#d9cce6;stop-opacity:1.0000000;"
+         offset="1.0000000"
          id="stop868" />
     </linearGradient>
     <linearGradient
@@ -131,13 +134,13 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="8.00000002"
-     inkscape:cx="25.7790040"
-     inkscape:cy="24.5089378"
+     inkscape:zoom="8.0000000"
+     inkscape:cx="25.779004"
+     inkscape:cy="24.508938"
      inkscape:window-width="705"
      inkscape:window-height="544"
      inkscape:window-x="547"
-     inkscape:window-y="438" />
+     inkscape:window-y="424" />
   <path
      d="M 8.3905812 44.279826 C 8.7160968 44.731121 11.464006 50.497178 13.044688 51.439704 C 14.697247 52.471793 38.868872 58.722625 40.969048 58.781504 C 43.08313 58.838577 48.098449 56.481176 48.527849 56.248362 C 50.16482 55.224253 59.745314 14.99643 58.601267 13.284944 C 58.378175 12.93538 55.707204 11.039605 51.723561 10.358235 C 47.739918 9.676864 26.148642 6.8549456 22.118059 6.495203 C 18.087476 6.1354604 16.009008 6.6003803 15.692037 6.8940725 C 14.370823 8.2675722 7.3079461 42.580144 8.3905812 44.279826 z "
      style="font-size:12;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:1.875;stroke-dasharray:none;fill-opacity:1;opacity:0.300000;"
@@ -194,4 +197,19 @@
      d="M 18.52784 22.444901 C 25.725376 23.569871 34.027226 25.279144 40.887502 27.211851 C 41.330366 27.336636 40.897303 28.689046 40.43726 28.617169 C 33.296215 27.500944 24.999848 25.595957 18.083923 23.647651 C 17.696811 23.538569 18.124287 22.381664 18.52784 22.444901 z "
      style="font-size:12;opacity:0.25;fill-rule:evenodd;stroke-width:1pt;"
      id="path656" />
+  <metadata
+     id="metadata39">
+    <rdf:RDF
+       id="RDF40">
+      <cc:Work
+         rdf:about=""
+         id="Work41">
+        <dc:format
+           id="format42">image/svg+xml</dc:format>
+        <dc:type
+           id="type44"
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
 </svg>

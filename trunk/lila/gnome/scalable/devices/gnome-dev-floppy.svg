@@ -5,15 +5,18 @@
 <svg
    id="svg1"
    sodipodi:version="0.32"
-   inkscape:version="0.37"
+   inkscape:version="0.39"
    width="48pt"
    height="48pt"
-   sodipodi:docbase="/home/dan/Projects/Lila-icons/scalable/devices"
+   sodipodi:docbase="/home/stefan/software/Lila-themes/lila-gnome/Lila/scalable/devices"
    sodipodi:docname="gnome-dev-floppy.svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink">
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs3">
     <linearGradient
@@ -30,12 +33,12 @@
     <linearGradient
        id="linearGradient866">
       <stop
-         style="stop-color:#ffffff;stop-opacity:1;"
-         offset="0.00000000"
+         style="stop-color:#ffffff;stop-opacity:1.0000000;"
+         offset="0.0000000"
          id="stop867" />
       <stop
-         style="stop-color:#d9d1e1;stop-opacity:1;"
-         offset="1.00000000"
+         style="stop-color:#d9cce6;stop-opacity:1.0000000;"
+         offset="1.0000000"
          id="stop868" />
     </linearGradient>
     <linearGradient
@@ -117,11 +120,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.97947193"
-     inkscape:cx="26.4570195"
-     inkscape:cy="23.7684983"
+     inkscape:zoom="7.9794719"
+     inkscape:cx="26.457020"
+     inkscape:cy="23.768498"
      inkscape:window-width="640"
-     inkscape:window-height="516"
+     inkscape:window-height="526"
      inkscape:window-x="153"
      inkscape:window-y="351" />
   <path
@@ -170,4 +173,19 @@
      d="M 19.632694 17.804513 C 26.83023 18.929483 35.13208 20.638756 41.992356 22.571463 C 42.43522 22.696248 42.002157 24.048658 41.542114 23.976781 C 34.401069 22.860556 26.104702 20.955569 19.188777 19.007263 C 18.801665 18.898181 19.229141 17.741276 19.632694 17.804513 z "
      style="font-size:12;opacity:0.25;fill-rule:evenodd;stroke-width:1pt;"
      id="path1381" />
+  <metadata
+     id="metadata34">
+    <rdf:RDF
+       id="RDF35">
+      <cc:Work
+         rdf:about=""
+         id="Work36">
+        <dc:format
+           id="format37">image/svg+xml</dc:format>
+        <dc:type
+           id="type39"
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
 </svg>
