@@ -1,0 +1,175 @@
+used symbols:
+~: file changed
++: file added
+-: file removed
+->: file renamed
+
+----------
+02/09/05 jpetso
+---------
+
+kde/
+ ~generate.py: add ksvgtopng converter (which is not very capable)
+ ~index.desktop: bug fixing
+
+
+actions/
+ +2leftarrow.svg
+ +2rightarrow.svg
+ +2uparrow.svg
+ +2downarrow.svg
+
+ align_left.svg -> text_left.svg, leftjust.svg
+ align_right.svg -> text_right.svg, rightjust.svg
+ center.svg -> text_center.svg, centrejust.svg
+ fill.svg -> text_block.svg
+ strikethrough.svg -> text_strike.svg
+ underline.svg -> text_under.svg, under.svg
+ italic.svg -> text_italic.svg
+ bold.svg -> text_bold.svg
+ +text.svg
+
+ ~bookmark.svg: update from epiphany-bookmarks.svg
+ ~bookmark_add.svg: update from stock_add-bookmark.svg
+ +favorites.svg
+ +indent.svg
+ first.svg -> start.svg
+ last.svg -> finish.svg
+ font.svg -> fonts.svg
+ +fontsizedown.svg
+ +fontsizeup.svg
+ +khtml_kget.svg
+
+ +kontact_contacts.svg
+ +kontact_date.svg
+ +kontact_mail.svg
+ +kontact_news.svg
+ +kontact_notes.svg
+ +kontact_todo.svg
+
+ +ktip.svg
+
+ ~laptop_charge.svg
+ ~laptop_nobattery.svg
+ ~laptop_nocharge.svg
+ ~laptop_power.svg
+
+ ~mail_find.svg: update from balsa_show_preview.svg
+ ~mail_forward.svg: update from balsa_forward.svg
+ ~mail_generic.svg: update from balsa_info_read.svg
+ ~mail_get.svg: update from balsa_receive.svg
+ ~mail_reply.svg: update from balsa_reply.svg
+ ~mail_replyall.svg: update from balsa_reply_all.svg
+ ~mail_replylist.svg: update from balsa_reply_group.svg
+ ~mail_send.svg: update from balsa_menu_send.svg
+ ~queue.svg: combined mail_generic.svg with clock from korn.svg
+ ~attach.svg: updated from balsa_info_attachment.svg
+
+ ~player_eject.svg: updated with gnome stock icon
+ ~player_end.svg: dito
+ ~player_fwd.svg: dito
+ ~player_pause.svg: dito
+ ~player_play.svg: dito
+ ~player_rew.svg: dito
+ ~player_start.svg: dito
+ +player_time.svg
+ +player_volume.svg
+
+ +save_all.svg
+
+
+apps/
+ +abiword.svg
+ +audacity.svg
+ +bluefish.svg
+ +clanbomber.svg
+ +clock.svg
+ +date.svg
+ +eclipse.svg
+ +edu_mathematics.svg
+ +error.svg
+ ~frozenbubble.svg: updated with correct icon from gnome apps
+ +gnome_apps.svg
+ +gnomemeeting.svg
+ +gv.svg
+ +hexedit.svg
+
+ +fonts.svg
+ +kcmdevices.svg
+ +kcmfontinst.svg
+ +kcmprocessor.svg
+
+ +kdbg.svg
+ ~kdict: updated with gdict icon
+ +key_bindings.svg
+ +keyboard.svg
+ +kfilereplace.svg
+ +kfontview.svg
+ +kget.svg
+ +kjobviewer.svg
+ +kmag.svg
+ +knotes.svg
+
+ +klines.svg
+ +kmahjongg.svg
+ +kmines.svg
+ +kpoker.svg
+ +kreversi.svg
+ +ksame.svg
+ +ksirtet.svg
+ +ksmiletris.svg
+ +kwin4.svg
+
+ ~kmix.svg: updated with gnome and xfce versions
+ ~knode.svg: changed it again, please update the gnome newsreaders too
+ ~kpdf.svg: updated with gnome-pdf.svg
+ ~kghostview.svg: updated with gnome-ghostview.svg
+
+ +konqsidebar_news.svg
+ +korn.svg
+ +kpackage.svg
+ +kpager.svg
+ +kppp.svg
+ +krfb.svg
+ +krdc.svg
+ +nicotine.svg
+ +printmgr.svg
+ ~xclock.svg: replaced with clock from gnome-mailcheck, because it was still transparent. please update gnome clocks as well!
+ +xconsole.svg
+ +xemacs.svg
+ +xeyes.svg
+
+
+devices/
+ +blockdevice.svg
+ +chardevice.svg
+ +joystick.svg
+ +pda_black.svg
+ +zip_mount.svg
+ +zip_unmount.svg
+
+
+filesystems/
+ executable.svg -> exec.svg
+ folder_favourite.svg -> folder_favorite.svg
+
+
+mimetypes/
+ +ascii.svg
+ +core.svg
+ +dvi.svg
+ +exec_wine.svg
+ +font.svg
+ +man.svg
+ +quicktime.svg
+ +source.svg
+ +template_source.svg
+ +vcalendar.svg
+
+ ~source_c.svg: updated with gnome mimetype icons
+ ~source_cpp.svg: dito
+ ~source_h.svg: dito
+ ~source_java.svg: dito
+ ~source_o.svg: dito
+ ~source_php.svg: dito
+ ~text-x-patch.svg: dito
