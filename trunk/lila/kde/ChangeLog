@@ -7,6 +7,33 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+04/07/05 jpetso
+---------
+
+kde/
+ ~index.desktop: 128x128/filesystems was labeled wrong, fixed
+ ~index-red.desktop: dito
+ ~index-blue.desktop: dito
+
+apps/
+ ~konqueror.svg: konqification of the world icon. The question is, is it good enough?
+ ~kpackage.svg: replaced with gnome's synaptic.svg
+ +multisynk.svg: copy of gnome's palm-pilot-sync.svg
+
+devices/
+ +system.svg: "storage media" icon new in KDE 3.4, copy of kwikdisk.svg
+
+filesystems/
+ +camera.svg: since KDE 3.4 also in filesystems/
+ +folder_violet.svg: missing folder colors, until now. don't take them as official 8-)
+ +folder_violet_open.svg: dito
+ +folder_orange.svg: dito
+ +folder_orange_open.svg: dito
+ +folder_grey.svg: dito
+ +folder_grey_open.svg: dito
+
+
+----------
 03/29/05 jpetso
 ---------
 

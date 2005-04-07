@@ -118,8 +118,8 @@ Context=FileSystems
 Type=Threshold
 [128x128/filesystems]
 Size=128
-Context=Actions
-Type=FileSystems
+Context=FileSystems
+Type=Treshold
 [16x16/mimetypes]
 Size=16
 Context=MimeTypes
