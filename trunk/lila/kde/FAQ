@@ -1,0 +1,46 @@
+The lila-kde FAQ:
+Questions that may or may not have been asked,
+but will be answered for your enhanced lila experience.
+
+Q. Why did it take a year until lila-kde v0.8 made its comeback?
+A. In the beginning, I was wondering myself. Just when lila-kde started to
+   rock, it became unmaintained. Tom Chance, also known as telex4, who was
+   the creator of the original KDE port, left the project silently (while
+   taking on other challenges). Anyways, the lila project, which had always
+   been mostly a gnome thing, continued to evolve without the KDE port.
+   Some time ago, I decided that this is bad, so here you are again
+   with a new maintainer and much more icons than before.
+
+Q. My favorite icon isn't in here! Can you draw one, please?
+A. We'll see. If you want to contact the team directly, you should come to
+   our site at lila-theme.berlios.de, where we all wait for your forum posts.
+   If you really want to help and have some good idea, you're strongly invited
+   to draw one or more icons yourself. Our web site has a tutorial how to do
+   that, and the team will try to help you as good as we can.
+
+Q. What's all this business with PNG and SVG formats?
+A. You know, that's only a workaround. PNGs is a well supported bitmap files,
+   storing color and opacity values for each pixel in a picture. PNG is the
+   standard picture format for KDE icon themes. SVG, on the other hand, is
+   a vector graphics format on the rise, which stores information about
+   the geometry of the picture, like the starting and end points of lines
+   or fill and border colors of all the shapes in the picture.
+   The lila icon set only consists of SVG pictures, but if you want them
+   to look great in KDE, you have to convert them to the PNG format.
+   That's what we do for lila-kde. The gnome folks don't need that workaround,
+   because they have a proper package displaying SVGs (which is called rsvg).
+
+Q. But I heard KDE 3.4 supports SVG! You don't need the PNGs anymore, do you?
+A. No, we still need them. KDE has enhanced the KSVG renderer, which renders
+   SVG graphics that are taken as background image or embedded in web sites.
+   Unfortunately, KSVG is too slow to render many icons in little time,
+   so the KDE folks made a less capable but faster SVG engine for displaying
+   icons (with serious drawbacks). This icon renderer hasn't improved with
+   KDE 3.4, though I think it's only a question of time until that changes.
+
+Q. I want to contribute to the lila project!
+A. This is a FAQ, you're supposed to ask questions! Well ok, anyways.
+   It's late at night, so I leave that one unanswered for now.
+   At least, know that we work with a Subversion (SVN) repository where we
+   store all the icons. You can do an anonymous checkout from there and
+   access our latest development state. Details on anonymous SVN later.
