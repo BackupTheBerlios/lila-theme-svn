@@ -98,10 +98,10 @@ done
 
 echo
 echo "Making tarballs ($OUTPUTPATH/lila-kde[-color].tar.bz2)..."
-sh -c "cd $OUTPUTPATH && tar --create --bzip2 --file $OUTPUTPATH/lila-kde.tar.bz2 lila-kde/lila"
+sh -c "cd $OUTPUTPATH/lila-kde && tar --create --bzip2 --file lila-kde.tar.bz2 lila"
 
 for COLOR in $COLORMODS; do
-	sh -c "cd $OUTPUTPATH && tar --create --bzip2 --file $OUTPUTPATH/lila-kde-$COLOR.tar.bz2 lila-kde/lila-$COLOR"
+	sh -c "cd $OUTPUTPATH/lila-kde && tar --create --bzip2 --file lila-kde-$COLOR.tar.bz2 lila-$COLOR"
 done
 
 echo
