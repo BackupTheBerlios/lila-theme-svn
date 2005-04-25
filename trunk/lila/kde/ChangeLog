@@ -7,6 +7,31 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+04/24/05 jpetso (release 0.8)
+---------
+
+kde/
+ ~README: changed version to 0.8. yay!
+ ~FAQ: is now more complete. Go enjoy reading.
+ ~makecolormod.sh: added --help option to also display the Usage hint.
+ ~makerelease.sh: added --help option and the appropriate Usage hint.
+
+apps/
+ +akregator.svg: (new in KDE 3.4) new Akregator icon, also using telex' knode newspaper
+ +akregator_empty.svg: (new in KDE 3.4) I have yet to find out where this appears.
+ ~kopete.svg: changed the green to something that is not color modded.
+ ~kopete_some_online.svg: dito
+ ~fsview.svg: dito
+ ~hwinfo.svg: a tiny magnifier glass rotation
+
+devices/
+ +scanner.svg: copy of gnome's xsane icon
+ +mobile_camera.svg: (new in KDE 3.4) the camera icon, once more.
+ +mobile_musicplayer.svg: (new in KDE 3.4) copy of the 3-musical-notes icon.
+ +mobile_organizer.svg: (new in KDE 3.4) copy of the pda icon
+
+
+----------
 04/19/05 jpetso
 ---------
 
@@ -19,6 +44,7 @@ apps/
  ~kmenu.svg: dito
  +ksokoban.svg: gnome's gweled diamond turned around
  +hwinfo.svg: another newly composed icon, this time for KInfoCenter
+
 
 ----------
 04/07/05 jpetso

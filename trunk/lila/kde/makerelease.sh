@@ -11,6 +11,16 @@
 # Make sure you have updated the README file with the latest
 # release version number, the script won't do that.
 
+if [ "$1" = "--help" ] # duplicating contents is not exactly clean, but I don't want to do extensive research for this.
+then
+  echo
+  echo "Usage:"
+  echo "$0 color [/path/to/svgs [/path/to/output [/path/to/svg-utils]]]"
+  echo "This script will try to make a lila-kde release, including"
+  echo "color mods, PNG generation from SVG, and tarball creation."
+  exit 0
+fi
+
 OUTPUTPATH=../release-kde
 COLORMODS="blue red"
 

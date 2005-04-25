@@ -40,7 +40,37 @@ A. No, we still need them. KDE has enhanced the KSVG renderer, which renders
 
 Q. I want to contribute to the lila project!
 A. This is a FAQ, you're supposed to ask questions! Well ok, anyways.
-   It's late at night, so I leave that one unanswered for now.
-   At least, know that we work with a Subversion (SVN) repository where we
-   store all the icons. You can do an anonymous checkout from there and
-   access our latest development state. Details on anonymous SVN later.
+   We gather our files in a Subversion (SVN) repository from where everybody
+   can access them. Only the developers with an account can modify the
+   repository contents, but everyone, including you, can get the most
+   current icons by using anonymous SVN.
+   To fetch only the KDE icons, tell the command line to execute this:
+   svn checkout svn://svn.berlios.de/lila-theme/trunk/lila/kde
+   (using an empty password), or if you want to check out all of the
+   lila project, do the same without the trailing "/lila/kde".
+   You can then edit the icons, make new icons and color mods, and
+   finally send your improvements to the lila forum.
+
+Q. Yeah, and how do I make my own color mods?
+A. First of all, you need the lila/kde and utils/svg-utils folders from the
+   Subversion repository. Color mods are possible because SVG, our icon format,
+   is in fact a pure textual description of the picture, which can be changed
+   easily. The svg-utils perform the job of transforming picture properties
+   like colors. For icon color mods, the information about which source color
+   transforms into which destination color is stored in XML files in the folder
+   utils/svg-utils/svgcolor-xml/lila, where you'll also find the file
+   lila-template.xml. You can copy and rename it to lila-mycolor.xml to create
+   a new color transform description where you can edit all of the colors that
+   you want to change. Then you can go to lila/kde/ and call
+   ./makecolormod.sh mycolor
+   and you'll get a set of transformed SVG files in your parent directory.
+   If you need to, you can copy lila/kde/generate.py into the new folder
+   and execute it there, which makes PNG images out of the SVG sources
+   (so that you can use it as KDE icon theme).
+
+Q. My question has not been answered here! or: I need further help!
+A. Then you're supposed to go to the forums on lila-theme.berlios.de
+   where we are waiting for your comments, questions, proposals or icons.
+   Please don't become aggressive when something doesn't work as expected,
+   after all, we're just people too and do this in our free time.
+   Now go on, have fun with the icon set!

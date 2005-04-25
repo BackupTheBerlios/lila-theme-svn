@@ -8,7 +8,7 @@
    inkscape:version="0.40"
    width="48pt"
    height="48pt"
-   sodipodi:docbase="/home/jakob/dev/lila-cvs/lila-kde/scalable/apps"
+   sodipodi:docbase="/home/jakob/dev/lila-cvs/lila-theme/trunk/lila/kde/scalable/apps"
    sodipodi:docname="fsview.svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:cc="http://web.resource.org/cc/"
@@ -48,11 +48,11 @@
     <linearGradient
        id="linearGradient1712">
       <stop
-         style="stop-color:#7fff7f;stop-opacity:1.0000000;"
+         style="stop-color:#7eff7e;stop-opacity:1.0000000;"
          offset="0.0000000"
          id="stop1713" />
       <stop
-         style="stop-color:#3fbf3f;stop-opacity:1.0000000;"
+         style="stop-color:#3ebf3e;stop-opacity:1.0000000;"
          offset="1.0000000"
          id="stop1714" />
     </linearGradient>
@@ -274,7 +274,7 @@
      id="path639"
      sodipodi:nodetypes="ccccc" />
   <path
-     style="font-size:12.000000;fill:url(#linearGradient1086);fill-opacity:1.0000000;fill-rule:evenodd;stroke:#003300;stroke-width:0.97500002;stroke-miterlimit:4.0000000;stroke-opacity:1.0000000"
+     style="font-size:12.000000;fill:url(#linearGradient1086);fill-opacity:1.0000000;fill-rule:evenodd;stroke:#003400;stroke-width:0.97500002;stroke-miterlimit:4.0000000;stroke-opacity:1.0000000;"
      d="M 30.251758,20.124938 C 28.940440,20.912542 29.780835,30.555094 30.829887,31.555679 C 31.223281,32.107208 45.488187,32.884084 47.061768,31.994005 C 47.651858,31.238795 48.347917,21.248696 46.971039,20.281602 C 44.938497,19.691108 30.710720,19.678986 30.251758,20.124938 z "
      id="path647"
      sodipodi:nodetypes="ccccc" />
