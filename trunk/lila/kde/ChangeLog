@@ -11,6 +11,13 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 ---------
 
 kde/
+ ~makerelease.sh: it's working as supposed, finally. man, this is tough.
+
+----------
+04/24/05 jpetso
+---------
+
+kde/
  ~README: changed version to 0.8. yay!
  ~FAQ: is now more complete. Go enjoy reading.
  ~makecolormod.sh: added --help option to also display the Usage hint.

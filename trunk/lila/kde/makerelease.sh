@@ -85,7 +85,7 @@ rm -f $OUTPUTPATH/lila-kde/lila/makecolormod.sh #> /dev/null
 rm -f $OUTPUTPATH/lila-kde/lila/convert-errors.log #> /dev/null
 rm -f $OUTPUTPATH/lila-kde/lila/index-scalable.desktop #> /dev/null
 
-for COLOR in "$COLORMODS"; do
+for COLOR in $COLORMODS; do
 	rm -rf $OUTPUTPATH/lila-kde/lila-$COLOR/ksplash #> /dev/null
 	rm -rf $OUTPUTPATH/lila-kde/lila-$COLOR/scalable #> /dev/null
 	rm -f $OUTPUTPATH/lila-kde/lila-$COLOR/generate.py #> /dev/null
@@ -97,8 +97,12 @@ done
 # Part 5: make a tarball
 
 echo
-echo "Making a tarball ($OUTPUTPATH/lila-kde.tar.bz2)..."
-tar --create --bzip2 --file $OUTPUTPATH/lila-kde.tar.bz2 $OUTPUTPATH/lila-kde
+echo "Making tarballs ($OUTPUTPATH/lila-kde[-color].tar.bz2)..."
+sh -c "cd $OUTPUTPATH && tar --create --bzip2 --file $OUTPUTPATH/lila-kde.tar.bz2 lila-kde/lila"
+
+for COLOR in $COLORMODS; do
+	sh -c "cd $OUTPUTPATH && tar --create --bzip2 --file $OUTPUTPATH/lila-kde-$COLOR.tar.bz2 lila-kde/lila-$COLOR"
+done
 
 echo
 echo "...Done! Enjoy your fine lila-kde release."
