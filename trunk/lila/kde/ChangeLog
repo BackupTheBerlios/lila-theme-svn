@@ -7,6 +7,68 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+05/05/05 jpetso
+---------
+"The 05 commit."
+
+actions/
+ +bug.svg: copy of the debugger icon, as found in kdbg.svg
+ +knewstuff.svg: finally, the emblem-special icon fits somewhere in KDE too.
+ +mouse.svg
+ +kdevelop_down.svg
+ +pencil.svg
+ +toggle_log.svg: copy of contents.svg, like in original crystal
+ color_picker.svg -> colorpicker.svg
+
+apps/
+ ~ark.svg: replaced with fileroller item
+ +kcoloredit.svg: copy of the color icon
+ +kcolorchooser.svg: copy of the colorpicker icon
+ +kgamma.svg: copy of gnome-monitor.svg
+ +kmobile.svg: taken from stock_cell-phone.svg
+ +kthememgr.svg: copy of glade-2, which shouldn't be all too common in KDE.
+ ~clock.svg: Don't know why, but some clocks have more contrast than others.
+ ~xclock.svg: So, copy from the original clock icons.
+
+devices/
+ +mobile_phone.svg: same as apps/kmobile.svg
+ +ksim_cpu.svg: the cpu icon, again
+
+mimetypes/
+ This is the great mimetypes clean-up. I checked well not to remove needed icons,
+ and I probably left out a few other unnecessary ones.
+ If I removed too much, please tell me instantly and I'll bring it back again.
+ -ac3.svg
+ -asf.svg
+ -avi.svg
+ -bmp.svg
+ -bzip2.svg
+ -dia-diagram.svg
+ -gif.svg
+ -gzip.svg
+ -jar.svg
+ -jpeg.svg
+ -mov.svg
+ -mp3.svg
+ -mpeg.svg
+ -ogg.svg
+ -png.svg
+ -psd.svg
+ -rar.svg
+ -real.svg
+ -rtf.svg
+ -sit.svg
+ -svg.svg
+ -tiff.svg
+ -wav.svg
+ -wmv.svg
+ -xcf.svg
+ -xpm.svg
+ +document2.svg: same as document.svg, don't know why it's duplicated
+ ~vcard.svg: replaced with gnome-gnomecard.svg, but without its toes
+
+
+----------
 04/24/05 jpetso (release 0.8)
 ---------
 
