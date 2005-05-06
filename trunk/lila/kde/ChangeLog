@@ -7,6 +7,19 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+05/06/05 jpetso
+---------
+
+actions/
+ ~player_time.svg: yet another messed-up clock icon.
+
+apps/
+ +korgac.svg: the nasty KOrganizer Alarm Daemon taskbar icon.
+ +korgac_disabled.svg: the grayed out version of the above.
+ +lyx.svg: directly from gnome/apps
+
+
+----------
 05/05/05 jpetso
 ---------
 "The 05 commit."
