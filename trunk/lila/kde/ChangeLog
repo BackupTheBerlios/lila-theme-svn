@@ -7,6 +7,17 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+05/11/05 jpetso
+---------
+
+apps/
+ +dock_both.svg: tray icon for kppp
+ +dock_left.svg: dito
+ +dock_none.svg: dito
+ +dock_right.svg: dito
+
+
+----------
 05/06/05 jpetso
 ---------
 
