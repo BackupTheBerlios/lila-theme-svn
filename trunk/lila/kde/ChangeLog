@@ -7,6 +7,36 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+05/18/05 jpetso
+---------
+
+actions/
+ ~contents.svg: replaced with gnome-stock-book-open.svg
+ +contents2.svg: bookmark icon without the red bookmark
+ +imagegallery.svg: Gwenview's "Image View"
+ +rebuild.svg: sort of refresh view
+ +view_left_right.svg: new "split window" icon
+ +view_top_bottom.svg: dito
+ +view_remove.svg: good to have, too.
+ ~view_detailed.svg: color fix
+ ~view_icon.svg: dito
+ ~view_multicolumn.svg: dito
+ ~view_text.svg: dito
+ ~view_tree.svg: dito
+ ~window_new.svg: dito
+
+apps/
+ +kuickshow.svg: Finally, the flower has escaped lila-backgrounds!
+ +imagegallery.svg: duplicate of the action/ one
+ +photobook.svg: Another Konqueror view plugin
+ ~fsview.svg: color fix, too
+ -dock_both.svg: doesn't work, hmpf - sorry.
+ -dock_left.svg: dito
+ -dock_none.svg: dito
+ -dock_right.svg: dito
+
+
+----------
 05/11/05 jpetso
 ---------
 
