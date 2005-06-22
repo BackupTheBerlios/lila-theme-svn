@@ -7,6 +7,23 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+06/22/05 jpetso
+---------
+
+actions/
+ +emptytrash.svg: copy of the empty trash icon
+ +view_bottom.svg: completing the "view" series, for now
+ +view_choose.svg: dito
+ +view_right.svg: dito
+ +view_sidetree.svg: dito
+ ~view_text: I thought I applied that color fix? anyways, now it's done
+ ~window_new.svg: just a little size optimization
+
+apps/
+ +pakoo.svg: A really mean icon for my very own portage frontend
+
+
+----------
 05/18/05 jpetso
 ---------
 
