@@ -10,6 +10,14 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 06/23/05 jpetso
 ---------
 
+actions/
+ +webarchiver.svg
+
+
+----------
+06/23/05 jpetso
+---------
+
 apps/
  ~kedit.svg: mirrored the pencil (KEdit is kept because of RTL)
  ~kwrite.svg: the previous KEdit icon, so it has a pencil too
