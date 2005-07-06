@@ -8,15 +8,15 @@
    inkscape:version="0.40"
    width="48pt"
    height="48pt"
-   sodipodi:docbase="/home/jakob/dev/lila-cvs/lila/kde/scalable/actions"
-   sodipodi:docname="fileclose_makeitcool.svg"
+   sodipodi:docbase="/home/jakob/dev/lila-cvs/lila-theme/trunk/lila/kde/scalable/actions"
+   sodipodi:docname="fileclose.svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:cc="http://web.resource.org/cc/"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:cc="http://web.resource.org/cc/"
-   xmlns:dc="http://purl.org/dc/elements/1.1/">
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
   <metadata
      id="metadata27">
     <rdf:RDF
@@ -137,7 +137,7 @@
      inkscape:cx="24.092695"
      inkscape:cy="23.041833"
      inkscape:window-width="1400"
-     inkscape:window-height="991"
+     inkscape:window-height="992"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:current-layer="svg1" />
@@ -146,7 +146,7 @@
      d="M 60.000000,30.000000 C 60.000000,46.560000 46.560000,60.000000 30.000001,60.000000 C 13.440000,60.000000 0.0000000,46.560000 0.0000000,30.000000 C 0.0000000,13.440000 13.440000,1.9999999e-07 30.000001,1.9999999e-07 C 46.560000,1.9999999e-07 60.000000,13.440000 60.000000,30.000000 z "
      id="path952" />
   <path
-     style="font-size:12.000000;fill:url(#radialGradient917);fill-opacity:1.0000000;fill-rule:evenodd;stroke:#330000;stroke-width:2.1437340"
+     style="font-size:12.000000;fill:url(#radialGradient917);fill-opacity:1.0000000;fill-rule:evenodd;stroke:#333333;stroke-width:2.1437340;stroke-opacity:1.0000000;"
      d="M 56.238834,28.477629 C 56.238834,43.406352 44.122769,55.522417 29.194047,55.522417 C 14.265323,55.522417 2.1492581,43.406352 2.1492581,28.477629 C 2.1492581,13.548906 14.265323,1.4328410 29.194047,1.4328410 C 44.122769,1.4328410 56.238834,13.548906 56.238834,28.477629 z "
      id="path951" />
   <path

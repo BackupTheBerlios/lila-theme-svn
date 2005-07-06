@@ -7,6 +7,16 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+07/06/05 jpetso
+---------
+
+actions/
+ ~fileclose.svg: fixed wrong border color
+ +project_open.svg: new icon, mixture of a window and the 'open' icon
+ +filter.svg: new icon. didn't get it quite well, did I? however.
+
+
+----------
 06/29/05 jpetso
 ---------
 
