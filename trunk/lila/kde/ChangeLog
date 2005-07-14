@@ -7,6 +7,18 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+07/14/05 jpetso
+---------
+
+actions/
+ ~filter.svg: small rework. I like it better now, and it's more standard too.
+
+apps/
+ +gwenview.svg: new icon, modelled after the original one
+ +kolourpaint.svg: dito
+
+
+----------
 07/06/05 jpetso
 ---------
 
