@@ -7,6 +7,22 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+07/30/05 jpetso (not yet committed)
+---------
+
+actions/
+ ~view_sidetree.svg: moved the sidetree left, so that it's not a midtree
+
+apps/
+ ~gwenview.svg: simple linear gradient for the glasses instead of a more freaky one
+ ~akregator_empty.svg: still don't know where it's used, but it's nicer now
+
+devices/
+ +ipod.svg: now in KDE too, since 3.5
+ +ipod_mount.svg: dito
+
+
+----------
 07/14/05 jpetso
 ---------
 
