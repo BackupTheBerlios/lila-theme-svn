@@ -7,7 +7,19 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
-07/30/05 jpetso (not yet committed)
+09/17/05 jpetso
+---------
+
+apps/
+ +multisynk.svg: must have forgotten to commit that one.
+
+devices/
+ +usbpendrive_unmount.svg: the long awaited usb-stick icon!
+ +usbpendrive_mount.svg: dito
+
+
+----------
+07/30/05 jpetso
 ---------
 
 actions/
