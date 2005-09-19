@@ -1,4 +1,60 @@
 ----------
+09/19/05 jpetso
+---------
+kde compatibility fixes (to keep in sync with the kde port)
+from the devices/ directory, and their copies in other folders
+Modified Files:
+  lila/gnome/scalable/apps/battstat.svg
+  lila/gnome/scalable/apps/gnomebaker-48.svg
+  lila/gnome/scalable/apps/gcdmaster.svg
+  lila/gnome/scalable/apps/drivemount-applet.svg
+  lila/gnome/scalable/apps/gnome-cdplayer-icon.svg
+  lila/gnome/scalable/apps/gnome-cd.svg
+  lila/gnome/scalable/apps/gnome-media-player.svg
+  lila/gnome/scalable/apps/gnome-multimedia.svg
+  lila/gnome/scalable/apps/gnome-screenshot.svg
+  lila/gnome/scalable/apps/knode.svg
+  lila/gnome/scalable/apps/netbeans.svg
+  lila/gnome/scalable/apps/rhythmbox.svg
+  lila/gnome/scalable/apps/xfce4-mouse.svg
+  lila/gnome/scalable/apps/xfce-printer.svg
+  lila/gnome/scalable/apps/xfprint.svg
+  lila/gnome/scalable/apps/xcdricon.svg
+  lila/gnome/scalable/devices/gnome-dev-battery.svg
+  lila/gnome/scalable/devices/gnome-dev-camera.svg
+  lila/gnome/scalable/devices/gnome-dev-cdrom.svg
+  lila/gnome/scalable/devices/gnome-dev-cdrom-audio.svg
+  lila/gnome/scalable/devices/gnome-dev-cdwriter.svg
+  lila/gnome/scalable/devices/gnome-dev-dvd.svg
+  lila/gnome/scalable/devices/gnome-dev-floppy.svg
+  lila/gnome/scalable/devices/gnome-dev-harddisk.svg
+  lila/gnome/scalable/devices/gnome-dev-harddisk-1394.svg
+  lila/gnome/scalable/devices/gnome-dev-harddisk-usb.svg
+  lila/gnome/scalable/devices/gnome-dev-jazdisk.svg
+  lila/gnome/scalable/devices/gnome-dev-joystick.svg
+  lila/gnome/scalable/devices/gnome-dev-mouse-ball.svg
+  lila/gnome/scalable/devices/gnome-dev-mouse-optical.svg
+  lila/gnome/scalable/devices/gnome-dev-printer.svg
+  lila/gnome/scalable/devices/gnome-dev-removable.svg
+  lila/gnome/scalable/devices/gnome-dev-removable-1394.svg
+  lila/gnome/scalable/devices/gnome-dev-removable-usb.svg
+  lila/gnome/scalable/devices/gnome-dev-tv.svg
+  lila/gnome/scalable/devices/gnome-dev-zipdisk.svg
+  lila/gnome/scalable/filesystems/gnome-fs-chardev.svg
+  lila/gnome/scalable/filesystems/gnome-fs-blockdev.svg
+  lila/gnome/scalable/stock/balsa_menu_print.svg
+  lila/gnome/scalable/stock/balsa_menu_save.svg
+  lila/gnome/scalable/stock/balsa_print.svg
+  lila/gnome/scalable/stock/balsa_save.svg
+  lila/gnome/scalable/stock/gtk-floppy.svg
+  lila/gnome/scalable/stock/gtk-harddisk.svg
+  lila/gnome/scalable/stock/gtk-print.svg
+  lila/gnome/scalable/stock/gtk-save.svg
+  lila/gnome/scalable/stock/media-album.svg
+  lila/gnome/scalable/stock/panel-multimedia.svg
+  lila/gnome/scalable/stock/panel-screenshot.svg
+  lila/gnome/scalable/stock/stock_cell-phone.svg
+----------
 03/14/05 9-speed
 ---------
 two new gnome icons
@@ -116,8 +172,8 @@ Added Files:
   scalable/stock/media-album.svg
   scalable/stock/media-artist.svg
   scalable/stock/media-audiofile.svg
-  scalable/stock/media-random.svg 	 
-  scalable/stock/media-repeat.svg 	 
+  scalable/stock/media-random.svg
+  scalable/stock/media-repeat.svg
   scalable/stock/media-stream.svg
 ----------
 01/03/05 9-speed

@@ -39,7 +39,7 @@ if not app:
 sizes = ['16x16', '22x22', '32x32', '48x48', '64x64', '128x128']
 
 print "Autocleaning old icons..."
-os.popen("rm -r 16x16 22x22 32x32 48x48 64x64 128x128 2>/dev/null")
+os.popen("rm -rf 16x16 22x22 32x32 48x48 64x64 128x128 2>/dev/null")
 
 print "Starting to generate PNG icons with %s." % (app)
 print "%s's error output goes into ./convert-errors.log" % (app)

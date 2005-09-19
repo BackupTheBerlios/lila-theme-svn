@@ -7,6 +7,92 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+09/19/05 jpetso: a shitload of compatibility fixes for the bad kde icon renderer
+---------
+
+kde/
+ ~generate.py: do 'rm -rf' instead of 'rm -r' to autoclean old icons
+
+devices/: kde icon-renderer compatibility fixes for all files in here
+ ~ipod.svg: updated with color changes (right?) from a recent gnome commit
+ ~ipod_mount.svg: dito
+ ~3floppy_mount.svg: kde icon-renderer compatibility fix
+ ~3floppy_unmount.svg: dito
+ ~battery.svg: dito (and a color fix)
+ ~blockdevice.svg: dito
+ ~camera.svg: dito
+ ~camera_mount.svg: dito
+ ~camera_unmount.svg: dito
+ ~cdaudio_unmount.svg: dito
+ ~cdaudio_mount.svg: dito
+ ~cdrom_unmount.svg: dito
+ ~cdrom_mount.svg: dito
+ ~cdwriter_unmount.svg: dito (and replacing it with the gnome version)
+ ~cdwriter_mount.svg: dito (and the gnome version, too)
+ ~chardevice.svg: dito (and removal of the highlights' borders)
+ ~dvd_mount.svg: dito
+ ~dvd_unmount.svg: dito
+ ~hdd_mount.svg: dito
+ ~hdd_unmount.svg: dito
+ ~ipod_mount.svg: dito
+ ~ipod.svg: dito
+ ~joystick.svg: dito
+ ~ksim_cpu.svg: dito (and removal of the highlights' borders, like chardevice)
+ ~mobile_camera.svg: dito
+ ~mobile_musicplayer.svg: dito
+ ~mobile_organizer.svg: dito
+ ~mobile_phone.svg: dito
+ ~mouse.svg: dito
+ ~pda_black.svg: dito
+ ~printer1.svg: dito
+ ~printer.svg: dito
+ ~print_printer.svg: dito
+ ~scanner.svg: dito
+ ~system.svg: dito
+ ~tv.svg: dito
+ ~usbpendrive_mount.svg: dito
+ ~usbpendrive_unmount.svg: dito
+ ~zip_mount.svg: dito
+ ~zip_unmount.svg: dito
+
+apps/
+ ~camera.svg: kde icon-renderer compatibility fix
+ ~digikam.svg: dito
+ ~juk.svg: dito
+ ~kcmprocessor.svg: dito (and removal of the highlights' borders, like in devices/)
+ ~kjobviewer.svg: dito
+ ~konqsidebar_mediaplayer.svg: dito
+ ~kpilot.svg: dito
+ ~kpilotDaemon.svg: dito
+ ~kscd.svg: dito
+ ~laptop_battery.svg: dito (and the color fix, like in devices/)
+ ~package_games.svg: dito
+ ~package_settings.svg: dito
+
+filesystems/
+ +link.svg: try it again, Sam
+ ~blockdev.svg: kde icon-renderer compatibility fix
+ ~camera.svg: dito
+ ~chardev.svg: dito
+
+actions/
+ ~pencil.svg: replaced by gnome's apps/logjam_pencil.svg
+ ~cd.svg: kde icon-renderer compatibility fix
+ ~cdburn.svg: dito
+ ~fileexport.svg: dito
+ ~fileprint.svg: dito
+ ~filesave.svg: dito
+ ~hdd.svg: dito
+ ~juk_dock.svg: dito
+ ~mouse.svg: dito
+ ~print.svg: dito
+ ~save.svg: dito
+
+mimetypes/
+ +kmultiple.svg: copy of gtk-dnd-multiple.svg
+
+
+----------
 09/17/05 jpetso
 ---------
 
