@@ -2,10 +2,10 @@ TODO list: this is what I find most important to do (in order of importance). Yo
 If you have requests or some new icons (in here or not), please leave a note in our forums.
 
 Icons for
+- file association icon (named 'filetypes')
 - the wizard icon, it's everywhere (a magic wand like in the original icon?)
-- KDevelop class icon - find out how to name it
+- KDevelop class icon - find out how to name it (not themeable? damnit?)
 - Menu Editor and Menu Updating Tool
-- Bookmark Tabs as Folder and Bookmark Toolbar
 - Scribus
 - Amarok (leave for now, the icon troubles aren't over yet)
 - Konversation, the new IRC client
@@ -13,17 +13,17 @@ Icons for
 - KNewsTicker
 - KWifiManager
 - KView (get the gqview icon?)
-- KGpg, KFloppy, World Clock, Tea Cooker, AMOR
-- KDE-SDK: KDevelop, Umbrello, KBugBuster, babel fish, Kompare, Qt Utilities
+- KGpg, World Clock, Tea Cooker, AMOR
+- KDE-SDK: KDevelop, Umbrello, KBugBuster, babel fish, Kompare, KDiff3, Qt Utilities
 - KNetAttach
 - Game Categories (Arcade, Board Games, Tactics & Strategy)
-- More game icons: KSnakeRace (take the python icon), Atlantik, KAsteroids, etc.
+- More game icons: Atlantik, KAsteroids, etc.
 - Edutainment (and Subcategories: Languages, Mathematics, Miscellaneous, Science, Teaching Tools)
 
 other TODO items:
-- use the green "mount point" with the gradient for all devices
-- write an autosync-script
+- let duplicate icons be symlinks (which is supported by Subversion!)
 - update all the icons to have them rendered much better from SVG source in KDE
+  > already done: devices/ (and some other single icons)
 
 easy TODO items:
 - see if there is some charismatic bitmap icon anywhere

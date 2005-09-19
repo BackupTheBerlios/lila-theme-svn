@@ -14,6 +14,8 @@ kde/
  ~generate.py: do 'rm -rf' instead of 'rm -r' to autoclean old icons
 
 devices/: kde icon-renderer compatibility fixes for all files in here
+ +memory.svg: the former cpu icon
+ ~ksim_cpu.svg: new cpu icon, extracted from one of the rom mimetypes
  ~ipod.svg: updated with color changes (right?) from a recent gnome commit
  ~ipod_mount.svg: dito
  ~3floppy_mount.svg: kde icon-renderer compatibility fix
@@ -56,6 +58,11 @@ devices/: kde icon-renderer compatibility fixes for all files in here
  ~zip_unmount.svg: dito
 
 apps/
+ ~ark.svg: fsck the fileroller icon, the original one is better
+ +kcmmemory.svg: the former cpu icon
+ ~kcmprocessor.svg: new cpu icon (the same as devices/ksim_cpu.svg)
+ ~kscreensaver.svg: slight reworking (colors & shapes)
+ +ksnake.svg: new icon! (but derived from the python mimetype)
  ~camera.svg: kde icon-renderer compatibility fix
  ~digikam.svg: dito
  ~juk.svg: dito
@@ -70,12 +77,19 @@ apps/
  ~package_settings.svg: dito
 
 filesystems/
- +link.svg: try it again, Sam
+ ~network_local.svg: finally updated with the rounded-edges home icon
+ +link.svg: I think it looks ok when it's white
  ~blockdev.svg: kde icon-renderer compatibility fix
  ~camera.svg: dito
  ~chardev.svg: dito
 
 actions/
+ +bookmark_list_add.svg: combination of the folder and bookmark_add icons
+ ~bookmark_folder.svg: replace the lying book with the standing one
+ +bookmark_toolbar.svg: copy of the above, plus the abstract toolbar
+                        from configure_toolbars.svg
+ ~bookmark.svg: color fix
+ ~contents2.svg: color fix, too
  ~pencil.svg: replaced by gnome's apps/logjam_pencil.svg
  ~cd.svg: kde icon-renderer compatibility fix
  ~cdburn.svg: dito
@@ -89,7 +103,8 @@ actions/
  ~save.svg: dito
 
 mimetypes/
- +kmultiple.svg: copy of gtk-dnd-multiple.svg
+ +kmultiple.svg: copy of actions/dnd_multi.svg
+ +superkaramba_theme.svg: copy of gnome's mimetypes/x-gdesklets-display.svg
 
 
 ----------
