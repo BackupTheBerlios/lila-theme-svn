@@ -11,8 +11,10 @@ then
   echo "  source-svg path:   . (this directory)"
   echo "  output-svg path:   [svg-path]/../svg-[colorname]"
   echo "  path to svg-utils: /usr/share/svg-utils"
+  echo
   echo "Beware: Don't let the output path be a subdirectory of the source-svg path."
   echo "        This will cause an infinite recursive loop."
+  echo
   exit $E_WRONG_ARGS
 else
   COLOR=$1
@@ -27,8 +29,10 @@ then
   echo "  source-svg path:   . (this directory)"
   echo "  output-svg path:   [svg-path]/../svg-[colorname]"
   echo "  path to svg-utils: /usr/share/svg-utils"
+  echo
   echo "Beware: Don't let the output path be a subdirectory of the source-svg path."
   echo "        This will cause an infinite recursive loop."
+  echo
   exit 0
 fi
 
@@ -53,12 +57,12 @@ fi
 mkdir -p $OUTPUTPATH
 
 echo
-echo "Making $COLOR color-mod in $OUTPUTPATH..."
+echo "Making $COLOR color mod in $OUTPUTPATH..."
 $SVGUTILSPATH/svgcolor.py $SVGUTILSPATH/svgcolor-xml/lila/lila-$COLOR.xml $SVGPATH $OUTPUTPATH > /dev/null
 if [ $? -ne 0 ]; then
-	echo "There was an error while making the color-mod."
+	echo "There was an error while making the color mod."
 	exit 1
 else
-	echo "$COLOR color-mod has been created."
+	echo "$COLOR color mod has been created."
 	exit
 fi

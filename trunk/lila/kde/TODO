@@ -3,8 +3,12 @@ If you have requests or some new icons (in here or not), please leave a note in 
 
 Icons for
 - file association icon (named 'filetypes')
+- KDE 3.5 - actions: view_fit_[height|width|window]
+- KDE 3.5 - apps: kttsd, fifteenpieces (puzzle applet), kbinaryclock
+- KDE 3.5 - devices: ipod -> ipod_unmount, laptop
+- KDE 3.5 - filesystems: folder_home2 (Users' Folders - folder icon with a user?)
 - the wizard icon, it's everywhere (a magic wand like in the original icon?)
-- KDevelop class icon - find out how to name it (not themeable? damnit?)
+- fileimport, and adapt fileexport
 - Menu Editor and Menu Updating Tool
 - Scribus
 - Amarok (leave for now, the icon troubles aren't over yet)
@@ -19,8 +23,10 @@ Icons for
 - Game Categories (Arcade, Board Games, Tactics & Strategy)
 - More game icons: Atlantik, KAsteroids, etc.
 - Edutainment (and Subcategories: Languages, Mathematics, Miscellaneous, Science, Teaching Tools)
+- actions/window_suppressed
 
 other TODO items:
+- fix the colors of the user icons (apps/personal, apps/kuser, etc.) or replace them completely
 - let duplicate icons be symlinks (which is supported by Subversion!)
 - update all the icons to have them rendered much better from SVG source in KDE
   > already done: devices/ (and some other single icons)

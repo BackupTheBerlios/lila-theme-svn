@@ -7,6 +7,37 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+09/20/05 jpetso (0.8.1 release)
+---------
+
+kde/
+ ~README: updated the version string to 0.8.1
+ ~FAQ: new section about how to install the theme, and an index
+ ~makerelease.sh: version string substitution, superior arguments parsing,
+                  and white as an additional default color mod
+ ~makecolormod.sh: don't remember, must've been some minor issue
+ ~index.desktop: adapt the comment string to not contain Gentoo
+ -index-red.desktop: not needed anymore, now created on the fly
+ -index-blue.desktop: dito
+
+actions/
+ +classnew.svg: inspecting the KDevelop sources brought me the icon name :)
+ ~contexthelp.svg: adjust the border size to 1.5pt
+ ~gohome.svg: no more gentoo, I modified the house icon to be appropriate
+ ~kde.svg: dito
+
+apps/
+ -kfm_home2.svg: not used in KDE
+ ~kfm_home.svg: no more gentoo, like actions/gohome
+ ~ksplash.svg: dito, and a little reworking / adhering to lila standards
+ ~package.svg: color fix, for the color mods to work properly
+
+filesystems/
+ ~folder_home.svg: no more gentoo, like actions/gohome
+ +folder_home2.svg: for KDE 3.5, currently just a copy of folder_home
+
+
+----------
 09/19/05 jpetso: a shitload of compatibility fixes for the bad kde icon renderer
 ---------
 

@@ -1,22 +1,62 @@
 The lila-kde FAQ:
 Questions that may or may not have been asked,
 but will be answered for your enhanced lila experience.
+(contemplated by jpetso.)
+
+
+Question Index
+
+- Why did it take a year until lila-kde v0.8 made its comeback?
+- How do I install the icon set in KDE?
+- My favorite icon isn't in here! Can you draw one, please?
+- What's all this business with PNG and SVG formats?
+- I want to contribute to the lila project (or need an icon in SVG source)!
+- Yeah, and how do I make my own color mods?
+- My question has not been answered here! or: I need further help!
+
 
 Q. Why did it take a year until lila-kde v0.8 made its comeback?
 A. In the beginning, I was wondering myself. Just when lila-kde started to
    rock, it became unmaintained. Tom Chance, also known as telex4, who was
-   the creator of the original KDE port, left the project silently (while
+   the creator of the initial KDE port, left the project silently (while
    taking on other challenges). Anyways, the lila project, which had always
    been mostly a gnome thing, continued to evolve without the KDE port.
    Some time ago, I decided that this is bad, so here you are again
    with a new maintainer and much more icons than before.
 
+Q. How do I install the icon set in KDE?
+A. You have two possibilities to do that:
+   a) You want to install it for your user only.
+     In this case, unpack the release tarball into the ~/.kde/share/icons/
+     directory. If you have Ark installed (which should be on nearly all
+     KDE systems) then you can right-click the tarball in Konqueror,
+     select 'Extract->Extract To...' and just specify the directory above in
+     the 'Extract To:' text box. (You can even copy it from here into that
+     text box! isn't that cute ;-)
+   b) You want to install it for all users, so your mom can choose it too.
+     In that case, unpack the release tarball into the share/icons/ sub folder
+     of the KDE installation directory (which you can find out by executing
+     'env | grep KDEDIR=' in Konsole). That will most probably require root
+     privileges, so I propose starting up a privileged Konqueror and perform
+     the method in a) from there. (At my place, the 'Extract To:' textbox
+     would contain (for example) '/usr/kde/3.4/share/icons, but it can differ
+     on your system.)
+     Alternatively, you can unpack it as normal user and copy the unpacked
+     folder to the destination directory with root privileges.
+
+Q. D'ya think I'm stupid? I know how to install the theme...
+A. You don't have to read all the answers.
+   Only the ones that you're interested in. Really.
+
 Q. My favorite icon isn't in here! Can you draw one, please?
 A. We'll see. If you want to contact the team directly, you should come to
    our site at lila-theme.berlios.de, where we all wait for your forum posts.
-   If you really want to help and have some good idea, you're strongly invited
-   to draw one or more icons yourself. Our web site has a tutorial how to do
-   that, and the team will try to help you as good as we can.
+   In the end, we certainly long for total completeness of the icon set, so
+   your requested icon may just be drawn a little sooner than planned.
+   (If it was planned at all.)
+   If you want to help and have some good idea, you're strongly invited
+   to draw one or more icons yourself. Our web site has a tutorial how
+   to do that, and the team will try to help you as good as we can.
 
 Q. What's all this business with PNG and SVG formats?
 A. You know, that's only a workaround. PNGs is a well supported bitmap files,
@@ -29,19 +69,20 @@ A. You know, that's only a workaround. PNGs is a well supported bitmap files,
    to look great in KDE, you have to convert them to the PNG format.
    That's what we do for lila-kde. The gnome folks don't need that workaround,
    because they have a proper package displaying SVGs (which is called rsvg).
+   KDE 4 will have decent support for native SVG icon sets.
 
-Q. But I heard KDE 3.4 supports SVG! You don't need the PNGs anymore, do you?
+Q. But I heard KDE 3.4 (or 3.5) supports SVG! You don't need PNGs anymore now?
 A. No, we still need them. KDE has enhanced the KSVG renderer, which renders
    SVG graphics that are taken as background image or embedded in web sites.
    Unfortunately, KSVG is too slow to render many icons in little time,
    so the KDE folks made a less capable but faster SVG engine for displaying
    icons (with serious drawbacks). This icon renderer hasn't improved with
-   KDE 3.4, though I think it's only a question of time until that changes.
+   KDE 3.4 - as said before, you'll have to wait for KDE 4.
 
-Q. I want to contribute to the lila project!
-A. This is a FAQ, you're supposed to ask questions! Well ok, anyways.
+Q. I want to contribute to the lila project (or need an icon in SVG source)!
+A. This is a FAQ, you're supposed to ask questions! Well ok, anyways ;)
    We gather our files in a Subversion (SVN) repository from where everybody
-   can access them. Only the developers with an account can modify the
+   can access them. Only developers with an SVN account can modify the
    repository contents, but everyone, including you, can get the most
    current icons by using anonymous SVN.
    To fetch only the KDE icons, tell the command line to execute this:
@@ -55,7 +96,7 @@ Q. Yeah, and how do I make my own color mods?
 A. First of all, you need the lila/kde and utils/svg-utils folders from the
    Subversion repository. Color mods are possible because SVG, our icon format,
    is in fact a pure textual description of the picture, which can be changed
-   easily. The svg-utils perform the job of transforming picture properties
+   easily. The svg-utils perform the job of transforming picture properties,
    like colors. For icon color mods, the information about which source color
    transforms into which destination color is stored in XML files in the folder
    utils/svg-utils/svgcolor-xml/lila, where you'll also find the file
