@@ -7,6 +7,14 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+10/14/05 jpetso
+---------
+
+apps/
+ network.svg: un-gentooized to be prepared for inclusion in a new splash screen
+
+
+----------
 09/20/05 jpetso (0.8.1 release)
 ---------
 
