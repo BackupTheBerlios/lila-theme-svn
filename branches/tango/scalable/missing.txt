@@ -1,0 +1,50 @@
+actions/
+ address-book-new
+ document-open-recent
+ document-page-setup
+ document-properties
+ edit-select-all
+ format-*
+ go-*
+ help-*
+ insert-*
+ list-*
+ mail-*
+ media-*
+ system-*
+ tools-*
+ view-*
+ window-*
+ wallpaper-*
+ zoom-*
+ ...
+
+apps/
+ all
+
+categories/
+ all
+
+devices/
+ all
+
+emblems/
+ all
+
+emotes/
+ all
+
+intl/
+ all
+
+mimetypes/
+ all
+
+status/
+ all
+
+
+missing in the spec:
+
+actions/
+ document-save-all
