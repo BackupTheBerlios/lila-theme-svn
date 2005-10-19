@@ -1,33 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
-"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg1"
    sodipodi:version="0.32"
-   inkscape:version="0.40"
+   inkscape:version="0.42.2"
    width="48pt"
    height="48pt"
-   sodipodi:docbase="/home/jakob/dev/lila-cvs/lila-theme/trunk/lila/kde/scalable/actions"
-   sodipodi:docname="fileclose.svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:cc="http://web.resource.org/cc/"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:xlink="http://www.w3.org/1999/xlink">
+   sodipodi:docbase="/home/jakob/dev/lila/lila-theme/trunk/lila/kde/scalable/actions"
+   sodipodi:docname="fileclose.svg">
   <metadata
      id="metadata27">
-    <rdf:RDF
-       id="RDF28">
+    <rdf:RDF>
       <cc:Work
-         rdf:about=""
-         id="Work29">
-        <dc:format
-           id="format30">image/svg+xml</dc:format>
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
         <dc:type
-           id="type32"
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
       </cc:Work>
     </rdf:RDF>
@@ -142,15 +137,15 @@
      inkscape:window-y="0"
      inkscape:current-layer="svg1" />
   <path
-     style="font-size:12.000000;opacity:0.29999998;fill-rule:evenodd;stroke-width:2.0736699"
+     style="font-size:12.000000px;opacity:0.29999998;fill-rule:evenodd;stroke-width:2.0736699"
      d="M 60.000000,30.000000 C 60.000000,46.560000 46.560000,60.000000 30.000001,60.000000 C 13.440000,60.000000 0.0000000,46.560000 0.0000000,30.000000 C 0.0000000,13.440000 13.440000,1.9999999e-07 30.000001,1.9999999e-07 C 46.560000,1.9999999e-07 60.000000,13.440000 60.000000,30.000000 z "
      id="path952" />
   <path
-     style="font-size:12.000000;fill:url(#radialGradient917);fill-opacity:1.0000000;fill-rule:evenodd;stroke:#333333;stroke-width:2.1437340;stroke-opacity:1.0000000;"
+     style="font-size:12.000000px;fill:url(#radialGradient917);fill-opacity:1.0000000;fill-rule:evenodd;stroke:#333333;stroke-width:2.1437340;stroke-opacity:1.0000000"
      d="M 56.238834,28.477629 C 56.238834,43.406352 44.122769,55.522417 29.194047,55.522417 C 14.265323,55.522417 2.1492581,43.406352 2.1492581,28.477629 C 2.1492581,13.548906 14.265323,1.4328410 29.194047,1.4328410 C 44.122769,1.4328410 56.238834,13.548906 56.238834,28.477629 z "
      id="path951" />
   <path
-     style="font-size:12.000000;fill:url(#linearGradient583);fill-opacity:1.0000000;fill-rule:evenodd;stroke:#333333;stroke-width:2.1437387"
+     style="font-size:12.000000px;fill:url(#linearGradient583);fill-opacity:1.0000000;fill-rule:evenodd;stroke:#333333;stroke-width:2.1437387"
      d="M 16.286604,42.213828 C 17.172389,43.105978 28.233355,34.676145 29.674020,34.590439 C 30.864904,34.590442 41.254979,43.043738 42.038789,42.213828 C 42.835438,41.370309 34.414226,30.726612 34.415399,29.570159 C 34.416640,28.441264 42.933868,17.544063 42.131755,16.647583 C 41.353406,15.777665 30.767807,24.272219 29.674020,24.270975 C 28.463972,24.174912 17.302746,15.647541 16.472542,16.554616 C 15.629321,17.475912 24.650679,28.380777 24.653742,29.756095 C 24.563504,30.983386 15.437340,41.264822 16.286604,42.213828 z "
      id="path589"
      sodipodi:nodetypes="cssssssss" />
@@ -160,7 +155,7 @@
      id="path918"
      sodipodi:nodetypes="cssss" />
   <path
-     style="font-size:12.000000;fill:url(#linearGradient600);fill-rule:evenodd;stroke:none;stroke-width:1.0000000pt"
+     style="font-size:12.000000px;fill:url(#linearGradient600);fill-rule:evenodd;stroke:none;stroke-width:1.0000000pt"
      d="M 20.774886,37.872536 C 20.880391,37.547795 25.690333,31.377204 27.267854,29.786943 C 27.571255,29.481092 27.087464,31.921732 26.695300,32.392427 C 25.014047,34.410342 20.687895,38.140290 20.774886,37.872536 z "
      id="path596"
      sodipodi:nodetypes="csss" />

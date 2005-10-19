@@ -7,11 +7,55 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+10/19/05 jpetso
+---------
+
+actions/
+ ~quit.svg: omg, this was waaay too huge
+ ~identity.svg: replaced with bordered user icon
+ ~filequickprint.svg: better recognizability for the lens glasses
+ ~appointment.svg: kde icon renderer fix
+ ~apply.svg: dito
+ ~button_ok.svg: dito
+ ~button_cancel.svg: dito
+ ~cancel.svg: dito
+ ~copy.svg: dito
+ ~cut.svg: dito
+ ~editcopy.svg: dito
+ ~editcut.svg: dito
+ ~editdelete.svg: dito
+ ~editpaste.svg: dito
+ ~exit.svg: dito
+ ~fileclose.svg: dito
+ ~filefind.svg: dito
+ ~filenew.svg: dito
+ ~filesaveas.svg: dito
+ ~fileopen.svg: dito
+ ~find.svg: dito
+ ~new.svg: dito
+ ~ok.svg: dito
+ ~paste.svg: dito
+ ~redo.svg: dito
+ ~replace.svg: dito
+ ~revert.svg: dito
+ ~save_as.svg: dito
+ ~undo.svg: dito
+
+apps/
+ +kdissert.svg: new and from telex4
+ ~amsn.svg: kde icon renderer fix
+
+mimetypes/
+ +kdi.svg: KDissert mimetype, also from telex4
+ ~empty.svg: kde icon renderer fix
+
+
+----------
 10/14/05 jpetso
 ---------
 
 apps/
- network.svg: un-gentooized to be prepared for inclusion in a new splash screen
+ ~network.svg: un-gentooized to be prepared for inclusion in a new splash screen
 
 
 ----------
