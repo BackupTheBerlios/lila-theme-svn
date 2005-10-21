@@ -4,7 +4,7 @@ actions/
  document-page-setup
  document-properties
  edit-select-all
- format-*
+ format-text-direction-*
  go-*
  help-*
  insert-*
@@ -48,3 +48,4 @@ missing in the spec:
 
 actions/
  document-save-all
+ view-fullscreen-leave
