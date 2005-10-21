@@ -7,6 +7,31 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+10/21/05 jpetso
+---------
+
+actions/
+ ~rightjust.svg: kde icon renderer fix
+ ~leftjust.svg: dito
+ ~text_left.svg: dito
+ ~text_right.svg: dito
+ ~text_center.svg: dito
+ ~text_block.svg: dito
+ ~text_bold.svg: dito
+ ~text_italic.svg: dito
+ ~text_strike.svg: dito
+ ~text_under.svg: dito
+ ~next.svg: dito
+ ~forward.svg: dito
+ ~previous.svg: dito
+ ~back.svg: dito
+ ~indent.svg: dito, and increasing the arrow size
+ ~unindent.svg: dito, and increasing the arrow size too
+ ~format_increaseindent.svg: like indent.svg
+ ~format_decreaseindent.svg: like unindent.svg
+
+
+----------
 10/19/05 jpetso
 ---------
 
