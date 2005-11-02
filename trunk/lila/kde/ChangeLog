@@ -7,6 +7,64 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+11/02/05 jpetso
+---------
+
+actions/
+ ~bottom.svg: kde icon renderer fix
+ ~build.svg: dito
+ ~down.svg: dito
+ ~kdevelop_down.svg: dito
+ ~goto.svg: dito
+ ~start.svg: dito
+ ~finish.svg: dito
+ ~top.svg: dito
+ ~up.svg: dito
+ ~help.svg: dito
+ ~add.svg: dito
+ ~remove.svg: dito
+ ~edit_add.svg: dito
+ ~edit_remove.svg: dito
+ ~exec.svg: dito
+ ~gear.svg: dito
+ ~run.svg: dito
+ ~lock.svg: dito
+ ~locked.svg: dito
+ ~authenticate.svg: dito
+ ~encrypted.svg: dito
+ ~wallet_closed.svg: dito
+ ~decrypted.svg: dito
+ ~unlock.svg: dito
+ ~wallet_open.svg: dito
+ ~reload.svg: dito
+ ~reload3.svg: dito
+ ~centrejust.svg: dito
+ ~under.svg: dito
+ ~spellcheck.svg: dito
+ ~player_rew.svg: dito
+ ~player_ffw.svg: dito
+ ~player_start.svg: dito
+ ~player_end.svg: dito
+ ~viewmag1.svg: dito
+ ~viewmagfit.svg: dito
+ ~viewmag-.svg: dito
+ ~viewmag.svg: dito
+ ~viewmag+.svg: dito
+ ~goto.svg: dito, and changed to the new definition of yellow
+ ~window_new.svg: exactly like goto.svg above
+ ~mail_new.svg: fixed bad colors, and kde icon renderer fix
+ ~quit.svg: slight reworking
+ ~exit.svg: copy of the reworked quit
+ ~player_pause.svg: very slight change of the pause bars
+ ~player_stop.svg: making the stop rectangle a little bit rounder
+ ~player_play.svg: not that much border bending, please
+
+apps/
+ ~kfind.svg: kde icon renderer fix
+ +kdevelop3.svg: at least Ubuntu has the icon renamed (additionally), which is nasty
+
+
+----------
 10/21/05 jpetso
 ---------
 

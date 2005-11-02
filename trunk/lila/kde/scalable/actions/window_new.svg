@@ -1,39 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
-"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg1"
    sodipodi:version="0.32"
-   inkscape:version="0.40"
+   inkscape:version="0.42"
    width="48pt"
    height="48pt"
-   sodipodi:docbase="/home/jakob/dev/lila-cvs/lila-theme/trunk/lila/kde/scalable/actions"
-   sodipodi:docname="window_new.svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:cc="http://web.resource.org/cc/"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:xlink="http://www.w3.org/1999/xlink">
+   sodipodi:docbase="/home/jakob/dev/lila/lila-theme/trunk/lila/kde/scalable/actions"
+   sodipodi:docname="window_new.svg">
   <metadata
      id="metadata21">
-    <rdf:RDF
-       id="RDF22">
+    <rdf:RDF>
       <cc:Work
-         rdf:about=""
-         id="Work23">
-        <dc:format
-           id="format24">image/svg+xml</dc:format>
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
         <dc:type
-           id="type26"
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
      id="defs3">
+    <linearGradient
+       id="linearGradient2047">
+      <stop
+         style="stop-color:#ffff33;stop-opacity:1.0000000;"
+         offset="0.0000000"
+         id="stop2049" />
+      <stop
+         style="stop-color:#ffc000;stop-opacity:1.0000000;"
+         offset="1.0000000"
+         id="stop2051" />
+    </linearGradient>
     <linearGradient
        id="linearGradient584">
       <stop
@@ -97,6 +103,15 @@
        y1="-0.00000000"
        x2="0.97945207"
        y2="0.97656250" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2047"
+       id="linearGradient2053"
+       x1="32.487360"
+       y1="42.920267"
+       x2="60.000000"
+       y2="42.920267"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -109,7 +124,7 @@
      inkscape:cx="26.515090"
      inkscape:cy="23.984809"
      inkscape:window-width="1400"
-     inkscape:window-height="992"
+     inkscape:window-height="997"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:current-layer="svg1" />
@@ -139,7 +154,7 @@
      id="path741"
      sodipodi:nodetypes="cssss" />
   <path
-     style="font-size:12.000000;fill:#ffeb21;fill-opacity:1.0000000;fill-rule:evenodd;stroke:#261933;stroke-width:1.1732898;stroke-opacity:1.0000000"
+     style="font-size:12.000000;fill:url(#linearGradient2053);fill-opacity:1.0;fill-rule:evenodd;stroke:#333300;stroke-width:1.1732898;stroke-opacity:1.0000000"
      d="M 59.413355,42.920270 C 59.413355,50.045510 53.513342,55.828320 46.243680,55.828320 C 38.974019,55.828320 33.074005,50.045510 33.074005,42.920270 C 33.074005,35.795023 38.974019,30.012214 46.243680,30.012214 C 53.513342,30.012214 59.413355,35.795023 59.413355,42.920270 z "
      id="path1189" />
 </svg>

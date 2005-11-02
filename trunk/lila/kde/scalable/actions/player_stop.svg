@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
-"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg1"
    sodipodi:version="0.32"
-   inkscape:version="0.39"
+   inkscape:version="0.42"
    width="48pt"
    height="48pt"
-   sodipodi:docbase="/home/scaba/files/lila/devel/lila-gnome/Lila/scalable/stock"
-   sodipodi:docname="media-stop.svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:cc="http://web.resource.org/cc/"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:xlink="http://www.w3.org/1999/xlink">
+   sodipodi:docbase="/home/jakob/dev/lila/lila-theme/trunk/lila/kde/scalable/actions"
+   sodipodi:docname="player_stop.svg">
   <defs
      id="defs3">
     <linearGradient
@@ -103,6 +102,16 @@
        r="0.51939911"
        fx="0.47656250"
        fy="0.48437500" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient599"
+       id="linearGradient2777"
+       x1="15.507152"
+       y1="-15.028332"
+       x2="45.095840"
+       y2="-44.887692"
+       gradientTransform="matrix(1.263184e-17,0.961095,-1.006177,2.870165e-16,-0.296881,0.697528)"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -119,7 +128,8 @@
      inkscape:window-x="0"
      inkscape:window-y="26"
      showguides="true"
-     inkscape:guide-bbox="true" />
+     inkscape:guide-bbox="true"
+     inkscape:current-layer="svg1" />
   <g
      transform="matrix(0.939009,0.000000,0.000000,0.950000,1.035344,1.240930)"
      style="font-size:12.000000;opacity:0.29999998;stroke:#000000;"
@@ -153,15 +163,11 @@
   </g>
   <metadata
      id="metadata933">
-    <rdf:RDF
-       id="RDF934">
+    <rdf:RDF>
       <cc:Work
-         rdf:about=""
-         id="Work935">
-        <dc:format
-           id="format936">image/svg+xml</dc:format>
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
         <dc:type
-           id="type938"
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
       </cc:Work>
     </rdf:RDF>
@@ -179,14 +185,9 @@
      sodipodi:cy="41.555550"
      sodipodi:rx="28.881311"
      sodipodi:ry="28.881311" />
-  <rect
-     style="font-size:12.000000;fill:url(#linearGradient581);fill-opacity:1.00000000;fill-rule:evenodd;stroke:#261926;stroke-width:1.7058344pt;"
+  <path
+     style="font-size:12.000000px;fill:url(#linearGradient2777);fill-opacity:1.0000000;fill-rule:evenodd;stroke:#261933;stroke-width:1.3750000;stroke-miterlimit:4.0000000;stroke-opacity:1.0000000"
+     d="M 44.214864,19.079559 C 44.765224,25.229025 44.765224,34.869969 44.214864,41.019435 C 44.085007,42.470398 42.994605,43.526506 41.493994,43.650603 C 35.040451,44.184298 24.881240,44.184298 18.427697,43.650603 C 16.927086,43.526506 15.836684,42.470398 15.706827,41.019435 C 15.156467,34.869969 15.156467,25.229025 15.706827,19.079559 C 15.836684,17.628596 16.927086,16.572488 18.427697,16.448390 C 24.881240,15.914696 35.040451,15.914696 41.493994,16.448390 C 42.994605,16.572488 44.085007,17.628596 44.214864,19.079559 z "
      id="rect596"
-     width="28.129589"
-     height="28.508038"
-     x="16.287840"
-     y="-44.511745"
-     ry="2.7208703"
-     transform="matrix(1.270987e-17,1.000000,-1.000000,2.949794e-16,-0.296881,-0.303138)"
-     rx="2.7208703" />
+     sodipodi:nodetypes="cssssssss" />
 </svg>
