@@ -5,22 +5,14 @@ actions/
  document-properties
  edit-select-all
  format-text-direction-*
- go-*
  help-*
  insert-*
- list-*
- mail-*
- media-*
- system-*
- tools-*
- view-*
- window-*
+ mail-mark-*
+ mail-send-receive
  wallpaper-*
- zoom-*
- ...
 
 apps/
- all
+ system-*
 
 categories/
  all
@@ -44,8 +36,28 @@ status/
  all
 
 
-missing in the spec:
+(probably) missing in the spec:
 
 actions/
  document-save-all
  view-fullscreen-leave
+ media-eject
+ media-cd-burn?
+ media-playlist-clear
+ tools-(privacy?)-encrypt
+ tools-(privacy?)-decrypt
+ system-switch-user
+ mail-reply (delete the "sender" suffix)
+ mail-receive
+ mail-send
+ bookmark
+ bookmark-add
+ bookmark-manage
+ messagebox-[error|warning|question|information]
+ archive-[compress|extract]
+ some "connect" app or action
+
+
+bugs in the spec:
+ drive-cddrom (one d too much)
+ don't make two preferences-desktop-accessibility icons?
