@@ -11,6 +11,38 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 ---------
 
 actions/
+ ~bookmark.svg: replaced the book with the bookmark icon
+ ~bookmark_toolbar.svg: away with the book as well
+ ~bookmark_add.svg: kde icon renderer fix
+ ~fonts.svg: dito
+ ~text.svg: dito
+
+apps/
+ ~kmixdocked.svg: color & border strenght fix
+ ~kmixdocked_mute.svg: dito
+ ~kmixdocked_error.svg: dito
+ ~looknfeel.svg: just has to be a litte more colorful
+ ~kcalc.svg: kde icon renderer fix
+ ~kdict.svg: dito
+ ~kmix.svg: dito
+ ~access.svg: dito
+ ~locale.svg: dito
+ ~lockscreen.svg: dito
+ ~logout.svg: dito
+ ~kcmfontinst.svg: dito
+ ~background.svg: dito
+ ~konsole.svg: dito
+
+mimetypes/
+ ~binary.svg: replaced the "new" with the "bittorrent" icon, fits better
+ ~font.svg: kde icon renderer fix
+
+
+----------
+11/02/05 jpetso
+---------
+
+actions/
  ~bottom.svg: kde icon renderer fix
  ~build.svg: dito
  ~down.svg: dito

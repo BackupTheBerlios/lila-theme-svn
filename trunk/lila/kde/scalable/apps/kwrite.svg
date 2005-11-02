@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
-"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.0"
    x="0"
    y="0"
@@ -10,27 +16,16 @@
    height="48pt"
    id="svg1418"
    sodipodi:version="0.32"
-   inkscape:version="0.40"
+   inkscape:version="0.42"
    sodipodi:docname="kwrite.svg"
-   sodipodi:docbase="/home/jakob/dev/lila-cvs/lila-theme/trunk/lila/kde/scalable/apps"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:cc="http://web.resource.org/cc/"
-   xmlns:dc="http://purl.org/dc/elements/1.1/">
+   sodipodi:docbase="/home/jakob/dev/lila/lila-theme/trunk/lila/kde/scalable/apps">
   <metadata
      id="metadata34">
-    <rdf:RDF
-       id="RDF35">
+    <rdf:RDF>
       <cc:Work
-         rdf:about=""
-         id="Work36">
-        <dc:format
-           id="format37">image/svg+xml</dc:format>
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
         <dc:type
-           id="type39"
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
       </cc:Work>
     </rdf:RDF>
@@ -46,7 +41,7 @@
      inkscape:cx="17.457656"
      inkscape:cy="24.037603"
      inkscape:window-width="1400"
-     inkscape:window-height="992"
+     inkscape:window-height="997"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:current-layer="svg1418" />
@@ -99,12 +94,12 @@
     <linearGradient
        id="linearGradient1422">
       <stop
-         style="stop-color:#d7a600;stop-opacity:1;"
-         offset="0.00000000"
+         style="stop-color:#ffc000;stop-opacity:1.0000000;"
+         offset="0.0000000"
          id="stop1423" />
       <stop
-         style="stop-color:#fff300;stop-opacity:1;"
-         offset="1.00000000"
+         style="stop-color:#ffff33;stop-opacity:1.0000000;"
+         offset="1.0000000"
          id="stop1424" />
     </linearGradient>
     <linearGradient
@@ -180,7 +175,7 @@
      id="path1442" />
   <path
      d="M 25.787967,35.388268 C 26.631273,36.144333 30.463941,35.268949 32.004043,33.855502 C 41.164606,25.448128 52.361249,14.838596 57.890018,5.9258867 C 58.946296,4.2230927 53.451326,0.71872706 51.759104,2.0089294 C 43.176382,8.5526829 34.494904,19.878719 27.065260,29.427666 C 25.837883,31.005168 24.985004,34.668385 25.787967,35.388268 z "
-     style="font-size:12.000000;fill:url(#linearGradient1425);fill-rule:evenodd;stroke:#3f3f19;stroke-width:1.8750000"
+     style="font-size:12.000000;fill:url(#linearGradient1425);fill-rule:evenodd;stroke:#333300;stroke-width:1.8750000;stroke-opacity:1.0000000"
      id="path1421" />
   <path
      d="M 48.544689,5.2872757 C 48.607336,5.9290510 54.017652,9.7484139 54.718117,9.6725349 C 54.952657,9.6613859 57.614553,5.7275928 57.592040,5.4575913 C 57.444311,3.9417279 54.475016,2.1848266 52.610678,2.1579345 C 51.550740,2.1424707 48.524986,5.1067471 48.544689,5.2872757 z "
@@ -188,7 +183,7 @@
      id="path1426" />
   <path
      d="M 45.895456,7.8530087 C 45.961843,8.5331909 51.696242,12.581342 52.438638,12.500933 C 52.687207,12.489136 54.906480,9.7648119 54.882532,9.4786279 C 54.725957,7.8719254 50.544095,5.1094809 48.579288,5.1985936 C 48.175864,5.2108929 45.874595,7.6616916 45.895456,7.8530087 z "
-     style="font-size:12.000000;fill:url(#linearGradient1435);fill-rule:evenodd;stroke:#3f3f19;stroke-width:1.1250000"
+     style="font-size:12.000000;fill:url(#linearGradient1435);fill-rule:evenodd;stroke:#333300;stroke-width:1.1250000;stroke-opacity:1.0000000"
      id="path1431" />
   <ellipse
      cx="152.36185"
@@ -196,7 +191,7 @@
      rx="26.788887"
      ry="26.788879"
      transform="matrix(8.379811e-2,0.000000,0.000000,8.379811e-2,13.27554,-12.08604)"
-     style="font-size:12.000000;fill:#3f3f19;fill-rule:evenodd;stroke-width:1.0000000pt"
+     style="font-size:12.000000;fill:#333300;fill-rule:evenodd;stroke-width:1.0000000pt;fill-opacity:1.0000000"
      id="path1436"
      sodipodi:cx="152.36185"
      sodipodi:cy="565.56213"
