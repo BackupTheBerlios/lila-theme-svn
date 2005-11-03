@@ -7,6 +7,14 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+11/03/05 jpetso
+---------
+
+actions/
+ ~bookmark_folder.svg: ...must have forgotten that one last time.
+
+
+----------
 11/02/05 jpetso
 ---------
 
@@ -34,8 +42,9 @@ apps/
  ~konsole.svg: dito
 
 mimetypes/
- ~binary.svg: replaced the "new" with the "bittorrent" icon, fits better
- ~font.svg: kde icon renderer fix
+ ~bittorrent.svg: kde icon renderer fix
+ ~font.svg: dito
+ ~binary.svg: replaced the "new" icon with the "bittorrent" one, fits better
 
 
 ----------
