@@ -7,7 +7,7 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
-11/03/05 jpetso
+11/08/05 jpetso
 ---------
 
 actions/
@@ -15,11 +15,13 @@ actions/
 
 apps/
  +amarok.svg: long awaited, finally there. yes, derived from the original one.
+ +player_record.svg: completing the player_* series
  ~email.svg: kde icon renderer fix
  ~kmail.svg: dito
  ~kmaillight.svg: dito
  ~fonts.svg: dito
  ~kfontview.svg: dito
+ ~settings-font.svg: dito
  ~looknfeel.svg: ok, less colors.
 
 ----------
