@@ -11,6 +11,22 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 ---------
 
 actions/
+ +bookmarks_list_add.svg: another one
+
+apps/
+ +amarok.svg: long awaited, finally there. yes, derived from the original one.
+ ~email.svg: kde icon renderer fix
+ ~kmail.svg: dito
+ ~kmaillight.svg: dito
+ ~fonts.svg: dito
+ ~kfontview.svg: dito
+ ~looknfeel.svg: ok, less colors.
+
+----------
+11/03/05 jpetso
+---------
+
+actions/
  ~bookmark_folder.svg: ...must have forgotten that one last time.
 
 
