@@ -7,15 +7,29 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+11/09/05 jpetso
+---------
+
+apps/
+ ~browser.svg: kde icon renderer fix
+ ~package_graphics.svg: dito
+ ~package_utilities.svg: dito
+ ~network.svg: resized to use all 48x48pt
+ ~package_applications.svg: dito, and renderer fix
+ ~package_development.svg: like package_applications.svg
+ ~package.svg: like package_applications.svg
+
+
+----------
 11/08/05 jpetso
 ---------
 
 actions/
  +bookmarks_list_add.svg: another one
+ +player_record.svg: completing the player_* series
 
 apps/
  +amarok.svg: long awaited, finally there. yes, derived from the original one.
- +player_record.svg: completing the player_* series
  ~email.svg: kde icon renderer fix
  ~kmail.svg: dito
  ~kmaillight.svg: dito
