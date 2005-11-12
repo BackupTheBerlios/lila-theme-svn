@@ -13,18 +13,11 @@ actions/
 
 apps/
  system-*
- symlinken nach ../devices/input-keyboard.svg:
-  preferences-desktop-keyboard.svg
 
 categories/
  preferences-desktop-peripherals
  preferences-desktop-personal
  preferences-system-network (inappropriate, IMHO)
- symlinken nach ../devices/input-gaming.svg:
-  applications-games.svg
- symlinken nach ../devices/computer.svg:
-  applications-system.svg
-  preferences-system.svg
 
 devices/
  audio-card
