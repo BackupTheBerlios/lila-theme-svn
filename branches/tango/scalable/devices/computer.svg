@@ -17,8 +17,8 @@
    id="svg1"
    sodipodi:version="0.32"
    inkscape:version="0.42"
-   sodipodi:docname="applications-system.svg"
-   sodipodi:docbase="/home/jakob/dev/lila/lila-theme/branches/tango/scalable/categories">
+   sodipodi:docname="computer.svg"
+   sodipodi:docbase="/home/jakob/dev/lila/lila-theme/branches/tango/scalable/devices">
   <metadata
      id="metadata69">
     <rdf:RDF>
@@ -267,29 +267,29 @@
          xlink:href="#linearGradient1528" />
       <linearGradient
          x1="139.82272"
-         y1="84.971738"
-         x2="554.04789"
-         y2="507.59236"
+         y1="84.971741"
+         x2="554.04791"
+         y2="507.59235"
          id="linearGradient641"
-         xlink:href="#linearGradient1152"
+         xlink:href="#linearGradient570"
          gradientTransform="matrix(6.834559e-2,0.000000,0.000000,7.739250e-2,-4.715144,5.418804)"
          gradientUnits="userSpaceOnUse" />
       <linearGradient
          x1="316.36566"
          y1="24.850462"
-         x2="409.76493"
+         x2="409.76492"
          y2="149.25992"
          id="linearGradient1522"
-         xlink:href="#linearGradient1152"
+         xlink:href="#linearGradient570"
          gradientTransform="matrix(2.089768e-2,0.000000,0.000000,0.253111,-4.715144,5.418804)"
          gradientUnits="userSpaceOnUse" />
       <linearGradient
          x1="190.12210"
          y1="127.43230"
          x2="501.86795"
-         y2="440.04322"
+         y2="440.04321"
          id="linearGradient1527"
-         xlink:href="#linearGradient1149"
+         xlink:href="#linearGradient570"
          gradientTransform="matrix(6.859796e-2,0.000000,0.000000,7.710781e-2,-4.715144,5.418804)"
          gradientUnits="userSpaceOnUse" />
       <linearGradient
@@ -406,11 +406,11 @@
      id="path834" />
   <path
      d="M 6.6723178,44.186477 C 6.4440480,43.968086 3.7011677,12.126444 4.0748014,11.238476 C 4.3040377,10.973111 32.921405,14.065729 33.150270,14.284690 C 33.368204,14.493337 6.6309020,11.154477 5.4993682,12.761633 C 4.2710242,14.425898 6.8908470,44.395552 6.6723178,44.186477 z "
-     style="font-size:12.000000px;opacity:0.69999999;fill:url(#linearGradient641);fill-rule:evenodd;stroke:none;stroke-width:1.0329400pt"
+     style="font-size:12.000000px;opacity:0.69999999;fill:url(#linearGradient641);fill-rule:evenodd;stroke:none;stroke-width:1.0329400pt;fill-opacity:1.0"
      id="path835" />
   <path
      d="M 4.5775896,43.705516 C 4.4928250,43.583799 2.0165816,21.912852 1.8962232,11.719445 C 1.8890034,11.357426 3.3087222,11.101209 3.4044170,11.238476 C 3.4763183,11.341697 2.3932266,12.159929 2.3989818,12.440930 C 2.5237197,22.635183 4.6603468,43.824316 4.5775896,43.705516 z "
-     style="font-size:12.000000px;opacity:0.69993597;fill:url(#linearGradient1522);fill-rule:evenodd;stroke:none;stroke-width:1.0329400pt"
+     style="font-size:12.000000px;opacity:0.69993597;fill:url(#linearGradient1522);fill-rule:evenodd;stroke:none;stroke-width:1.0329400pt;fill-opacity:1.0"
      id="path836" />
   <path
      d="M 7.2522104,14.358249 C 6.8005784,14.908285 8.1264759,40.480141 8.8142595,40.959325 C 9.5244975,41.399809 31.843995,34.556509 32.400840,33.860782 C 32.926008,33.279302 32.207740,16.969499 31.854182,16.375855 C 31.399130,15.742872 7.7455551,13.832257 7.2522104,14.358249 z "
@@ -418,6 +418,6 @@
      id="path837" />
   <path
      d="M 9.1266255,39.539624 C 8.9531565,39.335174 7.3760874,15.734333 7.7990182,15.180242 C 8.3587625,14.549038 29.337571,16.470465 29.511040,16.674702 C 29.676109,16.868836 10.498252,14.820357 8.8142615,16.375782 C 7.6664436,17.437511 9.2915455,39.733688 9.1266255,39.539624 z "
-     style="font-size:12.000000px;opacity:0.69993597;fill:url(#linearGradient1527);fill-rule:evenodd;stroke:none;stroke-width:0.96279802pt"
+     style="font-size:12.000000px;opacity:0.69993597;fill:url(#linearGradient1527);fill-rule:evenodd;stroke:none;stroke-width:0.96279802pt;fill-opacity:1.0"
      id="path838" />
 </svg>

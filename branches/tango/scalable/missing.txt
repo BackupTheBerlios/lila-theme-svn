@@ -13,12 +13,27 @@ actions/
 
 apps/
  system-*
+ symlinken nach ../devices/input-keyboard.svg:
+  preferences-desktop-keyboard.svg
 
 categories/
- all
+ preferences-desktop-peripherals
+ preferences-desktop-personal
+ preferences-system-network (inappropriate, IMHO)
+ symlinken nach ../devices/input-gaming.svg:
+  applications-games.svg
+ symlinken nach ../devices/computer.svg:
+  applications-system.svg
+  preferences-system.svg
 
 devices/
- all
+ audio-card
+ camera-video
+ drive-cdrom
+ drive-removable-media
+ input-mouse
+ printer-remote
+ video-card
 
 emblems/
  all
@@ -57,7 +72,11 @@ actions/
  archive-[compress|extract]
  some "connect" app or action
 
+devices/
+ camera-photo (there is an icon, but it's not mentioned in the spec)
+
 
 bugs in the spec:
  drive-cddrom (one d too much)
  don't make two preferences-desktop-accessibility icons?
+ category icons: is accessories/utilities a dupe?
