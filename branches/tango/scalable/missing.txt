@@ -44,7 +44,6 @@ status/
  appointment-missed
  battery-caution
  battery-low
- mail-attachment (just created this one, not sure about it)
  mail-replied
  mail-signed
  mail-signed-verified
@@ -52,17 +51,14 @@ status/
  network-offline
  network-online
  printer-error
- printer-printing
  software-update-available
  software-update-urgent
  sync-error
  sync-synchronizing
  task-due
  task-passed-due
- user-away
  user-idle
  user-offline
- user-online
  weather-clear
  weather-few-clouds
  weather-fog
