@@ -1,0 +1,49 @@
+Short description how to do splash screens, for people after me
+or when I don't remember anymore.
+
+There are 7 icons for the following tasks:
+
+1: Setting up interprocess communication
+2: Initializing system services
+3: Initializing peripherals
+4: Loading the window manager
+5: Loading the desktop
+6: Loading the panel
+7: Restoring session, then
+   KDE is up and running
+
+The splash screens are usually 400px wide and about 300 to 350px high.
+The Lila one, splash-source.svg, is about 400x324px (the bottom has
+variable height).
+
+That means, with 400px width you have 400 / 7 = 57.1 px width for each
+flashing item (the icons, normally). The icons in splash-source.svg
+are therefore of 48px width or height (the bigger one of the two)
+and start on the X axis at (9 + (56*x)) pixels. (splash-source.svg has
+real-size pixel measures, so you can enter the real values there.)
+The icons are decreased to 0.5 opacity for the inactive version.
+
+The splash top and the icons strip can be of any height, they are just
+glued together in the end (together with the splash bottom).
+The Lila splash top is 245px, the icons strip is 63px high.
+
+The bottom of the splash screen (where the text appears) is of variable
+height, created by tiling the 400x16 splash_bottom so high that the text
+fits in. (Meaning that you can't use any shapes in there, otherwise they'd
+get tiled too.)
+
+I created the seperate files by exporting the whole page into a PNG
+(which can also be reused as preview image), then cropping the copies
+to the respective sizes with Kolourpaint. The preview should be scaled
+down a bit (preferably with Krita and its Lanczos 3 scale mode (which
+yields a pretty sharp outcome, it seems). The standard KDE splash has
+a preview which is 227px high, which should be a good choice for
+other splash screens too.
+
+At last, put Preview.png, the four splash_*.pngs and Theme.rc into
+a folder which is named after what you want to see in the splash config
+later. Make a tarball (.tar.gz) from the folder, then you can install
+the theme with the Add button in the ksplash control center module.
+
+The splash themes are usually in /usr/share/apps/ksplash/Themes/,
+so if you want to see how Default or other themes do it, go there.

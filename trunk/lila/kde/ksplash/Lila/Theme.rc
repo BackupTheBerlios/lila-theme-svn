@@ -1,0 +1,21 @@
+#
+# Lila KSplash (by Jakob Petsovits a.k.a. jpetso)
+#
+
+[KSplash Theme: Lila]
+Name = Lila Splash Screen
+Description = Splash Screen in a Shade of Purple
+Version = 1.0
+Author = Jakob Petsovits a.k.a. jpetso
+
+# Theme behavior settings.
+Engine = Default
+
+# Should icons blink ala KDE, or not?
+Icons Flashing = true
+
+# Show progress bar?
+Always Show Progress = true
+
+# Status text colour
+Label Foreground = #EFE0FD
