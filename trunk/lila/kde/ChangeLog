@@ -7,6 +7,44 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+02/23/05 jpetso
+---------
+
+actions/
+ +view_fit_window.svg: new in KDE 3.5, finally drawn
+ +view_fit_width.svg: dito
+ +view_fit_height.svg: dito
+
+apps/
+ +kile.svg: new icon for Kile, roughly imitating the original, uninspired one
+ ~akregator_empty.svg: has the same purpose as kmaillight, actually. adapt.
+ ~kmaillight.svg: standardize transparency to a 0.35 value
+ ~firefox.svg: kde icon renderer fix
+ +mozilla-firefox.svg: copy of firefox.svg, for Ubuntu et al.
+ ~background.svg: make it more appealing
+
+----------
+11/29/05 jpetso
+---------
+
+actions/
+ ~up.svg: wrong highlights? fixed.
+ +fork.svg: new icon. wanted to do this for a long time.
+
+
+----------
+11/12/05 jpetso
+---------
+
+apps/
+ ~kgamma.svg: kde icon renderer fix, and make the icon full size
+
+devices/
+ ~ipod.svg: kde icon renderer fix, and make the icon full size
+ ~ipod_mount.svg: dito
+
+
+----------
 11/09/05 jpetso
 ---------
 

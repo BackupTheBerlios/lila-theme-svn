@@ -3,16 +3,15 @@ If you have requests or some new icons (in here or not), please leave a note in 
 
 Icons for
 - file association icon (named 'filetypes')
-- KDE 3.5 - actions: view_fit_[height|width|window]
-- KDE 3.5 - apps: kttsd, fifteenpieces (puzzle applet), kbinaryclock
-- KDE 3.5 - devices: ipod -> ipod_unmount, laptop
-- KDE 3.5 - filesystems: folder_home2 (Users' Folders - folder icon with a user?)
+- KDE 3.5 - switchuser (as seen prominently in the KMenu)
+- Konversation
 - the wizard icon, it's everywhere (a magic wand like in the original icon?)
 - fileimport, and adapt fileexport
 - Menu Editor and Menu Updating Tool
 - Scribus
-- Amarok (leave for now, the icon troubles aren't over yet)
-- Konversation, the new IRC client
+- KDE 3.5 - apps: kttsd, fifteenpieces (puzzle applet), kbinaryclock
+- KDE 3.5 - devices: ipod -> ipod_unmount, laptop
+- KDE 3.5 - filesystems: folder_home2 (Users' Folders - folder icon with a user?)
 - Some nice KOffice Logo
 - KNewsTicker
 - KWifiManager
@@ -33,6 +32,3 @@ other TODO items:
 
 easy TODO items:
 - see if there is some charismatic bitmap icon anywhere
-- discuss with the other devs:
-  > semantics - which icon has which meaning?
-  > consistency - I think of different openoffice.org, KOffice, Gnumeric icons, and such.
