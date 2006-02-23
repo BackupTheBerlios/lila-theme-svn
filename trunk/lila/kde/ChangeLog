@@ -7,6 +7,19 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+02/24/05 jpetso
+---------
+
+actions/
+ ~view_fit_height.svg: fixed the gradient - the light comes from the top left
+ +wizard.svg: new icon, a magic wand not very different to the original
+
+apps/
+ +filetypes.svg: newly combined icon. badly needed and finally there.
+ ~photobook.svg: fixed the gradient
+
+
+----------
 02/23/05 jpetso
 ---------
 
