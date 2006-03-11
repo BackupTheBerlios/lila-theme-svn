@@ -1,9 +1,8 @@
-TODO list: this is what I find most important to do (in order of importance). Your opinion may differ.
+TODO list: where you can go if you want to do something and don't know what.
 If you have requests or some new icons (in here or not), please leave a note in our forums.
 
-Icons for
-- KDE 3.5 - switchuser (as seen prominently in the KMenu)
-- Konversation
+Icons we could need:
+- KGpg
 - fileimport, and adapt fileexport
 - Menu Editor and Menu Updating Tool
 - Scribus
@@ -11,21 +10,19 @@ Icons for
 - KDE 3.5 - apps: kttsd, fifteenpieces (puzzle applet), kbinaryclock
 - KDE 3.5 - devices: ipod -> ipod_unmount, laptop
 - Some nice KOffice Logo
-- KNewsTicker
 - KWifiManager
 - KView (get the gqview icon?)
-- KGpg, World Clock, Tea Cooker, AMOR
+- World Clock, Tea Cooker, AMOR
 - KDE-SDK: KDevelop, Umbrello, KBugBuster, babel fish, Kompare, KDiff3, Qt Utilities
 - KNetAttach
 - Game Categories (Arcade, Board Games, Tactics & Strategy)
 - More game icons: Atlantik, KAsteroids, etc.
 - Edutainment (and Subcategories: Languages, Mathematics, Miscellaneous, Science, Teaching Tools)
 
-other TODO items:
-- fix the colors of the user icons (apps/personal, apps/kuser, etc.) or replace them completely
-- let duplicate icons be symlinks (which is supported by Subversion!)
-- update all the icons to have them rendered much better from SVG source in KDE
-  > already done: devices/ (and some other single icons)
+Icon improvements:
+- kdissert. in its current state it's completely unrecognizable at small sizes.
+- fork. it's not that bad, but should be better.
 
-easy TODO items:
-- see if there is some charismatic bitmap icon anywhere
+other TODO items:
+- let duplicate icons be symlinks (which is supported by Subversion!)
+  ...which is probably a task for the Tango port rather than the KDE one.

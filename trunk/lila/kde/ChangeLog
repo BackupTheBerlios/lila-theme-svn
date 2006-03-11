@@ -7,7 +7,47 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
-02/24/05 jpetso
+03/11/06 jpetso (0.8.2 release)
+---------
+
+actions/
+ +switchuser.svg: copy of amsn.svg, gets displayed in the KMenu
+ ~kopeteavailable.svg: replaced with an amsn.svg like single-user, as the
+     previous one was not conforming the color specification and Lila style
+ ~kopeteaway.svg: ditto
+ ~kontact_contacts.svg: replaced the user icon too
+ +collection.svg: a "three-cdroms" icon for amarok
+ +player_playlist.svg: the last missing one of the player_* series (for real, this time)
+ +player_playlist_2.svg: a copy of the above, for amarok
+ -preferences.svg: not in Crystal, I guess telex has added that unintentionally
+
+apps/
+ ~amsn.svg: tiny tweaks on the highlights
+ +konversation.svg: totally new. I hope many people like it.
+ ~personal.svg: same as kopeteavailable.svg
+ ~kuser.svg: copy of personal.svg with additional screw wrench
+ +userconfig.svg: copy of kuser.svg
+ ~kdmconfig.svg: copy of amsn.svg
+ ~kaddressbook.svg: copy of kontact_contacts.svg
+ ~kcmsystem.svg: painted the screw wrench white
+ ~package_system.svg: ditto
+ ~kdebluetooth.svg: reworked, I think it's better now
+ +kbluetoothd.svg: another pointless copy
+ +kxkb.svg: copy of keyboard.svg
+ ~kaffeine-pause.svg: updated with the current pause icon
+ ~kaffeine-play.svg: updated with the current play icon
+ ~kaffeine-record.svg: updated with the current record icon
+ ~ksplash.svg: color fix
+
+filesystems/
+ ~folder_video: fixed the gradients
+
+COPYRIGHT: replaced "Lila Community" by the people who have actually worked
+           on Lila, following legal advice from the kde-core-devel list.
+
+
+----------
+02/24/06 jpetso
 ---------
 
 actions/
@@ -20,7 +60,7 @@ apps/
 
 
 ----------
-02/23/05 jpetso
+02/23/06 jpetso
 ---------
 
 actions/

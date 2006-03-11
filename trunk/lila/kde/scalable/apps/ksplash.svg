@@ -16,7 +16,7 @@
    height="48pt"
    id="svg611"
    sodipodi:version="0.32"
-   inkscape:version="0.42.2"
+   inkscape:version="0.42"
    sodipodi:docname="ksplash.svg"
    sodipodi:docbase="/home/jakob/dev/lila/lila-theme/trunk/lila/kde/scalable/apps">
   <metadata
@@ -41,12 +41,23 @@
      inkscape:cx="30.000000"
      inkscape:cy="30.000000"
      inkscape:window-width="1400"
-     inkscape:window-height="992"
+     inkscape:window-height="995"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:current-layer="svg611" />
   <defs
      id="defs613">
+    <linearGradient
+       id="linearGradient2115">
+      <stop
+         style="stop-color:#000000;stop-opacity:0.0000000;"
+         offset="0.0000000"
+         id="stop2117" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0.30612245;"
+         offset="1.0000000"
+         id="stop2119" />
+    </linearGradient>
     <linearGradient
        id="linearGradient2856">
       <stop
@@ -465,16 +476,16 @@
     </radialGradient>
     <radialGradient
        inkscape:collect="always"
-       xlink:href="#radialGradient689"
+       xlink:href="#linearGradient578"
        id="radialGradient3886"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(4.805408e-2,0.000000,0.000000,5.435890e-2,0.000000,5.270552)"
        spreadMethod="pad"
-       cx="643.774963"
-       cy="155.889099"
-       fx="643.774963"
-       fy="155.889099"
-       r="747.807312" />
+       cx="643.77496"
+       cy="155.88910"
+       fx="643.77496"
+       fy="155.88910"
+       r="747.80731" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient584"
@@ -495,9 +506,20 @@
        y2="30.818911"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(0.972853,0.000000,0.000000,1.000000,0.758942,0.000000)" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2115"
+       id="radialGradient2121"
+       cx="30.940418"
+       cy="14.066039"
+       fx="30.940418"
+       fy="14.066039"
+       r="30.009107"
+       gradientTransform="matrix(1.000000,0.000000,0.000000,0.614101,0.000000,8.744396)"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <path
-     style="font-size:12.000000px;fill:url(#radialGradient3886);fill-rule:nonzero"
+     style="font-size:12.000000px;fill:url(#radialGradient3886);fill-rule:nonzero;fill-opacity:1.0"
      d="M 60.000000,39.508729 L 0.0000000,39.508729 L 0.0000000,5.2705516 L 60.000000,5.2705516 L 60.000000,39.508729 z "
      id="path558" />
   <path
@@ -517,7 +539,7 @@
      style="fill-rule:nonzero;stroke:#000000;stroke-miterlimit:4.0000000"
      transform="matrix(5.859375e-2,0.000000,0.000000,4.458096e-2,0.000000,6.618199)" />
   <rect
-     style="font-size:12.000000px;fill:none;fill-opacity:1.0000000;fill-rule:evenodd;stroke:#261933;stroke-width:1.8749993;stroke-miterlimit:4.0000000;stroke-dasharray:none;stroke-opacity:1.0000000"
+     style="font-size:12.000000px;fill:url(#radialGradient2121);fill-opacity:1.0;fill-rule:evenodd;stroke:#261933;stroke-width:1.8749993;stroke-miterlimit:4.0000000;stroke-dasharray:none;stroke-opacity:1.0000000"
      id="rect610"
      width="58.143215"
      height="34.982231"
