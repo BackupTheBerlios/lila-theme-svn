@@ -1,0 +1,29 @@
+This document is to post notes about things done
+with the tango port of Lila.
+
+------------------------------------------------
+
+
+2006-03-21 (9-speed)
+I downloaded tango-icon-theme-0.7.1 and replaced
+all icons with Lila versions. Some icons did not
+have an appropriate Lila version in my opinion.
+Missing icons compared to the tango icon package
+can be found using the diff tool to compare the
+scalable directories.
+I am still unsure about what the official icons
+in a tango port should be.
+
+* New icon system-installer
+* New icon system-software-update
+* New icon preferences-desktop-peripherals
+* New icon video-display
+* New icon face-plain
+* New icon face-smile-big
+* New icon face-devil-grin
+* New icon x-office-presentation
+* New icon user-home
+* New icon battery-caution
+* New icon weather-severe-alert
+* New icon weather-few-clouds-night
+* New icon weather-clear-night
