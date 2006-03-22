@@ -130,6 +130,8 @@ for COLOR in $COLORMODS; do
 	rm -f $OUTPUTPATH/lila-kde-$COLOR/*.mng #> /dev/null
 	rm -f $OUTPUTPATH/lila-kde-$COLOR/generate.py #> /dev/null
 	rm -f $OUTPUTPATH/lila-kde-$COLOR/convert-errors.log #> /dev/null
+	rm -f $OUTPUTPATH/lila-kde-$COLOR/README #> /dev/null
+	cat $OUTPUTPATH/lila-kde/README | sed -e "s/%VERSION%/$VERSION - $COLOR/g" > $OUTPUTPATH/lila-kde-$COLOR/README
 done
 
 

@@ -7,6 +7,27 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+03/21/06 jpetso
+---------
+
+actions/
+ ~attach.svg: updated with 9-speed's new attach icon from the Tango port
+ ~player_mute.svg: color fix
+
+apps/
+ ~access.svg: update from 9-speed's Tango commit
+ ~proxy.svg: dito
+ ~background.svg: remove non-standard gradient definitions
+ ~kfm.svg: kde icon renderer fix
+ ~kwin.svg: color fix
+
+filesystems/
+ network_local.svg: finally updated with the recolored home icon
+
+makerelease.svg: small bug fix, I can't even remember the cause
+
+
+----------
 03/11/06 jpetso (0.8.2 release)
 ---------
 

@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
-"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg1"
    sodipodi:version="0.32"
-   inkscape:version="0.40"
+   inkscape:version="0.42"
    width="48.000000pt"
    height="48.000000pt"
-   sodipodi:docbase="/home/jakob/dev/lila-cvs/lila-theme/trunk/lila/kde/scalable/apps"
-   sodipodi:docname="kmixdocked_mute.svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:cc="http://web.resource.org/cc/"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:xlink="http://www.w3.org/1999/xlink">
+   sodipodi:docbase="/home/jakob/dev/lila/lila-theme/branches/tango/scalable/status"
+   sodipodi:docname="audio-volume-muted.svg">
   <defs
      id="defs3">
     <linearGradient
@@ -935,15 +934,11 @@
      inkscape:current-layer="svg1" />
   <metadata
      id="metadata964">
-    <rdf:RDF
-       id="RDF965">
+    <rdf:RDF>
       <cc:Work
-         rdf:about=""
-         id="Work966">
-        <dc:format
-           id="format967">image/svg+xml</dc:format>
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
         <dc:type
-           id="type969"
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
       </cc:Work>
     </rdf:RDF>
@@ -1025,7 +1020,7 @@
          transform="matrix(1.373487,0.000000,0.000000,1.373487,-17.61598,-13.82184)" />
     </g>
     <path
-       style="font-size:12.000000;fill:url(#linearGradient3699);fill-opacity:1.0000000;fill-rule:evenodd;stroke:#000000;stroke-width:1.2150946"
+       style="font-size:12.000000;fill:url(#linearGradient3699);fill-opacity:1.0000000;fill-rule:evenodd;stroke:#261933;stroke-width:1.2150946;stroke-opacity:1.0000000"
        d="M 17.729912,47.613804 C 15.180506,46.716815 6.5065906,42.973340 5.0076905,41.306866 C 3.1277184,39.216715 1.9320394,32.632785 2.9336282,30.357760 C 3.6681197,28.689423 10.832161,24.431990 13.043196,23.585317 C 15.248469,22.740850 21.556825,48.960274 17.729912,47.613804 z "
        id="path1207"
        sodipodi:nodetypes="cssss" />

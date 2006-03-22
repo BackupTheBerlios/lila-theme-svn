@@ -1,19 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
-"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg1"
    sodipodi:version="0.32"
-   inkscape:version="0.37"
+   inkscape:version="0.42"
    width="48pt"
    height="48pt"
-   sodipodi:docbase="/home/dan/Projects/Lila-icons/scalable/apps"
-   sodipodi:docname="gnome-window-manager.svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink">
+   sodipodi:docbase="/home/jakob/dev/lila/lila-theme/trunk/lila/kde/scalable/apps"
+   sodipodi:docname="kwin.svg">
+  <metadata
+     id="metadata37">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
   <defs
      id="defs3">
     <linearGradient
@@ -144,30 +157,31 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.97947193"
-     inkscape:cx="21.3503690"
-     inkscape:cy="24.2738768"
-     inkscape:window-width="771"
-     inkscape:window-height="689"
-     inkscape:window-x="74"
-     inkscape:window-y="49" />
+     inkscape:zoom="7.9794719"
+     inkscape:cx="21.350369"
+     inkscape:cy="24.273877"
+     inkscape:window-width="1400"
+     inkscape:window-height="995"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:current-layer="svg1" />
   <path
      style="font-size:12;opacity:0.302675;fill-rule:evenodd;stroke-width:1.25;"
      d="M 2.0249778 41.039993 C 1.0833744 39.429385 11.245813 6.2919 13.746093 5.221956 C 15.622622 4.4154423 58.239182 12.486704 59.117306 14.289811 C 60.085443 16.492319 50.016028 52.552838 47.873333 53.368912 C 45.787368 54.242537 3.0501952 42.950405 2.0249778 41.039993 z "
      id="path627"
      sodipodi:nodetypes="cssss" />
   <path
-     style="font-size:12;fill:url(#linearGradient638);fill-rule:evenodd;stroke:#000000;stroke-width:1.875;stroke-dasharray:none;"
+     style="font-size:12;fill:url(#linearGradient638);fill-rule:evenodd;stroke:#261933;stroke-width:1.875;stroke-dasharray:none;stroke-opacity:1.0000000"
      d="M 2.2189011 37.346984 C 1.3264369 35.820428 10.958534 4.4122731 13.328333 3.3981652 C 15.106932 2.6337408 55.499482 10.283791 56.331779 11.992801 C 57.249392 14.080368 47.705465 48.259012 45.674589 49.0325 C 43.697483 49.860532 3.1906164 39.157697 2.2189011 37.346984 z "
      id="path628"
      sodipodi:nodetypes="cssss" />
   <path
-     style="font-size:12;fill:url(#linearGradient640);fill-rule:evenodd;stroke:#000000;stroke-width:1.875;stroke-dasharray:none;"
+     style="font-size:12;fill:url(#linearGradient640);fill-rule:evenodd;stroke:#261933;stroke-width:1.875;stroke-dasharray:none;stroke-opacity:1.0000000"
      d="M 11.113561 8.676361 C 10.43911 8.307871 12.689552 3.7947236 13.328333 3.3981652 C 14.901333 2.2697032 55.188651 10.474021 56.331779 11.992801 C 56.833638 12.732669 55.776724 17.280365 54.710228 17.839894 C 52.961588 19.079589 12.69595 9.98745 11.113561 8.676361 z "
      id="path629"
      sodipodi:nodetypes="cssss" />
   <path
-     style="font-size:12;fill-rule:evenodd;stroke-width:1pt;"
+     style="font-size:12;fill-rule:evenodd;stroke-width:1pt;fill:#261933;fill-opacity:1.0000000"
      d="M 49.68204 12.145649 C 49.292267 12.407435 50.287541 13.799271 50.270005 14.051583 C 50.257467 14.279769 48.570123 14.996242 48.789277 15.315735 C 48.965892 15.647285 50.72298 14.594365 50.959979 14.682096 C 51.138581 14.736361 51.714591 16.240673 52.093452 16.068673 C 52.463363 15.872824 51.748778 14.40606 51.779402 14.157006 C 51.849205 13.936169 53.689461 13.351744 53.536911 13.024078 C 53.313387 12.674043 51.34586 13.618045 51.080281 13.486553 C 50.858201 13.351613 50.064835 11.920058 49.68204 12.145649 z "
      id="path633"
      sodipodi:nodetypes="cssssssss" />
@@ -182,17 +196,17 @@
      id="path737"
      sodipodi:nodetypes="cssss" />
   <path
-     style="font-size:12;fill:url(#linearGradient638);fill-rule:evenodd;stroke:#000000;stroke-width:1.875;stroke-dasharray:none;"
+     style="font-size:12;fill:url(#linearGradient638);fill-rule:evenodd;stroke:#261933;stroke-width:1.875;stroke-dasharray:none;stroke-opacity:1.0000000"
      d="M 18.306527 48.018956 C 17.658748 46.910934 24.650028 24.113902 26.370104 23.37783 C 27.661067 22.822987 56.979258 28.375635 57.583365 29.616089 C 58.249397 31.131311 51.322113 55.939251 49.848039 56.500673 C 48.412993 57.101685 19.011829 49.333229 18.306527 48.018956 z "
      id="path738"
      sodipodi:nodetypes="cssss" />
   <path
-     style="font-size:12;fill:url(#linearGradient640);fill-rule:evenodd;stroke:#000000;stroke-width:1.875;stroke-dasharray:none;"
+     style="font-size:12;fill:url(#linearGradient640);fill-rule:evenodd;stroke:#261933;stroke-width:1.875;stroke-dasharray:none;stroke-opacity:1.0000000"
      d="M 24.762553 27.208911 C 24.273014 26.94145 25.906457 23.665665 26.370104 23.37783 C 27.511837 22.558756 56.753646 28.513711 57.583365 29.616089 C 57.94763 30.153108 57.180488 33.45397 56.406391 33.860094 C 55.137174 34.759903 25.9111 28.160541 24.762553 27.208911 z "
      id="path739"
      sodipodi:nodetypes="cssss" />
   <path
-     style="font-size:12;fill-rule:evenodd;stroke-width:1pt;"
+     style="font-size:12;fill-rule:evenodd;stroke-width:1pt;fill:#261933;fill-opacity:1.0000000"
      d="M 52.756774 29.727031 C 52.473864 29.917043 53.196266 30.927281 53.183538 31.110417 C 53.174437 31.276042 51.949709 31.796081 52.108779 32.027979 C 52.236972 32.268629 53.512321 31.504387 53.684343 31.568064 C 53.813978 31.607451 54.232063 32.699329 54.507053 32.574485 C 54.775546 32.432332 54.256877 31.367709 54.279106 31.186937 C 54.329771 31.026647 55.665487 30.602453 55.554761 30.364622 C 55.392521 30.110555 53.964428 30.795742 53.771662 30.700301 C 53.610468 30.602358 53.034619 29.563289 52.756774 29.727031 z "
      id="path740"
      sodipodi:nodetypes="cssssssss" />
