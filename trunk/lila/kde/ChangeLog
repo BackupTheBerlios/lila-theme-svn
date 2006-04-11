@@ -7,6 +7,23 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+04/11/06 jpetso
+---------
+
+actions/
+ +window_suppressed.svg: copy of actions/view_remove.svg, for popup blockers
+ +cssvalidator.svg: derived from the website one
+ +htmlvalidator.svg: dito
+
+apps/
+ +stylesheet.svg: copy of actions/cssvalidator.svg
+ +wine.svg: new icon for (surprise!) wine
+ +gpg.svg: copy of the lock icon
+ +gpgsm.svg: dito
+ +kgpg.svg: a rotated lock icon, like the original
+
+
+----------
 03/21/06 jpetso
 ---------
 
