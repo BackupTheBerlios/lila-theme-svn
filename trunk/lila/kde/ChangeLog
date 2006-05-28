@@ -10,7 +10,14 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 05/28/06 jpetso
 ---------
 
+actions/
+ ~player_volume.svg: color fix
+ +covermanager.svg: new icon, for amaroK
+ +equalizer.svg: dito
+ ~wizard.svg: make the star bigger
+
 apps/
+ ~arts.svg: color fix, same as actions/player_volume.svg
  ~apollon.svg: update with the more polished Gnome version
 
 

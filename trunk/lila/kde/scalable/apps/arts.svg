@@ -1,19 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
-"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg1"
    sodipodi:version="0.32"
-   inkscape:version="0.37"
+   inkscape:version="0.43"
    width="48pt"
    height="48pt"
-   sodipodi:docbase="/home/tom"
-   sodipodi:docname="arts.svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink">
+   sodipodi:docbase="/home/jakob/dev/lila/lila-theme/trunk/lila/kde/scalable/apps"
+   sodipodi:docname="arts.svg">
+  <metadata
+     id="metadata38">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
   <defs
      id="defs3">
     <linearGradient
@@ -141,15 +154,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.99999999"
-     inkscape:cx="27.7502289"
-     inkscape:cy="25.3287888"
-     inkscape:window-width="788"
+     inkscape:zoom="8"
+     inkscape:cx="27.750229"
+     inkscape:cy="25.328789"
+     inkscape:window-width="801"
      inkscape:window-height="714"
      inkscape:window-x="199"
      inkscape:window-y="44"
      showborder="true"
-     showgrid="false" />
+     showgrid="false"
+     inkscape:current-layer="svg1" />
   <g
      id="g650"
      style="font-size:12;opacity:0.296369;"
@@ -166,7 +180,7 @@
        transform="matrix(1.373487,0.000000,0.000000,1.373487,-17.61598,-13.82184)" />
   </g>
   <path
-     style="font-size:12;fill:url(#linearGradient860);fill-rule:evenodd;stroke:#000000;stroke-width:1.80513;"
+     style="font-size:12;fill:url(#linearGradient860);fill-rule:evenodd;stroke:#261933;stroke-width:1.80513;stroke-opacity:1"
      d="M 27.931522 49.094427 C 24.144155 47.76187 11.258291 42.200607 9.0315431 39.724912 C 6.2386789 36.619809 4.4623938 26.838801 5.9503419 23.459052 C 7.041493 20.980591 17.684306 14.655798 20.968992 13.397992 C 24.245121 12.14346 33.616739 51.094729 27.931522 49.094427 z "
      id="path637"
      sodipodi:nodetypes="cssss" />
