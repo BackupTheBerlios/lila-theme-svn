@@ -7,13 +7,28 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+05/29/06 jpetso
+---------
+
+actions/
+ +kgpg_docked.svg: guess what ;)
+ +mail_ham.svg: for KMail/Kontact
+ +mail_spam.svg: ditto
+ +mail_ignore.svg: ditto
+ +mail_flag.svg: ditto
+ +mail_todo.svg: ditto
+ +online_status.svg: ditto
+ -network.svg: not supposed to be in actions/, I think, there's one network.svg in filesystems/ already
+
+
+----------
 05/28/06 jpetso
 ---------
 
 actions/
  ~player_volume.svg: color fix
  +covermanager.svg: new icon, for amaroK
- +equalizer.svg: dito
+ +equalizer.svg: ditto
  ~wizard.svg: make the star bigger
 
 apps/
@@ -28,13 +43,13 @@ apps/
 actions/
  +window_suppressed.svg: copy of actions/view_remove.svg, for popup blockers
  +cssvalidator.svg: derived from the website one
- +htmlvalidator.svg: dito
+ +htmlvalidator.svg: ditto
 
 apps/
  +stylesheet.svg: copy of actions/cssvalidator.svg
  +wine.svg: new icon for (surprise!) wine
  +gpg.svg: copy of the lock icon
- +gpgsm.svg: dito
+ +gpgsm.svg: ditto
  +kgpg.svg: a rotated lock icon, like the original
 
 
@@ -48,15 +63,15 @@ actions/
 
 apps/
  ~access.svg: update from 9-speed's Tango commit
- ~proxy.svg: dito
+ ~proxy.svg: ditto
  ~background.svg: remove non-standard gradient definitions
  ~kfm.svg: kde icon renderer fix
  ~kwin.svg: color fix
 
 filesystems/
- network_local.svg: finally updated with the recolored home icon
+ ~network_local.svg: finally updated with the recolored home icon
 
-makerelease.svg: small bug fix, I can't even remember the cause
+~makerelease.svg: small bug fix, I can't even remember the cause
 
 
 ----------
@@ -118,8 +133,8 @@ apps/
 
 actions/
  +view_fit_window.svg: new in KDE 3.5, finally drawn
- +view_fit_width.svg: dito
- +view_fit_height.svg: dito
+ +view_fit_width.svg: ditto
+ +view_fit_height.svg: ditto
 
 apps/
  +kile.svg: new icon for Kile, roughly imitating the original, uninspired one
@@ -147,7 +162,7 @@ apps/
 
 devices/
  ~ipod.svg: kde icon renderer fix, and make the icon full size
- ~ipod_mount.svg: dito
+ ~ipod_mount.svg: ditto
 
 
 ----------
@@ -156,10 +171,10 @@ devices/
 
 apps/
  ~browser.svg: kde icon renderer fix
- ~package_graphics.svg: dito
- ~package_utilities.svg: dito
+ ~package_graphics.svg: ditto
+ ~package_utilities.svg: ditto
  ~network.svg: resized to use all 48x48pt
- ~package_applications.svg: dito, and renderer fix
+ ~package_applications.svg: ditto, and renderer fix
  ~package_development.svg: like package_applications.svg
  ~package.svg: like package_applications.svg
 
@@ -175,11 +190,11 @@ actions/
 apps/
  +amarok.svg: long awaited, finally there. yes, derived from the original one.
  ~email.svg: kde icon renderer fix
- ~kmail.svg: dito
- ~kmaillight.svg: dito
- ~fonts.svg: dito
- ~kfontview.svg: dito
- ~settings-font.svg: dito
+ ~kmail.svg: ditto
+ ~kmaillight.svg: ditto
+ ~fonts.svg: ditto
+ ~kfontview.svg: ditto
+ ~settings-font.svg: ditto
  ~looknfeel.svg: ok, less colors.
 
 ----------
@@ -198,28 +213,28 @@ actions/
  ~bookmark.svg: replaced the book with the bookmark icon
  ~bookmark_toolbar.svg: away with the book as well
  ~bookmark_add.svg: kde icon renderer fix
- ~fonts.svg: dito
- ~text.svg: dito
+ ~fonts.svg: ditto
+ ~text.svg: ditto
 
 apps/
  ~kmixdocked.svg: color & border strenght fix
- ~kmixdocked_mute.svg: dito
- ~kmixdocked_error.svg: dito
+ ~kmixdocked_mute.svg: ditto
+ ~kmixdocked_error.svg: ditto
  ~looknfeel.svg: just has to be a litte more colorful
  ~kcalc.svg: kde icon renderer fix
- ~kdict.svg: dito
- ~kmix.svg: dito
- ~access.svg: dito
- ~locale.svg: dito
- ~lockscreen.svg: dito
- ~logout.svg: dito
- ~kcmfontinst.svg: dito
- ~background.svg: dito
- ~konsole.svg: dito
+ ~kdict.svg: ditto
+ ~kmix.svg: ditto
+ ~access.svg: ditto
+ ~locale.svg: ditto
+ ~lockscreen.svg: ditto
+ ~logout.svg: ditto
+ ~kcmfontinst.svg: ditto
+ ~background.svg: ditto
+ ~konsole.svg: ditto
 
 mimetypes/
  ~bittorrent.svg: kde icon renderer fix
- ~font.svg: dito
+ ~font.svg: ditto
  ~binary.svg: replaced the "new" icon with the "bittorrent" one, fits better
 
 
@@ -229,45 +244,45 @@ mimetypes/
 
 actions/
  ~bottom.svg: kde icon renderer fix
- ~build.svg: dito
- ~down.svg: dito
- ~kdevelop_down.svg: dito
- ~goto.svg: dito
- ~start.svg: dito
- ~finish.svg: dito
- ~top.svg: dito
- ~up.svg: dito
- ~help.svg: dito
- ~add.svg: dito
- ~remove.svg: dito
- ~edit_add.svg: dito
- ~edit_remove.svg: dito
- ~exec.svg: dito
- ~gear.svg: dito
- ~run.svg: dito
- ~lock.svg: dito
- ~locked.svg: dito
- ~authenticate.svg: dito
- ~encrypted.svg: dito
- ~wallet_closed.svg: dito
- ~decrypted.svg: dito
- ~unlock.svg: dito
- ~wallet_open.svg: dito
- ~reload.svg: dito
- ~reload3.svg: dito
- ~centrejust.svg: dito
- ~under.svg: dito
- ~spellcheck.svg: dito
- ~player_rew.svg: dito
- ~player_ffw.svg: dito
- ~player_start.svg: dito
- ~player_end.svg: dito
- ~viewmag1.svg: dito
- ~viewmagfit.svg: dito
- ~viewmag-.svg: dito
- ~viewmag.svg: dito
- ~viewmag+.svg: dito
- ~goto.svg: dito, and changed to the new definition of yellow
+ ~build.svg: ditto
+ ~down.svg: ditto
+ ~kdevelop_down.svg: ditto
+ ~goto.svg: ditto
+ ~start.svg: ditto
+ ~finish.svg: ditto
+ ~top.svg: ditto
+ ~up.svg: ditto
+ ~help.svg: ditto
+ ~add.svg: ditto
+ ~remove.svg: ditto
+ ~edit_add.svg: ditto
+ ~edit_remove.svg: ditto
+ ~exec.svg: ditto
+ ~gear.svg: ditto
+ ~run.svg: ditto
+ ~lock.svg: ditto
+ ~locked.svg: ditto
+ ~authenticate.svg: ditto
+ ~encrypted.svg: ditto
+ ~wallet_closed.svg: ditto
+ ~decrypted.svg: ditto
+ ~unlock.svg: ditto
+ ~wallet_open.svg: ditto
+ ~reload.svg: ditto
+ ~reload3.svg: ditto
+ ~centrejust.svg: ditto
+ ~under.svg: ditto
+ ~spellcheck.svg: ditto
+ ~player_rew.svg: ditto
+ ~player_ffw.svg: ditto
+ ~player_start.svg: ditto
+ ~player_end.svg: ditto
+ ~viewmag1.svg: ditto
+ ~viewmagfit.svg: ditto
+ ~viewmag-.svg: ditto
+ ~viewmag.svg: ditto
+ ~viewmag+.svg: ditto
+ ~goto.svg: ditto, and changed to the new definition of yellow
  ~window_new.svg: exactly like goto.svg above
  ~mail_new.svg: fixed bad colors, and kde icon renderer fix
  ~quit.svg: slight reworking
@@ -287,21 +302,21 @@ apps/
 
 actions/
  ~rightjust.svg: kde icon renderer fix
- ~leftjust.svg: dito
- ~text_left.svg: dito
- ~text_right.svg: dito
- ~text_center.svg: dito
- ~text_block.svg: dito
- ~text_bold.svg: dito
- ~text_italic.svg: dito
- ~text_strike.svg: dito
- ~text_under.svg: dito
- ~next.svg: dito
- ~forward.svg: dito
- ~previous.svg: dito
- ~back.svg: dito
- ~indent.svg: dito, and increasing the arrow size
- ~unindent.svg: dito, and increasing the arrow size too
+ ~leftjust.svg: ditto
+ ~text_left.svg: ditto
+ ~text_right.svg: ditto
+ ~text_center.svg: ditto
+ ~text_block.svg: ditto
+ ~text_bold.svg: ditto
+ ~text_italic.svg: ditto
+ ~text_strike.svg: ditto
+ ~text_under.svg: ditto
+ ~next.svg: ditto
+ ~forward.svg: ditto
+ ~previous.svg: ditto
+ ~back.svg: ditto
+ ~indent.svg: ditto, and increasing the arrow size
+ ~unindent.svg: ditto, and increasing the arrow size too
  ~format_increaseindent.svg: like indent.svg
  ~format_decreaseindent.svg: like unindent.svg
 
@@ -315,31 +330,31 @@ actions/
  ~identity.svg: replaced with bordered user icon
  ~filequickprint.svg: better recognizability for the lens glasses
  ~appointment.svg: kde icon renderer fix
- ~apply.svg: dito
- ~button_ok.svg: dito
- ~button_cancel.svg: dito
- ~cancel.svg: dito
- ~copy.svg: dito
- ~cut.svg: dito
- ~editcopy.svg: dito
- ~editcut.svg: dito
- ~editdelete.svg: dito
- ~editpaste.svg: dito
- ~exit.svg: dito
- ~fileclose.svg: dito
- ~filefind.svg: dito
- ~filenew.svg: dito
- ~filesaveas.svg: dito
- ~fileopen.svg: dito
- ~find.svg: dito
- ~new.svg: dito
- ~ok.svg: dito
- ~paste.svg: dito
- ~redo.svg: dito
- ~replace.svg: dito
- ~revert.svg: dito
- ~save_as.svg: dito
- ~undo.svg: dito
+ ~apply.svg: ditto
+ ~button_ok.svg: ditto
+ ~button_cancel.svg: ditto
+ ~cancel.svg: ditto
+ ~copy.svg: ditto
+ ~cut.svg: ditto
+ ~editcopy.svg: ditto
+ ~editcut.svg: ditto
+ ~editdelete.svg: ditto
+ ~editpaste.svg: ditto
+ ~exit.svg: ditto
+ ~fileclose.svg: ditto
+ ~filefind.svg: ditto
+ ~filenew.svg: ditto
+ ~filesaveas.svg: ditto
+ ~fileopen.svg: ditto
+ ~find.svg: ditto
+ ~new.svg: ditto
+ ~ok.svg: ditto
+ ~paste.svg: ditto
+ ~redo.svg: ditto
+ ~replace.svg: ditto
+ ~revert.svg: ditto
+ ~save_as.svg: ditto
+ ~undo.svg: ditto
 
 apps/
  +kdissert.svg: new and from telex4
@@ -370,19 +385,19 @@ kde/
  ~makecolormod.sh: don't remember, must've been some minor issue
  ~index.desktop: adapt the comment string to not contain Gentoo
  -index-red.desktop: not needed anymore, now created on the fly
- -index-blue.desktop: dito
+ -index-blue.desktop: ditto
 
 actions/
  +classnew.svg: inspecting the KDevelop sources brought me the icon name :)
  ~contexthelp.svg: adjust the border size to 1.5pt
  ~gohome.svg: no more gentoo, I modified the house icon to be appropriate
- ~kde.svg: dito
+ ~kde.svg: ditto
 
 apps/
  -pakoo.svg: deleted for now, will make its comeback in the upcoming gentoo expansion set
  -kfm_home2.svg: not used in KDE
  ~kfm_home.svg: no more gentoo, like actions/gohome
- ~ksplash.svg: dito, and a little reworking / adhering to lila standards
+ ~ksplash.svg: ditto, and a little reworking / adhering to lila standards
  ~package.svg: color fix, for the color mods to work properly
 
 filesystems/
@@ -401,45 +416,45 @@ devices/: kde icon-renderer compatibility fixes for all files in here
  +memory.svg: the former cpu icon
  ~ksim_cpu.svg: new cpu icon, extracted from one of the rom mimetypes
  ~ipod.svg: updated with color changes (right?) from a recent gnome commit
- ~ipod_mount.svg: dito
+ ~ipod_mount.svg: ditto
  ~3floppy_mount.svg: kde icon-renderer compatibility fix
- ~3floppy_unmount.svg: dito
- ~battery.svg: dito (and a color fix)
- ~blockdevice.svg: dito
- ~camera.svg: dito
- ~camera_mount.svg: dito
- ~camera_unmount.svg: dito
- ~cdaudio_unmount.svg: dito
- ~cdaudio_mount.svg: dito
- ~cdrom_unmount.svg: dito
- ~cdrom_mount.svg: dito
- ~cdwriter_unmount.svg: dito (and replacing it with the gnome version)
- ~cdwriter_mount.svg: dito (and the gnome version, too)
- ~chardevice.svg: dito (and removal of the highlights' borders)
- ~dvd_mount.svg: dito
- ~dvd_unmount.svg: dito
- ~hdd_mount.svg: dito
- ~hdd_unmount.svg: dito
- ~ipod_mount.svg: dito
- ~ipod.svg: dito
- ~joystick.svg: dito
- ~ksim_cpu.svg: dito (and removal of the highlights' borders, like chardevice)
- ~mobile_camera.svg: dito
- ~mobile_musicplayer.svg: dito
- ~mobile_organizer.svg: dito
- ~mobile_phone.svg: dito
- ~mouse.svg: dito
- ~pda_black.svg: dito
- ~printer1.svg: dito
- ~printer.svg: dito
- ~print_printer.svg: dito
- ~scanner.svg: dito
- ~system.svg: dito
- ~tv.svg: dito
- ~usbpendrive_mount.svg: dito
- ~usbpendrive_unmount.svg: dito
- ~zip_mount.svg: dito
- ~zip_unmount.svg: dito
+ ~3floppy_unmount.svg: ditto
+ ~battery.svg: ditto (and a color fix)
+ ~blockdevice.svg: ditto
+ ~camera.svg: ditto
+ ~camera_mount.svg: ditto
+ ~camera_unmount.svg: ditto
+ ~cdaudio_unmount.svg: ditto
+ ~cdaudio_mount.svg: ditto
+ ~cdrom_unmount.svg: ditto
+ ~cdrom_mount.svg: ditto
+ ~cdwriter_unmount.svg: ditto (and replacing it with the gnome version)
+ ~cdwriter_mount.svg: ditto (and the gnome version, too)
+ ~chardevice.svg: ditto (and removal of the highlights' borders)
+ ~dvd_mount.svg: ditto
+ ~dvd_unmount.svg: ditto
+ ~hdd_mount.svg: ditto
+ ~hdd_unmount.svg: ditto
+ ~ipod_mount.svg: ditto
+ ~ipod.svg: ditto
+ ~joystick.svg: ditto
+ ~ksim_cpu.svg: ditto (and removal of the highlights' borders, like chardevice)
+ ~mobile_camera.svg: ditto
+ ~mobile_musicplayer.svg: ditto
+ ~mobile_organizer.svg: ditto
+ ~mobile_phone.svg: ditto
+ ~mouse.svg: ditto
+ ~pda_black.svg: ditto
+ ~printer1.svg: ditto
+ ~printer.svg: ditto
+ ~print_printer.svg: ditto
+ ~scanner.svg: ditto
+ ~system.svg: ditto
+ ~tv.svg: ditto
+ ~usbpendrive_mount.svg: ditto
+ ~usbpendrive_unmount.svg: ditto
+ ~zip_mount.svg: ditto
+ ~zip_unmount.svg: ditto
 
 apps/
  ~ark.svg: fsck the fileroller icon, the original one is better
@@ -448,24 +463,24 @@ apps/
  ~kscreensaver.svg: slight reworking (colors & shapes)
  +ksnake.svg: new icon! (but derived from the python mimetype)
  ~camera.svg: kde icon-renderer compatibility fix
- ~digikam.svg: dito
- ~juk.svg: dito
- ~kcmprocessor.svg: dito (and removal of the highlights' borders, like in devices/)
- ~kjobviewer.svg: dito
- ~konqsidebar_mediaplayer.svg: dito
- ~kpilot.svg: dito
- ~kpilotDaemon.svg: dito
- ~kscd.svg: dito
- ~laptop_battery.svg: dito (and the color fix, like in devices/)
- ~package_games.svg: dito
- ~package_settings.svg: dito
+ ~digikam.svg: ditto
+ ~juk.svg: ditto
+ ~kcmprocessor.svg: ditto (and removal of the highlights' borders, like in devices/)
+ ~kjobviewer.svg: ditto
+ ~konqsidebar_mediaplayer.svg: ditto
+ ~kpilot.svg: ditto
+ ~kpilotDaemon.svg: ditto
+ ~kscd.svg: ditto
+ ~laptop_battery.svg: ditto (and the color fix, like in devices/)
+ ~package_games.svg: ditto
+ ~package_settings.svg: ditto
 
 filesystems/
  ~network_local.svg: finally updated with the rounded-edges home icon
  +link.svg: I think it looks ok when it's white
  ~blockdev.svg: kde icon-renderer compatibility fix
- ~camera.svg: dito
- ~chardev.svg: dito
+ ~camera.svg: ditto
+ ~chardev.svg: ditto
 
 actions/
  +bookmark_list_add.svg: combination of the folder and bookmark_add icons
@@ -476,15 +491,15 @@ actions/
  ~contents2.svg: color fix, too
  ~pencil.svg: replaced by gnome's apps/logjam_pencil.svg
  ~cd.svg: kde icon-renderer compatibility fix
- ~cdburn.svg: dito
- ~fileexport.svg: dito
- ~fileprint.svg: dito
- ~filesave.svg: dito
- ~hdd.svg: dito
- ~juk_dock.svg: dito
- ~mouse.svg: dito
- ~print.svg: dito
- ~save.svg: dito
+ ~cdburn.svg: ditto
+ ~fileexport.svg: ditto
+ ~fileprint.svg: ditto
+ ~filesave.svg: ditto
+ ~hdd.svg: ditto
+ ~juk_dock.svg: ditto
+ ~mouse.svg: ditto
+ ~print.svg: ditto
+ ~save.svg: ditto
 
 mimetypes/
  +kmultiple.svg: copy of actions/dnd_multi.svg
@@ -500,7 +515,7 @@ apps/
 
 devices/
  +usbpendrive_unmount.svg: the long awaited usb-stick icon!
- +usbpendrive_mount.svg: dito
+ +usbpendrive_mount.svg: ditto
 
 
 ----------
@@ -516,7 +531,7 @@ apps/
 
 devices/
  +ipod.svg: now in KDE too, since 3.5
- +ipod_mount.svg: dito
+ +ipod_mount.svg: ditto
 
 
 ----------
@@ -528,7 +543,7 @@ actions/
 
 apps/
  +gwenview.svg: new icon, modelled after the original one
- +kolourpaint.svg: dito
+ +kolourpaint.svg: ditto
 
 
 ----------
@@ -575,9 +590,9 @@ apps/
 actions/
  +emptytrash.svg: copy of the empty trash icon
  +view_bottom.svg: completing the "view" series, for now
- +view_choose.svg: dito
- +view_right.svg: dito
- +view_sidetree.svg: dito
+ +view_choose.svg: ditto
+ +view_right.svg: ditto
+ +view_sidetree.svg: ditto
  ~view_text: I thought I applied that color fix? anyways, now it's done
  ~window_new.svg: just a little size optimization
 
@@ -595,14 +610,14 @@ actions/
  +imagegallery.svg: Gwenview's "Image View"
  +rebuild.svg: sort of refresh view
  +view_left_right.svg: new "split window" icon
- +view_top_bottom.svg: dito
+ +view_top_bottom.svg: ditto
  +view_remove.svg: good to have, too.
  ~view_detailed.svg: color fix
- ~view_icon.svg: dito
- ~view_multicolumn.svg: dito
- ~view_text.svg: dito
- ~view_tree.svg: dito
- ~window_new.svg: dito
+ ~view_icon.svg: ditto
+ ~view_multicolumn.svg: ditto
+ ~view_text.svg: ditto
+ ~view_tree.svg: ditto
+ ~window_new.svg: ditto
 
 apps/
  +kuickshow.svg: Finally, the flower has escaped lila-backgrounds!
@@ -610,9 +625,9 @@ apps/
  +photobook.svg: Another Konqueror view plugin
  ~fsview.svg: color fix, too
  -dock_both.svg: doesn't work, hmpf - sorry.
- -dock_left.svg: dito
- -dock_none.svg: dito
- -dock_right.svg: dito
+ -dock_left.svg: ditto
+ -dock_none.svg: ditto
+ -dock_right.svg: ditto
 
 
 ----------
@@ -621,9 +636,9 @@ apps/
 
 apps/
  +dock_both.svg: tray icon for kppp
- +dock_left.svg: dito
- +dock_none.svg: dito
- +dock_right.svg: dito
+ +dock_left.svg: ditto
+ +dock_none.svg: ditto
+ +dock_right.svg: ditto
 
 
 ----------
@@ -722,8 +737,8 @@ apps/
  +akregator.svg: (new in KDE 3.4) new Akregator icon, also using telex' knode newspaper
  +akregator_empty.svg: (new in KDE 3.4) I have yet to find out where this appears.
  ~kopete.svg: changed the green to something that is not color modded.
- ~kopete_some_online.svg: dito
- ~fsview.svg: dito
+ ~kopete_some_online.svg: ditto
+ ~fsview.svg: ditto
  ~hwinfo.svg: a tiny magnifier glass rotation
 
 devices/
@@ -743,7 +758,7 @@ kde/
 
 apps/
  ~go.svg: made the K fatter. It has been too slick in comparison with the originals.
- ~kmenu.svg: dito
+ ~kmenu.svg: ditto
  +ksokoban.svg: gnome's gweled diamond turned around
  +hwinfo.svg: another newly composed icon, this time for KInfoCenter
 
@@ -754,8 +769,8 @@ apps/
 
 kde/
  ~index.desktop: 128x128/filesystems was labeled wrong, fixed
- ~index-red.desktop: dito
- ~index-blue.desktop: dito
+ ~index-red.desktop: ditto
+ ~index-blue.desktop: ditto
 
 apps/
  ~konqueror.svg: konqification of the world icon. The question is, is it good enough?
@@ -768,11 +783,11 @@ devices/
 filesystems/
  +camera.svg: since KDE 3.4 also in filesystems/
  +folder_violet.svg: missing folder colors, until now. don't take them as official 8-)
- +folder_violet_open.svg: dito
- +folder_orange.svg: dito
- +folder_orange_open.svg: dito
- +folder_grey.svg: dito
- +folder_grey_open.svg: dito
+ +folder_violet_open.svg: ditto
+ +folder_orange.svg: ditto
+ +folder_orange_open.svg: ditto
+ +folder_grey.svg: ditto
+ +folder_grey_open.svg: ditto
 
 
 ----------
@@ -783,7 +798,7 @@ kde/
  ~makerelease.sh: deployment ready (as far as I can see)
  +index-scalable.desktop: replace index.desktop to have KDE use the SVG sources
  +index-blue.desktop: copy of index.desktop with modified Description entry
- +index-red.desktop: dito
+ +index-red.desktop: ditto
 
 
 ----------
@@ -798,16 +813,16 @@ kde/
 
 actions/
  ~view_detailed.svg: size fix
- ~view_multicolumn.svg: dito
- ~view_icon.svg: dito
- ~view_text.svg: dito
- ~view_tree.svg: dito
+ ~view_multicolumn.svg: ditto
+ ~view_icon.svg: ditto
+ ~view_text.svg: ditto
+ ~view_tree.svg: ditto
 
 apps/
  ~kontact.svg: small fix. I got it in use for a week now, and I really like it this way.
  +fsview.svg: finally! that's another item taken off the todo list.
  ~package_multimedia.svg: replaced with xfce-multimedia.svg, I think that fits better
- ~multimedia.svg: dito
+ ~multimedia.svg: ditto
  -globe.svg: doesn't belong into KDE icon set (anymore?)
  +netbeans.svg
 
@@ -870,14 +885,14 @@ actions/
  ~kontact_summary.svg: I didn't think of the most obvious option:
                        making the app icon the summary icon. good idea.
  ~kontact_contacts.svg: move the paper so it's in the middle
- ~kontact_date.svg: dito
- ~kontact_todo.svg: dito
+ ~kontact_date.svg: ditto
+ ~kontact_todo.svg: ditto
 
 apps/
  ~kontact.svg: rework, reflecting the most important program parts
  ~kaddressbook.svg: see kontact_*.svg
- ~korganizer.svg: dito
- ~korganizer_todo.svg: dito
+ ~korganizer.svg: ditto
+ ~korganizer_todo.svg: ditto
  ~kmixdocked_mute.svg: tried out KDE SVG rendering beautification method, and it works!
  +kpilot.svg
  +kpilotDaemon.svg
@@ -936,8 +951,8 @@ actions/
 apps/
  +kwikdisk.svg: combined chardevice and floppy icons
  ~kcmdevices.svg: updated with new kwikdisk.svg
- +kcmdf.svg: dito
- +kdf.svg: dito. Unfortunately, kwikdisk is using the kdf icon for the systray,
+ +kcmdf.svg: ditto
+ +kdf.svg: ditto. Unfortunately, kwikdisk is using the kdf icon for the systray,
            otherwise I would have made a different icon for KDiskFree. (That's life.)
  ~laptop_battery.svg: update from devices/battery.svg
 
@@ -955,7 +970,7 @@ actions/
 
 apps/
  hexedit.svg -> khexedit.svg: sorry, messed up this one
- +ktip.svg: dito
+ +ktip.svg: ditto
  ~kfm_home2.svg: update from firefox-home.svg
  +kweather.svg
  +kwin.svg
@@ -1042,12 +1057,12 @@ actions/
  ~attach.svg: updated from balsa_info_attachment.svg
 
  ~player_eject.svg: updated with gnome stock icon
- ~player_end.svg: dito
- ~player_fwd.svg: dito
- ~player_pause.svg: dito
- ~player_play.svg: dito
- ~player_rew.svg: dito
- ~player_start.svg: dito
+ ~player_end.svg: ditto
+ ~player_fwd.svg: ditto
+ ~player_pause.svg: ditto
+ ~player_play.svg: ditto
+ ~player_rew.svg: ditto
+ ~player_start.svg: ditto
  +player_time.svg
  +player_volume.svg
 
@@ -1143,9 +1158,9 @@ mimetypes/
  +vcalendar.svg
 
  ~source_c.svg: updated with gnome mimetype icons
- ~source_cpp.svg: dito
- ~source_h.svg: dito
- ~source_java.svg: dito
- ~source_o.svg: dito
- ~source_php.svg: dito
- ~text-x-patch.svg: dito
+ ~source_cpp.svg: ditto
+ ~source_h.svg: ditto
+ ~source_java.svg: ditto
+ ~source_o.svg: ditto
+ ~source_php.svg: ditto
+ ~text-x-patch.svg: ditto
