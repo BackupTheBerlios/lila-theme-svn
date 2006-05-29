@@ -18,6 +18,21 @@ actions/
  +mail_flag.svg: ditto
  +mail_todo.svg: ditto
  +online_status.svg: ditto
+ +kmmsgattachment.svg: ditto
+ +kmmsgdel.svg: ditto
+ +kmmsgflag.svg: ditto
+ +kmmsgforwarded.svg: ditto
+ +kmmsgham.svg: ditto
+ +kmmsgignored.svg: ditto
+ +kmmsgnew.svg: ditto
+ +kmmsgread.svg: ditto
+ +kmmsgread_fwd_replied.svg: ditto
+ +kmmsgread_fwd.svg: ditto
+ +kmmsgread_replied.svg: ditto
+ +kmmsgreplied.svg: ditto
+ +kmmsgspam.svg: ditto
+ +kmmsgunseen.svg: ditto
+ +kmmsgwatched.svg: ditto
  -network.svg: not supposed to be in actions/, I think, there's one network.svg in filesystems/ already
 
 
