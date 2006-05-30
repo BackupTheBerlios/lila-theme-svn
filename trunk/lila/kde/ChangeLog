@@ -7,6 +7,16 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+05/30/06 jpetso
+---------
+
+apps/
+ ~package_system.svg: I prefer Tango's devices/computer.svg icon for this.
+ ~kcmsound.svg: color fix
+ -network.svg: another unnecessary network icon? be gone!
+
+
+----------
 05/29/06 jpetso
 ---------
 
