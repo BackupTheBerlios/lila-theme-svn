@@ -14,6 +14,13 @@ actions/
  ~tab_new.svg: switch colors, the "new" tab is lighter now than the "old" one
  ~tab_breakoff.svg: ditto
  ~tab_duplicate.svg: ditto
+ +button_fewer.svg: copy of button_cancel.svg, for KMail's filtering dialog
+ +button_more.svg: copy of button_ok.svg, ditto
+ ~covermanager.svg: made the jewel case a little less wide, looks more authentic
+ +konv_message.svg: red version of the Konversation icon, used for flashing in the system tray
+ +make_kdevelop.svg: finally, a "build" icon for KDevelop
+ +show_side_panel.svg: copy of view_sidetree.svg
+ +minitools.svg: a simple star icon, like the original one
 
 
 ----------
