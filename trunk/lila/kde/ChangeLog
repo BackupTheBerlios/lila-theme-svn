@@ -7,6 +7,16 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+06/24/06 jpetso
+---------
+
+actions/
+ ~tab_new.svg: switch colors, the "new" tab is lighter now than the "old" one
+ ~tab_breakoff.svg: ditto
+ ~tab_duplicate.svg: ditto
+
+
+----------
 05/30/06 jpetso
 ---------
 
