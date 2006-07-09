@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<overlay label="industrialOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/x-javascript"><![CDATA[
+
+/*** Adapted from ctrlNumberTabSelection() in browser.js ***/
+function altNumberTabSelection(event)
+{
+  if (event.altKey && event.keyCode == KeyEvent.DOM_VK_RETURN) {
+    // Don't let winxp beep on ALT+ENTER, since the URL bar uses it.
+    event.preventDefault();
+    return;
+  }
+                                                                                 
+  if (!event.altKey)
+    return;
+                                                                                 
+  var index = event.charCode - 49;
+  if (index < 0 || index > 8)
+    return;
+                                                                                 
+  if (index >= gBrowser.tabContainer.childNodes.length)
+    return;
+                                                                                 
+  var oldTab = gBrowser.selectedTab;
+  var newTab = gBrowser.tabContainer.childNodes[index];
+  if (newTab != oldTab) {
+    oldTab.selected = false;
+    gBrowser.selectedTab = newTab;
+  }
+                                                                                 
+  event.preventDefault();
+  event.preventBubble();
+  event.preventCapture();
+  event.stopPropagation();
+}
+
+
+function industrialInit() {
+  window.addEventListener("keypress", ctrlNumberTabSelection, false);
+}
+
+//----------------------------------
+// Listen for Startup and set icons
+//----------------------------------
+window.addEventListener("load", industrialInit, false);
+]]></script>
+
+</overlay>

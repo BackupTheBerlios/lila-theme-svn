@@ -1,0 +1,13 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+	menupopup[cuteoffice="true"],
+	popup[cuteoffice="true"] {
+	background-image: url("chrome://cutemenus/content/officeXP-theme/menuback.gif") !important;
+	background-repeat: repeat-y !important;
+	background-color: #F9F8F7 !important;
+	}
+
+toolbar, menubar, tabbox, splitter, treecol, treecolpicker, sidebarheader, caption, statusbar, tabs, window, page, wizard, .box-texttab, menupopup, popup, dialog, sidebarheader, .alertBox, .headerContainer, .console-row-icon {
+  background-image: url("chrome://global/skin/subskin/brushed.png") !important;
+  -moz-appearance: none !important;
+}

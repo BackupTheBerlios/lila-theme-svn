@@ -1,0 +1,186 @@
+#extensionManager {
+  /* background-color: ThreeDFace; */
+	background-color: -moz-Field;
+}
+
+#extensionsView {
+  -moz-appearance: textfield;
+	background-color: -moz-Field !important;
+}
+
+/*
+#extensionsView[state="extensions"] {
+  background-image: url("chrome://mozapps/skin/extensions/viewWatermarkExtensions.png");
+}
+
+#extensionsView[state="themes"] {
+  background-image: url("chrome://mozapps/skin/extensions/viewWatermarkThemes.png");
+}
+*/
+
+/* Extension Manager Command Bar */
+#commandBar {
+  padding: 0px 12px 6px 12px;
+}
+
+#uninstallButton {
+  -moz-user-focus: ignore;
+  list-style-image: url("chrome://mozapps/skin/extensions/actionbuttons.png");
+  -moz-image-region: rect(0px, 21px, 21px, 0px) !important;
+}
+
+#uninstallButton[disabled="true"] {
+  list-style-image: url("chrome://mozapps/skin/extensions/actionbuttons.png");
+  -moz-image-region: rect(21px, 21px, 42px, 0px) !important;
+}
+
+#updateButton {
+  -moz-user-focus: ignore;
+  list-style-image: url("chrome://mozapps/skin/extensions/actionbuttons.png");
+  -moz-image-region: rect(0px, 42px, 21px, 21px) !important;
+}
+
+#updateButton[disabled="true"] {
+  list-style-image: url("chrome://mozapps/skin/extensions/actionbuttons.png");
+  -moz-image-region: rect(21px, 42px, 42px, 21px) !important;
+}
+
+#useThemeButton {
+	padding: 0;
+  -moz-user-focus: ignore;
+  list-style-image: url("chrome://mozapps/skin/extensions/actionbuttons.png");
+  -moz-image-region: rect(0px, 63px, 21px, 42px) !important;
+}
+
+#useThemeButton[disabled="true"] {
+  list-style-image: url("chrome://mozapps/skin/extensions/actionbuttons.png");
+  -moz-image-region: rect(21px, 63px, 42px, 42px) !important;
+}
+
+#optionsButton {
+  list-style-image: url("chrome://mozapps/skin/extensions/extensionOptions.png");
+}
+
+#optionsButton[disabled="true"] {
+  list-style-image: url("chrome://mozapps/skin/extensions/extensionOptions-disabled.png");
+}
+
+#uninstallButton .button-icon, #updateButton .button-icon, #useThemeButton .button-icon, #optionsButton .button-icon {
+  margin: 0px 2px 0px 0px !important;
+}
+
+.commandBarSeparator {
+  margin-left: 6px;
+}
+
+#getMore {
+  color: #0000FF;
+  text-decoration: underline !important;
+  cursor: pointer;
+  text-align: right;
+  -moz-user-focus: normal;
+}
+
+#getMore:focus {
+  -moz-outline: 1px dotted invert ! important;
+}
+
+/* Extension Buttons (Iconic buttons in each extension item) */
+.extension-button {
+  width: 16px;
+  height: 16px;
+  margin: 1px;
+}
+
+.extension-button[anonid="options-button"] {
+  background-image: url("chrome://mozapps/skin/extensions/extensionOptions.png");
+}
+
+.extension-button[anonid="about-button"] {
+  background-image: url("chrome://mozapps/skin/extensions/extensionAbout.png");
+}
+
+.extension-button[anonid="homepage-button"] {
+  background-image: url("chrome://mozapps/skin/extensions/extensionHome.png");
+}
+
+/* Extension List Items */
+extension {
+  padding: 12px 10px 12px 12px;
+  /*
+	min-height: 25px;
+	*/
+	background-color: -moz-Field;
+}
+extension + extension {
+	padding-bottom: 11px;
+	border-top: 1px dashed ThreeDShadow;
+}
+
+extension[selected="true"] {
+	background-image: none !important;
+	background-color: Highlight !important;
+	color: HighlightText;
+	border-color: Highlight !important;
+}
+
+extension[selected="true"] + extension {
+	border-color: transparent;
+}
+
+extension[disabled="true"] {
+  color: GrayText;
+  background-image: none;
+}
+
+/*
+extension[disabled="true"][selected="true"] {
+	background-image: url("chrome://mozapps/skin/shared/itemSelected.png");
+}
+*/
+
+extension[disabled="true"] .extension-icon {
+  opacity: 0.3;
+}
+
+.extension-item-name {
+  font-weight: bold;
+}
+
+.extension-icon {
+  margin-right: 12px; 
+}
+
+.previewText {
+  font-size: larger;
+  font-weight: bold;
+  color: ThreeDShadow;
+  text-align: center;
+}
+
+/*
+extension[itemType="theme"] {
+  padding: 7px 5px 7px 6px;
+}
+
+extension[itemType="theme"] .extension-icon {
+  margin-right: 3px;
+}
+*/
+
+.themePreviewArea {
+  -moz-appearance: listbox;
+  margin: 10px 10px 5px 5px;
+}
+
+#commandBar {
+	/*
+	direction: rtl;
+	*/
+	-moz-box-direction: reverse;
+}
+#commandBar > * {
+	/*
+	direction: ltr;
+	*/
+}

@@ -1,0 +1,326 @@
+/*
+ * The contents of this file are subject to the Netscape Public
+ * License Version 1.1 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of
+ * the License at http://www.mozilla.org/NPL/
+ *
+ * Software distributed under the License is distributed on an "AS
+ * IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or
+ * implied. See the License for the specific language governing
+ * rights and limitations under the License.
+ *
+ * The Original Code is Mozilla Communicator client code, released
+ * March 31, 1998.
+ *
+ * The Initial Developer of the Original Code is Netscape
+ * Communications Corporation. Portions created by Netscape are
+ * Copyright (C) 1998-1999 Netscape Communications Corporation. All
+ * Rights Reserved.
+ *
+ * Contributor(s):
+ *
+ */
+
+/* ===== global.css =====================================================
+  == Styles that apply everywhere.
+  ======================================================================= */
+
+/* all localizable skin settings shall live here */
+@import url("chrome://global/locale/intl.css");
+
+@import url("chrome://global/skin/formatting.css");
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: XBL bindings ::::: */
+
+radio {
+  -moz-binding: url("chrome://global/skin/globalBindings.xml#radio");
+}
+
+menulist > menupopup,
+.menulist-menupopup {
+  -moz-binding: url("chrome://global/content/bindings/popup.xml#popup-scrollbars");
+}
+
+.menulist-compact {
+  -moz-binding: url("chrome://global/content/bindings/menulist.xml#menulist-compact");
+}
+
+/* ::::: root elements ::::: */
+
+window,
+page,
+dialog,
+wizard {
+  -moz-appearance: window;
+  background-color: -moz-Dialog;
+  color: -moz-DialogText;
+  font: message-box;
+}
+
+/* deprecated */
+window.dialog {
+  padding: 8px 10px 10px 8px;
+}
+
+[wait-cursor] {
+  cursor: wait !important;
+}
+
+/* ::::: alert icons :::::*/
+
+.message-icon,
+.alert-icon,
+.error-icon,
+.question-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.message-icon {
+  list-style-image: url("chrome://global/skin/icons/Message.png");
+}
+
+.alert-icon {
+  list-style-image: url("chrome://global/skin/icons/Warning.png");
+}
+
+.error-icon {
+  list-style-image: url("chrome://global/skin/icons/Error.png");
+}
+
+.question-icon {
+  list-style-image: url("chrome://global/skin/icons/Question.png");
+}
+
+/* ::::: iframe ::::: */
+
+iframe {
+  border: none;
+  width: 100px;
+  height: 100px;
+  min-width: 10px;
+  min-height: 10px;
+}
+
+/* ::::: statusbar ::::: */
+
+statusbar {
+  /*
+	-moz-appearance: statusbar;
+	*/
+  -moz-appearance: statusbarpanel;
+  border-top: 1px solid ThreeDLightShadow;
+  border-left: 1px solid ThreeDShadow;
+  border-right: 1px solid ThreeDHighlight;
+  border-bottom: 1px solid ThreeDHighlight;
+  background-color: -moz-Dialog;
+  min-height: 22px;
+}
+
+statusbarpanel {
+	/*
+  -moz-appearance: statusbarpanel;
+	*/
+  -moz-box-align: center;
+  -moz-box-pack: center;
+	/*
+  border-left: 1px solid ThreeDHighlight;
+  border-top: 1px solid ThreeDHighlight;
+  border-right: 1px solid ThreeDShadow;
+  border-bottom: 1px solid ThreeDShadow;
+	*/
+  padding: 0px 6px;
+}
+statusbarpanel + statusbarpanel,
+keyset + statusbarpanel,
+tooltip + statusbarpanel {
+  border-left: 1px solid ThreeDShadow;
+}
+
+.statusbar-resizerpanel {
+  -moz-box-align: end;
+  -moz-box-pack: end;
+  -moz-appearance: resizerpanel;
+  padding: 0px;
+  border: none;
+}
+
+.statusbarpanel-iconic {
+  padding: 0px;
+}
+
+resizer[dir="bottomright"] {
+  -moz-appearance: resizer;
+  cursor: se-resize;
+}
+
+/* XXXBlake yeah, shoot me -- these don't belong here.  I'll move them later. */
+
+#sidebar-box > sidebarheader:first-child {
+	/*
+  height: 25px;
+  -moz-appearance: toolbox;
+	*/
+	background: -moz-Dialog url("chrome://global/skin/toolbar/Darken.png");
+}
+
+sidebarheader > label {
+  /* padding-left: 4px; */
+}
+
+/* ::::: miscellaneous ::::: */
+
+.toolbar-focustarget {
+  -moz-user-focus: ignore !important;
+}
+
+/*
+button,
+checkbox,
+colorpicker[type="button"],
+menulist,
+radiogroup,
+tree,
+browser,
+editor,
+iframe {
+	-moz-user-focus: none;
+}
+*/
+
+#serverCertExpired {
+	padding: 8px;
+}
+#serverCertExpired > vbox {
+	padding-left: 54px;
+	background: transparent url(chrome://global/skin/icons/Question.png) top left no-repeat;
+}
+#serverCertExpired hbox {
+	-moz-box-direction: reverse;
+}
+#serverCertExpired hbox button {
+}
+#certDetails {
+	padding: 12px;
+}
+
+#sidebar-box > sidebarheader {
+	font-weight: bold;
+}
+/*
+#downloadManager {
+  background-color: -moz-Field;
+}
+#downloadManager * {
+	border: 1px dotted red;
+}
+*/
+
+/* This SHOULD be in dialog.css, but the login dialog doesn't inherit */
+#commonDialog textbox {
+}
+#commonDialog .dialog-conent-box > hbox > vbox {
+}
+#commonDialog .dialog-conent-box vbox[flex=1] {
+	max-width: 35em !important;
+}
+
+#cookieAcceptDialog vbox > hbox + hbox {
+	margin: 24px 0 12px 0 !important;
+}
+#cookieAcceptDialog spacer {
+	display: none;
+}
+#cookieAcceptDialog #okCancelButtonsRight {
+	direction: rtl;
+}
+#cookieAcceptDialog #okCancelButtonsRight > button {
+	direction: ltr;
+}
+
+#cookieAcceptDialog button[dlgtype="disclosure"] {
+  border: 0px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+	margin-right: 12px !important;
+  -moz-appearance: none;
+  list-style-image: url("chrome://global/skin/tree/twisty-clsd.png");
+  min-width: 0px !important;
+  background-color: transparent;
+}
+#cookieAcceptDialog button[dlgtype="disclosure"] button-text {
+	padding-left: 6px !important;
+}
+#cookieAcceptDialog button[dlgtype="disclosure"]:hover {
+  list-style-image: url("chrome://global/skin/tree/twisty-clsd-hvr.png");
+}
+
+#cookieAcceptDialog button[dlgtype="disclosure"][label~="Hide"] {
+  list-style-image: url("chrome://global/skin/tree/twisty-open.png"); 
+}
+#cookieAcceptDialog button[dlgtype="disclosure"][label~="Hide"]:hover {
+  list-style-image: url("chrome://global/skin/tree/twisty-open-hvr.png"); 
+}
+
+#cookieAcceptDialog button#ok {
+	list-style-image: url(chrome://global/skin/icons/menu/add.png);
+}
+#cookieAcceptDialog button#Button2 {
+	list-style-image: url(chrome://global/skin/icons/menu/cookie-session.png);
+}
+#cookieAcceptDialog button#cancel {
+	list-style-image: url(chrome://global/skin/icons/menu/remove.png);
+}
+browsermessage[type="top"] {
+	padding: 3px 6px;
+	color: #000;
+	background-color: #ffb;
+	border-bottom: 1px solid ThreeDShadow;
+}
+.tree-bodybox {
+	/*
+	-moz-appearance: textfield;
+	*/
+}
+page > hbox {
+	padding: 2px;
+	border-bottom: 1px solid ThreeDShadow;
+}
+#sidebar-box + #sidebar-splitter {
+	border-left: 1px solid ThreeDShadow;
+	border-right: 1px solid ThreeDShadow;
+	min-width: 9px;
+}
+#bookmarks-view {
+	border-left: 1px solid ThreeDShadow;
+}
+	
+/* Hide the useless separator in the print settings dialog */
+.groupbox-body separator {
+	display: none;
+}
+
+/* Extensions support */
+.tabx-tab-close-button {
+	-moz-apearance: toolbarbutton !important;
+	list-style-image: url(chrome://global/skin/icons/close-button.png);
+	-moz-image-region: auto;
+}
+.tabx-tab-close-button:hover {
+	list-style-image: url(chrome://global/skin/icons/close-button.png);
+	-moz-image-region: auto;
+}
+.tbx-toolbar-statusbar-left,
+.tbx-toolbar-statusbar-right,
+.tbx-toolbox-plain {
+  -moz-appearance: none;
+	display: none;
+}
+
+prefwindow {
+-moz-appearance: none !important;
+background-color: #f3f3f3 !important;
+font: message-box;
+}

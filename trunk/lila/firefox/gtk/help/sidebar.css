@@ -1,0 +1,89 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#sidebar-box {
+  background-color: Window;
+}
+
+
+.box-texttab {
+  -moz-binding: url("chrome://help/skin/sidebarBindings.xml#sbtab");
+	/*
+  height: 20px;
+  -moz-appearance: toolbox;
+  -moz-appearance: button;
+	*/
+	padding: 3px 6px;
+	border: 1px solid ThreeDShadow;
+	border-bottom: 0;
+}
+.box-texttab:first-child {
+	border-top: 0;
+}
+tree[hidden="false"] + .box-texttab {
+	border-top: 0;
+}
+#help-search-btn {
+	border-bottom: 0;
+}
+tree[hidden="false"] + #help-toc-btn {
+	border-bottom: 1px solid ThreeDShadow;
+}
+.box-texttab:hover {
+	background-color: ThreeDHighlight;
+}
+
+.box-texttab[selected="true"],
+.box-texttab[selected="true"]:hover,
+.box-texttab[selected="true"]:hover:active {
+	/*
+  padding: 2px 1px 2px 0px;
+	*/
+  font-weight: bold;
+  cursor: default;
+}
+
+.sbtab-label {
+  margin: 0px 0px 0px 0px !important;
+}
+
+.sbtab-twisty {
+	/*
+  margin: 0px 7px;
+  list-style-image: url("chrome://help/skin/sbtab-twisty.gif");
+  padding-right: 4px;
+  padding-top: 1px;
+  width: 11px; */
+	/* The image's width is 11 pixels */
+	/*
+  list-style-image: url("chrome://global/skin/tree/twisty-clsd.png");
+	*/
+}
+.sbtab-twisty:hover {
+	/*
+  list-style-image: url("chrome://global/skin/tree/twisty-clsd-hvr.png");
+	*/
+}
+
+.sbtab-twisty[selected="true"] {
+	/*
+  list-style-image: url("chrome://help/skin/sbtab-twisty-open.gif");
+  width: 11px; 
+	*/ /* The image's width is 11 pixels */
+	/*
+  list-style-image: url("chrome://global/skin/tree/twisty-open.png");
+	*/
+}
+.sbtab-twisty[selected="true"]:hover {
+	/*
+  list-style-image: url("chrome://global/skin/tree/twisty-open-hvr.png");
+	*/
+}
+
+#help-search-panel {
+	border: 1px solid ThreeDShadow;
+	border-width: 0 1px;
+	padding: 0 3px;
+}
+#help-search-tree {
+	margin-bottom: 3px;
+}

@@ -1,0 +1,34 @@
+dialog {
+	padding: 12px;
+}
+
+.dialog-content-box {
+	background: transparent url(chrome://global/skin/icons/Question.png) top left no-repeat;
+	padding-left: 54px;
+}
+
+description {
+	font-size: larger;
+	font-weight: bold;
+}
+
+#from {
+  margin-top: 1px; 
+}
+
+#location {
+  font-weight: bold;
+}
+
+#contentTypeImage {
+  margin: 0px 6px 0px 0px;
+}
+
+.small-indent {
+  margin-left: 6px; 
+  margin-right: 6px;
+}
+
+separator.thin {
+	height: 12px;
+}

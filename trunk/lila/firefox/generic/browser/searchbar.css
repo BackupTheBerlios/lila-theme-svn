@@ -1,0 +1,17 @@
+.searchbar-textbox {
+width: 12em;}
+
+.searchbar-dropmarker {
+-moz-binding: url("chrome://browser/content/search.xml#searchbar-dropmarker") !important;
+margin-bottom: 1px;
+cursor: auto;}
+
+.searchbar-engine-image {
+margin: 1px 0 0 -2px;
+list-style-image: url("chrome://browser/skin/16pxbuttons.png");
+-moz-image-region: rect(0px 272px 16px 256px);}
+
+.searchbar-dropmarker-image {
+margin-left: 12px;
+margin-top: 8px;
+list-style-image: url("chrome://browser/skin/search-arrow.gif");}

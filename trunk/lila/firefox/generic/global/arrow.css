@@ -1,0 +1,57 @@
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+.up {
+  min-width: 0px;
+  list-style-image:url('chrome://browser/skin/icons/arrow-up.png');}
+  /*-moz-image-region: rect(0px 16px 16px 0px);  
+}               
+.up:hover {
+  -moz-image-region: rect(16px 16px 32px 0px);  
+}
+.up[disabled="true"] {
+  -moz-image-region: rect(32px 16px 48px 0px);  
+}*/
+
+.down {
+  min-width: 0px;
+  list-style-image:url('chrome://browser/skin/icons/arrow-down.png');
+  }/*
+  -moz-image-region: rect(0px 16px 16px 0px);  
+}
+.down:hover {
+  -moz-image-region: rect(16px 16px 32px 0px);  
+}
+.down[disabled="true"] {
+  -moz-image-region: rect(32px 16px 48px 0px);  
+}*/
+
+.left {
+  min-width: 0px;
+  list-style-image:url('chrome://browser/skin/icons/arrow-left.png');
+  }/*
+  -moz-image-region: rect(0px 16px 16px 0px);  
+}               
+.left:hover {
+  -moz-image-region: rect(16px 16px 32px 0px);  
+}
+.left[disabled="true"] {
+  -moz-image-region: rect(32px 16px 48px 0px);  
+}*/
+
+.right {
+  min-width: 0px;
+  list-style-image:url('chrome://browser/skin/icons/arrow-right.png');
+  }/*
+  -moz-image-region: rect(0px 16px 16px 0px);  
+}               
+.right:hover {
+  -moz-image-region: rect(16px 16px 32px 0px);  
+}
+.right[disabled="true"] {
+  -moz-image-region: rect(32px 16px 48px 0px);  
+}*/
+/*
+#expander {
+ -moz-appearance: none;
+}*/

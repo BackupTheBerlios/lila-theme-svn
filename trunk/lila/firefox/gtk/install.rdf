@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+	<Description about="urn:mozilla:install-manifest">
+		<em:id>{6d88900c-db35-4292-bb98-fae0c81e34c5}</em:id>
+		<em:version>1.4.99</em:version>
+
+		<!-- Target Application this extension can install into, 
+		with minimum and maximum supported versions. --> 
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>0.10</em:minVersion>
+				<em:maxVersion>1.6</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+
+		<!-- Front End MetaData -->
+		<em:name>Lila for Firefox</em:name>
+		<em:description>Lila theme for Mozilla Firefox</em:description>
+		<em:creator>Lila Community</em:creator>
+		<em:contributor>Garrett LeSage's Industial Firefox theme</em:contributor>
+		<em:contributor>Lila icon creators</em:contributor>
+		<em:contributor>Stefan Jol</em:contributor>
+		<em:contributor>Rasmus Wiman</em:contributor>
+		<em:homepageURL>http://lila-theme.uni.cc/</em:homepageURL>
+
+
+		<!-- Front End Integration Hooks (used by Theme Manager)-->
+		<em:internalName>Lila-gtk</em:internalName>
+	</Description>      
+
+</RDF>

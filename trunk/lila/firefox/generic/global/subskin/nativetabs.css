@@ -1,0 +1,110 @@
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/*browser tabs*/
+.tabbrowser-strip {
+  border-bottom: 1px  solid ThreeDShadow !important;
+  padding-bottom: 1px !important;
+}
+
+#content tab {
+  -moz-appearance: tab !important;
+  margin: 2px 0px 0px 0px !important;
+  padding: 2px 5px 1px 5px !important;
+  border: 2px solid !important;
+  border-bottom: 1px solid ThreeDHighlight;
+  -moz-border-top-colors: ThreeDHighlight ThreeDLightShadow;
+  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
+  -moz-border-left-colors: ThreeDHighlight ThreeDLightShadow;
+  -moz-border-radius-topleft: 2px;
+  -moz-border-radius-topright: 2px;
+  -moz-border-radius-bottomright: 1px;
+  background-color: -moz-Dialog;
+  color: -moz-DialogText;
+}
+
+#content tab[first-tab="true"] {
+  margin-left: 0px !important;
+  padding: 2px 5px 1px 6px !important;
+}
+
+#content .tabs-left,
+#content .tabs-right {
+  border-bottom: 2px solid !important;
+  -moz-border-bottom-colors: ThreeDHighlight ThreeDLightShadow !important;
+}
+
+#content tab[selected="true"] {
+  margin-top: 0 !important;
+  border-bottom-color: transparent !important;
+  padding: 2px 2px 2px 2px !important;
+}
+
+#content tab[first-tab="true"][selected="true"] {
+  padding-left: 8px !important;
+}
+
+#content tab[beforeselected="true"] {
+  -moz-appearance: tab-left-edge !important;
+  border-right: none !important;
+  -moz-border-radius-topright: 0 !important;
+  padding-right: 3px !important;
+}
+
+#content tab[afterselected="true"] {
+  -moz-appearance: tab-right-edge !important;
+  border-left: none !important;
+  -moz-border-radius-topleft: 0 !important;
+  padding-left: 5px !important;
+}
+
+/*page info & composer tabs*/
+tab {
+  -moz-appearance: tab !important;
+  margin: 2px 0px 0px 0px !important;
+  padding: 2px 5px 1px 5px !important;
+  border: 2px solid !important;
+  border-bottom: 1px solid ThreeDHighlight;
+  -moz-border-top-colors: ThreeDHighlight ThreeDLightShadow;
+  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
+  -moz-border-left-colors: ThreeDHighlight ThreeDLightShadow;
+  -moz-border-radius-topleft: 2px;
+  -moz-border-radius-topright: 2px;
+  -moz-border-radius-bottomright: 1px;
+  background-color: -moz-Dialog;
+  color: -moz-DialogText;
+}
+
+tab[first-tab="true"] {
+  margin-left: 0px !important;
+  padding: 2px 5px 1px 6px !important;
+}
+
+.tabs-left,
+.tabs-right {
+  border-bottom: 2px solid !important;
+  -moz-border-bottom-colors: ThreeDHighlight ThreeDLightShadow !important;
+}
+
+tab[selected="true"] {
+  margin-top: 0 !important;
+  border-bottom-color: transparent !important;
+  padding: 2px 7px 3px 7px !important;
+}
+
+tab[first-tab="true"][selected="true"] {
+  padding-left: 8px !important;
+}
+
+tab[beforeselected="true"] {
+  -moz-appearance: tab-left-edge !important;
+  border-right: none !important;
+  -moz-border-radius-topright: 0 !important;
+  padding-right: 3px !important;
+}
+
+tab[afterselected="true"] {
+  -moz-appearance: tab-right-edge !important;
+  border-left: none !important;
+  -moz-border-radius-topleft: 0 !important;
+  padding-left: 5px !important;
+}

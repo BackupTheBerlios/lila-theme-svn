@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:chrome="http://www.mozilla.org/rdf/chrome#">
+  <!-- List all the skins being supplied by this theme -->
+  <RDF:Seq about="urn:mozilla:skin:root">
+    <RDF:li resource="urn:mozilla:skin:lila" />
+  </RDF:Seq>
+  <RDF:Description about="urn:mozilla:skin:lila"
+        chrome:displayName="Lila"
+        chrome:accessKey="L"
+        chrome:author="Brian Carper"
+        chrome:authorURL="http://chwombat.deviantart.com"
+		chrome:description="Based on the Lila iconsets (http://www.newtolinux.org.uk/wiki/index.php/lila)."
+        chrome:name="lila"
+        chrome:image="preview.png">
+    <chrome:packages>
+      <RDF:Seq about="urn:mozilla:skin:lila:packages">
+        <RDF:li resource="urn:mozilla:skin:lila:browser"/>
+        <RDF:li resource="urn:mozilla:skin:lila:communicator"/>
+        <RDF:li resource="urn:mozilla:skin:lila:editor"/>
+        <RDF:li resource="urn:mozilla:skin:lila:global"/>        <RDF:li resource="urn:mozilla:skin:lila:mozapps"/>
+        <RDF:li resource="urn:mozilla:skin:lila:navigator"/>
+      </RDF:Seq>
+    </chrome:packages>
+  </RDF:Description>
+
+  <!-- Version Information.  State that we work only with major version 1 of this package. -->
+  <RDF:Description about="urn:mozilla:skin:lila:browser"      chrome:skinVersion="1.5"/>
+  <RDF:Description about="urn:mozilla:skin:lila:communicator" chrome:skinVersion="1.5"/>
+  <RDF:Description about="urn:mozilla:skin:lila:editor"       chrome:skinVersion="1.5"/>
+  <RDF:Description about="urn:mozilla:skin:lila:global"       chrome:skinVersion="1.5"/>
+  <RDF:Description about="urn:mozilla:skin:lila:mozapps"      chrome:skinVersion="1.5"/>
+  <RDF:Description about="urn:mozilla:skin:lila:navigator"    chrome:skinVersion="1.5"/>
+</RDF:RDF>

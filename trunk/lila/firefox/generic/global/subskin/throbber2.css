@@ -1,0 +1,15 @@
+#navigator-throbber {
+  list-style-image: url("chrome://global/skin/subskin/throbber32.png") !important;
+}
+#navigator-throbber[busy="true"] {
+  list-style-image: url("chrome://global/skin/subskin/throbber2.gif") !important;
+}
+
+toolbar[iconsize="small"] #navigator-throbber,
+toolbar[mode="text"] #navigator-throbber {
+  list-style-image: url("chrome://global/skin/subskin/throbber16.png") !important;
+}
+toolbar[iconsize="small"] #navigator-throbber[busy="true"],
+toolbar[mode="text"] #navigator-throbber[busy="true"] {
+  list-style-image: url("chrome://global/skin/subskin/throbber2-small.gif") !important;
+}

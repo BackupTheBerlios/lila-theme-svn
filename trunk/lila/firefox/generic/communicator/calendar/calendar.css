@@ -1,0 +1,242 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: NPL 1.1/GPL 2.0/LGPL 2.1
+ *
+ * The contents of this file are subject to the Netscape Public License
+ * Version 1.1 (the "License"); you may not use this file except in
+ * compliance with the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/NPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is mozilla.org code.
+ *
+ * The Initial Developer of the Original Code is 
+ * Netscape Communications Corporation.
+ * Portions created by the Initial Developer are Copyright (C) 1998
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *  Joe Hewitt <hewitt@netscape.com>
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or 
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the NPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the NPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+/* ==== communicator.css ====================================================
+   == Styles shared everywhere throughout the Communicator suite.
+   ========================================================================== */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/*--------------------------------------------------------------------
+ *   new event button
+ *-------------------------------------------------------------------*/
+
+#calendar-new-event-button   {
+ list-style-image: url('chrome://communicator/skin/calendar/compose.png') !important;
+ -moz-image-region: rect(0px 32px 32px 0px) !important;
+  }
+
+#calendar-new-event-button[disabled="true"],
+#calendar-new-event-button[disabled="true"]:hover,
+#calendar-new-event-button[disabled="true"]:hover:active  {
+ -moz-image-region: rect(64px 32px 96px 0px) !important;
+  }
+
+#calendar-new-event-button:hover  {
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+  }
+
+#calendar-new-event-button:hover:active  {
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+  }
+
+/*--------------------------------------------------------------------
+ *   edit event button
+ *-------------------------------------------------------------------*/
+
+#calendar-edit-event-button {
+ list-style-image: url('chrome://communicator/skin/calendar/edit.png') !important;
+ -moz-image-region: rect(0px 32px 32px 0px) !important;
+}
+
+#calendar-edit-event-button[disabled="true"],
+#calendar-edit-event-button[disabled="true"]:hover,
+#calendar-edit-event-button[disabled="true"]:hover:active{
+ -moz-image-region: rect(64px 32px 96px 0px) !important;
+}
+
+#calendar-edit-event-button:hover{
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+
+#calendar-edit-event-button:hover:active{
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+
+/*--------------------------------------------------------------------
+ *   delete event button
+ *-------------------------------------------------------------------*/
+
+#calendar-delete-event-button{
+ list-style-image: url('chrome://communicator/skin/calendar/delete.png') !important;
+ -moz-image-region: rect(0px 32px 32px 0px) !important;
+}
+  
+#calendar-delete-event-button[disabled="true"],
+#calendar-delete-event-button[disabled="true"]:hover,
+#calendar-delete-event-button[disabled="true"]:hover:active{
+ -moz-image-region: rect(64px 32px 96px 0px) !important;
+}
+
+#calendar-delete-event-button:hover{
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+
+#calendar-delete-event-button:hover:active{
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+
+
+/*--------------------------------------------------------------------
+ *   Choose date button
+ *-------------------------------------------------------------------*/
+
+#calendar-choose-date-button, #calendar-multiweek-view-button   {
+ list-style-image: url('chrome://communicator/skin/calendar/multiweek.png') !important;
+ -moz-image-region: rect(0px 32px 32px 0px) !important;
+  }
+#calendar-choose-date-button[disabled="true"],
+#calendar-choose-date-button[disabled="true"]:hover,
+#calendar-choose-date-button[disabled="true"]:hover:active
+#calendar-multiweek-view-button[disabled="true"],
+#calendar-multiweek-view-button[disabled="true"]:hover,
+#calendar-multiweek-view-button[disabled="true"]:hover:active  {
+ -moz-image-region: rect(64px 32px 96px 0px) !important;
+  }
+#calendar-choose-date-button:hover, #calendar-multiweek-view-button:hover  {
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+  }
+#calendar-choose-date-button:hover:active, #calendar-multiweek-view-button:hover:active  {
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+  }
+
+
+/*--------------------------------------------------------------------
+ *   Go To Today button
+ *-------------------------------------------------------------------*/
+
+#calendar-go-to-today-button   {
+ list-style-image: url('chrome://communicator/skin/calendar/today.png') !important;
+ -moz-image-region: rect(0px 32px 32px 0px) !important;
+  }
+#calendar-go-to-today-button[disabled="true"],
+#calendar-go-to-today-button[disabled="true"]:hover,
+#calendar-go-to-today-button[disabled="true"]:hover:active  {
+ -moz-image-region: rect(64px 32px 96px 0px) !important;
+  }
+#calendar-go-to-today-button:hover  {
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+  }
+#calendar-go-to-today-button:hover:active  {
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+  }
+
+/*--------------------------------------------------------------------
+ *   Change to month view button
+ *-------------------------------------------------------------------*/
+
+#calendar-month-view-button   {
+ list-style-image: url('chrome://communicator/skin/calendar/month.png') !important;
+ -moz-image-region: rect(0px 32px 32px 0px) !important;
+  }
+#calendar-month-view-button[disabled="true"],
+#calendar-month-view-button[disabled="true"]:hover,
+#calendar-month-view-button[disabled="true"]:hover:active  {
+ -moz-image-region: rect(64px 32px 96px 0px) !important;
+  }
+#calendar-month-view-button:hover  {
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+  }
+#calendar-month-view-button:hover:active  {
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+  }
+
+/*--------------------------------------------------------------------
+ *   Change to week view button
+ *-------------------------------------------------------------------*/
+
+#calendar-week-view-button   {
+ list-style-image: url('chrome://communicator/skin/calendar/week.png') !important;
+ -moz-image-region: rect(0px 32px 32px 0px) !important;
+  }
+#calendar-week-view-button[disabled="true"],
+#calendar-week-view-button[disabled="true"]:hover,
+#calendar-week-view-button[disabled="true"]:hover:active  {
+ -moz-image-region: rect(64px 32px 96px 0px) !important;
+  }
+#calendar-week-view-button:hover  {
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+  }
+#calendar-week-view-button:hover:active  {
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+  }
+
+/*--------------------------------------------------------------------
+ *   Change to day view button
+ *-------------------------------------------------------------------*/
+
+#calendar-day-view-button   {
+ list-style-image: url('chrome://communicator/skin/calendar/day.png') !important;
+ -moz-image-region: rect(0px 32px 32px 0px) !important;
+  }
+#calendar-day-view-button[disabled="true"],
+#calendar-day-view-button[disabled="true"]:hover,
+#calendar-day-view-button[disabled="true"]:hover:active  {
+ -moz-image-region: rect(64px 32px 96px 0px) !important;
+  }
+#calendar-day-view-button:hover  {
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+  }
+#calendar-day-view-button:hover:active  {
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+  }
+  
+
+
+/* ::::: throbber ::::: */
+
+#navigator-throbber {
+  -moz-appearance: none;
+  -moz-user-focus: ignore;
+  margin: 0 !important;
+  border: none !important;
+  padding: 0px !important;
+  min-width: 0;
+  background-color: transparent;
+  list-style-image: url("chrome://browser/skin/icons/throbber.png");
+}
+#navigator-throbber[busy="true"] {
+  list-style-image: url("chrome://browser/skin/icons/throbber.gif");
+}
+
+toolbar[iconsize="small"] #navigator-throbber,
+toolbar[mode="text"] #navigator-throbber {
+  list-style-image: url("chrome://browser/skin/icons/throbber-small.png");
+}
+toolbar[iconsize="small"] #navigator-throbber[busy="true"],
+toolbar[mode="text"] #navigator-throbber[busy="true"] {
+  list-style-image: url("chrome://browser/skin/icons/throbber-small.gif");
+}

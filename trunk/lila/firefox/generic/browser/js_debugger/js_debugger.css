@@ -1,0 +1,201 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: NPL 1.1/GPL 2.0/LGPL 2.1
+ *
+ * The contents of this file are subject to the Netscape Public License
+ * Version 1.1 (the "License"); you may not use this file except in
+ * compliance with the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/NPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is mozilla.org code.
+ *
+ * The Initial Developer of the Original Code is 
+ * Netscape Communications Corporation.
+ * Portions created by the Initial Developer are Copyright (C) 1998
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or 
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the NPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the NPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+/* ==== js_debugger.css ====================================================
+   JavaScript Debugger styles.
+   ========================================================================== */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+
+#maintoolbar\:cont {
+ list-style-image: url('chrome://navigator/skin/icons/forward.png') !important;
+ -moz-image-region: rect(0px 32px 32px 0px) !important;
+ }
+
+#maintoolbar\:cont[disabled="true"],
+#maintoolbar\:cont[disabled="true"]:hover,
+#maintoolbar\:cont[disabled="true"]:active {
+ -moz-image-region: rect(64px 32px 96px 0px) !important;
+}
+
+#maintoolbar\:cont:hover {
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+
+#maintoolbar\:cont:active {
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+
+#maintoolbar\:stop {
+ list-style-image: url('chrome://navigator/skin/icons/stop.png') !important;
+ -moz-image-region: rect(0px 32px 32px 0px) !important;
+}
+
+#maintoolbar\:stop[willStop="true"] {
+    list-style-image: url("chrome://communicator/skin/js_debugger/stop_checked.png") !important;
+  -moz-image-region: rect(0px 32px 32px 0px) !important;
+
+ }
+
+#maintoolbar\:stop[willStop="true"]:hover {
+    list-style-image: url("chrome://communicator/skin/js_debugger/stop_checked.png") !important;
+     -moz-image-region: rect(0px 32px 32px 0px) !important;
+
+  }
+
+#maintoolbar\:stop[disabled="true"],
+#maintoolbar\:stop[disabled="true"]:hover,
+#maintoolbar\:stop[disabled="true"]:active {
+ -moz-image-region: rect(64px 32px 96px 0px) !important;
+}
+
+#maintoolbar\:stop:hover {
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+
+#maintoolbar\:stop:active {
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+
+#maintoolbar\:step {
+  list-style-image: url("chrome://communicator/skin/js_debugger/step_into.png") !important;
+  -moz-image-region: rect(0px 32px 32px 0px) !important;
+}
+
+#maintoolbar\:step[disabled="true"],
+#maintoolbar\:step[disabled="true"]:hover,
+#maintoolbar\:button[disabled="true"]:active {
+ -moz-image-region: rect(64px 32px 96px 0px) !important;
+}
+
+#maintoolbar\:step:hover {
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+
+#maintoolbar\:step:active {
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+
+#maintoolbar\:next {
+  list-style-image: url("chrome://communicator/skin/js_debugger/step_over.png") !important;
+  -moz-image-region: rect(0px 32px 32px 0px) !important;
+}
+
+#maintoolbar\:next[disabled="true"],
+#maintoolbar\:next[disabled="true"]:hover,
+#maintoolbar\:next[disabled="true"]:active {
+ -moz-image-region: rect(64px 32px 96px 0px) !important;
+}
+
+#maintoolbar\:next:hover {
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+
+#maintoolbar\:next:active {
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+
+#maintoolbar\:finish {
+  list-style-image: url("chrome://communicator/skin/js_debugger/step_out.png") !important;
+  -moz-image-region: rect(0px 32px 32px 0px) !important;
+}
+
+#maintoolbar\:finish[disabled="true"],
+#maintoolbar\:finish[disabled="true"]:hover,
+#maintoolbar\:finish[disabled="true"]:active {
+ -moz-image-region: rect(64px 32px 96px 0px) !important;
+}
+
+#maintoolbar\:finish:hover {
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+
+#maintoolbar\:finish:active {
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+
+#maintoolbar\:profile-tb {
+  list-style-image: url("chrome://communicator/skin/js_debugger/profile.png") !important;
+   -moz-image-region: rect(0px 32px 32px 0px) !important;
+
+}
+
+#maintoolbar\:profile-tb[profile="true"] {
+  list-style-image: url("chrome://communicator/skin/js_debugger/profile_checked.png") !important;
+   -moz-image-region: rect(0px 32px 32px 0px) !important;
+
+}
+
+#maintoolbar\:profile-tb[profile="true"]:hover {
+    list-style-image: url("chrome://communicator/skin/js_debugger/profile_checked.png") !important;
+    -moz-image-region: rect(0px 32px 32px 0px) !important;
+
+}
+
+#maintoolbar\:profile-tb:hover {
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+
+#maintoolbar\:profile-tb:active{
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+
+
+#maintoolbar\:toggle-pprint {
+  list-style-image: url("chrome://communicator/skin/js_debugger/pretty_print.png") !important;
+  -moz-image-region: rect(0px 32px 32px 0px) !important;    
+}
+
+#maintoolbar\:toggle-pprint[state="true"] {
+  list-style-image: url("chrome://communicator/skin/js_debugger/pretty_print_checked.png") !important;
+   -moz-image-region: rect(0px 32px 32px 0px) !important;
+
+}
+
+#maintoolbar\:toggle-pprint[state="true"]:hover {
+  list-style-image: url("chrome://communicator/skin/js_debugger/pretty_print_checked.png") !important;
+   -moz-image-region: rect(0px 32px 32px 0px) !important;
+
+}
+
+#maintoolbar\:toggle-pprint:hover {
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+}
+
+#maintoolbar\:toggle-pprint:active {
+ -moz-image-region: rect(32px 32px 64px 0px) !important;
+}

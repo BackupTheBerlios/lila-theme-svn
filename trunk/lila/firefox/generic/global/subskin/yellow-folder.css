@@ -1,0 +1,16 @@
+
+.bookmark-item[container="true"] {
+  list-style-image: url("chrome://global/skin/subskin/folder-yellow.png") !important;
+}
+.bookmark-item[open="true"],
+.bookmark-item[container="true"][open="true"] {
+list-style-image: url("chrome://global/skin/subskin/folder-yellow.png") !important;
+}
+
+treechildren::-moz-tree-image(Name, container) {
+list-style-image: url("chrome://global/skin/subskin/folder-yellow.png") !important;
+}
+
+treechildren::-moz-tree-image(Name, open) {
+list-style-image: url("chrome://global/skin/subskin/folder-yellow.png") !important;
+}

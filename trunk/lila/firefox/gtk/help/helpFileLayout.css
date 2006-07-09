@@ -1,0 +1,226 @@
+/* ***** BEGIN LICENSE BLOCK *****
+* Version: MPL 1.1/GPL 2.0/LGPL 2.1
+*
+* The contents of this file are subject to the Mozilla Public License Version
+* 1.1 (the "License"); you may not use this file except in compliance with
+* the License. You may obtain a copy of the License at
+* http://www.mozilla.org/MPL/
+*
+* Software distributed under the License is distributed on an "AS IS" basis,
+* WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+* for the specific language governing rights and limitations under the
+* License.
+*
+* The Original Code is Mozilla Help CSS
+*
+* The Initial Developer of the Original Code is
+* R.J. Keller
+* Portions created by the Initial Developer are Copyright (C) 2003
+* the Initial Developer. All Rights Reserved.
+*
+* Contributor(s):
+*      Jeff Walden <jwalden+code@mit.edu>
+*
+* Alternatively, the contents of this file may be used under the terms of
+* either the GNU General Public License Version 2 or later (the "GPL"), or
+* the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+* in which case the provisions of the GPL or the LGPL are applicable instead
+* of those above. If you wish to allow use of your version of this file only
+* under the terms of either the GPL or the LGPL, and not to allow others to
+* use your version of this file under the terms of the MPL, indicate your
+* decision by deleting the provisions above and replace them with the notice
+* and other provisions required by the GPL or the LGPL. If you do not delete
+* the provisions above, a recipient may use your version of this file under
+* the terms of any one of the MPL, the GPL or the LGPL.
+*
+* ***** END LICENSE BLOCK ***** */
+
+@import url('chrome://help/content/platformClasses.css');
+
+body {
+	/*
+	margin: 2ex;
+	color: black;
+	font-family: sans-serif;
+	font-size: 0.75em;
+	max-width: 120ex;
+	*/
+	margin: 26px 0 0 0;
+	font-family: "Trebuchet MS", "Bitstream Vera Sans", Sans-Serif;
+	display: block;
+	font-size: 9pt;     
+	padding: 0;
+	padding-right: 4pt;
+	padding-top: 80px;
+	padding-bottom: 20pt;
+	background: #fff url("chrome://help/skin/bcg.png") top left repeat-y;
+}
+body > * {
+	margin-left: 20pt;
+	max-width: 590px;
+}
+
+h1,h2 {
+	margin-top: 2em;
+	color: #6b6c69;
+	font-size: 13pt;
+	display: block;
+}
+h3,h4 {
+	color: #6b6c69;
+	font-size: 11pt;
+}
+
+
+h1 + p + .contentsBox,
+div + .contentsBox {
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+h1 + p + .contentsBox ul,
+div + .contentsBox ul {
+}
+head {
+	display: block;
+}
+head>title {
+	display: block;
+	background: #949294 url("chrome://help/skin/n.png") 0px 0px no-repeat;
+	position: fixed;
+	z-index: 3000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 26px;
+	visibility: visible;
+	text-indent: -200em;
+}
+h1 + p + .contentsBox li,
+div + .contentsBox li {
+	display: none;
+}
+
+:link:hover { color: red; }
+
+a[href^="http://"]:after { 
+	content: url('chrome://help/skin/Weblink.png'); 
+	text-decoration: none;
+}
+
+h1 { 
+	position: absolute !important;
+	right: 0;
+	left: 0;
+	text-align: left;
+	top: 0px;
+	padding: 49px 0 5px 30px;
+	background: #6b6c69 url("chrome://help/skin/n.png") 0 0 no-repeat;
+	margin: 0;
+	font-size: 14pt;
+	color: #f6f6f6;
+	z-index: 4 !important;
+	max-width: 100%;
+}
+/*
+h2 { border-top: 1px solid black; font-size: 1.75em; }
+h3 { color: #009; font-size: 1em; margin-bottom: 0px; margin-top: 35px; }
+*/
+
+dt { font-weight: bold; }
+
+p {
+}
+
+/*
+.contentsBox, 
+.contentsBox > ul,
+li {
+	text-indent: 0px;
+}
+
+.contentsBox > ul,
+.contentsBox ul > ul{
+	margin: 0 0 0 0;
+	list-style-type: none;
+}
+
+.contentsBox {
+	margin-top: 12px;
+	background-color: #cccccc;
+	border: 1px solid black;
+	width: 300px;
+	padding: 1em;
+}
+*/
+.contentsBox em {
+	display: block;
+	text-align: center;
+	margin-top: 2em;
+}
+.contentsBox + p {
+	/* Copyright */
+	padding: 6px;
+	background-color: #6b6c69;
+	color: #fff;
+	margin: 2em -4pt -20pt 0;
+	max-width: 100%;
+	font-size: x-small;
+}
+
+.makeLeftMargin {
+	margin-left: 25px;
+}
+
+.menuPath {
+	background: Window;
+	color: inherit;
+	padding-left:  1px; /* else bgcolor ends at last char - no space */
+	padding-right: 1px;
+}
+
+table {
+	background-color: #eeeeee;    /* really light grey */
+}
+
+td {
+	border: 1px solid #999999;    /* grey */
+	vertical-align: top;
+}
+
+th {
+	background-color: #99ccff;    /* light aqua */
+	font-weight: bold;
+}
+
+kbd {
+	border: 1px solid ThreeDShadow;
+	background-color: Window;
+	padding: 1px 2px;
+	margin: 1px;
+	-moz-border-radius: 3px;
+	font-family: sans-serif;
+	font-size: x-small;
+}
+table kbd {
+	border: inherit;
+	background-color: inherit;
+	padding: inherit;
+	margin: inherit;
+	font-family: inherit;
+	font-size: inherit;
+}
+table {
+	border-collapse: collapse;
+}
+td, th {
+	padding: 4pt;
+}
+
+.noTableBorder,
+.noTableBorder td,
+.noTableBorder th {
+	background-color: transparent;
+	border: 0px solid transparent;
+}
+

@@ -1,0 +1,96 @@
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+.tabbrowser-strip {
+  padding-bottom: 0px;
+  border-bottom: 1px solid;
+  -moz-border-bottom-colors: ThreeDShadow;
+  background: #f3f3f3;
+}
+
+#content tabpanels {
+  -moz-appearance: none;
+}
+
+#content tab {
+  -moz-appearance: none ;
+  -moz-border-radius: 1 ;
+  padding: 2px ;
+  margin: 2px ;
+  
+  border: 1px solid ThreeDShadow ;
+  -moz-border-top-colors: ThreeDShadow;
+  -moz-border-right-colors: ThreeDShadow;
+  -moz-border-left-colors: ThreeDShadow;
+  color: GrayText;
+}
+
+.tabbrowser-tabs {
+	margin-bottom: -3px;	
+}
+
+#content tab[selected="true"] {
+  padding: 2px;
+  -moz-border-top-colors: Highlight;
+  -moz-border-right-colors: Highlight;
+  -moz-border-left-colors: Highlight;
+  color: ButtonText;
+
+  background-color: #fff;
+  border-bottom-color: #fff;
+}
+#content tab[selected="false"] {
+  padding: 2px;
+  color: GrayText;
+}
+
+#content .tabs-left,
+#content .tabs-right {
+  border-bottom: none;
+}
+
+#content .tab-icon {
+  margin: 0px 2px 0px 0px;
+  width: 16px;
+  height: 16px;
+  list-style-image: url('chrome://browser/skin/icons/bookmark_item.png'); 
+}
+
+#content tab[busy] > .tab-middle > .tab-icon {
+  list-style-image: url('chrome://browser/skin/icons/loading.gif');
+}
+
+/* ::::: close button ::::: */
+
+#content .tabs-closebutton {
+  list-style-image: url('chrome://browser/skin/icons/close-button.png');
+}
+
+#content .tabs-closebutton:hover, .tabs-closebutton:hover:active {
+  list-style-image: url('chrome://browser/skin/icons/close-button-hov.png');
+}
+
+#content .tabs-closebutton > .toolbarbutton-icon {
+  margin: 0;
+}
+
+#content .tabs-newbutton {
+  margin: 0px;
+  list-style-image: url('chrome://global/skin/icons/tab-new.png');
+  -moz-image-region: rect(0px 16px 16px 0px);
+}
+
+#content .tabs-newbutton:hover, .tabs-newbutton:hover:active {
+  margin: 0px;
+  -moz-image-region: rect(16px 16px 32px 0px);
+}
+
+#googlebarCriteria > .menulist-editable-box {
+  -moz-appearance: none;
+  border: none;
+  background-color: transparent;
+  background-image: url('chrome://browser/skin/icons/textbox.png');
+  margin: 0px solid;
+  padding: 0px solid; 
+  height: 22px;
+}

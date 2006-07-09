@@ -1,0 +1,15 @@
+.portrait-page {
+  list-style-image: url("chrome://global/skin/Portrait.png");
+}
+
+.landscape-page {
+  list-style-image: url("chrome://global/skin/Landscape.png");
+}
+
+
+.tabs-left, .tabs-right {
+  border-bottom-width: 2px !important;
+  border-bottom-style: solid !important;
+  border-bottom-color: -use-moz-text-color !important;
+  -moz-border-bottom-colors: 36 37 !important;
+}

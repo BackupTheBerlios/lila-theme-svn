@@ -1,0 +1,10 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+tab[selected="true"] {
+  background-color: #F3F3F0 !important;
+}
+
+toolbar, menubar, tabbox, splitter, treecol, treecolpicker, sidebarheader, caption, statusbar, tabs, window, page, wizard, .box-texttab, menupopup, popup, dialog, sidebarheader, .alertBox, .headerContainer, .console-row-icon {
+  background-color: #ECE9D8 !important;
+  -moz-appearance: none !important;
+}

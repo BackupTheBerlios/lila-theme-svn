@@ -1,0 +1,60 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+.tabbrowser-strip {
+  padding: 0px !important;
+  padding-top: 1px !important;
+  padding-bottom: 2px !important;
+  padding-left: 6px !important;
+  border: 0px 0px 0px 1px !important;
+  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
+  background-color: #ccc !important;
+}
+
+.tabbrowser-tabs {
+  padding-top: 0px !important;
+}
+
+.tabs-left,
+.tabs-right {
+  width: 3px !important;
+  border-bottom: none !important;
+}
+
+#content tab {
+  position: relative !important;
+  margin: 0px !important;
+  margin-bottom: -2px !important;
+  padding: 0px !important;
+  border-top: 0px !important;
+  border-bottom: 0px !important;
+  border-left: 0px !important;
+  border-right: 0px !important;
+  background: #F3F3F0 url("chrome://global/skin/subskin/tabdivider.png") right no-repeat !important;
+}
+
+#content tab[selected="true"] {
+  position: relative !important;
+  margin: 0px !important;
+  margin-top: -2px !important;
+  margin-bottom: 4px !important;
+  margin-left: -2px !important;
+  padding: 2px 2px 2px 2px !important;
+  border-bottom: 2px solid !important;
+  border-left: 1px solid !important;
+  border-right: 1px solid !important;
+  border-top: 1px solid !important;
+  -moz-border-bottom-colors: threedshadow !important;
+  -moz-border-left-colors: threedshadow !important;
+  -moz-border-right-colors: threedshadow !important;
+  -moz-border-top-colors: -moz-dialog !important;    
+  background-color: -moz-dialog !important;
+  background-image: none !important;
+}
+
+#content tab[selected="false"] {
+  background-color: Transparent !important;
+}
+
+#content tab[beforeselected="true"] {
+  background-image: none !important;
+}
