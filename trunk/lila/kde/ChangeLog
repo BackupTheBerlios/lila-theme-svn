@@ -7,11 +7,18 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
-06/28/11 jpetso
+11/28/06 jpetso
 ---------
 
+apps/
+ +wlassistant.svg: finally, an icon for wireless stuff
 actions/
  +audioscrobbler.svg: an icon for last.fm, used by Amarok
+ +dynamic.svg: an icon for Amarok's very cool dynamic mode
+ +visualizations.svg: for Amarok's Visualization menu entry
+ +podcast.svg: putting the wlassistant icon into another use, for Amarok
+ +podcast_new.svg: same thing, only with yellow radio waves
+ +mail_post_to.svg: another icon for KMail
 
 
 ----------
