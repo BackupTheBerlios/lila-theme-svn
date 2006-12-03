@@ -7,7 +7,15 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
-11/28/06 jpetso (0.8.3 release)
+12/04/06 jpetso (0.8.3 release)
+---------
+ ~makerelease.sh: more configurability, more robustness, and an SVG-only tarball
+ ~index.desktop: prolonged the copyright
+ ~index-scalable.desktop: ditto, and synced up with index.desktop
+
+
+----------
+11/28/06 jpetso
 ---------
 
 apps/
