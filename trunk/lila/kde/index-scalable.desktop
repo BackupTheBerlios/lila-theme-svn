@@ -1,10 +1,9 @@
 # Lila SVG Icon Theme
-# Copyright (C) 2004 Lila Community
-# Gentoo and the Gentoo G are Copyright Gentoo Technologies, Inc.
+# Copyright (C) 2004, 2005, 2006 Lila Community
 
 [KDE Icon Theme]
-Name=Lila
-Comment=Gentoo Vector Theme
+Name=Lila (original SVG version)
+Comment=Vector Theme in a Shade of Purple
 DisplayDepth=32
 
 Inherits=hicolor
