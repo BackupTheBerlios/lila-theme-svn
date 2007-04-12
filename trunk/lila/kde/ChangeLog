@@ -7,8 +7,30 @@ files expected to change every time: kde/ChangeLog and kde/TODO
 
 
 ----------
+04/12/07 jpetso
+---------
+
+devices/
+ +laptop.svg: a_bein's new laptop icon, wonderful, thanks
+ +pda_blue.svg: recolored version of pda_black.svg
+ +ipod_unmount.svg: don't know when they changed the name from ipod.svg,
+                    but here'sa copy of that (fits with both namings)
+apps/
+ ~ktorrent.svg: Make it a little less colorful
+
+
+----------
+02/21/07 a_bein
+---------
+
+apps/
+ +ktorrent.svg: New KTorrent icon
+
+
+----------
 12/04/06 jpetso (0.8.3 release)
 ---------
+
  ~makerelease.sh: more configurability, more robustness, and an SVG-only tarball
  ~index.desktop: prolonged the copyright
  ~index-scalable.desktop: ditto, and synced up with index.desktop
